@@ -6,14 +6,74 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jul 2023 16:27:58 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jul 2023 21:45:45 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Website</title>
+      <link>/resource/website/</link>
+      <pubDate>Sat, 08 Jul 2023 21:45:45 +0800</pubDate>
+      
+      <guid>/resource/website/</guid>
+      <description>找书 zlib</description>
+    </item>
+    
+    <item>
+      <title>Win Soft</title>
+      <link>/resource/win-soft/</link>
+      <pubDate>Sat, 08 Jul 2023 18:18:19 +0800</pubDate>
+      
+      <guid>/resource/win-soft/</guid>
+      <description>开机必备 KDE Connect (共享剪切板 with phone) snipaste (截图) geek (软件卸载) msys2 (类linux环境) banzip (解压缩) syncthing (同步) winxray (科学上网) weasel (开源输入法) everything (搜索文件) 福昕阅读器 (pdf阅读) neatreader (epub、mobi阅读) emacs 远控软件 向日葵 rustdesk todesk 其他 copyq IDM autohotkey tld tool chrome windirstat sm18 quicker goldwave manictime btsync traccar reg snap tld tool </description>
+    </item>
+    
+    <item>
+      <title>Articles</title>
+      <link>/resource/articles/</link>
+      <pubDate>Sat, 08 Jul 2023 18:16:41 +0800</pubDate>
+      
+      <guid>/resource/articles/</guid>
+      <description>投资 技术投资 如何评估一项技术是否值得长期投入
+有没有安全的工作？ 阮一峰</description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>/resource/blog/</link>
+      <pubDate>Sat, 08 Jul 2023 18:16:18 +0800</pubDate>
+      
+      <guid>/resource/blog/</guid>
+      <description>说明 博客是重要的信息源，如果订阅到大牛博客，能极大丰富个人见识。当然，所有的内容都要带有批判性的阅读。我视博客为信息库和信息源
+信息库：碰到问题我会优先在博客列表搜索
+信息源：时不时刷最新推送，看到有用的内容补充进自己的笔记
+软件：Inoreader
+列表 (列几个更新较频繁的)
+https://manateelazycat.github.io/ http://weiwuhui.com/ https://www.youtube.com/@Ansforce/videos http://www.ruanyifeng.com/ https://kaopubear.top/ https://nullprogram.com/ https://bg9ega.cn/ Opml文件 Inoreader-Feeds-20230708.xml</description>
+    </item>
+    
     <item>
       <title>自我管理</title>
       <link>/books/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/</link>
       <pubDate>Sat, 08 Jul 2023 16:27:58 +0800</pubDate>
       
       <guid>/books/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/</guid>
-      <description>dew </description>
+      <description>德鲁克的观察 观察：知识劳动者寿命在增加，雇佣组织的寿命在缩短 知识劳动者的新特征：拥有属于自己的生产资料(知识)、寿命长于大部分用人组织 知识劳动者的竞争优势：生产率
+三种回答：开始第二种不同的职业生涯；；发展“平行职业”；；“社会企业家” 知识劳动者流动性很强(知识劳动者总是在变化) （人是核心）知识总是体现在人身上，由人携带 创造 丰富和完善，由人使用 传授和学习 （知识是用来预测未来的）受过教育的人必须能够把自己掌握的知识用来瞄准现今 （人的活动是以现实世界为依托的）海赛 赫曼 《玻璃球的游戏》 价值观如果不和世界联系在一起，那这种价值观就没什么用 （人的生活环境）生活在注重措辞和思想的“知识分子”文化；重视人和管理工作的“管理者”文化 （注重学习的广度）有能力懂得多种专业知识的人：不同专业涉及到哪些内容，可以解决什么问题，主要研究那些问题，有哪些重要学说，出现了那些新观点，存在那些重大误区和挑战 （向他人贡献）掌握专业知识的专家必须担负起让人们了解自己和自己专业的责任
+知识工作者的发展路径 个人自我发展：追求卓越 你只能使自己富有成效，你还可以帮助创建让他人富有成效的环境
+自己的长处在哪里？ （需要有意识的实践才能解答这个问题） 在什么样的工作环境里才能工作更好：大vs小型组织 单干vs合作 能否在一个不确定的环境取得成功 需要花几年时间，才能最终发现自己想干什么
+观察你身边的人，他们真正能做好哪些工作，他们是怎么做的（寻求成功的途径）
+迈向成效的第一步就是决定哪些是应该做的正确的事，效率，就是采用正确的方法做事。确定工作重点，然后集中精力去完成。在工作中发现自己的长处；可以通过绩效来识别自己的长处
+自我更新 （无须采取不同方法去做事，只需赋予新内涵），创造激励因素，营造挑战氛围，采取措施不断丰富工作内容，从新的角度审视自己和要完成的任务；；三种支持自我更新的强制性方法：教别人 走出组织 为下属服务
+你希望凭什么不被世人忘记？
+问题：从事知识劳动的人如何富有成效？
+了解自己的长处和价值观 必须把自己定位在能够做出最大贡献的位置上
+自己的长处在哪？ 发现自己长处的唯一方法是反馈分析，进行关键决策时，把预期会发生的结果记录下来，9个月或1年后，按照预期对结果进行反馈。
+“反馈分析法” 记录预期结果，9个月或者1年后，对照实际结果与预期结果，就能知道那些方面做的不错，哪些技能和知识还需要掌握
+结论： 集中自己的优势，把自己定位于凭借长处能够完成任务和取得成果的方面 努力完善自己的长处 识别因知识分子狂妄自大导致无知而丧失能力的领域 改正不良习惯&amp;ndash;抑制效能和绩效的因素 反映一个人因为不注意方法而没能收到成效的情况 不应该做什么 尽可能再缺乏能力的领域少浪费自己的精力，从而把精力集中在自己能力强或技能高的领域
+反馈分析法得到的结论： 集中优势，把自己定位于凭借长处能够完成任务和取得成果的方面 完善长处，更新技能，完善知识缺口 反馈分析能够识别因无知或自大导致丧失能力的领域 改正不良习惯&amp;ndash;抑制效能和绩效的因素 反映因不注意方法而没能收到成效的情况 不应该做什么 尽可能在缺乏能力的领域少浪费精力
+自己如何取得绩效？ 能否在压力下取得很好的绩效（是否需要一个高度组织化的可预知环境） 作为决策者还是作为顾问才会更有成效 个性问题：善于读或者善于听 如何学习
+能否与别人很好地共事，在什么关系下能够与别人很好的共事
+自己的价值观是什么？ 职业归宿是什么？可能知道的比较晚，但是一定要知道自己的长处，如何取得绩效，价值观&amp;mdash;-&amp;gt;有能力决定职业归宿
+掌控时间 三流程：记录时间的去处；；管理时间；；整合时间
+必须支配大块时间，才能发挥效能 组织成员越多，有关人事的决策就越多 （管好自己的时间将变得越来越重要）</description>
     </item>
     
     <item>
@@ -35,8 +95,17 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>一个追求自由的人，我的目标是去除附加在身上的各种约束，物质的或思维的
-时间分配 看书：文史哲、经济金融、计算机、生理学、自我管理、非标、电气、电子、组织研究，偶尔看看生物信息 陪家人找好吃好玩的 性格 享受独处，偶尔混迹人群，身随心动 直接，不拘小节，关照所有人的利益 质疑权威 </description>
+      <description>喜欢自由
+时间分配 看书：文史哲、经济金融、计算机、生理学、自我管理、非标、电气、电子、组织研究，偶尔看看生物信息 陪家人找好吃好玩的 性格 享受独处 直接，不拘小节 质疑权威 关照他人利益 联系方式 mail: WuXuefeng_Shuai@163.com</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>/main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/main/</guid>
+      <description> Blog 交流、发表个人观点和信息 Wiki 多人协同，知识库 Books 读过的书 Projects 个人做的小项目 Resource 软件、文章、数据库、网站 About 个人简介 </description>
     </item>
     
   </channel>
