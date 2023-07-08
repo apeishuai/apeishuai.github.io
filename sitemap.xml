@@ -2,12 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>localhost/posts/hello-wrold/</loc>
+    <lastmod>2023-07-08T12:00:56+08:00</lastmod>
+  </url><url>
+    <loc>localhost/posts/</loc>
+    <lastmod>2023-07-08T12:00:56+08:00</lastmod>
+  </url><url>
+    <loc>localhost/</loc>
+    <lastmod>2023-07-08T12:00:56+08:00</lastmod>
+  </url><url>
     <loc>localhost/about/</loc>
   </url><url>
     <loc>localhost/categories/</loc>
   </url><url>
     <loc>localhost/tags/</loc>
-  </url><url>
-    <loc>localhost/</loc>
   </url>
 </urlset>
