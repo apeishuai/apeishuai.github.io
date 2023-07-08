@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wxf`s Fantasy World</title>
-    <link>localhost/</link>
+    <link>apeishuai.github.io/</link>
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jul 2023 12:00:56 +0800</lastBuildDate><atom:link href="localhost/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jul 2023 12:00:56 +0800</lastBuildDate><atom:link href="apeishuai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello Wrold</title>
-      <link>localhost/posts/hello-wrold/</link>
+      <link>apeishuai.github.io/posts/hello-wrold/</link>
       <pubDate>Sat, 08 Jul 2023 12:00:56 +0800</pubDate>
       
-      <guid>localhost/posts/hello-wrold/</guid>
+      <guid>apeishuai.github.io/posts/hello-wrold/</guid>
       <description>很早就有写博客的想法，随着时间的流逝，我的知识面越拓越宽，但是专业性一直原地踏步，究其原因，主动输出、与人沟通这两块做的很不好，写博客是为了弥补这两个短板
 搭建经历 22年1月，我通过nikola+github page搭建博客，界面很难看，但是本着能用就行的原则还是坚持写了十几篇，最后因为频繁换电脑，放弃了。换完电脑要重新配置环境，有些电脑配置过程中会出现一些莫名奇妙的问题
 后来我了解到travis、github action，CI/CD的概念，就是把博客的build、deploy环节转移到服务商提供的虚拟环境中（docker技术），为此我还研究如何使用docker，因为各种原因最终作罢
@@ -22,10 +22,10 @@
     
     <item>
       <title>About</title>
-      <link>localhost/about/</link>
+      <link>apeishuai.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>localhost/about/</guid>
+      <guid>apeishuai.github.io/about/</guid>
       <description>Ut vitae sagittis tortor. Aliquam euismod vel elit id porttitor. Sed sit amet feugiat urna, quis semper ipsum. Ut vitae ligula ultrices, porttitor ipsum nec, accumsan est. Nunc posuere felis non mauris volutpat interdum. Sed consequat arcu est, eget consequat enim feugiat rhoncus. Nunc sit amet rhoncus libero, venenatis tristique eros. Duis feugiat sem ac eros maximus gravida. Cras mollis vulputate risus, eget tincidunt neque porttitor vitae. Sed sit amet volutpat urna.</description>
     </item>
     
