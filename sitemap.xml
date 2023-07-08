@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/books/</loc>
+    <lastmod>2023-07-08T16:27:58+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-07-08T16:27:58+08:00</lastmod>
+  </url><url>
+    <loc>/books/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2023-07-08T16:27:58+08:00</lastmod>
+  </url><url>
     <loc>/posts/hello-wrold/</loc>
     <lastmod>2023-07-08T12:00:56+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2023-07-08T12:00:56+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2023-07-08T12:00:56+08:00</lastmod>
   </url><url>
     <loc>/about/</loc>
