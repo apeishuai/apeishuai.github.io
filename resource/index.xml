@@ -6,16 +6,7 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Jul 2023 14:47:29 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>List Linux Tool</title>
-      <link>/resource/list-linux-tool/</link>
-      <pubDate>Sun, 09 Jul 2023 14:47:29 +0800</pubDate>
-      
-      <guid>/resource/list-linux-tool/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 09 Jul 2023 14:23:19 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inbox</title>
       <link>/resource/inbox/</link>
@@ -26,35 +17,39 @@
     </item>
     
     <item>
-      <title>List-Website</title>
-      <link>/resource/list-website/</link>
+      <title>list-series-of-articles</title>
+      <link>/resource/list-series-of-articles/</link>
       <pubDate>Sat, 08 Jul 2023 21:45:45 +0800</pubDate>
       
-      <guid>/resource/list-website/</guid>
-      <description>my-books vedio share https://www.icloud.com.cn/iclouddrive/0fcIf0Dz5HYPlNGf5Y1kkWn9A#resource
-找书 zlib</description>
+      <guid>/resource/list-series-of-articles/</guid>
+      <description>Huberman lab
+Huberman是指Huberman Lab，是一个著名的神经科学实验室，由Andres G. Huberman博士领导。该实验室致力于研究神经科学和视觉系统的各个方面，包括感知、学习、记忆、行为以及神经退行性疾病。他们使用各种技术和方法，包括电生理学、光遗传学、光学记录、行为学等等，来探索大脑和视觉系统的功能和机制。Huberman Lab的研究对于增进对神经系统的理解，以及研发治疗神经退行性疾病的方法具有重要意义
+Ebook_Huberman_Lab_Podcast 提取码：5n68
+架构师经验
+道德经直译 提取码：fz9l
+软件架构总结</description>
     </item>
     
     <item>
-      <title>List-Win Soft</title>
-      <link>/resource/list-win-soft/</link>
+      <title>list-soft</title>
+      <link>/resource/list-soft/</link>
       <pubDate>Sat, 08 Jul 2023 18:18:19 +0800</pubDate>
       
-      <guid>/resource/list-win-soft/</guid>
+      <guid>/resource/list-soft/</guid>
       <description>开机必备 KDE Connect (共享剪切板 with phone) snipaste (截图) geek (软件卸载) msys2 (类linux环境) banzip (解压缩) syncthing (同步) winxray (科学上网) weasel (开源输入法) everything (搜索文件) 福昕阅读器 (pdf阅读) neatreader (epub、mobi阅读) emacs 远控软件 向日葵 rustdesk todesk 其他 copyq IDM autohotkey tld tool chrome windirstat sm18 quicker goldwave manictime btsync traccar reg snap tld tool </description>
     </item>
     
     <item>
-      <title>List-Articles</title>
+      <title>list-articles</title>
       <link>/resource/list-articles/</link>
       <pubDate>Sat, 08 Jul 2023 18:16:41 +0800</pubDate>
       
       <guid>/resource/list-articles/</guid>
-      <description>云存储 zpan 私人云盘、共享文件(pass,用icloud) 技术投资 如何评估一项技术是否值得长期投入 有没有安全的工作？ 阮一峰 创业 一个独立创造者的五年 chatgpt-4 使用 gpt4free-ts 完全免费白嫖 GPT-4 Depay信用卡亲测：从USDT到美元和人民币 开通 ChatGPT Plus 攻略 博客搭建 我的博客技术栈 个人成长 职场上从高层还是基层路线开始？ 其他 去哪里安度晚年？心安处即归处 </description>
+      <description>经济 推进消费转型需要“全民国企持股计划” 徐高 云存储 zpan 私人云盘、共享文件(pass,用icloud) 技术投资 如何评估一项技术是否值得长期投入 有没有安全的工作？ 阮一峰 创业 一个独立创造者的五年 chatgpt-4 使用 gpt4free-ts 完全免费白嫖 GPT-4 Depay信用卡亲测：从USDT到美元和人民币 开通 ChatGPT Plus 攻略 博客搭建 我的博客技术栈 个人成长 职场上从高层还是基层路线开始？ 其他 去哪里安度晚年？心安处即归处 </description>
     </item>
     
     <item>
-      <title>List-Blog</title>
+      <title>list-blog-src</title>
       <link>/resource/list-blog/</link>
       <pubDate>Sat, 08 Jul 2023 18:16:18 +0800</pubDate>
       
