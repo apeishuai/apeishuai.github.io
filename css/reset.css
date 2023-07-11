@@ -58,6 +58,7 @@ pre {
 article {
   padding: 5px 0;
 }
+
 .center  {
   display: block;
   margin-left: auto;
@@ -65,10 +66,12 @@ article {
   width: 100%;
 }
 img {
-  display: block;
+  display: flex;
   max-width: 100%;
   height: auto;
+  margin: auto;
 }
+
 figcaption {
   color: #888;
   font: 12px/1.5 monospace;
