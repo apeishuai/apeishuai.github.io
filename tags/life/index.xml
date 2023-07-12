@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>life on Wxf`s Fantasy World</title>
+    <link>/tags/life/</link>
+    <description>Recent content in life on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Jul 2023 12:01:14 +0800</lastBuildDate><atom:link href="/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wxf Pic</title>
+      <link>/resource/wxf-pic/</link>
+      <pubDate>Wed, 12 Jul 2023 12:01:14 +0800</pubDate>
+      
+      <guid>/resource/wxf-pic/</guid>
+      <description>20230711 麻婆豆腐 20230712 </description>
+    </item>
+    
+  </channel>
+</rss>

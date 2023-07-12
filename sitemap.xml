@@ -2,16 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/%E6%94%B9%E5%8F%98%E9%97%AE%E9%A2%98%E7%9A%84%E5%BD%A2%E6%88%90%E5%92%8C%E8%A7%A3%E5%86%B3/</loc>
-    <lastmod>2023-07-11T15:02:06+08:00</lastmod>
+    <loc>/tags/life/</loc>
+    <lastmod>2023-07-12T12:18:40+08:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-07-11T15:02:06+08:00</lastmod>
+    <loc>/resource/</loc>
+    <lastmod>2023-07-12T13:53:52+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2023-07-11T15:02:06+08:00</lastmod>
+    <lastmod>2023-07-12T21:18:32+08:00</lastmod>
+  </url><url>
+    <loc>/resource/wxf-pic/</loc>
+    <lastmod>2023-07-12T12:18:40+08:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2023-07-12T21:18:32+08:00</lastmod>
+  </url><url>
+    <loc>/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%E8%B7%AF%E7%BA%BF%E5%9B%BE/</loc>
+    <lastmod>2023-07-12T21:18:32+08:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2023-07-12T21:18:32+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E6%88%90%E9%95%BF/</loc>
+    <lastmod>2023-07-12T21:18:32+08:00</lastmod>
+  </url><url>
+    <loc>/posts/%E6%94%B9%E5%8F%98%E9%97%AE%E9%A2%98%E7%9A%84%E5%BD%A2%E6%88%90%E5%92%8C%E8%A7%A3%E5%86%B3/</loc>
     <lastmod>2023-07-11T15:02:06+08:00</lastmod>
   </url><url>
     <loc>/tags/%E8%AE%A4%E7%9F%A5%E8%A1%8C%E4%B8%BA%E5%AD%A6/</loc>
@@ -19,9 +34,6 @@
   </url><url>
     <loc>/resource/inbox/</loc>
     <lastmod>2023-07-09T14:23:56+08:00</lastmod>
-  </url><url>
-    <loc>/resource/</loc>
-    <lastmod>2023-07-10T19:14:46+08:00</lastmod>
   </url><url>
     <loc>/posts/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-07-09T18:37:14+08:00</lastmod>
@@ -36,7 +48,7 @@
     <lastmod>2023-07-10T19:01:26+08:00</lastmod>
   </url><url>
     <loc>/resource/list-articles/</loc>
-    <lastmod>2023-07-10T19:14:46+08:00</lastmod>
+    <lastmod>2023-07-12T13:53:52+08:00</lastmod>
   </url><url>
     <loc>/resource/list-blog-src/</loc>
     <lastmod>2023-07-10T19:01:02+08:00</lastmod>
@@ -56,6 +68,6 @@
     <loc>/categories/</loc>
   </url><url>
     <loc>/main/</loc>
-    <lastmod>2023-07-11T15:07:12+08:00</lastmod>
+    <lastmod>2023-07-12T21:12:50+08:00</lastmod>
   </url>
 </urlset>
