@@ -45,7 +45,7 @@ Ebook_Huberman_Lab_Podcast 提取码：5n68
       <pubDate>Sat, 08 Jul 2023 18:18:19 +0800</pubDate>
       
       <guid>/resource/list-soft/</guid>
-      <description>开机必备 KDE Connect (共享剪切板 with phone) snipaste (截图) geek (软件卸载) msys2 (类linux环境) banzip (解压缩) syncthing (同步) winxray (科学上网) weasel (开源输入法) everything (搜索文件) 福昕阅读器 (pdf阅读) neatreader (epub、mobi阅读) emacs 远控软件 向日葵 rustdesk todesk 其他 copyq IDM autohotkey tld tool chrome windirstat sm18 quicker goldwave manictime btsync traccar reg snap tld tool </description>
+      <description>scoop msys2 开机必备 KDE Connect (共享剪切板 with phone) snipaste (截图) geek (软件卸载) msys2 (类linux环境) banzip (解压缩) syncthing (同步) winxray (科学上网) weasel (开源输入法) everything (搜索文件) 福昕阅读器 (pdf阅读) neatreader (epub、mobi阅读) emacs 远控软件 向日葵 rustdesk todesk 其他 copyq IDM autohotkey tld tool chrome windirstat sm18 quicker goldwave manictime btsync traccar reg snap tld tool </description>
     </item>
     
     <item>
@@ -58,17 +58,17 @@ Ebook_Huberman_Lab_Podcast 提取码：5n68
     </item>
     
     <item>
-      <title>list-blog-src</title>
-      <link>/resource/list-blog-src/</link>
+      <title>list-infostream-src</title>
+      <link>/resource/list-infostream-src/</link>
       <pubDate>Sat, 08 Jul 2023 18:16:18 +0800</pubDate>
       
-      <guid>/resource/list-blog-src/</guid>
+      <guid>/resource/list-infostream-src/</guid>
       <description>说明 博客是重要的信息源，如果订阅到大牛博客，能极大丰富个人见识。当然，所有的内容都要带有批判性的阅读。我视博客为信息库和信息源
-信息库：碰到问题我会优先在博客列表搜索
-信息源：时不时刷最新推送，看到有用的内容补充进自己的笔记
-软件：Inoreader
-列表 (列几个更新较频繁的)
-https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https://www.youtube.com/@fofmaster7122 徐春 基金经理、FOF大佬 https://gitee.com/Kenneth-Lee-2012/MySummary 架构师 姚尧 自由学者、台湾问题专家、历史学、投资 https://manateelazycat.github.io/ emacs高手 http://weiwuhui.com/ 大学老师 https://01.me/ 计算机科学博士、学术文章、生活分享 https://www.youtube.com/@Ansforce/videos 半导体博士、半导体产业科普 http://www.ruanyifeng.com/ 技术科普、开拓眼界 https://kaopubear.top/ 生物信息学博士、生物信息 https://nullprogram.com/ 软件工程师 https://bg9ega.cn/ 无线电科普 https://www.chungkwong.cc/ 全栈工程师 Opml文件 Inoreader-Feeds-20230708.xml</description>
+信息源分三块：rss(博客+podcast)、twitter list、社群
+信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 + 软件：Inoreader
+软件：irreader1.5.9+1.6.11 提取码：jlfg resource rss、podcast-link
+列表 (几个对我影响较大的)
+https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https://www.youtube.com/@fofmaster7122 徐春 基金经理、FOF大佬 https://gitee.com/Kenneth-Lee-2012/MySummary 架构师 姚尧 自由学者、台湾问题专家、历史学、投资 </description>
     </item>
     
   </channel>
