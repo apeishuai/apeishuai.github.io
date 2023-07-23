@@ -6,7 +6,26 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jul 2023 21:59:51 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jul 2023 07:59:49 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>播客转译方法</title>
+      <link>/posts/%E6%92%AD%E5%AE%A2%E8%BD%AC%E8%AF%91%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sun, 23 Jul 2023 07:59:49 +0800</pubDate>
+      
+      <guid>/posts/%E6%92%AD%E5%AE%A2%E8%BD%AC%E8%AF%91%E6%96%B9%E6%B3%95/</guid>
+      <description>缘起 有听国外播客的需求，播客太长了，动辄1-2h，纯英文吸收效率太低，抓不住重点，但是其内容又很吸引我，如果转换成翻译版文字稿，吸收效率要高点
+流程v1 第一步是下载播客的文字稿，在我提及的两个播客网站，文字稿属于vip服务提供的内容，我用yt-dlp下载相关YouTube视频字幕，代码如下 经过下载字幕、转换格式、打印成pdf(注：批量打印pdf)，就得到了完整的文字稿 再用知云或小绿鲸辅助翻译阅读，就可完成播客的消化吸收
+流程v2 这两个软件的阅读体验和翻译流畅度很不好，后面有了chatgpt，我试着翻译了一段，流畅度堪比deepl，果断删掉了前两个软件
+流程v1太麻烦了，后面播客去掉了youtube视频的字幕，给我带来了很大的困扰。我试了很多转录的工具，飞书的memo，其他人提供的cloab代码，都不太满意。一番查找，最后发现两个工具
+插件revoldiv
+AI transfer audio to txt
+免费，不要钱 chat academic
+中科院出的一款科研软件
+先是本地搭建，淘宝购买api key
+后找到其他人搭建的服务器，可直接使用 飞书分享 在此我想贴一个页面，这是其他人做的，定价99元 人家的劳动成果要尊重，我会免费更新文本到飞书的共享知识库。
+酒好也怕巷子深，这些生理学的内容对个人自我调节很有帮助，真心希望有缘看到的朋友能好好读读，学以致用</description>
+    </item>
+    
     <item>
       <title>搬家</title>
       <link>/posts/%E6%90%AC%E5%AE%B6/</link>
