@@ -6,7 +6,39 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Jul 2023 12:01:14 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Oct 2023 10:25:21 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Health</title>
+      <link>/resource/health/</link>
+      <pubDate>Fri, 20 Oct 2023 10:25:21 +0800</pubDate>
+      
+      <guid>/resource/health/</guid>
+      <description>1 亚健康（当前关注重点）
+2 恶性肿瘤（35岁以后了）
+慢性病：
+（其实我更想从宏观层面，找数据，看疾病的发展趋势，没书提到这么些东西）
+《第五次健康报告》
+流行病：
+核心器官：心 肝 肾 肺 胃
+几大系统：内分泌系统、循环系统、呼吸系统、泌尿系统、消化系统、生殖系统、免疫系统
+心血管、呼吸、消化、神经系统
+常见体检项 | 现有检查手段(从医疗器械入手 | 好吧，文章已经囊括了)
+性价比
+年轻人的体检指南01 体检在检查什么
+年轻人的体检指南02：个性化筛查
+年轻人的体检指南 03：你该掌握的自查手段
+/Entered on/ [2022-10-07 周五 23:41]
+怎么体检 才能救命
+/Entered on/ [2022-10-08 周六 00:23]
+大龄单身青年自我保障指南 – Ouroboros
+/Entered on/ [2022-11-13 周日 20:59]
+财新 2023第1期 《以生活方式医学控制慢性病》
+[file:images/2023-01-08_20-18-33.png][Capture-2023-01-08_20-18-33.png]] [file:images/2023-05-06_08-37-07.png][Capture-2023-05-06_08-37-07.png]] 体检 程序员延寿指南
+/Entered on/ [2023-02-26 周日 01:06]
+blog-如何看病
+/Entered on/ [2023-10-20 周五 10:20]</description>
+    </item>
+    
     <item>
       <title>Wxf Pic</title>
       <link>/resource/wxf-pic/</link>
@@ -23,15 +55,6 @@
       
       <guid>/resource/inbox/</guid>
       <description>(一些未归类的资源)</description>
-    </item>
-    
-    <item>
-      <title>list-series-of-articles</title>
-      <link>/resource/list-series-of-articles/</link>
-      <pubDate>Sat, 08 Jul 2023 21:45:45 +0800</pubDate>
-      
-      <guid>/resource/list-series-of-articles/</guid>
-      <description> Ebook_Huberman_Lab_Podcast 提取码：5n68 软件架构设计 </description>
     </item>
     
     <item>
@@ -63,7 +86,7 @@
 信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 + 软件：Inoreader
 软件：irreader1.5.9+1.6.11 提取码：jlfg resource rss、podcast-link geek_plux newsletter geek_plux podcast
 列表 (几个对我影响较大的)
-https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https://www.youtube.com/@fofmaster7122 徐春 基金经理、FOF大佬 https://gitee.com/Kenneth-Lee-2012/MySummary 架构师 姚尧 自由学者、台湾问题专家、历史学、投资 </description>
+https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https://www.youtube.com/@fofmaster7122 徐春 基金经理、FOF大佬 https://gitee.com/Kenneth-Lee-2012/MySummary 架构师 姚尧 自由学者、台湾问题专家、历史学、投资 series of articles Ebook_Huberman_Lab_Podcast 提取码：5n68 软件架构设计 </description>
     </item>
     
   </channel>
