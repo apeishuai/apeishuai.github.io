@@ -6,7 +6,24 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Oct 2023 10:25:21 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Oct 2023 10:36:20 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>信息管理方案</title>
+      <link>/resource/%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Sat, 21 Oct 2023 10:36:20 +0800</pubDate>
+      
+      <guid>/resource/%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/</guid>
+      <description>信息搜集 信息分类 https://readwise.io/access_token get_token (同步微信读书笔记) 6R2jpQzfRm8EnoNlqS6tAjwbmqfrVdVYc28s5oMPNexEUpaxOf(readwise api token) 2023-10-21_10:44:43
+简悦导入readwise 简悦同步助手+自动化
+qq开启smtp 授权码：okgzxlbuidzmdfib
+uid: wiava73y-c4xx-hsx4-un1n-523muk66yxc2
+logseq: src.ref.mannual https://northnight.gitee.io/logseq-documents/#/page/Contents 抽认卡 (尘埃落定 2023-10-22_15:32:05) 图谱 (做思维扩展，有关联的信息能聚类到一起) 同步 (syncthing)
+渐进式阅读 提取训练/间隔推送 https://sct.ftqq.com/ (server酱) 2023-10-21_22:06:53
+pushdeer需商家小米商店才能推送通知，风险大；改用官方app 用pushdeer是考虑到场景扩展，各种约束 https://github.com/easychen/pushdeer/issues/150 check酱+server酱
+后台运行得自建服务器，这是一年后的事了 https://fwalert.com/rules/6533dbc082101a6023449d40 2023-10-21_22:47:53 (没有网页解析，还是得用server酱)
+原则 1 文件备份在本地</description>
+    </item>
+    
     <item>
       <title>Health</title>
       <link>/resource/health/</link>

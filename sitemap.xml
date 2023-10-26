@@ -2,17 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/resource/health/</loc>
-    <lastmod>2023-10-20T10:46:02+08:00</lastmod>
-  </url><url>
-    <loc>/resource/</loc>
-    <lastmod>2023-10-20T10:46:02+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2023-10-20T10:46:02+08:00</lastmod>
+    <loc>/posts/archive-%E7%8E%8B%E5%BD%A6%E5%BD%A6/</loc>
+    <lastmod>2023-10-26T14:11:58+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2023-10-19T23:34:14+08:00</lastmod>
+    <lastmod>2023-10-26T14:11:58+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-10-26T14:11:58+08:00</lastmod>
+  </url><url>
+    <loc>/resource/</loc>
+    <lastmod>2023-10-22T15:35:04+08:00</lastmod>
+  </url><url>
+    <loc>/resource/%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2023-10-22T15:35:04+08:00</lastmod>
+  </url><url>
+    <loc>/resource/health/</loc>
+    <lastmod>2023-10-20T10:46:02+08:00</lastmod>
   </url><url>
     <loc>/posts/%E7%94%9F%E4%BA%A7%E5%8A%9B-%E5%8D%9A%E5%AE%A2%E6%96%87%E6%A1%A3%E9%A1%B5%E9%9D%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2023-10-19T18:09:58+08:00</lastmod>
