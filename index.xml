@@ -6,7 +6,34 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Oct 2023 11:49:44 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Nov 2023 15:41:48 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的效率工具</title>
+      <link>/resource/%E6%88%91%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sat, 04 Nov 2023 15:41:48 +0800</pubDate>
+      
+      <guid>/resource/%E6%88%91%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
+      <description>继上一篇文章，我研究了很多效率工具，这一篇相当于pro2的工程实践
+flomo flomo有每日回顾，用来做间隔推送；
+卡片+层级标签，可以用来做渐进式阅读，代替supermemo(不能制作挖空卡片，这个无所谓)；
+多端同步，提供api，可以跟其他工具联动，例简悦
+简悦 这个工具用来标注网页，之前我都是用chrome插件“save page WE”下载成离线html，用hamsterbase标注，简悦集成了所有操作，配合readwise做间隔推送。跟flomo一样，划线标注成卡片，+间隔推送
+离线html版剪藏配置
+该配置库实现了自动离线下载功能，附带标注，我的配置如下： 对我来说，要标注在没有用到简悦之前的离线文件，第二张图片中红线部分，右边有两个按钮，点击第一个就可以打开离线html标注了
+第二个是我需要readwise做间隔推送，简悦提供了自动化选项，具体参考 sync readwise
+readwise 无需配置，直接使用即可
+logseq logseq主要用来看pdf，认为有用的内容可以用标签#card制成卡片，间隔推送
+用标签组织文件，每一个新文件可以插入&amp;rsquo;#tag/subtag/subtag&amp;rsquo;，这样就生成一个三级标签结构，完成文本组织；再用#card做间隔推送 高效todo 此工具有两个优点：多端同步、时间轴。我用标签追踪一些重要的东西 这个列表记录了我用过的不同效率工具，什么时候出现的，什么时候消失的。这样一来是review，因为在实际寻找效率工具的过程中一直处于搜索、信息缺失状态，时间轴列表可以帮忙监控整个过程；另，如果下一次出现同样的任务，我可以透视之前的行为来完善当前任务的策略(主要看重它的时间轴功能) 项目借用gtd思想，就是归类同一主题任务，有可能复用到之前同类型任务留下的资源 这三个tool是实际介入的内容及效果分析，比如我觉得刷twitter是个低ROI的行为，不想再刷了，就可以通过数据看这个行为具体改善情况，数据当然是通过manictime搜集来的啊
+manictime 破解版下载（某些功能破解版才有）
+链接：https://pan.baidu.com/s/1I4DFl6e7ywhqjKENGEr4Fg?pwd=t6bj
+标签组合：
+1-xxx表示大类，这样就有每天刷各种娱乐网站的信息了，我主要看花了多少时间及趋势，如果ROI太低就想办法减少这方面的时间投入；
+ref: 筛选语法 autotag
+数据备份与恢复：设置&amp;ndash;&amp;gt;备份和还原
+recoll 这个用来搜索全局文本， 这三个即为搜索目录，重要的pdf、txt等文件资料可以放这
+总结 综上，工具很重要，但更重要的是思想，我用到了：渐进阅读(卡片+标签)、间隔推送、时间轴；数据积累与检索</description>
+    </item>
+    
     <item>
       <title>Archive 王彦彦</title>
       <link>/posts/archive-%E7%8E%8B%E5%BD%A6%E5%BD%A6/</link>
@@ -138,10 +165,10 @@ update: 2023-10-18_21:05:24</description>
     
     <item>
       <title>设计人生-想法雏形</title>
-      <link>/posts/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E6%83%B3%E6%B3%95%E9%9B%8F%E5%BD%A2/</link>
+      <link>/resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E6%83%B3%E6%B3%95%E9%9B%8F%E5%BD%A2/</link>
       <pubDate>Sat, 09 Sep 2023 22:28:42 +0800</pubDate>
       
-      <guid>/posts/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E6%83%B3%E6%B3%95%E9%9B%8F%E5%BD%A2/</guid>
+      <guid>/resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E6%83%B3%E6%B3%95%E9%9B%8F%E5%BD%A2/</guid>
       <description>缘起 有时候大脑会出现各种画面，在众创学校，在桃源居，在依山伴城，我在这些空间短暂生存过一段时间，看起来也是当时较优的选择，但是我不知道为什么要在这些地方，我想得到什么？我得到了什么？
 我观察自己在不同环境的行为，总是趋向一种行为模式，只是一个模糊的轮廓，这种模式很局限，我想打破，引入新的行为。但是前面关于学习的文章提到了，首先你的注意力要聚焦到要改善的方向，这要求我们有一个框架，能解释行为模式出现的原因，然后提供控制方案。
 实践 我的想法，通过分析数据得到一个基准，然后在这个基准上提升。
@@ -540,12 +567,11 @@ ssh原理 git clone xx (拉取远程仓库的.git文件夹)
 信息源分三块：rss(博客+podcast)、twitter list、社群、+聊天
 信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 提取练习：一方面通过卡片推送(logseq+readwise,简悦)，恢复我死去的记忆；另一方面通过项目(这块正完善) + 软件：Inoreader + 软件：提取码：jlfg [irreader1.5.9+1.6.11]ttps://pan.baidu.com/s/1xqKW_hCPUeWRyA2lXaLMOw)
 软件：reeder(ipad)+omnifocus(归档进标签体系) 列表 (几个对我影响较大的)
-https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https://www.youtube.com/@fofmaster7122 徐春 基金经理、FOF大佬 https://gitee.com/Kenneth-Lee-2012/MySummary 架构师 姚尧 自由学者、台湾问题专家、历史学、投资 series of articles Ebook_Huberman_Lab_Podcast 提取码：5n68 软件架构设计 blog_list https://www.zhangjiee.com/blog/index.html
+https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https://www.youtube.com/@fofmaster7122 徐春 基金经理、FOF大佬 https://gitee.com/Kenneth-Lee-2012/MySummary 架构师 姚尧 自由学者、台湾问题专家、历史学、投资 series of articles how to be a programmer Ebook_Huberman_Lab_Podcast 提取码：5n68 软件架构设计 blog_list https://www.zhangjiee.com/blog/index.html
 /Entered on/ [2022-11-14 周一 12:24]
 钱塘散人：自由的思想者、潇洒的旁观者…… /Entered on/ [2022-11-14 周一 12:23]
 Yanyg Home - Happy Coding, Happy Life /Entered on/ [2022-11-14 周一 12:22]
-Blog Home Page /Entered on/ [2022-11-14 周一 12:18]
-Eric&amp;rsquo;s Projects Page /Entered on/ [2022-11-14 周一 12:43]</description>
+Blog Home Page /Entered on/ [2022-11-14 周一 12:18]</description>
     </item>
     
     <item>
@@ -619,8 +645,9 @@ Eric&amp;rsquo;s Projects Page /Entered on/ [2022-11-14 周一 12:43]</descripti
 2023/09/04 python环境搭建 现金流环境
 2023/10/18 工作规划 pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)
 从三个视角锚定当下，比如昨天看现在的时间，明天看现在的时间，结合状态机+有限无限游戏，就能给当下指派任务
-技术栈构建
-从0到1 </description>
+设计人生
+2023/09/09 设计人生-想法雏形
+2023/11/04 我的效率工具 </description>
     </item>
     
     <item>
