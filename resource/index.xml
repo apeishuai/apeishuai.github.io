@@ -6,7 +6,25 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Nov 2023 15:41:48 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Nov 2023 14:06:35 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据备份</title>
+      <link>/resource/%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/</link>
+      <pubDate>Sun, 05 Nov 2023 14:06:35 +0800</pubDate>
+      
+      <guid>/resource/%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/</guid>
+      <description>数字资产很重要，每一次脑力劳动获取的成果及过程，都应做记录，并保证数据安全，推荐几个工具：
+Keepass 记录密码，所有密码放在一个.kdbx文件中，同步此文件至坚果云，就能在三端做密码管理了
+除了1password，这个应该是最安全的方案了
+ios：奇密
+android：Keepass2Android\ pc：keepass+chrome插件
+syncthing 用来同步logseq笔记，还有其他需要单独同步的文件夹
+我尽量保证产生的所有数据(配置文件、脚本、文章)都是离线的，然后根据需要同步相关文件至安卓手机。
+所有离线数据均保存至U盘，U盘通过syncthing同步至一台128G的安卓手机；另一些常用的，比如logseq笔记同步至常用手机，因为要经常翻看
+KDE connect 剪切板同步工具，手机、PC相互传文件，共享剪切板。
+手机传输至PC(windows系统)的文件在“文档”文件夹下</description>
+    </item>
+    
     <item>
       <title>我的效率工具</title>
       <link>/resource/%E6%88%91%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
@@ -223,6 +241,15 @@ conda search package-name conda install package-name=2.2.3 -n env-name conda upd
     </item>
     
     <item>
+      <title>list-series-of-articles</title>
+      <link>/resource/list-series-of-articles/</link>
+      <pubDate>Sat, 08 Jul 2023 21:45:45 +0800</pubDate>
+      
+      <guid>/resource/list-series-of-articles/</guid>
+      <description> Ebook_Huberman_Lab_Podcast 提取码：5n68 软件架构设计 </description>
+    </item>
+    
+    <item>
       <title>list-soft</title>
       <link>/resource/list-soft/</link>
       <pubDate>Sat, 08 Jul 2023 18:18:19 +0800</pubDate>
@@ -255,6 +282,20 @@ https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https:/
 钱塘散人：自由的思想者、潇洒的旁观者…… /Entered on/ [2022-11-14 周一 12:23]
 Yanyg Home - Happy Coding, Happy Life /Entered on/ [2022-11-14 周一 12:22]
 Blog Home Page /Entered on/ [2022-11-14 周一 12:18]</description>
+    </item>
+    
+    <item>
+      <title>list-infostream-src</title>
+      <link>/resource/list-infostream-src.sync-conflict-20231105-221556-3eaneuh/</link>
+      <pubDate>Sat, 08 Jul 2023 18:16:18 +0800</pubDate>
+      
+      <guid>/resource/list-infostream-src.sync-conflict-20231105-221556-3eaneuh/</guid>
+      <description>说明 博客是重要的信息源，如果订阅到大牛博客，能极大丰富个人见识。当然，所有的内容都要带有批判性的阅读。我视博客为信息库和信息源
+信息源分三块：rss(博客+podcast)、twitter list、社群
+信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 + 软件：Inoreader
+软件：irreader1.5.9+1.6.11 提取码：jlfg resource rss、podcast-link geek_plux newsletter geek_plux podcast
+列表 (几个对我影响较大的)
+https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https://www.youtube.com/@fofmaster7122 徐春 基金经理、FOF大佬 https://gitee.com/Kenneth-Lee-2012/MySummary 架构师 姚尧 自由学者、台湾问题专家、历史学、投资 </description>
     </item>
     
   </channel>
