@@ -62,29 +62,6 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser iwr -useb get.scoop.sh | iex
     </item>
     
     <item>
-      <title>未来工作计划</title>
-      <link>/posts/%E6%9C%AA%E6%9D%A5%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</link>
-      <pubDate>Wed, 13 Sep 2023 15:33:15 +0800</pubDate>
-      
-      <guid>/posts/%E6%9C%AA%E6%9D%A5%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</guid>
-      <description>商业观察 先考虑下工作岗位怎么来的，因为有需求要满足，当服务群体比较大，一个人忙不过来，就需要招募人手，工作岗位就产生了。
-市场是最主要的，因为其最靠近需求端，我们需要从需求端拿钱，好的销售善于发现需求、创造需求。
-其次是研发制造，这里面的顶层是架构师，即在需求不明朗的情况下提供并选择相对最优的方案，决定资源投入方向；设计师在拿到需求后根据架构师给出的硬限制做设计方案，工艺师决定加工方案，再由车间工人现场加工、组装，交付。
-这是关键链条，其次就是一些辅助岗位：行政、财务、法务、售后
-我来做透视，第一个概念是组织，市场上不只有你一个服务提供商，如果客户被竞争者或潜在代替者抢走，组织就失去了存在的土壤，结果就是大家散伙，组织的所有积累打散流失到其他不同的组织。
-我们不希望这种事情发生，因为这意味着从头再来，我们失去了复利带来的滚雪球效应。所以先考察组织的竞争力，组织的竞争力体现在更快、更好的交付产品，这要求：
-技术实力 组织成员协作效率 在博客文章《软件开发者路线图》中提到过组织知识的来源，诸位可以check来考察公司的技术潜力
-成员协作效率依赖OA系统，linux是分布式协作最好的案例，可以看看github提供的协作方案，我觉得这是工作最理想的形态，不必去现场、不必去工作室、不必通勤，只需贡献代码。
-产品及对象 人多不一定力量大，市场上谁的购买力强，谁的声音就大，所以看交易对象，有本书《长尾理论》，如果找到利基市场，所得的现金流也能维持组织的运转；
-当然，我前面提到的都是在市场环境下自组织起来的组织，还有政府，政府垄断国家经济命脉，提供公共产品，提供秩序。
-通过分析组织现金流来源，也就能知道其发展可不可持续；比如在这次疫情，很多小企业因为现金流断了，贷不到款，最后破产，很可惜；而大点的企业由于现金储备充足，且能贷到款而活下来。
-个人在组织的利益 有这样一种现象，为了保证自己地位的稳定性，某个项目创始人会留一手，防止卸磨杀驴。这就像屠龙少年终成恶龙的故事，管理者会创造各种障碍，使得自己具有不可代替性，可能是保留关键技术，也可能是创建一些制度。
-当然，这是在有能力构建出完整系统，满足客户需求的前提下。除了透视组织的利益，组织利益如何转化成个人利益，这个路径，需要尤其关注。
-建立抓手 最优选择是
-自动化运作 </description>
-    </item>
-    
-    <item>
       <title>设计人生</title>
       <link>/posts/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F/</link>
       <pubDate>Sat, 09 Sep 2023 22:28:42 +0800</pubDate>
@@ -103,21 +80,6 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser iwr -useb get.scoop.sh | iex
 评估当前生活、美好时光日志、制定多个人生剧本、原型设计、etc (后续完善)
 5个要素：活动、环境、互动、物体、用户 (这个可以加到我的精力曲线表，需要在特定时间拿到一些东西，时机很重要，那张表能帮我找到时机)
 7月初我看过一本书《目标》，高德拉特认为我们只需对常识思考，解决方案会在思考常识的过程中自己浮现。我认为这句话很正确。</description>
-    </item>
-    
-    <item>
-      <title>环境搭建 python 1</title>
-      <link>/posts/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-python1/</link>
-      <pubDate>Mon, 04 Sep 2023 17:25:55 +0800</pubDate>
-      
-      <guid>/posts/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-python1/</guid>
-      <description>学习方法 思维导图+做习题，通过做习题巩固基础语法，思维导图组织形成知识树。要以实际问题为导向，可事半功倍。
-注：习题可以帮助熟悉语法，但是对构建项目帮助甚微，因为构建项目是一项创新活动，有很多路径能抵达。不过，高以下为基，不熟悉语法就上手项目无异于痴人说梦。
-环境搭建 miniconda+docker搭建复用环境，展示一下如何用miniconda管理环境。集成开发环境一般选用vscode，我在windows下用msys2仿linux环境，用emacs+gcc
-下载miniconda，安装，添加condabin目录至环境变量，下述脚本就能用了，成功标志： 用conda搭建开发环境，看看conda使用方法 conda 环境管理
-conda env list //列出所创建的环境 (E:/miniconda/env/py3.6) conda create --n env_name python=3.8 pandas //创建环境 conda info --envs //查看虚拟环境 conda activate env_name //激活环境 conda deactivate //冻结环境 conda remove --n env_name --all //删除环境 conda包管理
-conda search package-name conda install package-name=2.2.3 -n env-name conda update package-name pip install package-name conda list 创建python3.6的环境，然后激活，使用下述两个资源做python语法的基础训练
-问题记录 log: CommandNotFoundError: Your shell has not been properly configured to use &amp;#39;conda activate&amp;#39;. slove: source activate //linux下使用该命令激活activate Rsc 《笨办法学python3》</description>
     </item>
     
     <item>
@@ -485,22 +447,6 @@ git工作流程 新建github账号
 ssh原理 git clone xx (拉取远程仓库的.git文件夹)
 本地新建目录
 执行git init (生成.git文件夹（如果通过clone得到.git文件夹就不用执行此步骤）) git remote add repo-name xx (关联远程仓库) 推送至本地仓库 (注：stage为暂存区) git add . git status (查看文件状态) git rm &amp;ndash;cache xx.txt (从暂存区移除文件) git mv(修改文件名称= mv + rm + add) git reset HEAD xx.txt(取消已经暂存的文件) git checkout &amp;ndash; xx.txt(取消对文件的修改) git diff &amp;ndash;cached (查看已暂存的将要添加到下次提交的内容) git diff (查看尚未暂存的改动) git commit -m &amp;ldquo;first post&amp;rdquo; git commit -m &amp;ldquo;xx&amp;rdquo; git add forgetten_files(修正第一个的提交内容) git commit &amp;ndash;amend (修改最后一次提交) 推送至远程仓库</description>
-    </item>
-    
-    <item>
-      <title>Git使用教程</title>
-      <link>/posts/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.sync-conflict-20231105-221613-3eaneuh/</link>
-      <pubDate>Sun, 09 Jul 2023 11:53:48 +0800</pubDate>
-      
-      <guid>/posts/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.sync-conflict-20231105-221613-3eaneuh/</guid>
-      <description>书中对git介绍的很详细了，我结合个人需求记录一些操作
-git工作流程 新建github账号
-新建repository
-执行ssh-keygen，生成key，将public key的值填入SSH and GPG keys
-ssh原理 git clone xx (拉取远程仓库的.git文件夹)
-本地新建目录
-执行git init (生成.git文件夹（如果通过clone得到.git文件夹就不用执行此步骤）) git remote add repo-name xx (关联远程仓库) 推送至本地仓库 (注：stage为暂存区) git add . git status (查看文件状态) git rm &amp;ndash;cache xx.txt (从暂存区移除文件) git mv git diff &amp;ndash;cached (查看已暂存的将要添加到下次提交的内容) git diff (查看尚未暂存的改动) git commit -m &amp;ldquo;first post&amp;rdquo; git commit &amp;ndash;amend (重新提交) 推送至远程仓库
-git push origin master git fetch (将远程仓库有但是当前仓库没有的信息拉取然后存储在本地数据库) git pull (=fetch + merge) 历史版本回退 git log (-p &amp;ndash;stat) (查看提交历史) git reset(书本内搜索git reset，第23个索引起做了很详细的解释) git reset &amp;ndash;soft HEAD~ git reset &amp;ndash;mixed HEAD~ git reset &amp;ndash;hard HEAD~ git协作 git branch git branch new-branch git branch -d new-branch git branch -v git branch -vv git branch &amp;ndash;merged git branch &amp;ndash;nomerged git checkout new-branch git checkout -b iss53 (创建新分支) git checkout &amp;ndash;track origin/xx git push origin &amp;ndash;delete origin/xx (删除远程分支) 合并和变基</description>
     </item>
     
     <item>
