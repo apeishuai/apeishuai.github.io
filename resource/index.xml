@@ -6,7 +6,18 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Dec 2023 15:41:38 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Dec 2023 11:30:18 +0800</lastBuildDate><atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快速学习 终篇</title>
+      <link>/resource/%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0-%E7%BB%88%E7%AF%87/</link>
+      <pubDate>Sun, 10 Dec 2023 11:30:18 +0800</pubDate>
+      
+      <guid>/resource/%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0-%E7%BB%88%E7%AF%87/</guid>
+      <description>学习的目的是为了解决问题，我来讨论学习成果及有效性。
+首先得定义范围，问题、解决问题所需要的知识，均需定义范围。
+探索过程：从图中你的位置出发，有很多可能方向，你得把这些虚线描述的错误方向排除(要求自己动手测试)。如此反复，最终得到整个知识网 复用过程：得保证知识网可靠，用到逻辑闭包的概念 </description>
+    </item>
+    
     <item>
       <title>技术栈</title>
       <link>/resource/%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
