@@ -6,7 +6,20 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Dec 2023 11:30:18 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Dec 2023 09:55:30 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C顺序表</title>
+      <link>/posts/c%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
+      <pubDate>Mon, 11 Dec 2023 09:55:30 +0800</pubDate>
+      
+      <guid>/posts/c%E9%A1%BA%E5%BA%8F%E8%A1%A8/</guid>
+      <description>写顺序表遇到如下卡点：
+1 c基础不到位(结构体、指针怎么使用，涉及到很多细节，补充c基础内容)
+2 功能层面：函数是否完备，仅需要内存管理、增删改查就够了吗?
+3 性能层面：想不到具体场景，日后完善
+Seq.h #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #define CAP 100 #define EType int #define status int #define OK 1 #define ERROR 0 typedef struct{ EType *elem; int length,maxsize; }SqList; #if 0 /*-------------------------------- 创建、销毁列表(内存操作) -------------------------------*/ status InitSeqList(SqList *L); status Expand(SqList *L); //扩展内存 status ClearSeqList(SqList *L); status DestorySeqList(SqList *L); /*-------------------------------- 增删改查 -------------------------------*/ status InsertSeqList(SqList *L,int pos,EType e); status DeleteElem(SqList *L,int pos); status ModifyElem(SqList *L,EType e); status ModifyElem(SqList *L,int pos,EType e); status SearchData(SqList *L,EType data); status SearchPos(SqList *L,int pos); /*-------------------------------- 非破坏性操作 -------------------------------*/ status ListEmpty(SqList *L); status PrintElem(SqList *L); /*-------------------------------- 复杂操作 -------------------------------*/ 合并两张表成一张 分解一张表成两张 #endif Seq.</description>
+    </item>
+    
     <item>
       <title>快速学习 终篇</title>
       <link>/resource/%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0-%E7%BB%88%E7%AF%87/</link>
@@ -761,7 +774,7 @@ ssh原理 git clone xx (拉取远程仓库的.git文件夹)
 信息源分三块：rss(博客+podcast)、twitter list、社群、+聊天
 信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 提取练习：一方面通过卡片推送(logseq+readwise,简悦)，恢复我死去的记忆；另一方面通过项目(这块正完善) + 软件：Inoreader + 软件：提取码：jlfg [irreader1.5.9+1.6.11]ttps://pan.baidu.com/s/1xqKW_hCPUeWRyA2lXaLMOw)
 软件：reeder(ipad)+omnifocus(归档进标签体系) 列表 (几个对我影响较大的)
-https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https://www.youtube.com/@fofmaster7122 徐春 基金经理、FOF大佬 https://gitee.com/Kenneth-Lee-2012/MySummary 架构师 姚尧 自由学者、台湾问题专家、历史学、投资 series of articles how to be a programmer Ebook_Huberman_Lab_Podcast 提取码：5n68 软件架构设计 blog_list https://www.zhangjiee.com/blog/index.html
+https://weibo.com/u/2301586363 徐高 经济学博士 首席经济学家 https://www.youtube.com/@fofmaster7122 徐春 基金经理、FOF大佬 https://mysummary.readthedocs.io/zh/latest/index.html 架构师 姚尧 自由学者、台湾问题专家、历史学、投资 series of articles how to be a programmer Ebook_Huberman_Lab_Podcast 提取码：5n68 软件架构设计 blog_list https://www.zhangjiee.com/blog/index.html
 /Entered on/ [2022-11-14 周一 12:24]
 钱塘散人：自由的思想者、潇洒的旁观者…… /Entered on/ [2022-11-14 周一 12:23]
 Yanyg Home - Happy Coding, Happy Life /Entered on/ [2022-11-14 周一 12:22]
@@ -853,7 +866,7 @@ Blog Home Page /Entered on/ [2022-11-14 周一 12:18]</description>
 2023/08/18 关于学习的思考
 2023/11/21 ref 学习
 2023/11/24 关键点
-2023/11/24 快速学习 终篇 </description>
+2023/12/10 快速学习 终篇 </description>
     </item>
     
     <item>
