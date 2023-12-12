@@ -6,7 +6,33 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Dec 2023 09:55:30 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Dec 2023 22:05:17 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何适应一家公司</title>
+      <link>/resource/%E5%A6%82%E4%BD%95%E9%80%82%E5%BA%94%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8/</link>
+      <pubDate>Mon, 11 Dec 2023 22:05:17 +0800</pubDate>
+      
+      <guid>/resource/%E5%A6%82%E4%BD%95%E9%80%82%E5%BA%94%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8/</guid>
+      <description>之所以有快速学习章节，是因为在我工作的过程中，发现自己老是抓不住重点，说明我的学习方式有问题。而快速学习的目的，是为了在劳动力市场竞争，目前来看，还没有迈出第一步。
+要在职场中使用快速学习能力取得优势，需要聚焦哪些点？
+业务模式 得搞清楚钱从哪来，怎么分配。
+从末端出发，订单为王，我们看律所，地位最高的合伙人，他们的优势就是案源；还有很多小工厂老板，搞些什么酒、衣服啥的，凑吧凑吧就上场，结果还卖的不错，这里面的核心还是订单
+分类付费主体：政府、企业、居民
+居民根据购买力划分：高净值人群、中产、普通人群
+围绕这几个主体，从订单的数量、单价、总价、获取成本、连续性划分，可以分为(稳定 获利高低)四个象限。科研为例，资金来源是科研项目基金，稳定，获利高低不好说，如果项目成果孵化成产品并卖的好(条件很苛刻)，获利高，反之获利低；大厂呢，IBM为例，产品是大型计算机，主要卖给政府、银行、保险公司和大型制造企业，稳定获利高；小工厂呢，不稳定获利高(看环境)，胜在灵活
+分配机制，纯打工者看定薪体系就行；不同的是，项目制公司有项目提成，销售岗位有销售提成，这两个都跟订单密切相关。职场人更应培养的是业务能力。
+这么一切割，就能分析出想工作的环境。
+职场环境 信息：上下级存在信息差，因为上级站在更高层面看问题；部门之间也存在信息墙。
+这种你只能利用一些通用技能，去创造交集，比如修电脑啥的。尽可能多的搜集信息，分析
+资源：资源的分配权在老板和几个部门领导手里，唯一能做的，就是画大饼。资源就是个人能力成长经验包，你有一个设想，但是实际执行发现很多漏洞，如果没有资源支持，你就得不到这些经验
+势能：如果要推动某些事，有些人可能不配合，这是因为势能低，但是假如你主持成功了几个项目，在团队中有了技术影响力，再推动事情阻力可能会小点
+熟悉业务 到这快速学习就能派上用场了。现在手里有现成的产品，从0到1开始做拆解：
+原始需求、方案设计思路(取舍)、具体实现(有很多细节)，基于实际产品和文档资料构建逻辑链。不管怎么样，你得分析出当前产品可能存在逻辑断点的地方，以及部分完整的逻辑链，很难的，所以知道为什么小公司不愿意培养新人了么，成本太高
+维护及创新 在维护原有产品的基础上改进，可能要维护一个需求列表。
+但更重要的是，你得有从0到1的能力，在需求不明朗的前提下，跟客户反复沟通确定一套方案，验证方案可行性，申请资源，推动设计落地、交付售后
+综上，为了快速适应，得有意识培养自己做项目的能力，聚焦点：需求分析、可行性分析、方案设计、工程实现、交付运维</description>
+    </item>
+    
     <item>
       <title>C顺序表</title>
       <link>/posts/c%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
@@ -18,6 +44,15 @@
 2 功能层面：函数是否完备，仅需要内存管理、增删改查就够了吗?
 3 性能层面：想不到具体场景，日后完善
 Seq.h #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #define CAP 100 #define EType int #define status int #define OK 1 #define ERROR 0 typedef struct{ EType *elem; int length,maxsize; }SqList; #if 0 /*-------------------------------- 创建、销毁列表(内存操作) -------------------------------*/ status InitSeqList(SqList *L); status Expand(SqList *L); //扩展内存 status ClearSeqList(SqList *L); status DestorySeqList(SqList *L); /*-------------------------------- 增删改查 -------------------------------*/ status InsertSeqList(SqList *L,int pos,EType e); status DeleteElem(SqList *L,int pos); status ModifyElem(SqList *L,EType e); status ModifyElem(SqList *L,int pos,EType e); status SearchData(SqList *L,EType data); status SearchPos(SqList *L,int pos); /*-------------------------------- 非破坏性操作 -------------------------------*/ status ListEmpty(SqList *L); status PrintElem(SqList *L); /*-------------------------------- 复杂操作 -------------------------------*/ 合并两张表成一张 分解一张表成两张 #endif Seq.</description>
+    </item>
+    
+    <item>
+      <title>C语言基础</title>
+      <link>/posts/c%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 11 Dec 2023 09:54:54 +0800</pubDate>
+      
+      <guid>/posts/c%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</guid>
+      <description>函数 形式参数：按值传递(拷贝一份)</description>
     </item>
     
     <item>
@@ -866,7 +901,8 @@ Blog Home Page /Entered on/ [2022-11-14 周一 12:18]</description>
 2023/08/18 关于学习的思考
 2023/11/21 ref 学习
 2023/11/24 关键点
-2023/12/10 快速学习 终篇 </description>
+2023/12/10 快速学习 终篇
+2023/12/11 如何适应一家公司 </description>
     </item>
     
     <item>
