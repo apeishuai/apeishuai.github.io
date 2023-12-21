@@ -26,33 +26,15 @@
 这种你只能利用一些通用技能，去创造交集，比如修电脑啥的。尽可能多的搜集信息，分析
 资源：资源的分配权在老板和几个部门领导手里，唯一能做的，就是画大饼。资源就是个人能力成长经验包，你有一个设想，但是实际执行发现很多漏洞，如果没有资源支持，你就得不到这些经验
 势能：如果要推动某些事，有些人可能不配合，这是因为势能低，但是假如你主持成功了几个项目，在团队中有了技术影响力，再推动事情阻力可能会小点
+认知：认知不到位，就会在错误方向用力，造成金钱、时间、资源的浪费，提升认知需要不断打破舒适圈，一个坑一个坑踩。
 熟悉业务 到这快速学习就能派上用场了。现在手里有现成的产品，从0到1开始做拆解：
-原始需求、方案设计思路(取舍)、具体实现(有很多细节)，基于实际产品和文档资料构建逻辑链。不管怎么样，你得分析出当前产品可能存在逻辑断点的地方，以及部分完整的逻辑链，很难的，所以知道为什么小公司不愿意培养新人了么，成本太高
+原始需求、方案设计思路(取舍)、具体实现(有很多细节)
+基于实际产品和文档资料构建逻辑链，不管怎么样，你得分析出当前产品可能存在逻辑断点的地方，以及部分完整的逻辑链。
+(具体参考前面四篇关于学习的文章)
 维护及创新 在维护原有产品的基础上改进，可能要维护一个需求列表。
 但更重要的是，你得有从0到1的能力，在需求不明朗的前提下，跟客户反复沟通确定一套方案，验证方案可行性，申请资源，推动设计落地、交付售后
-综上，为了快速适应，得有意识培养自己做项目的能力，聚焦点：需求分析、可行性分析、方案设计、工程实现、交付运维</description>
-    </item>
-    
-    <item>
-      <title>C顺序表</title>
-      <link>/posts/c%E9%A1%BA%E5%BA%8F%E8%A1%A8/</link>
-      <pubDate>Mon, 11 Dec 2023 09:55:30 +0800</pubDate>
-      
-      <guid>/posts/c%E9%A1%BA%E5%BA%8F%E8%A1%A8/</guid>
-      <description>写顺序表遇到如下卡点：
-1 c基础不到位(结构体、指针怎么使用，涉及到很多细节，补充c基础内容)
-2 功能层面：函数是否完备，仅需要内存管理、增删改查就够了吗?
-3 性能层面：想不到具体场景，日后完善
-Seq.h #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #define CAP 100 #define EType int #define status int #define OK 1 #define ERROR 0 typedef struct{ EType *elem; int length,maxsize; }SqList; #if 0 /*-------------------------------- 创建、销毁列表(内存操作) -------------------------------*/ status InitSeqList(SqList *L); status Expand(SqList *L); //扩展内存 status ClearSeqList(SqList *L); status DestorySeqList(SqList *L); /*-------------------------------- 增删改查 -------------------------------*/ status InsertSeqList(SqList *L,int pos,EType e); status DeleteElem(SqList *L,int pos); status ModifyElem(SqList *L,EType e); status ModifyElem(SqList *L,int pos,EType e); status SearchData(SqList *L,EType data); status SearchPos(SqList *L,int pos); /*-------------------------------- 非破坏性操作 -------------------------------*/ status ListEmpty(SqList *L); status PrintElem(SqList *L); /*-------------------------------- 复杂操作 -------------------------------*/ 合并两张表成一张 分解一张表成两张 #endif Seq.</description>
-    </item>
-    
-    <item>
-      <title>C语言基础</title>
-      <link>/posts/c%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</link>
-      <pubDate>Mon, 11 Dec 2023 09:54:54 +0800</pubDate>
-      
-      <guid>/posts/c%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</guid>
-      <description>函数 形式参数：按值传递(拷贝一份)</description>
+综上，为了快速适应，得有意识培养自己做项目的能力
+聚焦点：需求分析、可行性分析、方案设计、工程实现、交付运维</description>
     </item>
     
     <item>
@@ -634,7 +616,10 @@ AI transfer audio to txt
 找房是最难受的，我不像很多人，工作敲定，先租房半年，工作我也觉得可以说换就换，所以势必发展出一套动态的租房策略，经实践，如下:
 不要找中介
 中介动辄签一年的合同，说可以帮你转租，其实签了合同就任人家摆布了，我的印象，中介没什么责任心 找转租房
-为了高性价比，去咸鱼找转租房。有些人签了一年合同，干了几个月，公司倒闭了，或者离职了，或者转正未通过，房子就空置了，找到他们，去谈判，可以拿一个不错的价格。时刻留意，看自己的住房时间安排，有机会就出手 核心问题 经过上述的推导，不难发现，搬家问题的核心找房子+断舍离，断舍离已经搞定；找房子受制于工作地点，而工作的目的是挣钱。考察现有的工作模式，远程工作，可以摆脱具体的工作地点限制，这是因为互联网行业基建做的最好，且知识为其主要生产资料；另外，可以利用资本增值，这个导向创业、理财两条路。已经有三条康庄大道摆在我们面前了，怎么选呢？</description>
+为了高性价比，去咸鱼找转租房。有些人签了一年合同，干了几个月，公司倒闭了，或者离职了，或者转正未通过，房子就空置了，找到他们，去谈判，可以拿一个不错的价格。时刻留意，看自己的住房时间安排，有机会就出手 核心问题 经过上述的推导，不难发现，搬家问题的核心找房子+断舍离，断舍离已经搞定；找房子受制于工作地点，而工作的目的是挣钱。
+考察现有的工作模式，远程工作，可以摆脱具体的工作地点限制，这是因为互联网行业基建做的最好，且知识为其主要生产资料；
+另外，可以利用资本增值，这个导向创业、理财两条路。
+已经有三条康庄大道摆在我们面前了，怎么选呢？</description>
     </item>
     
     <item>
@@ -921,7 +906,11 @@ Blog Home Page /Entered on/ [2022-11-14 周一 12:18]</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/main/</guid>
-      <description> Focus 身体健康 Resource list-infostream-src 飞书 wiki Life &amp;amp; Entertainment wxfs music playlist laike9m`s music playlist Blog 无痛英语学习环境配置及实战 About 个人简介 </description>
+      <description>Focus
+身体健康 Resource
+wxf wiki list-infostream-src 飞书 wiki Life &amp;amp; Entertainment
+guanjihuan blog music 悠闲的躺在沙滩上喝果汁 v友们喜欢的歌 FUNK&amp;amp;DISCO Playlist · 坠入碧蓝 ♫ 节奏流动 Blog
+无痛英语学习环境配置及实战 About 个人简介</description>
     </item>
     
   </channel>
