@@ -6,7 +6,30 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Dec 2023 22:05:17 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Dec 2023 13:17:44 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023年总结</title>
+      <link>/posts/2023%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Thu, 21 Dec 2023 13:17:44 +0800</pubDate>
+      
+      <guid>/posts/2023%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+      <description>先看22年底的总结吧： 23/01.04&amp;ndash;&amp;gt;23/06/28，入职到新公司&amp;ndash;&amp;gt;辞职，get新技能：开车、eplan绘图、plc编程、低压电气元器件选型。 我还顺带研究了下公司业务范围、组织结构，及基本电气系统搭建方法 所有材料如下： 此为上半年进度！下半年主要在修复上半年发现的缺陷，简言之，我弄了一堆工具帮助我纠偏 工具演化过程如下： 闭环了搬家相关主题；
+闭环人生道路相关主题，规划、纠偏相关工具：okr、gtd、渐进式阅读；
+闭环人生设计主题，8月15经过小倩朋友圈，参加了读书会，引发出人生设计主题；
+闭环快速学习主题，12月用3天闭环快速学习专题；
+现在正处于okr的基础技能构建阶段，如下： _ _进度：c语言刚半只脚趾踏入算法门槛(具体进度去主页的wiki看吧) 展望 24年主题：挣钱，闭环上述几个项目。祝我好运吧！</description>
+    </item>
+    
+    <item>
+      <title>和胡老师对话</title>
+      <link>/posts/%E5%92%8C%E8%83%A1%E8%80%81%E5%B8%88%E5%AF%B9%E8%AF%9D/</link>
+      <pubDate>Thu, 21 Dec 2023 13:03:43 +0800</pubDate>
+      
+      <guid>/posts/%E5%92%8C%E8%83%A1%E8%80%81%E5%B8%88%E5%AF%B9%E8%AF%9D/</guid>
+      <description>早上打了把游戏，胡老师说：你应该想办法挣钱，而不是整天浑浑噩噩
+其实吧，我什么都知道，就是没有激情。动起来吧！</description>
+    </item>
+    
     <item>
       <title>如何适应一家公司</title>
       <link>/resource/%E5%A6%82%E4%BD%95%E9%80%82%E5%BA%94%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8/</link>
@@ -875,7 +898,7 @@ Blog Home Page /Entered on/ [2022-11-14 周一 12:18]</description>
 2023/11/05 数据备份 现金流环境
 2023/10/18 工作规划
 2023/11/30 金钱观
-2023/11/30 技术栈(持续更新) 社交 商业 pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)
+2023/11/30 技术栈(持续更新)\ 社交 商业 pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)
 从三个视角锚定当下，比如昨天看现在的时间，明天看现在的时间，结合状态机+有限无限游戏，就能给当下指派任务
 设计人生 end
 (2023/08/16&amp;ndash;&amp;gt;2023/11/17 93d end)
