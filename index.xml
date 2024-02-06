@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jan 2024 14:17:44 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Feb 2024 15:28:26 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flomo实践gtd和para</title>
+      <link>/posts/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</link>
+      <pubDate>Tue, 06 Feb 2024 15:28:26 +0800</pubDate>
+      <guid>/posts/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</guid>
+      <description>前天火车上翻搜集的电子书，发现一本，这本书是twitter其他人推过来的，当时在找信息的分类方法，提到了para。&#xA;今天给我妹讲了一下flomo+标签(gtd体系、para体系)的使用方法，觉得挺有逻辑的，摘抄出来，以飨大众。&#xA;主要解决三个问题：&#xA;1 资料归类&#xA;2 待办事项组织&#xA;3 目标管理&#xA;成型后系统效果是这样的：任何内容，大脑中的想法、工作相关任务、生活中瞬间、触发灵感的阅读材料，任何内容，统统丢进inbox，然后继续忙自己当前的事。晚上打开inbox走一遍流程，归类所有内容，第二天继续丢内容进inbox，往复循环&#xA;有三套流程，一套是gtd，一套是para，一套是每日计划，均使用flomo的标签实现，如下 可以看到，有三套标签，sys-gtd、sys-para、normal、2024\&#xA;sys-para para是存资料的，一般看到感觉有用的资料，统统丢进inbox，夜深人静的时候走流程，&#xA;传统笔记分类为主，比如：生活，工作，xxx&#xA;para分类法以推动action为主：&#xA;proj是有时间限制的任务组，规定时间内要有成果交付&#xA;area是长期关注，并有投入责任的领域&#xA;resource则是以文本块为最小组织单元，有可能会用到的信息&#xA;archive是失去兴趣的领域&#xA;+ inbox，捕捉用&#xA;一个笔记先进inbox，然后走流程，归类完毕后重点关注proj，这样能确保信息无遗漏，且提取的信息跟当前的场景匹配&#xA;具体如下： sys-gtd gtd用于组织日常事项，最小单位是action，action组织成project。一个复杂的动作往往有很多action构成，无所谓，只关心action的状态即可 依然是先放进inbox，然后拆解成具体action，：洗衣服、写文章，等等，非常具体的且可执行的事项。然后分配到act/Todo(这个todo列后面要用到)。proj则是由这些action组织起来的，用flomo的@(链接)功能&#xA;action有三种状态：TODO、DONE、waiting，waiting是需要外部辅助的，比如你的材料需要其他人的数据，这个时候就要等，但是不能干等啊，所以转移到waiting列表，定个时间，比如2h后提醒自己check一次。&#xA;waiting列表我们也可以附带时间和地点，如图，我有一个aeiou列表，里面维持了地点、跟其他人的谈话信息，这种我们下次谈话就能接着之前聊的话题继续聊，gtd的waiting需要哪些人的协助，@进去，或者在哪些地方，@进去，定期核查这个列表，能确保任务无遗漏&#xA;同理，不时地翻翻proj列表，看看哪些能推进，顺手干掉。sys-gtd相当于一个动态的任务分配系统吧，且能做到很精细的资源管理&#xA;2024 okr 接下来我想谈谈每日的任务安排，在工作时，我们的大脑只能记住一小段内容，如果要完成一个时间、空间跨度都很大的任务，仅凭工作记忆是不够的。现在有sys-para帮我们处理了资料的问题，sys-gtd帮我们处理了任务分配的问题，接下来问一个问题：我想干什么？&#xA;2024有1年的时间，能做成哪些事，拆解这些事到具体的每一天，在这一天应该做什么事。&#xA;首先对每天做的事情分类：自己想做的、外部触发要做的；生活上的、工作上的；投资自己的、浪费时间的，有很多维度，我选择用okr做目标分类、追踪、对齐，如下&#xA;OKR 2024/week1/day6 任务安排(直接从sys-gtd/act/Todo提取action即可) 2024/week1/day6 任务完成情况 形成自己的标签体系 举个例子吧，aeiou是在《人生设计课程》知道的概念，我可以做tool/activ、tool/user、tool/envi、tool/object、tool/xxx五个标签，用这个列表记录一些关键的事，比如搬家、工作、跟某个人的交流等，为以后的决策提供数据支持。&#xA;举这个例子是想说，标签体系千变万化，只要能搞成一个闭环体系，什么名字都无所谓。下面是实际生活中自己形成的一些标签 flomo用了三个月，对我的生活产生了很大的影响，更多的是上面的几套方法论的影响吧。4个月可以产生这么大变化，也许我们对生活应该乐观点，说不定下四个月你能做出什么了不起的突破呢，共勉！！！ </description>
+    </item>
     <item>
       <title>构建现金流渠道</title>
       <link>/resource/%E6%9E%84%E5%BB%BA%E7%8E%B0%E9%87%91%E6%B5%81%E6%B8%A0%E9%81%93/</link>
