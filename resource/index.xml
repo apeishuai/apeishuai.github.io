@@ -6,8 +6,15 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jan 2024 14:17:44 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 08 Feb 2024 07:52:31 +0800</lastBuildDate>
     <atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows软件管理</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Thu, 08 Feb 2024 07:52:31 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
+      <description>window主要靠两个软件：msys2(类linux环境)、scoop&#xA;流程 所有数据都放到u盘了，所以只要恢复软件及其配置&#xA;拿到一个新电脑，先安装msys2，然后恢复其配置文件，再安装scoop，完成&#xA;msys配置 msys的核心是这些配置文件，把它们上传到github，定期更新，迁移到新电脑时git clone一下就行&#xA;然后需要修改注册表，我写了三个脚本，执行一遍，msys配置就完成了!!!&#xA;main-init.sh&#xA;#!/bin/bash # change environment variables . chg-env-var.sh # change reg . chg-reg.sh # install cmd tool . command-install.sh chg-env-var.sh&#xA;#!/bin/bash # Set the system environment variable list SYS_ENV_VARS=( &amp;#34;&amp;#34; ) # Create the system batch file cat &amp;gt; update_sys_env.bat &amp;lt;&amp;lt; EOF @echo off REM Update system environment variables EOF for env_var in &amp;#34;${SYS_ENV_VARS[@]}&amp;#34; do var_name=&amp;#34;${env_var%=*}&amp;#34; var_value=&amp;#34;${env_var#*=}&amp;#34; echo &amp;#34;setx $var_name \&amp;#34;$var_value\&amp;#34; /M&amp;#34; &amp;gt;&amp;gt; update_sys_env.</description>
+    </item>
     <item>
       <title>构建现金流渠道</title>
       <link>/resource/%E6%9E%84%E5%BB%BA%E7%8E%B0%E9%87%91%E6%B5%81%E6%B8%A0%E9%81%93/</link>

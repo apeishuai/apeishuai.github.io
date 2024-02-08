@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/resource/</loc>
+    <lastmod>2024-02-08T08:12:20+08:00</lastmod>
+  </url><url>
+    <loc>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2024-02-08T08:12:20+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-02-08T08:12:20+08:00</lastmod>
+  </url><url>
     <loc>/posts/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</loc>
     <lastmod>2024-02-06T19:32:30+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
     <lastmod>2024-02-06T19:32:30+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2024-02-06T19:32:30+08:00</lastmod>
-  </url><url>
-    <loc>/resource/</loc>
-    <lastmod>2024-01-08T14:42:22+08:00</lastmod>
   </url><url>
     <loc>/resource/%E6%9E%84%E5%BB%BA%E7%8E%B0%E9%87%91%E6%B5%81%E6%B8%A0%E9%81%93/</loc>
     <lastmod>2024-01-08T14:42:22+08:00</lastmod>
@@ -177,7 +180,7 @@
     <lastmod>2023-07-08T13:49:46+08:00</lastmod>
   </url><url>
     <loc>/project/</loc>
-    <lastmod>2024-01-08T14:43:24+08:00</lastmod>
+    <lastmod>2024-02-08T08:13:40+08:00</lastmod>
   </url><url>
     <loc>/about/</loc>
     <lastmod>2024-01-08T16:34:16+08:00</lastmod>
