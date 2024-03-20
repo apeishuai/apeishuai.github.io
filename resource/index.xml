@@ -6,8 +6,15 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2024 11:21:18 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2024 02:12:35 +0800</lastBuildDate>
     <atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Workflow_inbox</title>
+      <link>/resource/workflow_inbox/</link>
+      <pubDate>Wed, 20 Mar 2024 02:12:35 +0800</pubDate>
+      <guid>/resource/workflow_inbox/</guid>
+      <description>一个有点奇怪的工作流…… 我用 todoist 很多，这天想起来它有完善的 api 支持，于是大概看了下，然后定时推送rss feed 到 todo里… 居然很好用哎&#xA;然后我就真的好多天没打开过 reeder 了。&#xA;担心过文章摘录等情况，但现在看来没多大需求，后续再看。&#xA;大不了自己实现一个它的前端。&#xA;· 3月12日&#xA;发现这个后我一发不可收拾，我做了个随机推送锻炼的任务，随机发送一些适合办公室里做的小的身体活动的事项，每30分钟推一次，这样我没事看看 todo，就有一些新的东西，正好锻炼下。\&#xA;对我来说这个比 iOS 通知好用的多…</description>
+    </item>
     <item>
       <title>Ref 浅谈最佳学习路径</title>
       <link>/resource/ref-%E6%B5%85%E8%B0%88%E6%9C%80%E4%BD%B3%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/</link>
@@ -293,7 +300,7 @@
       <link>/resource/list-infostream-src/</link>
       <pubDate>Sat, 08 Jul 2023 18:16:18 +0800</pubDate>
       <guid>/resource/list-infostream-src/</guid>
-      <description>说明 博客是重要的信息源，如果订阅到大牛博客，能极大丰富个人见识。当然，所有的内容都要带有批判性的阅读。我视博客为信息库和信息源\&#xA;体系化：论文 &amp;gt; 出版书籍(审核ing) &amp;gt; 博客(rss) &amp;gt; 会议 &amp;gt; 电话1v1 实时性：实地调研 &amp;gt; 电话1v1 &amp;gt; 会议 &amp;gt; 社交媒体&#xA;元信息：参考&amp;lt;完美软件 对软件测试的各种幻想&amp;gt; chap5 元测试：思考信息从0到1出现的过程(关于信息质量的信息) 技巧：视角切换(拿其他人的信息库、信息流、提取的思路和习惯做测试) 信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 提取练习：一方面通过卡片推送(logseq,简悦,flomo)；另一方面通过项目(这块正完善) + 软件：Inoreader&#xA;+ 软件：提取码：jlfg [irreader1.5.9+1.6.11]ttps://pan.baidu.com/s/1xqKW_hCPUeWRyA2lXaLMOw)&#xA;+ 软件：reeder(ipad)+omnifocus(归档进标签体系)\&#xA;常用 软件&#xA;qireader： https://www.qireader.com/ (rss阅读器) wewerss: (微信公众号订阅工具,docker部署) juchats： https://www.juchats.com/ (chatgpt衍生项目) google search (主动)&#xA;模板：&#xA;框定范围&#xA;确定搜索目标&#xA;制定搜索策略&#xA;评估，封存策略备用&#xA;复用或创建新策略&#xA;具体实践&#xA;inurl:www.douban.com/doulist/ &amp;lt;关键词&amp;gt; /search 书单 inurl:github.io &amp;lt;关键词&amp;gt; /search blog\ twitter search (主动)&#xA;search for twitter list&#xA;https://twitter.com/search?q=list%3A1565529135316815873%20%20周杰伦&amp;amp;src=typed_query&amp;amp;f=top&#xA;https://twitter.com/search?q=list%3A1742859529241624647%20%20周杰伦&amp;amp;src=typed_query&amp;amp;f=top</description>
+      <description>说明 博客是重要的信息源，如果订阅到大牛博客，能极大丰富个人见识。当然，所有的内容都要带有批判性的阅读。我视博客为信息库和信息源\&#xA;体系化：论文 &amp;gt; 出版书籍(审核ing) &amp;gt; 博客(rss) &amp;gt; 会议 &amp;gt; 电话1v1 实时性：实地调研 &amp;gt; 电话1v1 &amp;gt; 会议 &amp;gt; 社交媒体&#xA;元信息：参考&amp;lt;完美软件 对软件测试的各种幻想&amp;gt; chap5 元测试：思考信息从0到1出现的过程(关于信息质量的信息) 技巧：视角切换(拿其他人的信息库、信息流、提取的思路和习惯做测试) 信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 提取练习：一方面通过卡片推送(logseq,简悦,flomo)；另一方面通过项目(这块正完善) + 软件：Inoreader&#xA;+ 软件：提取码：jlfg [irreader1.5.9+1.6.11]ttps://pan.baidu.com/s/1xqKW_hCPUeWRyA2lXaLMOw)&#xA;+ 软件：reeder(ipad)+omnifocus(归档进标签体系)\&#xA;常用 软件&#xA;qireader： https://www.qireader.com/ (rss阅读器) wewerss: (微信公众号订阅工具,docker部署) juchats： https://www.juchats.com/ (chatgpt衍生项目) google search (主动)&#xA;模板：&#xA;框定范围&#xA;确定搜索目标&#xA;制定搜索策略&#xA;评估，封存策略备用&#xA;复用或创建新策略&#xA;具体实践&#xA;inurl:www.douban.com/doulist/ &amp;lt;关键词&amp;gt; /search 书单 inurl:github.io &amp;lt;关键词&amp;gt; /search blog\ 搜索历史&#xA;2024/03/20 https://twitter.com/search?q=list%3A1565529135316815873%20%20seo&amp;amp;src=typed_query&amp;amp;f=top&#xA;评估：发现不少SEO相关信息源及实践，说明信息库能很好cover seo知识的需求\ twitter search (主动)&#xA;search for twitter list</description>
     </item>
     <item>
       <title>《自我管理》</title>
@@ -301,6 +308,13 @@
       <pubDate>Sat, 08 Jul 2023 16:27:58 +0800</pubDate>
       <guid>/resource/%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/</guid>
       <description>德鲁克的观察 观察：知识劳动者寿命在增加，雇佣组织的寿命在缩短&#xA;知识劳动者的新特征：拥有属于自己的生产资料(知识)、寿命长于大部分用人组织&#xA;知识劳动者的竞争优势：生产率&#xA;知识劳动者的生产率 (生产过程分析)&#xA;确定任务、集中完成任务、制定考核标准&#xA;在商品生产和流通领域，任务很明确，比如在电子厂干活，就是一些明确的动作；而在知识工作领域，“任务是什么”需要被首先考虑&#xA;德鲁克的观察： 某公司案例：“任务不是预测未来，而是确定我们的企业方向和目标以及实现目标的战略”&#xA;在组织内部，工作越分越细，组织中的实际从事知识劳动和服务生产的成员，承担着越来越多的临时性工作和额外业务活动，这些工作和活动几乎不会或完全不会创造价值，并且与他们拿报酬从事的工作几乎没关系&#xA;所以在知识劳动领域，提高生产力的关键在绩效。知识劳动的质量和数量构成了绩效。百货商店女售货员的绩效是“顾客满意”，绘图员的绩效是其绘制图纸的质量和数量，etc&#xA;可以根据上述生产率的定义，制定某一给定工作的考核标准&#xA;流程&#xA;从工作流程角度分析：知识工作者的工作必须与相关从事知识工作的人员合作完成，流程也是影响其生产率的因素之一&#xA;学习与传授&#xA;提高生产率需要不断学习 只对工作进行重新设计，培训，并不足够（以教代学的效果更好） 发挥效能 (生产力的制约因素)&#xA;知识劳动者不产生任何自身产生效能的东西，他们生产知识、创意和信息，而这些东西是另外的知识工作者的输入。知识劳动者的生产率就意味着叫别人正确做事的能力，也就是发挥效能&#xA;我们把因为担任职位或拥有知识而在正常的工作过程中做出的决策关系到组织整体绩效和结果的知识劳动者、管理者或者个体自由职业者叫做“决策者”&#xA;导致决策者缺乏效能的情况&#xA;决策者的时间属于组织内每一个其他成员 决策者被迫始终保持准备行动的状态 只有当组织中其他成员对决策者的贡献加以利用时，决策者才具有效能 一切成果存在于组织外部，而决策者的控制力在组织内 解决方案就是通过人类劳动必须的工具，而不是通过突击提高人类能力来扩展人类的能力范围。不要期待无所不能的天才出世，相反，要更好地利用具有一技之长的天才&#xA;观察得：富有成效的人的共同之处：他们都有过能使自己发挥效能的实践经历 效能是一种习惯，是后天可以练习的结果&#xA;注重贡献 (解除组织效能约束)&#xA;知识劳动者是某方面的专才，他们只有经过专业化后，才具有效能；很多专业的产出结合在一起，才能产出成果&#xA;组织的任务是使得每个专才使用其专业产生效能，这就意味着知识工作者必须思考谁会使用他们的产出，以及使用者需要知道和了解哪些信息才能利用专才的产出来生产产品&#xA;了解自己的长处和价值观 (解除个人效能约束)&#xA;自己的长处在哪&#xA;发现自己长处的唯一方法是反馈分析法&#xA;“反馈分析法”&#xA;记录预期结果，9个月或者1年后，对照实际结果与预期结果，就能知道那些方面做的不错，哪些技能和知识还需要掌握。该方法会向人们显示应该做什么或者应该舍弃什么&amp;ndash;舍弃自己不擅长的领域&#xA;(德鲁克)得出的行为结论：&#xA;集中自己的优势，把自己定位于凭借长处能够完成任务和取得成果的方面 努力完善自己的长处 识别因知识分子狂妄自大导致无知而丧失能力的领域(与巴菲特的“能力圈”对照) 改正不良习惯&amp;ndash;抑制效能和绩效的因素 反映一个人因为不注意方法而没能收到成效的情况（比如因为没有说“谢谢”而导致双方的摩擦） 不应该做什么 尽可能再缺乏能力的领域少浪费自己的精力，从而把精力集中在自己能力强或技能高的领域 自己如何取得绩效&#xA;(反馈分析法有可能会展现出在如何取得绩效方面存在的某些错误，但很少能查明原因，不过有几年工作经验就能搞定)&#xA;如何学习(有人擅长动手做、有人擅长阅读、有人擅长跟人对话) 能否在压力下取得很好的绩效（是否需要一个高度组织化的可预知环境） 作为决策者还是作为顾问才会更有成效 能否与别人很好地共事，在什么关系下能够与别人很好的共事 自己的价值观是什么&#xA;可能知道的比较晚，但是一定要知道自己的长处，如何取得绩效，价值观&amp;ndash;&amp;gt;职业归宿&#xA;掌控时间 三流程：记录时间的去处；；管理时间；；整合时间 (该流程是决策者发挥效能的基础)&#xA;观点&#xA;必须支配大块时间，才能发挥效能 组织成员越多，有关人事的决策就越多，人事决策所包含的内容，只有经过多次反复才会变得明了 创新和变革使得决策者的时间紊乱不堪 （管好自己的时间将变得越来越重要） 记录时间的使用&#xA;[此处仍在探索，后面补充]&#xA;管理&#xA;识别根本不应该做的事（反问自己：如果不做这件事会怎么样） 哪些事情可以由别人代劳 不要浪费别人的时间（询问：有没有打乱你的计划） 浪费时间的因素：信息传递不通 组织不善，会议成灾 人浮于事 缺乏远见导致的时间浪费</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/resource/workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/workflow/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

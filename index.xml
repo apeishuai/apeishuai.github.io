@@ -6,8 +6,22 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2024 11:21:18 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2024 16:14:58 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自定义搜索引擎yacy</title>
+      <link>/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</link>
+      <pubDate>Wed, 20 Mar 2024 16:14:58 +0800</pubDate>
+      <guid>/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</guid>
+      <description>自定义搜索引擎解决了搜索范围的问题，多个网站聚合成一个引擎，相当于我这边筛选了一遍，再进行二次筛选，能提升效率&#xA;网站地址在programm able seach engine，添加搜索引擎 添加索引网站 点击进入实例，添加&amp;ndash;&amp;gt;填网址 对网址格式做一说明，一般是&amp;quot;xxx.com/ * &amp;ldquo;,即该网站下所有页面 xml格式导入&#xA;xml文件大概是这样，更改about和value值，就能批量添加地址了，当然，图形框也能批量添加&#xA;&amp;lt;Annotations&amp;gt; &amp;lt;Annotation about=&amp;#34;*.antirez.com/*&amp;#34; timestamp=&amp;#34;0x0006140ea65e7149&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;http://antirez.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;Annotation about=&amp;#34;*.huoding.com/*&amp;#34; timestamp=&amp;#34;0x0006140e7ab53ef5&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;https://huoding.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;/Annotations&amp;gt; 改外观 这样就行了 最终所得网址如下 qireader脚本 qireader是我看rss的工具，导出opml文件，里面包含了订阅所有博客的网址，我写了个python脚本把网址转化为xml格式，以便导入&#xA;# 描述: 这是一个Python脚本，用于构建google ces的annoation格式文本，达到批量导入博客，用于检索的目的 # 作者: wxf # 版本: 1.0 # 生成日期: 2024/03/20 # 最后修改日期: 2024/03/20 import re import os import subprocess # 从本地文件读取文本 file_path = &amp;#39;QiReader subscriptions - Wed Mar 20 2024.</description>
+    </item>
+    <item>
+      <title>Workflow_inbox</title>
+      <link>/resource/workflow_inbox/</link>
+      <pubDate>Wed, 20 Mar 2024 02:12:35 +0800</pubDate>
+      <guid>/resource/workflow_inbox/</guid>
+      <description>一个有点奇怪的工作流…… 我用 todoist 很多，这天想起来它有完善的 api 支持，于是大概看了下，然后定时推送rss feed 到 todo里… 居然很好用哎&#xA;然后我就真的好多天没打开过 reeder 了。&#xA;担心过文章摘录等情况，但现在看来没多大需求，后续再看。&#xA;大不了自己实现一个它的前端。&#xA;· 3月12日&#xA;发现这个后我一发不可收拾，我做了个随机推送锻炼的任务，随机发送一些适合办公室里做的小的身体活动的事项，每30分钟推一次，这样我没事看看 todo，就有一些新的东西，正好锻炼下。\&#xA;对我来说这个比 iOS 通知好用的多…</description>
+    </item>
     <item>
       <title>Ref 浅谈最佳学习路径</title>
       <link>/resource/ref-%E6%B5%85%E8%B0%88%E6%9C%80%E4%BD%B3%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/</link>
@@ -335,7 +349,7 @@
       <link>/resource/list-infostream-src/</link>
       <pubDate>Sat, 08 Jul 2023 18:16:18 +0800</pubDate>
       <guid>/resource/list-infostream-src/</guid>
-      <description>说明 博客是重要的信息源，如果订阅到大牛博客，能极大丰富个人见识。当然，所有的内容都要带有批判性的阅读。我视博客为信息库和信息源\&#xA;体系化：论文 &amp;gt; 出版书籍(审核ing) &amp;gt; 博客(rss) &amp;gt; 会议 &amp;gt; 电话1v1 实时性：实地调研 &amp;gt; 电话1v1 &amp;gt; 会议 &amp;gt; 社交媒体&#xA;元信息：参考&amp;lt;完美软件 对软件测试的各种幻想&amp;gt; chap5 元测试：思考信息从0到1出现的过程(关于信息质量的信息) 技巧：视角切换(拿其他人的信息库、信息流、提取的思路和习惯做测试) 信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 提取练习：一方面通过卡片推送(logseq,简悦,flomo)；另一方面通过项目(这块正完善) + 软件：Inoreader&#xA;+ 软件：提取码：jlfg [irreader1.5.9+1.6.11]ttps://pan.baidu.com/s/1xqKW_hCPUeWRyA2lXaLMOw)&#xA;+ 软件：reeder(ipad)+omnifocus(归档进标签体系)\&#xA;常用 软件&#xA;qireader： https://www.qireader.com/ (rss阅读器) wewerss: (微信公众号订阅工具,docker部署) juchats： https://www.juchats.com/ (chatgpt衍生项目) google search (主动)&#xA;模板：&#xA;框定范围&#xA;确定搜索目标&#xA;制定搜索策略&#xA;评估，封存策略备用&#xA;复用或创建新策略&#xA;具体实践&#xA;inurl:www.douban.com/doulist/ &amp;lt;关键词&amp;gt; /search 书单 inurl:github.io &amp;lt;关键词&amp;gt; /search blog\ twitter search (主动)&#xA;search for twitter list&#xA;https://twitter.com/search?q=list%3A1565529135316815873%20%20周杰伦&amp;amp;src=typed_query&amp;amp;f=top&#xA;https://twitter.com/search?q=list%3A1742859529241624647%20%20周杰伦&amp;amp;src=typed_query&amp;amp;f=top</description>
+      <description>说明 博客是重要的信息源，如果订阅到大牛博客，能极大丰富个人见识。当然，所有的内容都要带有批判性的阅读。我视博客为信息库和信息源\&#xA;体系化：论文 &amp;gt; 出版书籍(审核ing) &amp;gt; 博客(rss) &amp;gt; 会议 &amp;gt; 电话1v1 实时性：实地调研 &amp;gt; 电话1v1 &amp;gt; 会议 &amp;gt; 社交媒体&#xA;元信息：参考&amp;lt;完美软件 对软件测试的各种幻想&amp;gt; chap5 元测试：思考信息从0到1出现的过程(关于信息质量的信息) 技巧：视角切换(拿其他人的信息库、信息流、提取的思路和习惯做测试) 信息库：碰到问题我会优先在博客列表搜索 信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记 提取练习：一方面通过卡片推送(logseq,简悦,flomo)；另一方面通过项目(这块正完善) + 软件：Inoreader&#xA;+ 软件：提取码：jlfg [irreader1.5.9+1.6.11]ttps://pan.baidu.com/s/1xqKW_hCPUeWRyA2lXaLMOw)&#xA;+ 软件：reeder(ipad)+omnifocus(归档进标签体系)\&#xA;常用 软件&#xA;qireader： https://www.qireader.com/ (rss阅读器) wewerss: (微信公众号订阅工具,docker部署) juchats： https://www.juchats.com/ (chatgpt衍生项目) google search (主动)&#xA;模板：&#xA;框定范围&#xA;确定搜索目标&#xA;制定搜索策略&#xA;评估，封存策略备用&#xA;复用或创建新策略&#xA;具体实践&#xA;inurl:www.douban.com/doulist/ &amp;lt;关键词&amp;gt; /search 书单 inurl:github.io &amp;lt;关键词&amp;gt; /search blog\ 搜索历史&#xA;2024/03/20 https://twitter.com/search?q=list%3A1565529135316815873%20%20seo&amp;amp;src=typed_query&amp;amp;f=top&#xA;评估：发现不少SEO相关信息源及实践，说明信息库能很好cover seo知识的需求\ twitter search (主动)&#xA;search for twitter list</description>
     </item>
     <item>
       <title>《自我管理》</title>
@@ -356,7 +370,14 @@
       <link>/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/project/</guid>
-      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end 生产环境&#xA;2023/11/04 效率工具-PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/08 windows软件管理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2024/01/08 构建现金流渠道 社交\ pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;快速学习 end&#xA;(2023/08/18&amp;ndash;&amp;gt;2023/12/10 3m21d end)&#xA;2023/08/18 关于学习的思考&#xA;2023/11/21 ref 学习&#xA;2023/11/24 关键点&#xA;2023/12/10 快速学习 终篇&#xA;2023/12/11 如何适应一家公司 pro3 识别模式及构建控制点 项目概述：我们现在的状态是由自己过去一系列选择构成的，在没有对自己的人生思考前，它是一种自然生长状态，这意味着不可控；任何不在我们视野的事物都处于这种“视而不见”的状态。但是你不看它，它就对你没影响了吗？所以我们记录数据，从数据中发现规律(识别)，用一些手段控制该事物的演化方向&#xA;设计人生 end&#xA;(2023/08/16&amp;ndash;&amp;gt;2023/11/17 3m3d end)&#xA;2023/09/09 想法雏形&#xA;2023/12/25 约束模型&#xA;2023/12/31 ref-(分享 2023 年最大的收获)&#xA;2024/01/08 纠偏&#xA;2024/03/04 如何复盘 </description>
+      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end 生产环境&#xA;2023/11/04 效率工具-PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/08 windows软件管理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2024/01/08 构建现金流渠道 社交\ pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;快速学习 end&#xA;(2023/08/18&amp;ndash;&amp;gt;2023/12/10 3m21d end)&#xA;2023/08/18 关于学习的思考&#xA;2023/11/21 ref 学习&#xA;2023/11/24 关键点&#xA;2023/12/10 快速学习 终篇&#xA;2023/12/11 如何适应一家公司 奇怪的工作流&#xA;(1014/03/20&amp;ndash;&amp;gt;)&#xA;2024/03/20 inbox pro3 识别模式及构建控制点 项目概述：我们现在的状态是由自己过去一系列选择构成的，在没有对自己的人生思考前，它是一种自然生长状态，这意味着不可控；任何不在我们视野的事物都处于这种“视而不见”的状态。但是你不看它，它就对你没影响了吗？所以我们记录数据，从数据中发现规律(识别)，用一些手段控制该事物的演化方向&#xA;设计人生 end&#xA;(2023/08/16&amp;ndash;&amp;gt;2023/11/17 3m3d end)&#xA;2023/09/09 想法雏形&#xA;2023/12/25 约束模型&#xA;2023/12/31 ref-(分享 2023 年最大的收获)</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/resource/workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resource/workflow/</guid>
+      <description></description>
     </item>
     <item>
       <title>About me</title>
