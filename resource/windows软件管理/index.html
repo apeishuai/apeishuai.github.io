@@ -73,12 +73,12 @@
     
     
   </strong>
-  <span> • 381 words</span>
+  <span> • 378 words</span>
   <span> • 2 minute read</span>
   
     <div>
       Last updated on
-      <time>2024-02-08</time>
+      <time>2024-03-22</time>
     </div>
   
   
@@ -93,165 +93,166 @@
 msys的核心是这些配置文件，把它们上传到github，定期更新，迁移到新电脑时git clone一下就行<br>
 然后需要修改注册表，我写了三个脚本，执行一遍，msys配置就完成了!!!<br>
 main-init.sh</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># change environment variables</span>
-</span></span><span style="display:flex;"><span>. chg-env-var.sh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># change reg</span>
-</span></span><span style="display:flex;"><span>. chg-reg.sh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># install cmd tool </span>
-</span></span><span style="display:flex;"><span>. command-install.sh
-</span></span></code></pre></div><p>chg-env-var.sh</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Set the system environment variable list</span>
-</span></span><span style="display:flex;"><span>SYS_ENV_VARS<span style="color:#f92672">=(</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the system batch file</span>
-</span></span><span style="display:flex;"><span>cat &gt; update_sys_env.bat <span style="color:#e6db74">&lt;&lt; EOF
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">@echo off
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">REM Update system environment variables
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> env_var in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>SYS_ENV_VARS[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>  var_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>env_var%=*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>  var_value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>env_var#*=<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;setx </span>$var_name<span style="color:#e6db74"> \&#34;</span>$var_value<span style="color:#e6db74">\&#34; /M&#34;</span> &gt;&gt; update_sys_env.bat
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Call the system batch file</span>
-</span></span><span style="display:flex;"><span>cmd /c update_sys_env.bat
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remove the tmp files</span>
-</span></span><span style="display:flex;"><span>rm update_sys_env.bat
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Set the user environment variable list</span>
-</span></span><span style="display:flex;"><span>USER_ENV_VARS<span style="color:#f92672">=(</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;MSYS2_PATH_TYPE=inherit&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;EMACS_SERVER_FILE=C:\msys64\home\dell\.emacs.d\server\server&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the batch file</span>
-</span></span><span style="display:flex;"><span>cat &gt; update_user_env.bat <span style="color:#e6db74">&lt;&lt; EOF
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">@echo off
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">REM Get the user profile path for the main computer user
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">for /f &#34;tokens=2 delims==&#34; %%a in (&#39;wmic useraccount where name=&#34;%username%&#34; get sid /value&#39;) do set sid=%%a
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">set &#34;sid=%sid:~0,-18%&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">set &#34;userprofile=C:\Users\%username%&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">REM Update environment variables
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> env_var in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>USER_ENV_VARS[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>  var_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>env_var%=*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>  var_value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>env_var#*=<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;setx </span>$var_name<span style="color:#e6db74"> \&#34;</span>$var_value<span style="color:#e6db74">\&#34;&#34;</span> &gt;&gt; update_user_env.bat
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Call the batch file with cmd.exe</span>
-</span></span><span style="display:flex;"><span>cmd.exe /c update_user_env.bat
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remove the tmp files</span>
-</span></span><span style="display:flex;"><span>rm update_user_env.bat
-</span></span></code></pre></div><p>chg-reg.sh</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用 cmd 执行 reg add 命令</span>
-</span></span><span style="display:flex;"><span>cmd /c <span style="color:#e6db74">&#34;reg add HKEY_CLASSES_ROOT\org-protocol\shell\open /v \&#34;command\&#34; /t REG_SZ /d \&#34;\\\&#34;C:\\msys64\\mingw64\\bin\\emacsclientw.exe\\\&#34; \\\&#34;%1\\\&#34;\&#34; /f&#34;</span>
-</span></span></code></pre></div><p>command-install.sh</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 定义软件包名称列表</span>
-</span></span><span style="display:flex;"><span>packages<span style="color:#f92672">=(</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;vim&#34;</span>
-</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;mingw-w64-x86_64-ffmpeg&#34;</span>
-</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;dialog&#34;</span>
-</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;mingw-w64-x86_64-spdlog&#34;</span>
-</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;mingw-w64-x86_64-emacs&#34;</span>
-</span></span><span style="display:flex;"><span>	  <span style="color:#e6db74">&#34;git&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 循环遍历软件包列表中的每个软件包名称</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> package in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>packages[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 检查软件包是否已经安装</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> pacman -Qq $package &gt; /dev/null 2&gt;&amp;1; <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>        echo <span style="color:#e6db74">&#34;</span>$package<span style="color:#e6db74"> is already installed, skipping...&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 安装软件包</span>
-</span></span><span style="display:flex;"><span>        echo <span style="color:#e6db74">&#34;Installing </span>$package<span style="color:#e6db74">...&#34;</span>
-</span></span><span style="display:flex;"><span>        pacman -S --noconfirm $package
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 检查软件包是否成功安装</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $? -ne <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#34;Error: Failed to install </span>$package<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>            exit <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">fi</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fi</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
-</span></span></code></pre></div><h1 id="scoop">scoop</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>卸载：默认在“C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\w</span>hens<span style="color:#ae81ff">\s</span>coop<span style="color:#ae81ff">\&#34;</span>，删除该目录即可
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>- env:powershell
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; admin
-</span></span><span style="display:flex;"><span>$env:SCOOP<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;D:\softwares\scoop&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>environment<span style="color:#f92672">]</span>::setEnvironmentVariable<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;USERSCOOP&#39;</span>,$env:SCOOP,<span style="color:#e6db74">&#39;User&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>$env:SCOOP_GLOBAL<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;D:\softwares\scoop\globalApps&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>environment<span style="color:#f92672">]</span>::setEnvironmentVariable<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;SCOOP_GLOBAL&#39;</span>,$env:SCOOP_GLOBAL,<span style="color:#e6db74">&#39;Machine&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; user
-</span></span><span style="display:flex;"><span>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-</span></span><span style="display:flex;"><span>iwr -useb get.scoop.sh | iex
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>scoop uninstall scoop
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>-------------------------------------
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; proxy
-</span></span><span style="display:flex;"><span>scoop install git
-</span></span><span style="display:flex;"><span>scoop config proxy socks5://127.0.0.1:1081
-</span></span><span style="display:flex;"><span>scoop config rm proxy
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; add buckets
-</span></span><span style="display:flex;"><span>scoop bucket add extras
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#scoop bucket add apps https://github.com/kkzzhizhou/scoop-apps</span>
-</span></span><span style="display:flex;"><span>scoop bucket add dorado https://github.com/h404bi/dorado
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt;install tools
-</span></span><span style="display:flex;"><span>scoop install yt-dlp ffmpeg
-</span></span><span style="display:flex;"><span>miniconda
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>scoop install 7zip curl sudo git openssh coreutils grep sed gawk less innounp 
-</span></span><span style="display:flex;"><span>scoop install python ruby go nodejs
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&gt; manage 
-</span></span><span style="display:flex;"><span>scoop list xxx
-</span></span><span style="display:flex;"><span>scoop update xxx
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>scoop search xxx
-</span></span><span style="display:flex;"><span>scoop info xxx
-</span></span><span style="display:flex;"><span>scoop install spc/&lt;app_name&gt;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>scoop bucket list
-</span></span><span style="display:flex;"><span>scoop bucket known
-</span></span><span style="display:flex;"><span>scoop update
-</span></span><span style="display:flex;"><span>scoop bucket add
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>scoop reset xx
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[[</span>https://www.junmajinlong.com/others/scoop/<span style="color:#f92672">]]</span>       
-</span></span></code></pre></div><h1 id="常用软件">常用软件</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># change environment variables</span>
+. chg-env-var.sh
+
+<span style="color:#75715e"># change reg</span>
+. chg-reg.sh
+
+<span style="color:#75715e"># install cmd tool </span>
+. command-install.sh
+</code></pre></div><p>chg-env-var.sh</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># Set the system environment variable list</span>
+SYS_ENV_VARS<span style="color:#f92672">=(</span>
+	<span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#f92672">)</span>
+
+<span style="color:#75715e"># Create the system batch file</span>
+cat &gt; update_sys_env.bat <span style="color:#e6db74">&lt;&lt; EOF
+</span><span style="color:#e6db74">@echo off
+</span><span style="color:#e6db74">REM Update system environment variables
+</span><span style="color:#e6db74">EOF</span>
+
+<span style="color:#66d9ef">for</span> env_var in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>SYS_ENV_VARS[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">do</span>
+  var_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>env_var%=*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  var_value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>env_var#*=<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  echo <span style="color:#e6db74">&#34;setx </span>$var_name<span style="color:#e6db74"> \&#34;</span>$var_value<span style="color:#e6db74">\&#34; /M&#34;</span> &gt;&gt; update_sys_env.bat
+<span style="color:#66d9ef">done</span>
+
+<span style="color:#75715e"># Call the system batch file</span>
+cmd /c update_sys_env.bat
+<span style="color:#75715e"># Remove the tmp files</span>
+rm update_sys_env.bat
+
+
+
+
+<span style="color:#75715e"># Set the user environment variable list</span>
+USER_ENV_VARS<span style="color:#f92672">=(</span>
+  <span style="color:#e6db74">&#34;MSYS2_PATH_TYPE=inherit&#34;</span>
+  <span style="color:#e6db74">&#34;EMACS_SERVER_FILE=C:\msys64\home\dell\.emacs.d\server\server&#34;</span>
+<span style="color:#f92672">)</span>
+
+
+<span style="color:#75715e"># Create the batch file</span>
+cat &gt; update_user_env.bat <span style="color:#e6db74">&lt;&lt; EOF
+</span><span style="color:#e6db74">@echo off
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">REM Get the user profile path for the main computer user
+</span><span style="color:#e6db74">for /f &#34;tokens=2 delims==&#34; %%a in (&#39;wmic useraccount where name=&#34;%username%&#34; get sid /value&#39;) do set sid=%%a
+</span><span style="color:#e6db74">set &#34;sid=%sid:~0,-18%&#34;
+</span><span style="color:#e6db74">set &#34;userprofile=C:\Users\%username%&#34;
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">REM Update environment variables
+</span><span style="color:#e6db74">EOF</span>
+
+<span style="color:#66d9ef">for</span> env_var in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>USER_ENV_VARS[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">do</span>
+  var_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>env_var%=*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  var_value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>env_var#*=<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  echo <span style="color:#e6db74">&#34;setx </span>$var_name<span style="color:#e6db74"> \&#34;</span>$var_value<span style="color:#e6db74">\&#34;&#34;</span> &gt;&gt; update_user_env.bat
+<span style="color:#66d9ef">done</span>
+
+<span style="color:#75715e"># Call the batch file with cmd.exe</span>
+cmd.exe /c update_user_env.bat
+
+<span style="color:#75715e"># Remove the tmp files</span>
+rm update_user_env.bat
+</code></pre></div><p>chg-reg.sh</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># 使用 cmd 执行 reg add 命令</span>
+cmd /c <span style="color:#e6db74">&#34;reg add HKEY_CLASSES_ROOT\org-protocol\shell\open /v \&#34;command\&#34; /t REG_SZ /d \&#34;\\\&#34;C:\\msys64\\mingw64\\bin\\emacsclientw.exe\\\&#34; \\\&#34;%1\\\&#34;\&#34; /f&#34;</span>
+</code></pre></div><p>command-install.sh</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># 定义软件包名称列表</span>
+packages<span style="color:#f92672">=(</span>
+          <span style="color:#e6db74">&#34;vim&#34;</span>
+	  <span style="color:#e6db74">&#34;mingw-w64-x86_64-ffmpeg&#34;</span>
+	  <span style="color:#e6db74">&#34;dialog&#34;</span>
+	  <span style="color:#e6db74">&#34;mingw-w64-x86_64-spdlog&#34;</span>
+	  <span style="color:#e6db74">&#34;mingw-w64-x86_64-emacs&#34;</span>
+	  <span style="color:#e6db74">&#34;git&#34;</span>
+  <span style="color:#f92672">)</span>
+
+<span style="color:#75715e"># 循环遍历软件包列表中的每个软件包名称</span>
+<span style="color:#66d9ef">for</span> package in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>packages[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+    <span style="color:#75715e"># 检查软件包是否已经安装</span>
+    <span style="color:#66d9ef">if</span> pacman -Qq $package &gt; /dev/null 2&gt;&amp;1; <span style="color:#66d9ef">then</span>
+        echo <span style="color:#e6db74">&#34;</span>$package<span style="color:#e6db74"> is already installed, skipping...&#34;</span>
+    <span style="color:#66d9ef">else</span>
+        <span style="color:#75715e"># 安装软件包</span>
+        echo <span style="color:#e6db74">&#34;Installing </span>$package<span style="color:#e6db74">...&#34;</span>
+        pacman -S --noconfirm $package
+
+        <span style="color:#75715e"># 检查软件包是否成功安装</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $? -ne <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+            echo <span style="color:#e6db74">&#34;Error: Failed to install </span>$package<span style="color:#e6db74">&#34;</span>
+            exit <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">fi</span>
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span>
+</code></pre></div><h1 id="scoop">scoop</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">卸载：默认在“C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\w</span>hens<span style="color:#ae81ff">\s</span>coop<span style="color:#ae81ff">\&#34;</span>，删除该目录即可
+
+- env:powershell
+
+&gt; admin
+$env:SCOOP<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;D:\softwares\scoop&#39;</span>
+<span style="color:#f92672">[</span>environment<span style="color:#f92672">]</span>::setEnvironmentVariable<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;USERSCOOP&#39;</span>,$env:SCOOP,<span style="color:#e6db74">&#39;User&#39;</span><span style="color:#f92672">)</span>
+$env:SCOOP_GLOBAL<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;D:\softwares\scoop\globalApps&#39;</span>
+<span style="color:#f92672">[</span>environment<span style="color:#f92672">]</span>::setEnvironmentVariable<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;SCOOP_GLOBAL&#39;</span>,$env:SCOOP_GLOBAL,<span style="color:#e6db74">&#39;Machine&#39;</span><span style="color:#f92672">)</span>
+
+&gt; user
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+iwr -useb get.scoop.sh | iex
+
+scoop uninstall scoop
+
+-------------------------------------
+
+&gt; proxy
+scoop install git
+scoop config proxy socks5://127.0.0.1:1081
+scoop config rm proxy
+
+&gt; add buckets
+scoop bucket add extras
+<span style="color:#75715e">#scoop bucket add apps https://github.com/kkzzhizhou/scoop-apps</span>
+scoop bucket add dorado https://github.com/h404bi/dorado
+
+&gt;install tools
+scoop install yt-dlp ffmpeg
+miniconda
+
+scoop install 7zip curl sudo git openssh coreutils grep sed gawk less innounp 
+scoop install python ruby go nodejs
+
+
+&gt; manage 
+scoop list xxx
+scoop update xxx
+
+scoop search xxx
+scoop info xxx
+scoop install spc/&lt;app_name&gt;
+
+scoop bucket list
+scoop bucket known
+scoop update
+scoop bucket add
+
+scoop reset xx
+
+<span style="color:#f92672">[[</span>https://www.junmajinlong.com/others/scoop/<span style="color:#f92672">]]</span>       
+
+</code></pre></div><h1 id="常用软件">常用软件</h1>
 <p>flomo、logseq、chrome、clash</p>
 </div>
     </article>
