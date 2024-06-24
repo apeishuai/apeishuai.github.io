@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 May 2024 21:21:56 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2024 02:54:01 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>无痛英语环境打造</title>
+      <link>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A0/</link>
+      <pubDate>Mon, 24 Jun 2024 02:54:01 +0800</pubDate>
+      <guid>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A0/</guid>
+      <description>废话不多说，用到的工具如下：&#xA;anki、pdf guru web、burning vocabulary、sealos&#xA;流程如下：&#xA;该英语学习环境以句子为基本单位，句群为一个训练单元，情景为引导点&#xA;先通过burning vocabulary标注出pdf中的所有生单词(标注一个单词，该工具能自动标注该pdf中所有一样的单词)&#xA;在通过pdf guru anki，以一个完整的句子为基本单位，挖空纸卡，完成后导入到anki&#xA;sealos一键搭建anki同步服务器，一天几分钱，划算&#xA;然后就可以全平台刷anki卡片了，消灭掉所有材料就ok，推送间隔时长anki内置算法已经优化完了&#xA;接下来就是个学以致用的问题，怎么分割材料，怎么在实际生活中使用这些训练得到的成果</description>
+    </item>
     <item>
       <title>妈的，做项目能力太差了</title>
       <link>/posts/%E5%A6%88%E7%9A%84%E5%81%9A%E9%A1%B9%E7%9B%AE%E8%83%BD%E5%8A%9B%E5%A4%AA%E5%B7%AE%E4%BA%86/</link>
@@ -104,7 +111,7 @@
       <link>/posts/archive-%E7%8E%8B%E5%BD%A6%E5%BD%A6/</link>
       <pubDate>Thu, 26 Oct 2023 11:49:44 +0800</pubDate>
       <guid>/posts/archive-%E7%8E%8B%E5%BD%A6%E5%BD%A6/</guid>
-      <description>时间段 2020/03/10&amp;ndash;&amp;gt;2023/11/01&#xA;还是不够了解吧，自己也有很多事没搞定，日后再review&#xA;review：我太想当然，不成熟；你不懂拒绝，太容易被别人影响；对不起，希望你能快乐。(20231102 end)&#xA;review：这是一段不正常的关系，如果还有可能接触，我一定好好构建，以挣钱为主了。&#xA;review: 命里有时终须有，命里无时莫强求(20240322)&#xA;Log:&#xA;2023/12/27 2024/03/03 2024/05/25&#xA;相处模式不对，我知道怎么扳回来了！！！&#xA;博士加油吧，我也会努力的！！！</description>
+      <description>时间段 2020/03/10&amp;ndash;&amp;gt;2023/11/01&#xA;还是不够了解吧，自己也有很多事没搞定，日后再review&#xA;review：我太想当然，不成熟；你不懂拒绝，太容易被别人影响；对不起，希望你能快乐。(20231102 end)&#xA;review: 命里有时终须有，命里无时莫强求(20240322)&#xA;Log:&#xA;2023/12/27 2024/03/03 2024/05/25&#xA;相处模式不对，我知道怎么扳回来了！！！&#xA;博士加油吧，我也会努力的！！！&#xA;2024/06/18&#xA;你还是不肯原谅我，就这样吧，我是神经病。我唯一能做的，就是使自己足够强大。不希望你被生活抹平棱角，也不想有任何人欺负你。&#xA;本来可以双赢的，非要搞成这样，如果是其他人，早一脚踢到十万八千里去了，但是你，我生气归生气，只恨自己能力不够，那就提升能力呗，希望有一天能用到，拜拜！</description>
     </item>
     <item>
       <title>Health</title>
