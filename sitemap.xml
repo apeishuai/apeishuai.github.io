@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/</loc>
-    <lastmod>2024-08-25T22:07:58+08:00</lastmod>
+    <loc>/resource/</loc>
+    <lastmod>2024-09-01T08:15:14+08:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2024-09-01T08:15:14+08:00</lastmod>
+  </url><url>
+    <loc>/resource/%E9%80%9A%E8%BF%87%E5%A4%8D%E7%9B%98%E4%BC%98%E5%8C%96%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2024-09-01T08:15:14+08:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
     <lastmod>2024-08-25T22:07:58+08:00</lastmod>
   </url><url>
     <loc>/posts/%E6%B8%B8%E9%BB%84%E5%B1%B1/</loc>
@@ -26,11 +32,8 @@
     <loc>/posts/%E9%9E%8B%E5%AD%90%E9%99%A4%E5%BC%82%E5%91%B3/</loc>
     <lastmod>2024-08-11T20:02:38+08:00</lastmod>
   </url><url>
-    <loc>/resource/</loc>
-    <lastmod>2024-08-11T20:23:12+08:00</lastmod>
-  </url><url>
     <loc>/resource/winsoft/</loc>
-    <lastmod>2024-08-11T04:51:44+08:00</lastmod>
+    <lastmod>2024-08-26T16:06:34+08:00</lastmod>
   </url><url>
     <loc>/posts/%E5%BD%A6%E5%BD%A6%E6%83%B3%E4%BD%A0%E4%BA%86/</loc>
     <lastmod>2024-08-05T19:47:02+08:00</lastmod>
@@ -201,7 +204,7 @@
     <lastmod>2024-04-26T20:14:16+08:00</lastmod>
   </url><url>
     <loc>/resource/ref-%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2024-04-26T20:14:28+08:00</lastmod>
+    <lastmod>2024-09-01T08:01:40+08:00</lastmod>
   </url><url>
     <loc>/resource/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7android/</loc>
     <lastmod>2024-04-26T20:14:18+08:00</lastmod>
@@ -297,7 +300,7 @@
     <lastmod>2024-04-26T20:14:12+08:00</lastmod>
   </url><url>
     <loc>/project/</loc>
-    <lastmod>2024-07-14T08:20:26+08:00</lastmod>
+    <lastmod>2024-09-01T08:21:40+08:00</lastmod>
   </url><url>
     <loc>/resource/workflow/</loc>
     <lastmod>2024-04-26T20:14:26+08:00</lastmod>
@@ -314,6 +317,6 @@
     <loc>/categories/</loc>
   </url><url>
     <loc>/main/</loc>
-    <lastmod>2024-08-11T04:39:04+08:00</lastmod>
+    <lastmod>2024-08-26T09:59:04+08:00</lastmod>
   </url>
 </urlset>
