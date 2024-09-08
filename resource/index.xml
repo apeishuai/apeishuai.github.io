@@ -6,8 +6,15 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Sep 2024 19:14:35 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2024 13:16:32 +0800</lastBuildDate>
     <atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delicious</title>
+      <link>/resource/delicious/</link>
+      <pubDate>Thu, 05 Sep 2024 13:16:32 +0800</pubDate>
+      <guid>/resource/delicious/</guid>
+      <description>2024/09/05 一个人值不值得深交，看ta吃饭的样子就知道了 KnowYourself</description>
+    </item>
     <item>
       <title>帮助完善视角的思维工具</title>
       <link>/resource/%E5%B8%AE%E5%8A%A9%E5%AE%8C%E5%96%84%E8%A7%86%E8%A7%92%E7%9A%84%E6%80%9D%E7%BB%B4%E5%B7%A5%E5%85%B7/</link>
@@ -55,7 +62,7 @@
       <link>/resource/&#43;%E5%BC%80%E8%BD%A6/</link>
       <pubDate>Sun, 30 Jun 2024 01:26:25 +0800</pubDate>
       <guid>/resource/&#43;%E5%BC%80%E8%BD%A6/</guid>
-      <description>在苏州找到工作的两个月，去了许多地方，开着公司的破车慢慢也练出了开车技术，构想是这样：衣食住行，服务都是分散的，“行”能把这些东西串起来。</description>
+      <description>在苏州找到工作的两个月，去了许多地方，开着公司的破车慢慢也练出了开车技术，构想是这样：衣食住行，服务都是分散的，“行”能把这些东西串起来。&#xA;2024/09/07 已纯熟</description>
     </item>
     <item>
       <title>干掉拖延&#43;产出导向</title>
@@ -286,7 +293,7 @@
       <link>/resource/ref-%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Tue, 21 Nov 2023 14:10:27 +0800</pubDate>
       <guid>/resource/ref-%E5%AD%A6%E4%B9%A0/</guid>
-      <description>再谈什么是软件架构&#xA;我手上有无数这种分析，一般我会写在evernote上，但前天正好在机场等飞机，写的时候手边访问evernote不方便，所以就改写到知乎上了。 我举这个例子是说，其实架构师手边是有大量的分析数据的，但必须能保证这些分析不会随意进入主分析链，避免目标被冲淡了。所以，你看到一点点的决策或者判断，实际上可能背后都是大量的工作。&#xA;如何在工作中学习&#xA;快速学习&#xA;什么是软件架构&#xA;浅谈最佳学习路径&#xA;Makefile概念入门&#xA;20240421 重读，为了更高的控制力，make工具一直在演化，最终给出一套完整的工程文件编译规则，适配所有平台。高屋建瓴，最重要的是“基于目标分层”的方式理解一个工具的思维，太牛逼了&#xA;就是要你懂TCP&amp;ndash;半连接队列和全连接队列就是要你懂TCP&amp;ndash;半连接队列和全连接队列</description>
+      <description>再谈什么是软件架构&#xA;我手上有无数这种分析，一般我会写在evernote上，但前天正好在机场等飞机，写的时候手边访问evernote不方便，所以就改写到知乎上了。 我举这个例子是说，其实架构师手边是有大量的分析数据的，但必须能保证这些分析不会随意进入主分析链，避免目标被冲淡了。所以，你看到一点点的决策或者判断，实际上可能背后都是大量的工作。&#xA;就是要你懂TCP&amp;ndash;半连接队列和全连接队列就是要你懂TCP&amp;ndash;半连接队列和全连接队列&#xA;20240907 重读，作者确实对基础知识敲的比较深\&#xA;如何在工作中学习&#xA;快速学习&#xA;什么是软件架构&#xA;浅谈最佳学习路径&#xA;Makefile概念入门&#xA;20240421 重读，为了更高的控制力，make工具一直在演化，最终给出一套完整的工程文件编译规则，适配所有平台。高屋建瓴，最重要的是“基于目标分层”的方式理解一个工具的思维，太牛逼了\</description>
     </item>
     <item>
       <title>效率工具Android</title>
