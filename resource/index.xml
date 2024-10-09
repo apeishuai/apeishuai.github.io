@@ -6,8 +6,15 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Oct 2024 09:48:09 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2024 07:18:18 +0800</lastBuildDate>
     <atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>贝叶斯推理</title>
+      <link>/resource/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E7%90%86/</link>
+      <pubDate>Thu, 10 Oct 2024 07:18:18 +0800</pubDate>
+      <guid>/resource/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E7%90%86/</guid>
+      <description>贝叶斯推断最关键的点是可以利用贝叶斯定理结合新的证据及以前的先验概率，来得到新的概率（这和频率学派推断相反，频率论推断只考虑证据，不考虑先验概率）。&#xA;而且贝叶斯推断可以迭代使用：在观察一些证据后得到的后设概率可以当作新的先验概率，再根据新的证据得到新的后设概率。因此贝叶斯定理可以应用在许多不同的证据上，不论这些证据是一起出现或是不同时出现都可以，这个程序称为贝叶斯更新（Bayesian updating）。</description>
+    </item>
     <item>
       <title>人生课题遍历</title>
       <link>/resource/%E4%BA%BA%E7%94%9F%E8%AF%BE%E9%A2%98%E9%81%8D%E5%8E%86/</link>
