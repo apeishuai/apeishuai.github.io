@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Oct 2024 22:27:39 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 21:35:04 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Win配置node环境</title>
+      <link>/posts/win%E9%85%8D%E7%BD%AEnode%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Tue, 15 Oct 2024 21:35:04 +0800</pubDate>
+      <guid>/posts/win%E9%85%8D%E7%BD%AEnode%E7%8E%AF%E5%A2%83/</guid>
+      <description>测了半天，用到如下工具：msys2、scoop、pnpm，具体操作如下：&#xA;ref scoop&#xA;安装nodejs&#xA;scoop install nodejs 设置npm目录&#xA;npm config ls npm config get prefix \\获取当前设置的目录 npm config set prefix \\设置node_modules目录 npm root -g \\全局位置 安装pnpm&#xA;corepack enable pnpm@latest ref&#xA;Since v16.13, Node.js is shipping Corepack for managing package managers. This is an experimental feature, so you need to enable it by running: info If you have installed Node.js with pnpm env Corepack won&amp;#39;t be installed on your system, you will need to install it separately.</description>
+    </item>
     <item>
       <title>Cpolar&#43;ssh登录ubuntu服务器</title>
       <link>/posts/cpolar&#43;ssh%E7%99%BB%E5%BD%95ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
