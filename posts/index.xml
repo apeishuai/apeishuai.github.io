@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Nov 2024 21:46:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2024 17:04:25 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Msys2使用anaconda</title>
+      <link>/posts/msys2%E4%BD%BF%E7%94%A8anaconda/</link>
+      <pubDate>Sun, 24 Nov 2024 17:04:25 +0800</pubDate>
+      <guid>/posts/msys2%E4%BD%BF%E7%94%A8anaconda/</guid>
+      <description>msys2带的原生python环境不好用，出现各种包安装的问题，直接在msys2中调用anaconda可解决这个问题。&#xA;msys2: windows下的类linux环境&#xA;anaconda：windows下python集成环境&#xA;安装anaconda 配置msys2 conda info \\显示当前conda安装的信息 conda init --all --dry-run --verbose \\初始化conda与shell，打印出所有相关文件而不做任何修改 conda config --show envs_dirs \\显示env环境安装目录 vim .condarc \\修改env安装目录&#xA;envs_dirs: - D:\softwares\Anaconda3\envs vim .bash_profile \\绑定shell:msys2与conda&#xA;eval &amp;#34;$(&amp;#39;D:/softwares/anaconda3/Scripts/conda.exe&amp;#39; &amp;#39;shell.bash&amp;#39; &amp;#39;hook&amp;#39;)&amp;#34; conda env create -n {env_name} -f xxx.yml conda activate {env_name} conda deactive \\退出环境 退出环境 退出环境后，需要执行&#xA;source ~/.bashrc 方可使用之前bash的配置&#xA;conda使用教程 conda最常见的就是创建一个虚拟python环境，在虚拟环境中不用担心库问题，因为anaconda集成了超多库，所以只需要知道怎么创建、进入、切换、退出、删除虚拟环境即可。&#xA;至于项目迁移、其他的一些操作，等日后有需要再补充。&#xA;conda install {package_name} \\安装包 conda list \\查看已安装的包 conda update {package_name} \\更新包 conda remove {package_name} \\删除包 conda create -n {env_name} python=3.</description>
+    </item>
     <item>
       <title>职业发展方向</title>
       <link>/posts/%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91/</link>
