@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Nov 2024 08:30:53 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 Nov 2024 20:36:21 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qt初探索</title>
+      <link>/posts/qt%E5%88%9D%E6%8E%A2%E7%B4%A2/</link>
+      <pubDate>Tue, 26 Nov 2024 20:36:21 +0800</pubDate>
+      <guid>/posts/qt%E5%88%9D%E6%8E%A2%E7%B4%A2/</guid>
+      <description>有用qt的需求，就学了一下，看下怎么玩的。&#xA;安装qt ustc mirror qt&#xA;下载在线安装的exe文件，执行，选择所有组件&#xA;配置qt编译环境 我用的msys+cmake，cmake在windows界面下需要单独安装cmaek.msi&#xA;安装完cmake后将xx/cmake/bin/cmake.exe放到windows系统的环境变量，尝试，直到出现如下界面 C++编程核心要点 qt是c++实现的，所以使用qt的前提是对c++很熟悉，那就来研究一下&#xA;主要用到c++的面向对象特性，而面向对象是通过：封装、继承、多态实现的，再往下拆&#xA;封装就是把数据和方法放到一个class中&#xA;继承类通过层次结构和对象的内存分布实现(不深入了解)，关注点：构造函数、析构函数&#xA;多态，关注点：虚函数、纯虚函数&#xA;而这些可以通过qt引导项生成，常用的主要是：class类生成&#xA;跑通流程 qt ref 野火，参考第七章，跑通hello流程&#xA;熟悉控件 我的目标是做桌面开发，翻qt帮助文件 可以看到，主要用qt quick和qt widget组件，这两个组件里面是一堆class类，所以随后需要做的工作是遍历，搞清楚这一堆class类是怎么组合，为什么目标服务&#xA;end 这样，qt就基本入门了，然后根据目标组织代码就行了</description>
+    </item>
     <item>
       <title>领域知识</title>
       <link>/posts/%E9%A2%86%E5%9F%9F%E7%9F%A5%E8%AF%86/</link>
