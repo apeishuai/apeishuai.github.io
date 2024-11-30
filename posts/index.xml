@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Nov 2024 20:36:21 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 Nov 2024 14:56:41 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qt Python开发流程</title>
+      <link>/posts/qt-python%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Sat, 30 Nov 2024 14:56:41 +0800</pubDate>
+      <guid>/posts/qt-python%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/</guid>
+      <description>用cpp+cmake开发，太繁琐了，切换到qt-python&#xA;环境配置 需要python解释器、pyside6包&#xA;下面三张照片展示python解释器是怎么配置的，其中python的虚拟环境搭建可以参考文章msys2使用anaconda 根据上述文章搭建一个名为qt的环境，激活环境，并安装pyside6的包&#xA;conda env list conda create -n qt python=3.10 conda activate qt pip install pyside6 conda deactivate 然后可以放手开发了。&#xA;界面开发 这个是ui界面，可以在上面拖拽放控件，这个ui文件对应一个xml文件，如下： 可以直接编辑xml文件，让ai生成相应界面，但是太难调整了，不如直接拖拽。实践中发现最好前后端分离，就是说前面的界面拖拽生成，界面样式和逻辑分开实现。&#xA;要在python代码中使用ui文件，必须通过uic.exe把xx.ui转换为xx.py，再把这个生成的xx.py作为包引入，为此我写了一个脚本，如下&#xA;#!/bin/bash if [ -f &amp;#34;$1.py&amp;#34; ]; then rm &amp;#34;$1.py&amp;#34; pyside6-uic.exe &amp;#34;$1.ui&amp;#34; -o &amp;#34;$1.py&amp;#34; echo &amp;#34;转换完成，文件地址：$(realpath &amp;#34;$1.py&amp;#34;)&amp;#34; else pyside6-uic.exe &amp;#34;$1.ui&amp;#34; -o &amp;#34;$1.py&amp;#34; echo &amp;#34;转换完成，文件地址：$(realpath &amp;#34;$1.py&amp;#34;)&amp;#34; fi 代码组织 新建ui.py文件，所有ui相关的逻辑都放在这个文件，特点就是ui绘制、界面行为、信号-槽的实现解耦，可以随意扩充。 打包发布 同样写了一个脚本，该脚本会在项目根目录下的.dist文件下生成可执行的exe文件及相关库文件，可以在没有python环境的电脑上运行 。里面用到的工具pyinstaller、上面的pyside6-uic，在qt虚拟环境中去找&#xA;#!/bin/bash # 检查是否提供了Python脚本作为参数 if [ -z &amp;#34;$1&amp;#34; ]; then echo &amp;#34;Usage: $0 &amp;lt;python_script.py&amp;gt;&amp;#34; exit 1 fi DISTPATH=&amp;#34;.</description>
+    </item>
     <item>
       <title>Qt初探索</title>
       <link>/posts/qt%E5%88%9D%E6%8E%A2%E7%B4%A2/</link>
