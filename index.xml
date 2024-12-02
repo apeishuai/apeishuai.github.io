@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Dec 2024 20:58:03 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2024 21:41:51 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>项目管理</title>
+      <link>/posts/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 02 Dec 2024 21:41:51 +0800</pubDate>
+      <guid>/posts/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</guid>
+      <description>今天有人问我，有没有工具可以管理项目，要求如下：&#xA;1 计划&#xA;2 显示执行情况&#xA;3 随意更改计划&#xA;4 异常报警&#xA;别说，还真有。之前找甘特图工具时发现的，zz-plan，一个轻量级项目管理工具，我说下怎么使用。&#xA;计划 流程为：创建项目-&amp;gt;清点资源(时间、人)-&amp;gt;创建任务-&amp;gt;为任务创建约束项(物料约束、时间约束、人力约束、任务依赖关系)&#xA;如图，我创造了一个名为黄石的项目，五个任务，任务间定义依赖关系，分配人员、时间 执行 在执行过程中会改动计划，所以给初始计划建一个快照。&#xA;改动要保证整体计划会随着我的改动项整体修改，比如我插了一个一天的任务，整体计划时间就要延长；或者我缩短了某任务时间，整体计划时间缩短。zz-plan提供了这个功能。 执行完成后填入实际执行时间，更新该图表即可&#xA;分析 任务进行到一半，要分析异常，比如当前跟最初的计划到底偏离了多少，这时候打开计划初保存的那个快照，就能看到异常 这个显示总时间多了一天，原因：任务1延后一天，这时候找到相关负责人交流就成。\&#xA;如果跟踪每日进度，则每天应该更新进度并建立快照，周进度直接对比六天前的快照就行，一目了然。&#xA;end </description>
+    </item>
     <item>
       <title>GTD工具一览</title>
       <link>/posts/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</link>
