@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Nov 2024 14:56:41 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2024 20:58:03 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GTD工具一览</title>
+      <link>/posts/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</link>
+      <pubDate>Mon, 02 Dec 2024 20:58:03 +0800</pubDate>
+      <guid>/posts/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</guid>
+      <description>我是2020年开始接触gtd，当时在学emacs，并在此基础上实现自己的gtd系统。有一句话深以为意，“虽然gtd的理念很简单，但是打造成熟的gtd系统需要两年时间”。&#xA;反正当时有这么个念头，今天又翻到了之前做的GTD列表，意外发现，可以直接复用原来的系统，之前有些做不了的todo项现在可以做了。有一种穿越时空的感觉。&#xA;我个人实现了三套GTD系统，如下：&#xA;1 flomo(tag)&#xA;2 qqmail+omnifocus&#xA;3 emacs+beorg+orgzly&#xA;flomo gtd 参考文章flomo实践gtd和para&#xA;用flomo的标签功能，标签划分如下:&#xA;sys-gtd/ sys-gtd/inbox sys-gtd/act/TODO | DONE | Trash sys-gtd/porject sys-gtd/life \&#xA;新任务搜集进inbox标签，然后归类至project或life标签，在添加状态标签。一般是在TODO标签找任务做，做完后将TODO标签转为DONE。&#xA;qqmail+omnifocus omnifocus在文章gtd系统扩展+calender提及，实现后界面如下图 通过邮箱给一个特定邮箱发邮件，该邮件会同步至omnifocus，可以将其当作inbox。一般是看due、delegate，这两栏清空后再看defer。&#xA;emacs+orgzly emacs就有点复杂了，把下面的文件丢到kimi，让它解释一遍。emacs中的TODO项通过坚果云同步至orgzly，遗弃的todo项加ARCHIVE标签，这样就不会出现在检索列。&#xA;然后依然是从TODO状态找任务做，做完后状态切换至DONE&#xA;在pc端，一般用Ctrl+a+m来检索标签，我当时做出了覆盖很全的标签体系，这套体系后来可以直接复用到flomo (global-set-key (kbd &amp;#34;C-c l&amp;#34;) #&amp;#39;org-store-link) (global-set-key (kbd &amp;#34;C-c a&amp;#34;) #&amp;#39;org-agenda) (global-set-key (kbd &amp;#34;C-c c&amp;#34;) #&amp;#39;org-capture) ;;(setq org-directory &amp;#34;g:/area/emacs-notes/GTD&amp;#34;) (setq org-directory &amp;#34;C:/Users/whens/Nutstore/1/docs/GTD&amp;#34;) (setq org-capture-templates `((&amp;#34;i&amp;#34; &amp;#34;Inbox&amp;#34; entry (file &amp;#34;inbox.org&amp;#34;) ,(concat &amp;#34;* TODO %?\n&amp;#34; &amp;#34;/Entered on/ %U\n&amp;#34; &amp;#34;\n&amp;#34;)))) (setq org-todo-keywords &amp;#39;((sequence &amp;#34;TODO(T!</description>
+    </item>
     <item>
       <title>Qt Python开发流程</title>
       <link>/posts/qt-python%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/</link>
