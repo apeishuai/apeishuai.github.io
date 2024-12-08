@@ -6,20 +6,27 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Dec 2024 21:41:51 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2024 13:53:19 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Plc之状态图</title>
+      <link>/posts/plc%E4%B9%8B%E7%8A%B6%E6%80%81%E5%9B%BE/</link>
+      <pubDate>Fri, 06 Dec 2024 13:53:19 +0800</pubDate>
+      <guid>/posts/plc%E4%B9%8B%E7%8A%B6%E6%80%81%E5%9B%BE/</guid>
+      <description>start 五月份误入非标行业，蹲到现场从0到1复原了一个程序，虽然之前接触过倍福、西门子，kingscada，但没有真正自己负责做过东西。why，因为涉及到电气元器件选型。&#xA;断路器的选择依据是什么? 一般回答，选择额定电流为总电流8-10倍，断路器可在2s内脱扣。&#xA;我的思路是先分析电网，然后计算电网的短路电流，在根据短路电流选择断路器。&#xA;短路电流是感抗产生的，一般变压器端出现的感抗最高，针对不同条件的电网有不同的计算公式；回到我接触的设备中，感抗就是在一个闭合回路中，如果出现短路，闭合回路的磁场会产生变化，进而导致短路电流的出现，具体计算公式没找到。&#xA;根据上面的图，感抗产生的短路电流应该有额定电流的n倍，这样就能解释通为什么选择8-10倍额定电流作为断路器参数。&#xA;电气元器件涉及的知识太多了，抓不住重点，只能慢慢积累。&#xA;plc plc的设计方法，是我在一本书上看到的，当时困扰我的是变量的依赖关系，看其他人的程序，有些输出前面加了一堆又臭又长的条件，同类型条件分布在程序的各处，毫无规律可言。翻了这本书，才发现可以用状态图(sfc)把程序逻辑捋出来，再用M变量表示中间状态，再用一些常规的方法做变量的开闭，就能把程序捋的很清楚。&#xA;那么plc编程的重点就是，状态图、M变量、状态开闭，针对这些东西构建工具&#xA;状态图 试过很多plc软件提供的sfc工具，都很垃圾，最后我想到了dot语言，专门用来画流程图的，然后基于此搜索，找到了一个叫plantuml的程序，可以根据xx.uml自动生成png图，具体配置如下： 既然是编程语言，就能用上次提到的aider辅助生成状态图代码了，如下： 如此就解决了状态图的问题&#xA;M变量 这个就不赘述，文末我放那本书的链接，里面有详细的说明&#xA;状态开闭 st语言 非标程序框架&#xA;书里提到了五种方法，上面那个是写起来最简单的&#xA;end 这样基本解决plc程序编写问题，剩下选型，我打算做一个选型软件，然后一点点补充，end!</description>
+    </item>
+    <item>
       <title>项目管理</title>
-      <link>/posts/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</link>
+      <link>/resource/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</link>
       <pubDate>Mon, 02 Dec 2024 21:41:51 +0800</pubDate>
-      <guid>/posts/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</guid>
+      <guid>/resource/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</guid>
       <description>今天有人问我，有没有工具可以管理项目，要求如下：&#xA;1 计划&#xA;2 显示执行情况&#xA;3 随意更改计划&#xA;4 异常报警&#xA;别说，还真有。之前找甘特图工具时发现的，zz-plan，一个轻量级项目管理工具，我说下怎么使用。&#xA;计划 流程为：创建项目-&amp;gt;清点资源(时间、人)-&amp;gt;创建任务-&amp;gt;为任务创建约束项(物料约束、时间约束、人力约束、任务依赖关系)&#xA;如图，我创造了一个名为黄石的项目，五个任务，任务间定义依赖关系，分配人员、时间 执行 在执行过程中会改动计划，所以给初始计划建一个快照。&#xA;改动要保证整体计划会随着我的改动项整体修改，比如我插了一个一天的任务，整体计划时间就要延长；或者我缩短了某任务时间，整体计划时间缩短。zz-plan提供了这个功能。 执行完成后填入实际执行时间，更新该图表即可&#xA;分析 任务进行到一半，要分析异常，比如当前跟最初的计划到底偏离了多少，这时候打开计划初保存的那个快照，就能看到异常 这个显示总时间多了一天，原因：任务1延后一天，这时候找到相关负责人交流就成。\&#xA;如果跟踪每日进度，则每天应该更新进度并建立快照，周进度直接对比六天前的快照就行，一目了然。&#xA;end </description>
     </item>
     <item>
       <title>GTD工具一览</title>
-      <link>/posts/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</link>
+      <link>/resource/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</link>
       <pubDate>Mon, 02 Dec 2024 20:58:03 +0800</pubDate>
-      <guid>/posts/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</guid>
+      <guid>/resource/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</guid>
       <description>我是2020年开始接触gtd，当时在学emacs，并在此基础上实现自己的gtd系统。有一句话深以为意，“虽然gtd的理念很简单，但是打造成熟的gtd系统需要两年时间”。&#xA;反正当时有这么个念头，今天又翻到了之前做的GTD列表，意外发现，可以直接复用原来的系统，之前有些做不了的todo项现在可以做了。有一种穿越时空的感觉。&#xA;我个人实现了三套GTD系统，如下：&#xA;1 flomo(tag)&#xA;2 qqmail+omnifocus&#xA;3 emacs+beorg+orgzly&#xA;flomo gtd 参考文章flomo实践gtd和para&#xA;用flomo的标签功能，标签划分如下:&#xA;sys-gtd/ sys-gtd/inbox sys-gtd/act/TODO | DONE | Trash sys-gtd/porject sys-gtd/life \&#xA;新任务搜集进inbox标签，然后归类至project或life标签，在添加状态标签。一般是在TODO标签找任务做，做完后将TODO标签转为DONE。&#xA;qqmail+omnifocus omnifocus在文章gtd系统扩展+calender提及，实现后界面如下图 通过邮箱给一个特定邮箱发邮件，该邮件会同步至omnifocus，可以将其当作inbox。一般是看due、delegate，这两栏清空后再看defer。&#xA;emacs+orgzly emacs就有点复杂了，把下面的文件丢到kimi，让它解释一遍。emacs中的TODO项通过坚果云同步至orgzly，遗弃的todo项加ARCHIVE标签，这样就不会出现在检索列。&#xA;然后依然是从TODO状态找任务做，做完后状态切换至DONE&#xA;在pc端，一般用Ctrl+a+m来检索标签，我当时做出了覆盖很全的标签体系，这套体系后来可以直接复用到flomo (global-set-key (kbd &amp;#34;C-c l&amp;#34;) #&amp;#39;org-store-link) (global-set-key (kbd &amp;#34;C-c a&amp;#34;) #&amp;#39;org-agenda) (global-set-key (kbd &amp;#34;C-c c&amp;#34;) #&amp;#39;org-capture) ;;(setq org-directory &amp;#34;g:/area/emacs-notes/GTD&amp;#34;) (setq org-directory &amp;#34;C:/Users/whens/Nutstore/1/docs/GTD&amp;#34;) (setq org-capture-templates `((&amp;#34;i&amp;#34; &amp;#34;Inbox&amp;#34; entry (file &amp;#34;inbox.org&amp;#34;) ,(concat &amp;#34;* TODO %?\n&amp;#34; &amp;#34;/Entered on/ %U\n&amp;#34; &amp;#34;\n&amp;#34;)))) (setq org-todo-keywords &amp;#39;((sequence &amp;#34;TODO(T!</description>
     </item>
     <item>
@@ -52,9 +59,9 @@
     </item>
     <item>
       <title>Msys2使用anaconda</title>
-      <link>/posts/msys2%E4%BD%BF%E7%94%A8anaconda/</link>
+      <link>/resource/msys2%E4%BD%BF%E7%94%A8anaconda/</link>
       <pubDate>Sun, 24 Nov 2024 17:04:25 +0800</pubDate>
-      <guid>/posts/msys2%E4%BD%BF%E7%94%A8anaconda/</guid>
+      <guid>/resource/msys2%E4%BD%BF%E7%94%A8anaconda/</guid>
       <description>msys2带的原生python环境不好用，出现各种包安装的问题，直接在msys2中调用anaconda可解决这个问题。&#xA;msys2: windows下的类linux环境&#xA;anaconda：windows下python集成环境&#xA;安装anaconda 配置msys2 conda info \\显示当前conda安装的信息 conda init --all --dry-run --verbose \\初始化conda与shell，打印出所有相关文件而不做任何修改 conda config --show envs_dirs \\显示env环境安装目录 vim .condarc \\修改env安装目录&#xA;envs_dirs: - D:\softwares\Anaconda3\envs vim .bash_profile \\绑定shell:msys2与conda&#xA;eval &amp;#34;$(&amp;#39;D:/softwares/anaconda3/Scripts/conda.exe&amp;#39; &amp;#39;shell.bash&amp;#39; &amp;#39;hook&amp;#39;)&amp;#34; conda env create -n {env_name} -f xxx.yml conda activate {env_name} conda deactive \\退出环境 退出环境 退出环境后，需要执行&#xA;source ~/.bashrc 方可使用之前bash的配置&#xA;conda使用教程 conda最常见的就是创建一个虚拟python环境，在虚拟环境中不用担心库问题，因为anaconda集成了超多库，所以只需要知道怎么创建、进入、切换、退出、删除虚拟环境即可。&#xA;至于项目迁移、其他的一些操作，等日后有需要再补充。&#xA;conda install {package_name} \\安装包 conda list \\查看已安装的包 conda update {package_name} \\更新包 conda remove {package_name} \\删除包 conda create -n {env_name} python=3.</description>
     </item>
     <item>
@@ -73,10 +80,10 @@
     </item>
     <item>
       <title>学习工程化2 搭建文档池及建立搜索入口</title>
-      <link>/posts/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%962-%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E6%B1%A0%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%90%9C%E7%B4%A2%E5%85%A5%E5%8F%A3/</link>
+      <link>/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%962-%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E6%B1%A0%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%90%9C%E7%B4%A2%E5%85%A5%E5%8F%A3/</link>
       <pubDate>Wed, 13 Nov 2024 22:51:07 +0800</pubDate>
-      <guid>/posts/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%962-%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E6%B1%A0%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%90%9C%E7%B4%A2%E5%85%A5%E5%8F%A3/</guid>
-      <description>留存文档分类 1 保留最原始出处&#xA;2 分层组织，运用para规则，+article 学习工程化提到的第三点：构建自己的命名空间&#xA;3 检索历史也要保存到log文件，追加至留存文档&#xA;问题1： 建一个大文件夹，保存内容如下&#xA;简悦自动保存离线网页，丢进去&#xA;聊天记录定期导出，丢进去&#xA;使用频率较高的pdf，丢进去&#xA;md(我试了，可以展示图片，也可以用latex显示数学公式)或org格式写的笔记，丢进去&#xA;工程文件，丢进去&#xA;这样，基本所有的文档都汇到一个池子了&#xA;问题2：&#xA;这里主要是笔记和工程类文件&#xA;笔记以doc-area分类，比如doc-dianqi，doc-jixie，doc-front，doc-soft，doc-host，etc&#xA;工程类文件建pro文件夹，按项目分&#xA;检索 经过上面的操作，可以确保文件库大部分文件是文本格式，然后找一个文本检索工具，作为检索入口&#xA;recoll，它可以扫描这些文本文件，生成索引表，很快能检索出需要的文本信息&#xA;对学习和知识的看法 学习就是建模，跟之前提的构建逻辑链相似。穷举所有状态，让这些状态全部包含在构建的模型当中，就获得了对这个状态空间的控制力&#xA;最难的地方在确定最终状态、找出影响要素&#xA;假设观测到某种现象，这种现象受到三个要素影响，即使想到了这三个要素，也很难去验证&#xA;从0知识出发，建立复杂系统，注定有很长的路要走。&#xA;构建的这个叫pkm系统，它解决的是过往经验复用的问题，做时间的朋友。</description>
+      <guid>/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%962-%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E6%B1%A0%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%90%9C%E7%B4%A2%E5%85%A5%E5%8F%A3/</guid>
+      <description>留存文档分类 1 保留最原始出处&#xA;2 分层组织，运用para规则，+article 学习工程化提到的第三点：构建自己的命名空间&#xA;3 检索历史也要保存到log文件，追加至留存文档&#xA;问题1： 建一个大文件夹，保存内容如下&#xA;简悦自动保存离线网页，丢进去&#xA;聊天记录定期导出，丢进去&#xA;使用频率较高的pdf，丢进去&#xA;md(我试了，可以展示图片，也可以用latex显示数学公式)或org格式写的笔记，丢进去&#xA;工程文件，丢进去&#xA;这样，基本所有的文档都汇到一个池子了&#xA;问题2：&#xA;这里主要是笔记和工程类文件&#xA;笔记以doc-area分类，比如doc-dianqi，doc-jixie，doc-front，doc-soft，doc-host，etc&#xA;工程类文件建pro文件夹，按项目分&#xA;检索 经过上面的操作，可以确保文件库大部分文件是文本格式，然后找一个文本检索工具，作为检索入口&#xA;recoll，它可以扫描这些文本文件，生成索引表，很快能检索出需要的文本信息&#xA;fix:2024/12/05&#xA;引入rga，scoop install rga，可以点对点搜索，命令行也更符合使用习惯&#xA;对学习和知识的看法 学习就是建模，跟之前提的构建逻辑链相似。穷举所有状态，让这些状态全部包含在构建的模型当中，就获得了对这个状态空间的控制力&#xA;最难的地方在确定最终状态、找出影响要素&#xA;假设观测到某种现象，这种现象受到三个要素影响，即使想到了这三个要素，也很难去验证&#xA;从0知识出发，建立复杂系统，注定有很长的路要走。&#xA;构建的这个叫pkm系统，它解决的是过往经验复用的问题，做时间的朋友。</description>
     </item>
     <item>
       <title>学习工程化</title>
@@ -150,9 +157,9 @@
     </item>
     <item>
       <title>GTD系统扩展&#43;calender</title>
-      <link>/posts/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</link>
+      <link>/resource/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</link>
       <pubDate>Fri, 04 Oct 2024 16:17:06 +0800</pubDate>
-      <guid>/posts/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</guid>
+      <guid>/resource/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</guid>
       <description>老是觉得事情推不动，应该在时间上做限制，下面两篇文章完美解决了我的困惑。&#xA;准确定位calendar与 omnifocus ，整个世界都清楚了&#xA;双剑合璧，结束混乱：任务管理中omnifocus 与日历的配合使用&#xA;GTD系统用omnifocus、日历选用&amp;quot;优效日历&amp;quot;(跨平台，能预览一个月的时间安排)&#xA;时间管理相关 2min原则：一件事能在2min内完成的，马上去做&#xA;5h原则：阅读-反思-实验，每周至少花5h在自己感兴趣的事情上面，平均每天1h(不至于负荷太重)</description>
     </item>
     <item>
@@ -444,9 +451,9 @@
     </item>
     <item>
       <title>自定义搜索引擎yacy</title>
-      <link>/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</link>
+      <link>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</link>
       <pubDate>Wed, 20 Mar 2024 16:14:58 +0800</pubDate>
-      <guid>/posts/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</guid>
+      <guid>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</guid>
       <description>自定义搜索引擎解决了搜索范围的问题，多个网站聚合成一个引擎，相当于我这边筛选了一遍，再进行二次筛选，能提升效率&#xA;网站地址在programm able seach engine，添加搜索引擎 添加索引网站 点击进入实例，添加&amp;ndash;&amp;gt;填网址 对网址格式做一说明，一般是&amp;quot;xxx.com/ * &amp;ldquo;,即该网站下所有页面 xml格式导入&#xA;xml文件大概是这样，更改about和value值，就能批量添加地址了，当然，图形框也能批量添加&#xA;&amp;lt;Annotations&amp;gt; &amp;lt;Annotation about=&amp;#34;*.antirez.com/*&amp;#34; timestamp=&amp;#34;0x0006140ea65e7149&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;http://antirez.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;Annotation about=&amp;#34;*.huoding.com/*&amp;#34; timestamp=&amp;#34;0x0006140e7ab53ef5&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;https://huoding.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;/Annotations&amp;gt; 改外观 这样就行了 最终所得网址如下 qireader脚本 qireader是我看rss的工具，导出opml文件，里面包含了订阅所有博客的网址，我写了个python脚本把网址转化为xml格式，以便导入&#xA;# 描述: 这是一个Python脚本，用于构建google ces的annoation格式文本，达到批量导入博客，用于检索的目的 # 作者: wxf # 版本: 1.0 # 生成日期: 2024/03/20 # 最后修改日期: 2024/03/20 import re import os import subprocess # 从本地文件读取文本 file_path = &amp;#39;QiReader subscriptions - Wed Mar 20 2024.</description>
     </item>
     <item>
@@ -493,9 +500,9 @@
     </item>
     <item>
       <title>Flomo实践gtd和para</title>
-      <link>/posts/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</link>
+      <link>/resource/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</link>
       <pubDate>Tue, 06 Feb 2024 15:28:26 +0800</pubDate>
-      <guid>/posts/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</guid>
+      <guid>/resource/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</guid>
       <description>前天火车上翻搜集的电子书，发现一本，这本书是twitter其他人推过来的，当时在找信息的分类方法，提到了para。&#xA;今天给我妹讲了一下flomo+标签(gtd体系、para体系)的使用方法，觉得挺有逻辑的，摘抄出来，以飨大众。&#xA;主要解决三个问题：&#xA;1 资料归类&#xA;2 待办事项组织&#xA;3 目标管理&#xA;成型后系统效果是这样的：任何内容，大脑中的想法、工作相关任务、生活中瞬间、触发灵感的阅读材料，任何内容，统统丢进inbox，然后继续忙自己当前的事。晚上打开inbox走一遍流程，归类所有内容，第二天继续丢内容进inbox，往复循环&#xA;有三套流程，一套是gtd，一套是para，一套是每日计划，均使用flomo的标签实现，如下 可以看到，有三套标签，sys-gtd、sys-para、normal、2024\&#xA;sys-para para是存资料的，一般看到感觉有用的资料，统统丢进inbox，夜深人静的时候走流程，&#xA;传统笔记分类为主，比如：生活，工作，xxx&#xA;para分类法以推动action为主：&#xA;proj是有时间限制的任务组，规定时间内要有成果交付&#xA;area是长期关注，并有投入责任的领域&#xA;resource则是以文本块为最小组织单元，有可能会用到的信息&#xA;archive是失去兴趣的领域&#xA;+ inbox，捕捉用&#xA;一个笔记先进inbox，然后走流程，归类完毕后重点关注proj，这样能确保信息无遗漏，且提取的信息跟当前的场景匹配&#xA;具体如下： sys-gtd gtd用于组织日常事项，最小单位是action，action组织成project。一个复杂的动作往往有很多action构成，无所谓，只关心action的状态即可 依然是先放进inbox，然后拆解成具体action，：洗衣服、写文章，等等，非常具体的且可执行的事项。然后分配到act/Todo(这个todo列后面要用到)。proj则是由这些action组织起来的，用flomo的@(链接)功能&#xA;action有三种状态：TODO、DONE、waiting，waiting是需要外部辅助的，比如你的材料需要其他人的数据，这个时候就要等，但是不能干等啊，所以转移到waiting列表，定个时间，比如2h后提醒自己check一次。&#xA;waiting列表我们也可以附带时间和地点，如图，我有一个aeiou列表，里面维持了地点、跟其他人的谈话信息，这种我们下次谈话就能接着之前聊的话题继续聊，gtd的waiting需要哪些人的协助，@进去，或者在哪些地方，@进去，定期核查这个列表，能确保任务无遗漏&#xA;同理，不时地翻翻proj列表，看看哪些能推进，顺手干掉。sys-gtd相当于一个动态的任务分配系统吧，且能做到很精细的资源管理&#xA;2024 okr 接下来我想谈谈每日的任务安排，在工作时，我们的大脑只能记住一小段内容，如果要完成一个时间、空间跨度都很大的任务，仅凭工作记忆是不够的。现在有sys-para帮我们处理了资料的问题，sys-gtd帮我们处理了任务分配的问题，接下来问一个问题：我想干什么？&#xA;2024有1年的时间，能做成哪些事，拆解这些事到具体的每一天，在这一天应该做什么事。&#xA;首先对每天做的事情分类：自己想做的、外部触发要做的；生活上的、工作上的；投资自己的、浪费时间的，有很多维度，我选择用okr做目标分类、追踪、对齐，如下&#xA;OKR 2024/week1/day6 任务安排(直接从sys-gtd/act/Todo提取action即可) 2024/week1/day6 任务完成情况 形成自己的标签体系 举个例子吧，aeiou是在《人生设计课程》知道的概念，我可以做tool/activ、tool/user、tool/envi、tool/object、tool/xxx五个标签，用这个列表记录一些关键的事，比如搬家、工作、跟某个人的交流等，为以后的决策提供数据支持。&#xA;举这个例子是想说，标签体系千变万化，只要能搞成一个闭环体系，什么名字都无所谓。下面是实际生活中自己形成的一些标签 flomo用了三个月，对我的生活产生了很大的影响，更多的是上面的几套方法论的影响吧。4个月可以产生这么大变化，也许我们对生活应该乐观点，说不定下四个月你能做出什么了不起的突破呢，共勉！！！ </description>
     </item>
     <item>
@@ -804,7 +811,7 @@
       <link>/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/project/</guid>
-      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/11/04 效率工具PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/08 windows软件管理 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通&#xA;2024/04/12 冲突图 奇怪的工作流&#xA;(1014/03/20&amp;ndash;&amp;gt;)&#xA;2024/03/20 inbox&#xA;工程效率 2024/05/08 超越理论，情景创设&#xA;2024/05/14 主题阅读方法&#xA;2024/05/22 软硬件调试九法&#xA;2024/05/31 干掉拖延+产出导向&#xA;pro3 识别模式及构建控制点 项目概述：我们现在的状态是由自己过去一系列选择构成的，在没有对自己的人生思考前，它是一种自然生长状态，这意味着不可控；任何不在我们视野的事物都处于这种“视而不见”的状态。但是你不看它，它就对你没影响了吗？所以我们记录数据，从数据中发现规律(识别)，用一些手段控制该事物的演化方向&#xA;注：只有认为需要做出变化的地方，才要找模式&#xA;设计人生 end</description>
+      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/03/20 自定义搜索引擎yacy 2023/11/04 效率工具PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/06 flomo实践gtd与para&#xA;2024/02/08 windows软件管理&#xA;2024/10/04 GTD系统扩展+calender&#xA;2024/11/24 msys2使用anaconda&#xA;2024/12/02 GTD工具一览&#xA;2024/12/02 项目管理 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通&#xA;2024/04/12 冲突图 奇怪的工作流&#xA;(1014/03/20&amp;ndash;&amp;gt;)&#xA;2024/03/20 inbox&#xA;工程效率 2024/05/08 超越理论，情景创设</description>
     </item>
     <item>
       <title></title>
@@ -839,7 +846,7 @@
       <link>/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/main/</guid>
-      <description>Focus&#xA;探索美食 Resource&#xA;shaarli 书签 wiki 技术文档(wiki log) 专题 生理学相关 wxf softwares Life &amp;amp; Entertainment&#xA;apple music wxf Playlist · 坠入碧蓝 ♫ 节奏流动 blog cosine music blog guanjihuan music Blog&#xA;About 个人简介</description>
+      <description>Focus&#xA;探索美食 Resource&#xA;shaarli 书签 wiki 技术文档(wiki log) 专题 生理学相关 wxf softwares Life &amp;amp; Entertainment&#xA;qqmusic wxf Playlist · 坠入碧蓝 ♫ 节奏流动 blog cosine music blog guanjihuan music Blog&#xA;About 个人简介</description>
     </item>
   </channel>
 </rss>

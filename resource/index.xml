@@ -6,14 +6,42 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Nov 2024 22:40:48 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2024 21:41:51 +0800</lastBuildDate>
     <atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>项目管理</title>
+      <link>/resource/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 02 Dec 2024 21:41:51 +0800</pubDate>
+      <guid>/resource/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</guid>
+      <description>今天有人问我，有没有工具可以管理项目，要求如下：&#xA;1 计划&#xA;2 显示执行情况&#xA;3 随意更改计划&#xA;4 异常报警&#xA;别说，还真有。之前找甘特图工具时发现的，zz-plan，一个轻量级项目管理工具，我说下怎么使用。&#xA;计划 流程为：创建项目-&amp;gt;清点资源(时间、人)-&amp;gt;创建任务-&amp;gt;为任务创建约束项(物料约束、时间约束、人力约束、任务依赖关系)&#xA;如图，我创造了一个名为黄石的项目，五个任务，任务间定义依赖关系，分配人员、时间 执行 在执行过程中会改动计划，所以给初始计划建一个快照。&#xA;改动要保证整体计划会随着我的改动项整体修改，比如我插了一个一天的任务，整体计划时间就要延长；或者我缩短了某任务时间，整体计划时间缩短。zz-plan提供了这个功能。 执行完成后填入实际执行时间，更新该图表即可&#xA;分析 任务进行到一半，要分析异常，比如当前跟最初的计划到底偏离了多少，这时候打开计划初保存的那个快照，就能看到异常 这个显示总时间多了一天，原因：任务1延后一天，这时候找到相关负责人交流就成。\&#xA;如果跟踪每日进度，则每天应该更新进度并建立快照，周进度直接对比六天前的快照就行，一目了然。&#xA;end </description>
+    </item>
+    <item>
+      <title>GTD工具一览</title>
+      <link>/resource/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</link>
+      <pubDate>Mon, 02 Dec 2024 20:58:03 +0800</pubDate>
+      <guid>/resource/gtd%E5%B7%A5%E5%85%B7%E4%B8%80%E8%A7%88/</guid>
+      <description>我是2020年开始接触gtd，当时在学emacs，并在此基础上实现自己的gtd系统。有一句话深以为意，“虽然gtd的理念很简单，但是打造成熟的gtd系统需要两年时间”。&#xA;反正当时有这么个念头，今天又翻到了之前做的GTD列表，意外发现，可以直接复用原来的系统，之前有些做不了的todo项现在可以做了。有一种穿越时空的感觉。&#xA;我个人实现了三套GTD系统，如下：&#xA;1 flomo(tag)&#xA;2 qqmail+omnifocus&#xA;3 emacs+beorg+orgzly&#xA;flomo gtd 参考文章flomo实践gtd和para&#xA;用flomo的标签功能，标签划分如下:&#xA;sys-gtd/ sys-gtd/inbox sys-gtd/act/TODO | DONE | Trash sys-gtd/porject sys-gtd/life \&#xA;新任务搜集进inbox标签，然后归类至project或life标签，在添加状态标签。一般是在TODO标签找任务做，做完后将TODO标签转为DONE。&#xA;qqmail+omnifocus omnifocus在文章gtd系统扩展+calender提及，实现后界面如下图 通过邮箱给一个特定邮箱发邮件，该邮件会同步至omnifocus，可以将其当作inbox。一般是看due、delegate，这两栏清空后再看defer。&#xA;emacs+orgzly emacs就有点复杂了，把下面的文件丢到kimi，让它解释一遍。emacs中的TODO项通过坚果云同步至orgzly，遗弃的todo项加ARCHIVE标签，这样就不会出现在检索列。&#xA;然后依然是从TODO状态找任务做，做完后状态切换至DONE&#xA;在pc端，一般用Ctrl+a+m来检索标签，我当时做出了覆盖很全的标签体系，这套体系后来可以直接复用到flomo (global-set-key (kbd &amp;#34;C-c l&amp;#34;) #&amp;#39;org-store-link) (global-set-key (kbd &amp;#34;C-c a&amp;#34;) #&amp;#39;org-agenda) (global-set-key (kbd &amp;#34;C-c c&amp;#34;) #&amp;#39;org-capture) ;;(setq org-directory &amp;#34;g:/area/emacs-notes/GTD&amp;#34;) (setq org-directory &amp;#34;C:/Users/whens/Nutstore/1/docs/GTD&amp;#34;) (setq org-capture-templates `((&amp;#34;i&amp;#34; &amp;#34;Inbox&amp;#34; entry (file &amp;#34;inbox.org&amp;#34;) ,(concat &amp;#34;* TODO %?\n&amp;#34; &amp;#34;/Entered on/ %U\n&amp;#34; &amp;#34;\n&amp;#34;)))) (setq org-todo-keywords &amp;#39;((sequence &amp;#34;TODO(T!</description>
+    </item>
+    <item>
+      <title>Msys2使用anaconda</title>
+      <link>/resource/msys2%E4%BD%BF%E7%94%A8anaconda/</link>
+      <pubDate>Sun, 24 Nov 2024 17:04:25 +0800</pubDate>
+      <guid>/resource/msys2%E4%BD%BF%E7%94%A8anaconda/</guid>
+      <description>msys2带的原生python环境不好用，出现各种包安装的问题，直接在msys2中调用anaconda可解决这个问题。&#xA;msys2: windows下的类linux环境&#xA;anaconda：windows下python集成环境&#xA;安装anaconda 配置msys2 conda info \\显示当前conda安装的信息 conda init --all --dry-run --verbose \\初始化conda与shell，打印出所有相关文件而不做任何修改 conda config --show envs_dirs \\显示env环境安装目录 vim .condarc \\修改env安装目录&#xA;envs_dirs: - D:\softwares\Anaconda3\envs vim .bash_profile \\绑定shell:msys2与conda&#xA;eval &amp;#34;$(&amp;#39;D:/softwares/anaconda3/Scripts/conda.exe&amp;#39; &amp;#39;shell.bash&amp;#39; &amp;#39;hook&amp;#39;)&amp;#34; conda env create -n {env_name} -f xxx.yml conda activate {env_name} conda deactive \\退出环境 退出环境 退出环境后，需要执行&#xA;source ~/.bashrc 方可使用之前bash的配置&#xA;conda使用教程 conda最常见的就是创建一个虚拟python环境，在虚拟环境中不用担心库问题，因为anaconda集成了超多库，所以只需要知道怎么创建、进入、切换、退出、删除虚拟环境即可。&#xA;至于项目迁移、其他的一些操作，等日后有需要再补充。&#xA;conda install {package_name} \\安装包 conda list \\查看已安装的包 conda update {package_name} \\更新包 conda remove {package_name} \\删除包 conda create -n {env_name} python=3.</description>
+    </item>
     <item>
       <title>Ref 分享2023年最大的收获</title>
       <link>/resource/ref-%E5%88%86%E4%BA%AB2023%E5%B9%B4%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E8%8E%B7/</link>
       <pubDate>Sun, 17 Nov 2024 22:40:48 +0800</pubDate>
       <guid>/resource/ref-%E5%88%86%E4%BA%AB2023%E5%B9%B4%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E8%8E%B7/</guid>
       <description>分享 2023 年最大的收获 如果此时此刻，你正面临艰难的选择，我十分建议你花刷 5 分钟时间看完。&#xA;这算是我的一篇年终总结。&#xA;小故事 一切得从那套大概 400W 的瞰江大平层说起。&#xA;大概今年 5 月份左右的时候，那是我今年最舒服的几个月，新产品被动收入持续攀升，加上其他的收入，每个月少量的工作，可以带来大概 4 W 左右的收入，我不得不说，我飘了，可哪知道，那是我的巅峰时刻，从那时候开始，基本上就收入持续下降。有一天我躺床上刷朋友圈，我就刷到一套房子，瞰江大平层，大概 400W，一眼相中。&#xA;于是飘了的我开始盘算，我怎样才能在一年内买下这套房，算上贷款，我支付首付的话，我也需要每天赚 8300 多软妹币才够，遗憾的是，我发现我无论如何我都赚不到。&#xA;于是我继续思考，我为什么赚不到？因为我手上没有一块小生意、小业务能给自己带来持续性每天 8K+ 的收入。那我手上为什么没有这样的小生意？因为过去十年，我一直在给别人打工。&#xA;于是我继续思考，那既然这样，我能不能放弃，我不要这套房子了？不，不可以，我向来不是一个没有努力过，就直接放弃的性格。我想要的东西，我可以接受自己得不到，但原因只能是两个：&#xA;我没兴趣了。 我用尽了全力，办不到。 这套大平层，不符合，所以我一定要，时间可以长一些，但一定要。&#xA;于是我继续思考，我为什么一定要这套大平层？再给我十年时间，我相信自己肯定可以赚到，为什么现在办不到？我过去十年的时间，都浪费给了愚蠢的老板，余生剩下时间，我要做什么？&#xA;我开始思考「时间」，我早晚要死的，我死了以后，我儿子记得我，我孙子可能记得我，我的重孙大概率根本不记得我，就算是记得我，但我都死了，又有什么意义？人生就是一场体验，我要做的是丰富自己的人生体验，不要太过在意外人对自己的看法，做自己真正想做的事情。&#xA;于是我继续思考，人生剩余的几十年，我到底想过成什么样？既然我死了以后，可以一了百了，啥也不管，假如我不管别人的看法，假如不管社会规则、甚至不顾及伦理道德，我最希望把自己的有限人生过成什么样？我希望多丰富一些体验，做一些没做过的事情，看一些没看过的风景。我希望有一天可以把时间用在自己身上，而不是用在工作上，不是在那些不重要的人，或者事身上。更具体一点，我希望家人身体健康、平平安安，有爱，有陪伴，我也希望有一天可以走遍中国、走遍世界，看那些没看过的风景，吃那些没吃过的美食。&#xA;当我想到这里，我豁然开朗，我知道我终其一生追求的是什么，剩余的，都不重要的。那么，我怎样才可以？我需要时间，我需要钱。&#xA;从此开始，我所有的事情都围绕着这个目的展开，只要某件事情，对我的人生最终目的是有推进作用，无论多么艰难，我都必须做，是的，必须，没有任何商量的余地。&#xA;工作上的杂事，我掏钱请别人干，因为浪费我时间。 陪老婆、孩子去做以前从来没做过的事情。 尽全力尝试一些方向，做产品扩大被动收入。 缩减所有耗费自己心神的短期收益的事情。 陪伴家人，坦诚沟通 锻炼身体 学习外语 看书 我建立了一个「人生体验推进计划」，所有对我最终目标有推进作用的事项，全部列进去，我希望有一天我的时间表上都是绿色，只有少量的红色。&#xA;人这一生最稀缺的是时间，回头看，太多的时间浪费在没有意义的事情上。&#xA;过去的很多不成熟的想法和选择，造成的现状。现在的一些想法也同样会决定未来的走向。&#xA;以后尽量不要去做短期收益的事情，当然，长期收益的事情也不仅仅是赚钱。&#xA;当我想清楚，我这一生，想要过成什么样，我接下来所有的事情都围绕着这个目的来。不论遇到什么样的选择，都有了共同的判定标准，那就是让自己离这个目标更近一些。无论它有多难，都必须做，没有任何商量的余地。&#xA;很感谢对我的认可，你花时间看到这里，我很希望这篇文章对你有价值。同时，我也很希望你能想清楚「你想要过什么样的人生」，当你有了这个判定标准，你任何一个抉择，都会无比轻松。&#xA;故事完~&#xA;毕竟是一篇年终总结，我总得总结一下，再展望 2024 年吧。 2023 年，我的收入没细算，大概增长了 30% 左右，但是能自由支配的时间，确比 2022 年多了 50% 左右，最让我开心的，不是收入的增长，而是想通的这个道理，会让我接下来的人生变得无比踏实，我知道自己要什么，想变成什么样，并且在过去的这半年，我正在践行着我的「人生体验推进计划」&#xA;关于 2024 年，我之前没想过，我会在 30 岁的时候开始一段「新的人生」&#xA;我最近开始尝试之前没穿过的风格的衣服，我甚至想开始护肤了，归根结底，可能是我希望自己能再年轻一些，以及团哥说的一句话，我们在家虽然可以很随意，甚至油头垢面，但我们更应该把自己清清爽爽的一面展现给自己的家人，而不是每次出门的时候，打扮给外人看，家人比外人更值得我们认真对待。 新产品一定要盈利，一定 持续刷多邻国，不能停 刷了两个月多邻国下来，发现坚持似乎也不难，我给自己定的目标是每天 15 分钟。我希望自己多读一些书，这周冲了微信读书年卡，新的一年，我也希望自己能坚持下来，每天读书 15 分钟。 做一下身材管理，5 月份之前，将体重降低到 62KG 陪伴家人，多一些耐心，多一点包容。 现在遇到困难的时候总会想起一句话：道阻且长，行则将至。</description>
+    </item>
+    <item>
+      <title>学习工程化2 搭建文档池及建立搜索入口</title>
+      <link>/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%962-%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E6%B1%A0%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%90%9C%E7%B4%A2%E5%85%A5%E5%8F%A3/</link>
+      <pubDate>Wed, 13 Nov 2024 22:51:07 +0800</pubDate>
+      <guid>/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%962-%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E6%B1%A0%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%90%9C%E7%B4%A2%E5%85%A5%E5%8F%A3/</guid>
+      <description>留存文档分类 1 保留最原始出处&#xA;2 分层组织，运用para规则，+article 学习工程化提到的第三点：构建自己的命名空间&#xA;3 检索历史也要保存到log文件，追加至留存文档&#xA;问题1： 建一个大文件夹，保存内容如下&#xA;简悦自动保存离线网页，丢进去&#xA;聊天记录定期导出，丢进去&#xA;使用频率较高的pdf，丢进去&#xA;md(我试了，可以展示图片，也可以用latex显示数学公式)或org格式写的笔记，丢进去&#xA;工程文件，丢进去&#xA;这样，基本所有的文档都汇到一个池子了&#xA;问题2：&#xA;这里主要是笔记和工程类文件&#xA;笔记以doc-area分类，比如doc-dianqi，doc-jixie，doc-front，doc-soft，doc-host，etc&#xA;工程类文件建pro文件夹，按项目分&#xA;检索 经过上面的操作，可以确保文件库大部分文件是文本格式，然后找一个文本检索工具，作为检索入口&#xA;recoll，它可以扫描这些文本文件，生成索引表，很快能检索出需要的文本信息&#xA;fix:2024/12/05&#xA;引入rga，scoop install rga，可以点对点搜索，命令行也更符合使用习惯&#xA;对学习和知识的看法 学习就是建模，跟之前提的构建逻辑链相似。穷举所有状态，让这些状态全部包含在构建的模型当中，就获得了对这个状态空间的控制力&#xA;最难的地方在确定最终状态、找出影响要素&#xA;假设观测到某种现象，这种现象受到三个要素影响，即使想到了这三个要素，也很难去验证&#xA;从0知识出发，建立复杂系统，注定有很长的路要走。&#xA;构建的这个叫pkm系统，它解决的是过往经验复用的问题，做时间的朋友。</description>
     </item>
     <item>
       <title>学习工程化</title>
@@ -42,6 +70,13 @@
       <pubDate>Sat, 05 Oct 2024 09:48:09 +0800</pubDate>
       <guid>/resource/%E4%BA%BA%E7%94%9F%E8%AF%BE%E9%A2%98%E9%81%8D%E5%8E%86/</guid>
       <description>ref-提到“课题概念”&#xA;我意识到人的精力是有限的，无序扩张的结果是啥也做不成；过将就的人生会消耗机会成本，也是对生命的浪费。所以TODO项中出现这么一项 its some examples:&#xA;姚尧的33岁生日&#xA;我人生的前28年&#xA;我眼中的婚恋连载（1）&#xA;看得出，事业方面需要持续的投入，艰苦奋斗才能有所成就，坚持下去的动力，可能只有热爱了；爱情方面可遇不可求。&#xA;至此，人生的每个阶段需要拿到什么成果，往哪个方向去努力，就很清晰了！！！</description>
+    </item>
+    <item>
+      <title>GTD系统扩展&#43;calender</title>
+      <link>/resource/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</link>
+      <pubDate>Fri, 04 Oct 2024 16:17:06 +0800</pubDate>
+      <guid>/resource/gtd%E7%B3%BB%E7%BB%9F%E6%89%A9%E5%B1%95&#43;calender/</guid>
+      <description>老是觉得事情推不动，应该在时间上做限制，下面两篇文章完美解决了我的困惑。&#xA;准确定位calendar与 omnifocus ，整个世界都清楚了&#xA;双剑合璧，结束混乱：任务管理中omnifocus 与日历的配合使用&#xA;GTD系统用omnifocus、日历选用&amp;quot;优效日历&amp;quot;(跨平台，能预览一个月的时间安排)&#xA;时间管理相关 2min原则：一件事能在2min内完成的，马上去做&#xA;5h原则：阅读-反思-实验，每周至少花5h在自己感兴趣的事情上面，平均每天1h(不至于负荷太重)</description>
     </item>
     <item>
       <title>Delicious</title>
@@ -198,6 +233,13 @@
       <description>说说做投资的思路，投资就是低买高卖，在金融市场，每天有无数买进卖出，但是无论个体还是机构，资金量有限，只能做有限次交易，首先得筛选出交易机会&#xA;分为价值、技术两个流派，价值就是对市场和企业做详尽的调研，判断企业后续发展情况，提前锁定收益；技术是通过k线分析趋势的运行情况，捕获交易机会。两者有个共同模式，即制定策略&amp;ndash;&amp;gt;确定策略的执行周期&amp;ndash;&amp;gt;执行&amp;ndash;&amp;gt;调整策略(事件触发)，因为有可能因为环境变化导致策略不适用&#xA;上述模式可以用于人生设计，能大大缩短在每个场景下的停留时间，如下，再复述一遍&#xA;制定策略&amp;ndash;&amp;gt;确定策略的执行周期&amp;ndash;&amp;gt;执行&amp;ndash;&amp;gt;调整策略(事件触发)&#xA;然后我提供一个策略模板：AEIOU(《斯坦福人生设计》)，通过AEIOU透视自己生活中的缺项，至于什么缺项，你想让你的生活是什么样，现在是什么样，就能知道缺项了，想办法补充，如上！！！</description>
     </item>
     <item>
+      <title>自定义搜索引擎yacy</title>
+      <link>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</link>
+      <pubDate>Wed, 20 Mar 2024 16:14:58 +0800</pubDate>
+      <guid>/resource/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%94%B6%E7%BC%A9%E5%BC%95%E6%93%8Eyacy/</guid>
+      <description>自定义搜索引擎解决了搜索范围的问题，多个网站聚合成一个引擎，相当于我这边筛选了一遍，再进行二次筛选，能提升效率&#xA;网站地址在programm able seach engine，添加搜索引擎 添加索引网站 点击进入实例，添加&amp;ndash;&amp;gt;填网址 对网址格式做一说明，一般是&amp;quot;xxx.com/ * &amp;ldquo;,即该网站下所有页面 xml格式导入&#xA;xml文件大概是这样，更改about和value值，就能批量添加地址了，当然，图形框也能批量添加&#xA;&amp;lt;Annotations&amp;gt; &amp;lt;Annotation about=&amp;#34;*.antirez.com/*&amp;#34; timestamp=&amp;#34;0x0006140ea65e7149&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;http://antirez.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;Annotation about=&amp;#34;*.huoding.com/*&amp;#34; timestamp=&amp;#34;0x0006140e7ab53ef5&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;https://huoding.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;/Annotations&amp;gt; 改外观 这样就行了 最终所得网址如下 qireader脚本 qireader是我看rss的工具，导出opml文件，里面包含了订阅所有博客的网址，我写了个python脚本把网址转化为xml格式，以便导入&#xA;# 描述: 这是一个Python脚本，用于构建google ces的annoation格式文本，达到批量导入博客，用于检索的目的 # 作者: wxf # 版本: 1.0 # 生成日期: 2024/03/20 # 最后修改日期: 2024/03/20 import re import os import subprocess # 从本地文件读取文本 file_path = &amp;#39;QiReader subscriptions - Wed Mar 20 2024.</description>
+    </item>
+    <item>
       <title>Workflow_inbox</title>
       <link>/resource/workflow_inbox/</link>
       <pubDate>Wed, 20 Mar 2024 02:12:35 +0800</pubDate>
@@ -238,6 +280,13 @@
       <pubDate>Thu, 08 Feb 2024 07:52:31 +0800</pubDate>
       <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
       <description>window主要靠两个软件：msys2(类linux环境)、scoop&#xA;流程 所有数据都放到u盘了，所以只要恢复软件及其配置&#xA;拿到一个新电脑，先安装msys2，然后恢复其配置文件，再安装scoop，完成&#xA;msys配置 msys的核心是这些配置文件，把它们上传到github，定期更新，迁移到新电脑时git clone一下就行&#xA;然后需要修改注册表，我写了三个脚本，执行一遍，msys配置就完成了!!!&#xA;main-init.sh&#xA;#!/bin/bash # change environment variables . chg-env-var.sh # change reg . chg-reg.sh # install cmd tool . command-install.sh chg-env-var.sh&#xA;#!/bin/bash # Set the system environment variable list SYS_ENV_VARS=( &amp;#34;&amp;#34; ) # Create the system batch file cat &amp;gt; update_sys_env.bat &amp;lt;&amp;lt; EOF @echo off REM Update system environment variables EOF for env_var in &amp;#34;${SYS_ENV_VARS[@]}&amp;#34; do var_name=&amp;#34;${env_var%=*}&amp;#34; var_value=&amp;#34;${env_var#*=}&amp;#34; echo &amp;#34;setx $var_name \&amp;#34;$var_value\&amp;#34; /M&amp;#34; &amp;gt;&amp;gt; update_sys_env.</description>
+    </item>
+    <item>
+      <title>Flomo实践gtd和para</title>
+      <link>/resource/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</link>
+      <pubDate>Tue, 06 Feb 2024 15:28:26 +0800</pubDate>
+      <guid>/resource/flomo%E5%AE%9E%E8%B7%B5gtd%E5%92%8Cpara/</guid>
+      <description>前天火车上翻搜集的电子书，发现一本，这本书是twitter其他人推过来的，当时在找信息的分类方法，提到了para。&#xA;今天给我妹讲了一下flomo+标签(gtd体系、para体系)的使用方法，觉得挺有逻辑的，摘抄出来，以飨大众。&#xA;主要解决三个问题：&#xA;1 资料归类&#xA;2 待办事项组织&#xA;3 目标管理&#xA;成型后系统效果是这样的：任何内容，大脑中的想法、工作相关任务、生活中瞬间、触发灵感的阅读材料，任何内容，统统丢进inbox，然后继续忙自己当前的事。晚上打开inbox走一遍流程，归类所有内容，第二天继续丢内容进inbox，往复循环&#xA;有三套流程，一套是gtd，一套是para，一套是每日计划，均使用flomo的标签实现，如下 可以看到，有三套标签，sys-gtd、sys-para、normal、2024\&#xA;sys-para para是存资料的，一般看到感觉有用的资料，统统丢进inbox，夜深人静的时候走流程，&#xA;传统笔记分类为主，比如：生活，工作，xxx&#xA;para分类法以推动action为主：&#xA;proj是有时间限制的任务组，规定时间内要有成果交付&#xA;area是长期关注，并有投入责任的领域&#xA;resource则是以文本块为最小组织单元，有可能会用到的信息&#xA;archive是失去兴趣的领域&#xA;+ inbox，捕捉用&#xA;一个笔记先进inbox，然后走流程，归类完毕后重点关注proj，这样能确保信息无遗漏，且提取的信息跟当前的场景匹配&#xA;具体如下： sys-gtd gtd用于组织日常事项，最小单位是action，action组织成project。一个复杂的动作往往有很多action构成，无所谓，只关心action的状态即可 依然是先放进inbox，然后拆解成具体action，：洗衣服、写文章，等等，非常具体的且可执行的事项。然后分配到act/Todo(这个todo列后面要用到)。proj则是由这些action组织起来的，用flomo的@(链接)功能&#xA;action有三种状态：TODO、DONE、waiting，waiting是需要外部辅助的，比如你的材料需要其他人的数据，这个时候就要等，但是不能干等啊，所以转移到waiting列表，定个时间，比如2h后提醒自己check一次。&#xA;waiting列表我们也可以附带时间和地点，如图，我有一个aeiou列表，里面维持了地点、跟其他人的谈话信息，这种我们下次谈话就能接着之前聊的话题继续聊，gtd的waiting需要哪些人的协助，@进去，或者在哪些地方，@进去，定期核查这个列表，能确保任务无遗漏&#xA;同理，不时地翻翻proj列表，看看哪些能推进，顺手干掉。sys-gtd相当于一个动态的任务分配系统吧，且能做到很精细的资源管理&#xA;2024 okr 接下来我想谈谈每日的任务安排，在工作时，我们的大脑只能记住一小段内容，如果要完成一个时间、空间跨度都很大的任务，仅凭工作记忆是不够的。现在有sys-para帮我们处理了资料的问题，sys-gtd帮我们处理了任务分配的问题，接下来问一个问题：我想干什么？&#xA;2024有1年的时间，能做成哪些事，拆解这些事到具体的每一天，在这一天应该做什么事。&#xA;首先对每天做的事情分类：自己想做的、外部触发要做的；生活上的、工作上的；投资自己的、浪费时间的，有很多维度，我选择用okr做目标分类、追踪、对齐，如下&#xA;OKR 2024/week1/day6 任务安排(直接从sys-gtd/act/Todo提取action即可) 2024/week1/day6 任务完成情况 形成自己的标签体系 举个例子吧，aeiou是在《人生设计课程》知道的概念，我可以做tool/activ、tool/user、tool/envi、tool/object、tool/xxx五个标签，用这个列表记录一些关键的事，比如搬家、工作、跟某个人的交流等，为以后的决策提供数据支持。&#xA;举这个例子是想说，标签体系千变万化，只要能搞成一个闭环体系，什么名字都无所谓。下面是实际生活中自己形成的一些标签 flomo用了三个月，对我的生活产生了很大的影响，更多的是上面的几套方法论的影响吧。4个月可以产生这么大变化，也许我们对生活应该乐观点，说不定下四个月你能做出什么了不起的突破呢，共勉！！！ </description>
     </item>
     <item>
       <title>构建现金流渠道</title>
