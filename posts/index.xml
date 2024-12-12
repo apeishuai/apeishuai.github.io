@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Dec 2024 08:19:45 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2024 09:36:49 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python面向对象</title>
+      <link>/posts/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 12 Dec 2024 09:36:49 +0800</pubDate>
+      <guid>/posts/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
+      <description>在写软件的过程中发现很多基础知识不牢固，快速过一遍。&#xA;风格：面向对象，面向对象实现方法：封装、继承、多态，首先从python类开始&#xA;函数调用方法 class cat: index = 0 def __init__(self,name): self.name = name def run(self): print(&amp;#34;cat run&amp;#34;) def main(): p = cat(&amp;#34;miao&amp;#34;) p.run() if __name__ == &amp;#34;__main__&amp;#34;: main() python默认main函数为其入口，def main，然后添加if name xxx，这两段后，在main中实现逻辑，执行即可&#xA;类和函数 类比函数多了一个self参数，self是类的实例(具体是类实例的地址)，index可以在类实例间共享&#xA;类调用是先生成实例，然后用实例的指针(self)去访问内部变量，比如self.name&#xA;class声明语法实现了类的封装&#xA;类的继承 class SubClassName (ParentClass1[, ParentClass2, ...]): 按上述语法将父类指针传递到子类，就可以在子类实例中实现父类方法了，一个子类可以继承多个父类&#xA;父类方法查找：&#xA;解释器按照MRO中的顺序，逐个在父类中查找这个方法。一旦找到，解释器就会使用找到的方法。&#xA;也就是说，在执行过程中，python解释器会自己去父类中索引子类中没有的方法并调用，而不是拷贝父类方法到子类再调用&#xA;class animal: def __init__(self): pass def echo(self): print(self.name) class cat(animal): index = 0 def __init__(self,name): self.name = name def run(self): print(&amp;#34;cat run&amp;#34;) def main(): p = cat(&amp;#34;miao&amp;#34;) #p.</description>
+    </item>
     <item>
       <title>选型</title>
       <link>/posts/%E9%80%89%E5%9E%8B/</link>
