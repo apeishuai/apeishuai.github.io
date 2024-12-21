@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2024 21:40:08 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Dec 2024 13:22:30 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编程语言关注点</title>
+      <link>/posts/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
+      <pubDate>Sat, 21 Dec 2024 13:22:30 +0800</pubDate>
+      <guid>/posts/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%85%B3%E6%B3%A8%E7%82%B9/</guid>
+      <description>快速翻了sicp，对编程语言及编程技巧，做一快速总结。&#xA;过程抽象 一般而言，程序语言会对可计算元素的可能使用方式加上某种限制，带有最少限制的元素称之为具有“第一级”状态，具有“第一级”状态的元素特权包括：&#xA;使用变量命名&#xA;使用过程作为参数&#xA;过程作为返回结果&#xA;可以包含在数据结构中&#xA;上述四个限制可以实现很复杂的过程抽象，具体等用到了再翻书。&#xA;数据抽象 层次性数据、闭包特性(一种类似粘合剂的技巧，来构建数据抽象)&#xA;base: 表数据(序列数据)&#xA;map+递归&#xA;信号流处理方式&#xA;分层设计&#xA;模块化及状态 函数式编程：数据处理引入流，这样可以保证过程抽象的一致性，但是存在性能问题&#xA;面向对象：直接操作数据，引入环境模型，同时引入了并发的问题&#xA;约束系统&#xA;元语言抽象 运用上面提到的三种技巧，通过自举，实现求值器，通过求值器，来实现不同功能的编程语言&#xA;end 对编程语言的表达力探索，到此为止，基本就是上面提到的内容了，next，linux系统核心</description>
+    </item>
     <item>
       <title>2024年总结</title>
       <link>/posts/2024%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
