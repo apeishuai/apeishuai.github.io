@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Dec 2024 13:22:30 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jan 2025 16:03:14 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Freshrss搭建</title>
+      <link>/posts/freshrss%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Thu, 16 Jan 2025 16:03:14 +0800</pubDate>
+      <guid>/posts/freshrss%E6%90%AD%E5%BB%BA/</guid>
+      <description>前置准备 需要一台1G1核心的云主机，我用ucloud；操作系统选择ubuntu&#xA;配置ssh登录 ssh-keygen -t rsa -f ~/.ssh/ucloud_ubuntu ssh-copy-id -i ~/.ssh/ucloud_ubuntu user@remotehost 比如root就新建一个ucloud_root密钥，shuai就新建一个ucloud_shuai密钥 修改配置文件~/.ssh/config Host ucloud_root HostName 132.43.143.434(修改过的) User root Port 22 IdentityFile ~/.ssh/ucloud_root ssh user@remotehost 安装docker sudo apt install docker - add mirror web /etc/docker/deamon.json { &amp;#34;registry-mirrors&amp;#34;: [ &amp;#34;https://registry.docker-cn.com&amp;#34; ] } 安装vraya docker镜像有很多时候pull不下来，需借助魔法&#xA;https://github.com/ningmoon/v2ray $ sudo apt install v2ray v2raya $ sudo systemctl start v2raya.service 运行服务 准备docker-compose.yml文件 version: &amp;#34;3&amp;#34; services: freshrss-app: image: freshrss/freshrss:latest container_name: freshrss-app hostname: freshrss-app restart: unless-stopped ports: - &amp;#34;7000:80&amp;#34; depends_on: - freshrss-db volumes: - .</description>
+    </item>
     <item>
       <title>编程语言关注点</title>
       <link>/posts/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%85%B3%E6%B3%A8%E7%82%B9/</link>
@@ -881,7 +888,7 @@
       <link>/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/main/</guid>
-      <description>Focus&#xA;探索美食 Resource&#xA;weekly&#xA;run&#xA;shaarli 书签&#xA;wiki 技术文档(wiki log)&#xA;专题 生理学相关&#xA;wxf softwares&#xA;Life &amp;amp; Entertainment&#xA;qqmusic wxf Playlist · 坠入碧蓝 ♫ 节奏流动 blog cosine music blog guanjihuan music Blog&#xA;About 个人简介</description>
+      <description>Focus&#xA;探索美食 Resource&#xA;weekly run shaarli 书签 wiki 技术文档(wiki log) 专题 生理学相关 wxf softwares Life &amp;amp; Entertainment&#xA;qqmusic wxf Playlist · 坠入碧蓝 ♫ 节奏流动 blog cosine music blog guanjihuan music Blog&#xA;About 个人简介</description>
     </item>
   </channel>
 </rss>
