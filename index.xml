@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jan 2025 16:03:14 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jan 2025 20:21:20 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>信息流监控</title>
+      <link>/posts/%E4%BF%A1%E6%81%AF%E6%B5%81%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Mon, 20 Jan 2025 20:21:20 +0800</pubDate>
+      <guid>/posts/%E4%BF%A1%E6%81%AF%E6%B5%81%E7%9B%91%E6%8E%A7/</guid>
+      <description>为了塑造个人信息环境，需要引入各种工具：&#xA;1 索引+信息库(结构化信息)&#xA;学习工程化&#xA;学习工程化2 搭建文档池及建立搜索入口&#xA;自定义搜索引擎yacy&#xA;2 信息流推送&#xA;主要方式就上面两个，今天这篇文章主要解决信息流监控.&#xA;check酱 这里要提到一个模式：外部事件触发，比如手机有短信通知，或者某天微信收到一条消息。通知这个动作被外部对象接管了，比如各种手机app的推送，微信消息。这部分应该掌握到自己手里。&#xA;当前思路是：rss订阅博客、wewerss订阅微信公众号、check酱监控网页变动。&#xA;docker-compose.yml 首先，你得有一台服务器。参考文章Freshrss搭建配置服务器，启动docker-composer服务&#xA;version: &amp;#39;3&amp;#39; services: chrome: image: easychen/checkchan:latest volumes: - &amp;#34;./data:/checkchan/data&amp;#34; environment: - &amp;#34;CKC_PASSWD=abc6677&amp;#34; - &amp;#34;VDEBUG=OFF&amp;#34; - &amp;#34;VNC=ON&amp;#34; #- &amp;#34;WIN_WIDTH=414&amp;#34; #- &amp;#34;WIN_HEIGHT=896&amp;#34; #- &amp;#34;XVFB_WHD=500x896x16&amp;#34; - &amp;#34;API_KEY=abc7788&amp;#34; - &amp;#34;ERROR_IMAGE=NORMAL&amp;#34; # NONE,NORMAL,FULL #- &amp;#34;SNAP_URL_BASE=&amp;lt;开启截图在这里写服务器地址（结尾不用加/），不开留空&amp;gt;...&amp;#34; #- &amp;#34;SNAP_FULL=1&amp;#34; - &amp;#34;TZ=Asia/Chongqing&amp;#34; # - WEBHOOK_URL=http://... # 云端 Webhook地址，不需要则不用设置 ports: - &amp;#34;5900:5900&amp;#34; - &amp;#34;8080:8080&amp;#34; - &amp;#34;8088:80&amp;#34; 安装check酱插件 download link zip check&#xA;配置界面如下： 配置 使用server酱推送 server client ref Check酱：监测网页内容变化</description>
+    </item>
     <item>
       <title>Freshrss搭建</title>
       <link>/posts/freshrss%E6%90%AD%E5%BB%BA/</link>
@@ -853,7 +860,7 @@
       <link>/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/project/</guid>
-      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/03/20 自定义搜索引擎yacy 2023/11/04 效率工具PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/06 flomo实践gtd与para&#xA;2024/02/08 windows软件管理&#xA;2024/10/04 GTD系统扩展+calender&#xA;2024/11/24 msys2使用anaconda&#xA;2024/12/02 GTD工具一览&#xA;2024/12/02 项目管理 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通&#xA;2024/04/12 冲突图 奇怪的工作流&#xA;(1014/03/20&amp;ndash;&amp;gt;)&#xA;2024/03/20 inbox&#xA;工程效率 2024/05/08 超越理论，情景创设</description>
+      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/03/20 自定义搜索引擎yacy&#xA;2023/11/04 效率工具PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/06 flomo实践gtd与para&#xA;2024/02/08 windows软件管理&#xA;2024/10/04 GTD系统扩展+calender&#xA;2024/11/24 msys2使用anaconda&#xA;2024/12/02 GTD工具一览&#xA;2024/12/02 项目管理 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通&#xA;2024/04/12 冲突图 奇怪的工作流&#xA;(1014/03/20&amp;ndash;&amp;gt;)&#xA;2024/03/20 inbox&#xA;工程效率 2024/05/08 超越理论，情景创设</description>
     </item>
     <item>
       <title></title>
