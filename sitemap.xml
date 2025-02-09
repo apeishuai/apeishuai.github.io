@@ -2,20 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/c&#43;&#43;%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2025-01-24T10:39:10+08:00</lastmod>
+    <loc>/photos/</loc>
+    <lastmod>2025-02-09T20:23:18+08:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-02-07T16:53:38+08:00</lastmod>
+    <loc>/resource/docsify%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2025-02-09T19:27:33+08:00</lastmod>
+  </url><url>
+    <loc>/resource/</loc>
+    <lastmod>2025-02-09T19:27:33+08:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2025-02-08T05:22:12+08:00</lastmod>
+    <lastmod>2025-02-09T19:50:46+08:00</lastmod>
+  </url><url>
+    <loc>/posts/node%E9%A1%B9%E7%9B%AE%E8%A7%A3%E6%9E%90/</loc>
+    <lastmod>2025-02-08T08:13:30+08:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-02-09T19:50:46+08:00</lastmod>
+  </url><url>
+    <loc>/posts/c&#43;&#43;%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2025-01-24T10:39:10+08:00</lastmod>
   </url><url>
     <loc>/tags/invest/</loc>
     <lastmod>2025-01-23T20:24:00+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2025-01-28T21:54:12+08:00</lastmod>
+    <lastmod>2025-02-09T19:50:46+08:00</lastmod>
   </url><url>
     <loc>/posts/%E5%9F%BA%E9%87%91%E7%9A%84%E6%94%B6%E5%85%A5%E6%9D%A5%E6%BA%90/</loc>
     <lastmod>2025-01-23T20:24:00+08:00</lastmod>
@@ -39,10 +51,10 @@
     <lastmod>2024-12-21T13:57:59+08:00</lastmod>
   </url><url>
     <loc>/posts/2024%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2024-12-17T01:03:07+08:00</lastmod>
+    <lastmod>2025-02-09T19:50:30+08:00</lastmod>
   </url><url>
-    <loc>/resource/</loc>
-    <lastmod>2025-02-08T05:22:12+08:00</lastmod>
+    <loc>/tags/year-summary/</loc>
+    <lastmod>2025-02-09T19:50:46+08:00</lastmod>
   </url><url>
     <loc>/resource/%E6%9D%90%E6%96%99%E8%A6%86%E7%9B%96%E7%8E%87/</loc>
     <lastmod>2024-12-13T12:49:52+08:00</lastmod>
@@ -144,7 +156,7 @@
     <lastmod>2024-08-14T20:14:18+08:00</lastmod>
   </url><url>
     <loc>/tags/life/</loc>
-    <lastmod>2025-01-28T21:54:12+08:00</lastmod>
+    <lastmod>2025-02-09T19:49:29+08:00</lastmod>
   </url><url>
     <loc>/posts/%E7%94%B5%E8%A7%A3%E8%B4%A8%E9%A5%AE%E6%96%99/</loc>
     <lastmod>2024-08-11T20:06:50+08:00</lastmod>
@@ -213,7 +225,7 @@
     <lastmod>2024-04-26T21:27:32+08:00</lastmod>
   </url><url>
     <loc>/tags/health/</loc>
-    <lastmod>2025-01-28T21:54:12+08:00</lastmod>
+    <lastmod>2025-02-09T19:49:29+08:00</lastmod>
   </url><url>
     <loc>/posts/%E4%BD%93%E6%A3%80%E6%89%8B%E5%86%8C/</loc>
     <lastmod>2025-01-24T23:30:44+08:00</lastmod>
@@ -300,7 +312,7 @@
     <lastmod>2024-04-26T20:14:28+08:00</lastmod>
   </url><url>
     <loc>/posts/2023%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2025-01-01T23:19:47+08:00</lastmod>
+    <lastmod>2025-02-09T19:50:46+08:00</lastmod>
   </url><url>
     <loc>/resource/%E5%A6%82%E4%BD%95%E9%80%82%E5%BA%94%E4%B8%80%E5%AE%B6%E5%85%AC%E5%8F%B8/</loc>
     <lastmod>2024-09-11T09:13:18+08:00</lastmod>
@@ -345,9 +357,9 @@
     <lastmod>2024-04-26T20:14:30+08:00</lastmod>
   </url><url>
     <loc>/posts/health/</loc>
-    <lastmod>2025-01-28T21:54:12+08:00</lastmod>
+    <lastmod>2025-02-09T19:49:29+08:00</lastmod>
   </url><url>
-    <loc>/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <loc>/resource/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2024-11-03T08:27:52+08:00</lastmod>
   </url><url>
     <loc>/tags/work/</loc>
@@ -386,9 +398,6 @@
     <loc>/resource/%E6%90%AC%E5%AE%B6/</loc>
     <lastmod>2024-04-26T20:14:18+08:00</lastmod>
   </url><url>
-    <loc>/resource/wxf-pic/</loc>
-    <lastmod>2024-04-26T20:14:22+08:00</lastmod>
-  </url><url>
     <loc>/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%E8%B7%AF%E7%BA%BF%E5%9B%BE/</loc>
     <lastmod>2024-05-05T20:29:50+08:00</lastmod>
   </url><url>
@@ -423,7 +432,7 @@
     <lastmod>2024-04-26T20:14:12+08:00</lastmod>
   </url><url>
     <loc>/project/</loc>
-    <lastmod>2025-02-06T07:25:44+08:00</lastmod>
+    <lastmod>2025-02-09T20:49:10+08:00</lastmod>
   </url><url>
     <loc>/resource/workflow/</loc>
     <lastmod>2024-04-26T20:14:26+08:00</lastmod>
@@ -435,11 +444,11 @@
     <lastmod>2024-04-26T20:14:20+08:00</lastmod>
   </url><url>
     <loc>/about/</loc>
-    <lastmod>2024-06-05T06:58:42+08:00</lastmod>
+    <lastmod>2025-02-09T19:30:08+08:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
   </url><url>
     <loc>/main/</loc>
-    <lastmod>2025-01-02T16:39:05+08:00</lastmod>
+    <lastmod>2025-02-09T19:29:20+08:00</lastmod>
   </url>
 </urlset>

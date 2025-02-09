@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jan 2025 10:08:49 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2025 05:48:42 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node项目解析</title>
+      <link>/posts/node%E9%A1%B9%E7%9B%AE%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Sat, 08 Feb 2025 05:48:42 +0800</pubDate>
+      <guid>/posts/node%E9%A1%B9%E7%9B%AE%E8%A7%A3%E6%9E%90/</guid>
+      <description>npm init //生成package.json pnpm init //是一个高性能的包管理工具，旨在解决 npm 的一些性能和存储问题&#xA;package.json&#xA;src //原代码 dist //存放编译后的文件&#xA;package @types 是 TypeScript 中用于提供第三方 JavaScript 库类型定义的命名空间</description>
+    </item>
     <item>
       <title>C&#43;&#43;基础</title>
       <link>/posts/c&#43;&#43;%E5%9F%BA%E7%A1%80/</link>
@@ -329,13 +336,6 @@
       <pubDate>Fri, 20 Oct 2023 10:25:21 +0800</pubDate>
       <guid>/posts/health/</guid>
       <description>1 亚健康（当前关注重点）&#xA;2 恶性肿瘤（35岁以后了）&#xA;慢性病：&#xA;（其实我更想从宏观层面，找数据，看疾病的发展趋势，没书提到这么些东西）&#xA;《第五次健康报告》&#xA;流行病：&#xA;核心器官：心 肝 肾 肺 胃&#xA;几大系统：内分泌系统、循环系统、呼吸系统、泌尿系统、消化系统、生殖系统、免疫系统&#xA;心血管、呼吸、消化、神经系统&#xA;常见体检项 | 现有检查手段(从医疗器械入手 | 好吧，文章已经囊括了)&#xA;性价比&#xA;年轻人的体检指南01 体检在检查什么&#xA;年轻人的体检指南02：个性化筛查&#xA;年轻人的体检指南 03：你该掌握的自查手段&#xA;/Entered on/ [2022-10-07 周五 23:41]&#xA;怎么体检 才能救命&#xA;/Entered on/ [2022-10-08 周六 00:23]&#xA;大龄单身青年自我保障指南 – Ouroboros&#xA;/Entered on/ [2022-11-13 周日 20:59]&#xA;程序员延寿指南&#xA;/Entered on/ [2023-02-26 周日 01:06]&#xA;blog-如何看病&#xA;/Entered on/ [2023-10-20 周五 10:20]</description>
-    </item>
-    <item>
-      <title>博客搭建</title>
-      <link>/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
-      <pubDate>Wed, 18 Oct 2023 22:55:45 +0800</pubDate>
-      <guid>/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
-      <description>安装scoop powershell执行命令:&#xA;Set-ExecutionPolicy RemoteSigned -scope CurrentUser iwr -useb get.scoop.sh | iex 修改配置:&#xA;# 设置环境变量 $env:SCOOP=&amp;#39;E:\Softwares\Scoop&amp;#39; [Environment]::SetEnvironmentVariable(&amp;#39;SCOOP&amp;#39;, $env:SCOOP, &amp;#39;User&amp;#39;) $env:SCOOP_GLOBAL=&amp;#39;E:\Softwares\GlobalScoopApps&amp;#39; [Environment]::SetEnvironmentVariable(&amp;#39;SCOOP_GLOBAL&amp;#39;, $env:SCOOP_GLOBAL, &amp;#39;Machine&amp;#39;) # 设置环境变量之后，建议将默认目录下的所有文件复制到新目录下 # 搜索软件 scoop search xxx # 找不到软件？添加软件库 scoop bucket list scoop bucket add &amp;lt;bucketname&amp;gt; # 常用软件库 extras https://github.com/ScoopInstaller/Extras 2023/9/8 12:26:26 1890 main https://github.com/ScoopInstaller/Main 2023/9/8 12:25:39 1241 # 列出已安装软件 scoop list 安装hugo scoop install hugo 配置hugo 执行下述命令&#xA;# 新建站点，会生成一个quickstart目录 hugo new site quickstart cd quickstart # 初始化git，生成.git目录 git init # 为了避免quickstart/themes的.</description>
     </item>
     <item>
       <title>生活的态度</title>
