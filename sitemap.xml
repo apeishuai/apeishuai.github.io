@@ -2,32 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/resource/faeb/</loc>
+    <lastmod>2025-02-11T08:38:09+08:00</lastmod>
+  </url><url>
+    <loc>/resource/</loc>
+    <lastmod>2025-02-11T08:38:09+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-02-11T08:38:09+08:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-02-10T10:24:06+08:00</lastmod>
+  </url><url>
+    <loc>/tags/program/</loc>
+    <lastmod>2025-02-10T10:24:06+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-02-10T10:24:06+08:00</lastmod>
+  </url><url>
+    <loc>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2025-02-10T10:24:06+08:00</lastmod>
+  </url><url>
     <loc>/photos/</loc>
     <lastmod>2025-02-09T20:23:18+08:00</lastmod>
   </url><url>
     <loc>/resource/docsify%E6%90%AD%E5%BB%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2025-02-09T19:27:33+08:00</lastmod>
   </url><url>
-    <loc>/resource/</loc>
-    <lastmod>2025-02-09T19:27:33+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2025-02-09T19:50:46+08:00</lastmod>
-  </url><url>
     <loc>/posts/node%E9%A1%B9%E7%9B%AE%E8%A7%A3%E6%9E%90/</loc>
     <lastmod>2025-02-08T08:13:30+08:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-02-09T19:50:46+08:00</lastmod>
   </url><url>
     <loc>/posts/c&#43;&#43;%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2025-01-24T10:39:10+08:00</lastmod>
   </url><url>
     <loc>/tags/invest/</loc>
     <lastmod>2025-01-23T20:24:00+08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2025-02-09T19:50:46+08:00</lastmod>
   </url><url>
     <loc>/posts/%E5%9F%BA%E9%87%91%E7%9A%84%E6%94%B6%E5%85%A5%E6%9D%A5%E6%BA%90/</loc>
     <lastmod>2025-01-23T20:24:00+08:00</lastmod>
@@ -432,7 +441,7 @@
     <lastmod>2024-04-26T20:14:12+08:00</lastmod>
   </url><url>
     <loc>/project/</loc>
-    <lastmod>2025-02-09T20:49:10+08:00</lastmod>
+    <lastmod>2025-02-11T08:42:15+08:00</lastmod>
   </url><url>
     <loc>/resource/workflow/</loc>
     <lastmod>2024-04-26T20:14:26+08:00</lastmod>

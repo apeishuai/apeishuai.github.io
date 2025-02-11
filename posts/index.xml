@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2025 05:48:42 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 10:00:44 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>并发编程 消费者模式</title>
+      <link>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 10 Feb 2025 10:00:44 +0800</pubDate>
+      <guid>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
+      <description>pipe作为缓冲区</description>
+    </item>
     <item>
       <title>Node项目解析</title>
       <link>/posts/node%E9%A1%B9%E7%9B%AE%E8%A7%A3%E6%9E%90/</link>

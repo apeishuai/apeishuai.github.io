@@ -6,8 +6,22 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2025 19:11:29 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2025 08:20:07 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAEB</title>
+      <link>/resource/faeb/</link>
+      <pubDate>Tue, 11 Feb 2025 08:20:07 +0800</pubDate>
+      <guid>/resource/faeb/</guid>
+      <description>FABE FABE是销售培训的入门课 FABE法简单地说，就是在找出顾客最感兴趣的各种特征后，分析这一特征所产生的优点，找出这一优点能够带给顾客的利益，最后提出证据，通过这四个关键环节的销售模式，解答消费诉求，证实该产品确能给顾客带来这些利益，极为巧妙的处理好顾客关心的问题，从而顺利实现产品的销售诉求。&#xA;FABE有很多变体，(此处pending)&#xA;乔哈里视窗 真正而有效的沟通，只能在公开区內进行，因为在此区域内，双方交流的资讯是可以共享的，沟通的效果是会令双方满意的。但在现实中，很多沟通者对彼此都不很了解，很无奈地进入了封闭区，沟通的效果就可想而知了。 为了获得理想的沟通效果，就要通过提高个人信息曝光率、主动征求反馈意见等手段，不断扩大自己的公开区，增强信息的真实度、透明度。在沟通的策略上，可以在隐藏区内选择一个能够为沟通双方都容易接受的点来进行交流，这个点被叫做“策略资讯开放点”。</description>
+    </item>
+    <item>
+      <title>并发编程 消费者模式</title>
+      <link>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 10 Feb 2025 10:00:44 +0800</pubDate>
+      <guid>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
+      <description>pipe作为缓冲区</description>
+    </item>
     <item>
       <title>Photos</title>
       <link>/photos/</link>
@@ -909,7 +923,7 @@
       <link>/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/project/</guid>
-      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/03/20 自定义搜索引擎yacy&#xA;2023/11/04 效率工具PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/06 flomo实践gtd与para&#xA;2024/02/08 windows软件管理&#xA;2024/10/04 GTD系统扩展+calender&#xA;2024/11/24 msys2使用anaconda&#xA;2024/12/02 GTD工具一览&#xA;2024/12/02 项目管理 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通\ 沟通模型&#xA;2024/04/12 冲突图 show your self&#xA;2023/10/18 hugo 博客搭建</description>
+      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/03/20 自定义搜索引擎yacy&#xA;2023/11/04 效率工具PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/06 flomo实践gtd与para&#xA;2024/02/08 windows软件管理&#xA;2024/10/04 GTD系统扩展+calender&#xA;2024/11/24 msys2使用anaconda&#xA;2024/12/02 GTD工具一览&#xA;2024/12/02 项目管理 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通\ 沟通模型&#xA;2024/04/12 冲突图&#xA;2024/02/11 FABE 乔哈里视窗 show your self</description>
     </item>
     <item>
       <title></title>
