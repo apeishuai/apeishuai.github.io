@@ -6,14 +6,21 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Feb 2025 10:00:44 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2025 17:33:23 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学习理论v1.0</title>
+      <link>/posts/%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BAv1.0/</link>
+      <pubDate>Sat, 15 Feb 2025 17:33:23 +0800</pubDate>
+      <guid>/posts/%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BAv1.0/</guid>
+      <description>参考 wxf blog/project/学习专题，之前的文章比较散，这一篇结合实践重新组织一下逻辑。&#xA;这个话题不想再提了。&#xA;1 学习 ！= 阅读、刷课&#xA;学习是有目的性的把对方的概念空间转化成自己的，一个概念包含大量的细节，需要反复折叠才能摸到概念的边界&#xA;唯一重要的是思想，思想是看事物的视角，基于此视角形成概念空间。概念是信息的压缩&#xA;所以如果要检验是否看到真东西，就把概念还原成场景，忘掉概念&#xA;2 学习需要状态&#xA;如上提到的，如果今天很困，或者不是很想看书，效率会很低&#xA;第一点要确保精力充足，睡好、吃好、玩好，心无杂念，效率是最高的&#xA;第二点要确保随时进入状态，B=MAT&#xA;M很简单，热爱，能从中获得乐趣，或者说不得不学；T得设计，可以把两个动作串起来(行为链)，比如在GTD里面放数学题，或者埋几个外部触发的点(这两个都是很自然的触发器)；A的话需要降低行为过程中的阻力，需要：整块不被打扰的时间、笔记(留更多带宽给大脑思考)、实践平台&#xA;3 启发式学习&#xA;在工程实践过程中，更多的是没有方向。&#xA;效率最高的是问从业者，他们已经形成一套稳定的解决方案；第二是看源码；第三是阅读相关领域书籍、论文，穷举所有可能性，方案也就出来了(这个最怕的是视角不对，视角不对，很多概念出不来)&#xA;看源码或文献，从历史开始研究，效率最高&#xA;4 如何构建复杂逻辑&#xA;这个需要一个思维模型：一个框，所有遇到的概念或逻辑链丢到这个框里，等需要的时候再拿出来用。或者说时不时拿一两个出来做推演或观察&#xA;要保证短逻辑链的稳固，需要在一个场景中能很纯熟的使用现有概念+工具解决问题&#xA;(类似于飞行员检查清单)、(这里建议看下《穷查理宝典》，有很多有用的工具)&#xA;在稳固的前提下扩展，尽量不影响原有逻辑。只要模型跟现实世界相符，偏底层，很少出现推倒重建的情况&#xA;That`s all ，你看，对学习建模，我也是一个概念一个概念摸出来的</description>
+    </item>
     <item>
       <title>并发编程 消费者模式</title>
       <link>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Mon, 10 Feb 2025 10:00:44 +0800</pubDate>
       <guid>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
-      <description>pipe作为缓冲区</description>
+      <description>pipe作为缓冲区 queue作为缓冲区</description>
     </item>
     <item>
       <title>Node项目解析</title>
@@ -41,7 +48,7 @@
       <link>/posts/qml/</link>
       <pubDate>Thu, 23 Jan 2025 18:59:57 +0800</pubDate>
       <guid>/posts/qml/</guid>
-      <description>code &amp;ndash;list-extensions&#xA;code &amp;ndash;install-extension qt-vscode.qt-vscode&#xA;ref Qt 学习之路 2\&#xA;qt 5&#xA;qml book english&#xA;qml book chinese&#xA;玩转qml</description>
+      <description>code &amp;ndash;list-extensions&#xA;code &amp;ndash;install-extension qt-vscode.qt-vscode&#xA;qpaintdevice class&#xA;qpainter class&#xA;QQuickPaintedItem Class&#xA;ref Qt 学习之路 2\&#xA;qt 5&#xA;qml book english&#xA;qml book chinese&#xA;玩转qml</description>
     </item>
     <item>
       <title>Lsp配置</title>
@@ -55,7 +62,7 @@
       <link>/posts/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Tue, 21 Jan 2025 22:15:01 +0800</pubDate>
       <guid>/posts/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</guid>
-      <description>安装vscode vscode download&#xA;code命令 打开终端，执行\&#xA;code --version 可以看到code版本，在项目根目录下执行&#xA;code . 可以快速打开项目文件。&#xA;配置项 VS Code 提供了几种不同的设置范围。当您打开工作区时，您将至少看到以下两个范围：&#xA;用户设置- 全局应用到您打开的任何 VS Code 实例的设置。&#xA;工作区设置- 存储在工作区内部的设置，仅在工作区打开时应用。&#xA;用户设置 设置文件位置&#xA;根据您的平台，用户设置文件位于此处：&#xA;视窗 %APPDATA%\Code\User\settings.json&#xA;苹果系统 $HOME/Library/Application\ Support/Code/User/settings.json&#xA;Linux $HOME/.config/Code/User/settings.json&#xA;工作区设置 工作区设置特定于项目，可以在项目的开发人员之间共享。工作区设置覆盖用户设置。 工作区设置文件位于.vscode根文件夹中的文件夹下。&#xA;特定语言编辑器设置 setting.json\&#xA;{ &amp;#34;[typescript]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnPaste&amp;#34;: true }, &amp;#34;[markdown]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.wordWrap&amp;#34;: &amp;#34;on&amp;#34;, &amp;#34;editor.renderWhitespace&amp;#34;: &amp;#34;all&amp;#34;, &amp;#34;editor.acceptSuggestionOnEnter&amp;#34;: &amp;#34;off&amp;#34; } } 插件配置 vscode-eslint 语法检测 code --install-extension dbaeumer.vscode-eslint conf: eslint.config.mjs&#xA;prettier 代码格式化 code --install-extension esbenp.prettier-vscode conf: .</description>
+      <description>安装vscode vscode download&#xA;code命令 打开终端，执行\&#xA;code --version 可以看到code版本，在项目根目录下执行&#xA;code . 可以快速打开项目文件。&#xA;code --list-extensions 列出安装的所有插件&#xA;配置项 VS Code 提供了几种不同的设置范围。当您打开工作区时，您将至少看到以下两个范围：&#xA;用户设置- 全局应用到您打开的任何 VS Code 实例的设置。&#xA;工作区设置- 存储在工作区内部的设置，仅在工作区打开时应用。&#xA;用户设置 设置文件位置&#xA;根据您的平台，用户设置文件位于此处：&#xA;视窗 %APPDATA%\Code\User\settings.json&#xA;苹果系统 $HOME/Library/Application\ Support/Code/User/settings.json&#xA;Linux $HOME/.config/Code/User/settings.json&#xA;工作区设置 工作区设置特定于项目，可以在项目的开发人员之间共享。工作区设置覆盖用户设置。 工作区设置文件位于.vscode根文件夹中的文件夹下。&#xA;特定语言编辑器设置 setting.json\&#xA;{ &amp;#34;[typescript]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnPaste&amp;#34;: true }, &amp;#34;[markdown]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.wordWrap&amp;#34;: &amp;#34;on&amp;#34;, &amp;#34;editor.renderWhitespace&amp;#34;: &amp;#34;all&amp;#34;, &amp;#34;editor.acceptSuggestionOnEnter&amp;#34;: &amp;#34;off&amp;#34; } } 插件配置 eslint-config-prettier 与 eslint-plugin-prettier (pending)&#xA;vscode-eslint 语法检测 code --install-extension dbaeumer.vscode-eslint conf: eslint.</description>
     </item>
     <item>
       <title>信息流监控</title>

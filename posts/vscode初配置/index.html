@@ -79,12 +79,12 @@
     
     
   </strong>
-  <span> • 115 words</span>
+  <span> • 130 words</span>
   <span> • 1 minute read</span>
   
     <div>
       Last updated on
-      <time>2025-01-21</time>
+      <time>2025-02-12</time>
     </div>
   
   
@@ -98,6 +98,8 @@
 </code></pre><p>可以看到code版本，在项目根目录下执行</p>
 <pre tabindex="0"><code>code .
 </code></pre><p>可以快速打开项目文件。</p>
+<pre tabindex="0"><code>code --list-extensions
+</code></pre><p>列出安装的所有插件</p>
 <h1 id="配置项">配置项</h1>
 <p>VS Code 提供了几种不同的设置范围。当您打开工作区时，您将至少看到以下两个范围：</p>
 <p>用户设置- 全局应用到您打开的任何 VS Code 实例的设置。<br>
@@ -126,12 +128,20 @@ Linux $HOME/.config/Code/User/settings.json</p>
   }
 }
 </code></pre><h2 id="插件配置">插件配置</h2>
+<p>eslint-config-prettier 与 eslint-plugin-prettier (pending)</p>
 <h3 id="vscode-eslint-语法检测">vscode-eslint 语法检测</h3>
 <pre tabindex="0"><code>code --install-extension dbaeumer.vscode-eslint
-</code></pre><p>conf: eslint.config.mjs</p>
+</code></pre><p>conf: eslint.config.mjs
+<img src="/img/Snipaste_2025-02-12_14-04-41.png" alt="">
+<img src="/img/Snipaste_2025-02-12_13-58-42.png" alt="">
+<a href="https://zh-hans.eslint.org/docs/latest/use/configure/configuration-files">ref eslint conf</a></p>
 <h3 id="prettier-代码格式化">prettier 代码格式化</h3>
 <pre tabindex="0"><code>code --install-extension esbenp.prettier-vscode
-</code></pre><p>conf: .prettier.mjs、.prettierignore</p>
+</code></pre><p>conf: .prettier.mjs、.prettierignore
+<img src="/img/Snipaste_2025-02-12_14-06-06.png" alt="">
+<img src="/img/Snipaste_2025-02-12_13-52-40.png" alt="">
+<a href="https://prettier.io/docs/configuration.html">ref prettier conf</a></p>
+<p><a href="https://vscode.github.net.cn/docs/csharp/get-started">ref language</a></p>
 <h1 id="设置优先级">设置优先级</h1>
 <p>配置可以通过不同的设置范围在多个级别上覆盖。在下面的列表中，后面的范围覆盖前面的范围：</p>
 <p>defaultsetting.json 默认设置 - 此范围表示默认的未配置设置值。<br>

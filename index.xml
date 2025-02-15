@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2025 08:20:07 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2025 17:33:23 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学习理论v1.0</title>
+      <link>/posts/%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BAv1.0/</link>
+      <pubDate>Sat, 15 Feb 2025 17:33:23 +0800</pubDate>
+      <guid>/posts/%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BAv1.0/</guid>
+      <description>参考 wxf blog/project/学习专题，之前的文章比较散，这一篇结合实践重新组织一下逻辑。&#xA;这个话题不想再提了。&#xA;1 学习 ！= 阅读、刷课&#xA;学习是有目的性的把对方的概念空间转化成自己的，一个概念包含大量的细节，需要反复折叠才能摸到概念的边界&#xA;唯一重要的是思想，思想是看事物的视角，基于此视角形成概念空间。概念是信息的压缩&#xA;所以如果要检验是否看到真东西，就把概念还原成场景，忘掉概念&#xA;2 学习需要状态&#xA;如上提到的，如果今天很困，或者不是很想看书，效率会很低&#xA;第一点要确保精力充足，睡好、吃好、玩好，心无杂念，效率是最高的&#xA;第二点要确保随时进入状态，B=MAT&#xA;M很简单，热爱，能从中获得乐趣，或者说不得不学；T得设计，可以把两个动作串起来(行为链)，比如在GTD里面放数学题，或者埋几个外部触发的点(这两个都是很自然的触发器)；A的话需要降低行为过程中的阻力，需要：整块不被打扰的时间、笔记(留更多带宽给大脑思考)、实践平台&#xA;3 启发式学习&#xA;在工程实践过程中，更多的是没有方向。&#xA;效率最高的是问从业者，他们已经形成一套稳定的解决方案；第二是看源码；第三是阅读相关领域书籍、论文，穷举所有可能性，方案也就出来了(这个最怕的是视角不对，视角不对，很多概念出不来)&#xA;看源码或文献，从历史开始研究，效率最高&#xA;4 如何构建复杂逻辑&#xA;这个需要一个思维模型：一个框，所有遇到的概念或逻辑链丢到这个框里，等需要的时候再拿出来用。或者说时不时拿一两个出来做推演或观察&#xA;要保证短逻辑链的稳固，需要在一个场景中能很纯熟的使用现有概念+工具解决问题&#xA;(类似于飞行员检查清单)、(这里建议看下《穷查理宝典》，有很多有用的工具)&#xA;在稳固的前提下扩展，尽量不影响原有逻辑。只要模型跟现实世界相符，偏底层，很少出现推倒重建的情况&#xA;That`s all ，你看，对学习建模，我也是一个概念一个概念摸出来的</description>
+    </item>
     <item>
       <title>FAEB</title>
       <link>/resource/faeb/</link>
@@ -20,7 +27,7 @@
       <link>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Mon, 10 Feb 2025 10:00:44 +0800</pubDate>
       <guid>/posts/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B-%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
-      <description>pipe作为缓冲区</description>
+      <description>pipe作为缓冲区 queue作为缓冲区</description>
     </item>
     <item>
       <title>Photos</title>
@@ -62,7 +69,7 @@
       <link>/posts/qml/</link>
       <pubDate>Thu, 23 Jan 2025 18:59:57 +0800</pubDate>
       <guid>/posts/qml/</guid>
-      <description>code &amp;ndash;list-extensions&#xA;code &amp;ndash;install-extension qt-vscode.qt-vscode&#xA;ref Qt 学习之路 2\&#xA;qt 5&#xA;qml book english&#xA;qml book chinese&#xA;玩转qml</description>
+      <description>code &amp;ndash;list-extensions&#xA;code &amp;ndash;install-extension qt-vscode.qt-vscode&#xA;qpaintdevice class&#xA;qpainter class&#xA;QQuickPaintedItem Class&#xA;ref Qt 学习之路 2\&#xA;qt 5&#xA;qml book english&#xA;qml book chinese&#xA;玩转qml</description>
     </item>
     <item>
       <title>Lsp配置</title>
@@ -76,7 +83,7 @@
       <link>/posts/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Tue, 21 Jan 2025 22:15:01 +0800</pubDate>
       <guid>/posts/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</guid>
-      <description>安装vscode vscode download&#xA;code命令 打开终端，执行\&#xA;code --version 可以看到code版本，在项目根目录下执行&#xA;code . 可以快速打开项目文件。&#xA;配置项 VS Code 提供了几种不同的设置范围。当您打开工作区时，您将至少看到以下两个范围：&#xA;用户设置- 全局应用到您打开的任何 VS Code 实例的设置。&#xA;工作区设置- 存储在工作区内部的设置，仅在工作区打开时应用。&#xA;用户设置 设置文件位置&#xA;根据您的平台，用户设置文件位于此处：&#xA;视窗 %APPDATA%\Code\User\settings.json&#xA;苹果系统 $HOME/Library/Application\ Support/Code/User/settings.json&#xA;Linux $HOME/.config/Code/User/settings.json&#xA;工作区设置 工作区设置特定于项目，可以在项目的开发人员之间共享。工作区设置覆盖用户设置。 工作区设置文件位于.vscode根文件夹中的文件夹下。&#xA;特定语言编辑器设置 setting.json\&#xA;{ &amp;#34;[typescript]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnPaste&amp;#34;: true }, &amp;#34;[markdown]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.wordWrap&amp;#34;: &amp;#34;on&amp;#34;, &amp;#34;editor.renderWhitespace&amp;#34;: &amp;#34;all&amp;#34;, &amp;#34;editor.acceptSuggestionOnEnter&amp;#34;: &amp;#34;off&amp;#34; } } 插件配置 vscode-eslint 语法检测 code --install-extension dbaeumer.vscode-eslint conf: eslint.config.mjs&#xA;prettier 代码格式化 code --install-extension esbenp.prettier-vscode conf: .</description>
+      <description>安装vscode vscode download&#xA;code命令 打开终端，执行\&#xA;code --version 可以看到code版本，在项目根目录下执行&#xA;code . 可以快速打开项目文件。&#xA;code --list-extensions 列出安装的所有插件&#xA;配置项 VS Code 提供了几种不同的设置范围。当您打开工作区时，您将至少看到以下两个范围：&#xA;用户设置- 全局应用到您打开的任何 VS Code 实例的设置。&#xA;工作区设置- 存储在工作区内部的设置，仅在工作区打开时应用。&#xA;用户设置 设置文件位置&#xA;根据您的平台，用户设置文件位于此处：&#xA;视窗 %APPDATA%\Code\User\settings.json&#xA;苹果系统 $HOME/Library/Application\ Support/Code/User/settings.json&#xA;Linux $HOME/.config/Code/User/settings.json&#xA;工作区设置 工作区设置特定于项目，可以在项目的开发人员之间共享。工作区设置覆盖用户设置。 工作区设置文件位于.vscode根文件夹中的文件夹下。&#xA;特定语言编辑器设置 setting.json\&#xA;{ &amp;#34;[typescript]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnPaste&amp;#34;: true }, &amp;#34;[markdown]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.wordWrap&amp;#34;: &amp;#34;on&amp;#34;, &amp;#34;editor.renderWhitespace&amp;#34;: &amp;#34;all&amp;#34;, &amp;#34;editor.acceptSuggestionOnEnter&amp;#34;: &amp;#34;off&amp;#34; } } 插件配置 eslint-config-prettier 与 eslint-plugin-prettier (pending)&#xA;vscode-eslint 语法检测 code --install-extension dbaeumer.vscode-eslint conf: eslint.</description>
     </item>
     <item>
       <title>信息流监控</title>
@@ -349,7 +356,7 @@
       <link>/resource/winsoft/</link>
       <pubDate>Sun, 11 Aug 2024 04:38:29 +0800</pubDate>
       <guid>/resource/winsoft/</guid>
-      <description>geek 软件卸载&#xA;banzip 解压缩&#xA;snipaste 截图&#xA;向日葵 远程&#xA;百度网盘&#xA;IDM 下载&#xA;work related </description>
+      <description>geek 软件卸载&#xA;banzip 解压缩&#xA;snipaste 截图&#xA;向日葵 远程&#xA;百度网盘&#xA;IDM 下载&#xA;netsetman 快速ip切换&#xA;PC Related CPUZ&#xA;work related </description>
     </item>
     <item>
       <title>彦彦，想你了</title>
@@ -734,7 +741,7 @@
       <link>/resource/ref-%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Tue, 21 Nov 2023 14:10:27 +0800</pubDate>
       <guid>/resource/ref-%E5%AD%A6%E4%B9%A0/</guid>
-      <description>再谈什么是软件架构&#xA;我手上有无数这种分析，一般我会写在evernote上，但前天正好在机场等飞机，写的时候手边访问evernote不方便，所以就改写到知乎上了。 我举这个例子是说，其实架构师手边是有大量的分析数据的，但必须能保证这些分析不会随意进入主分析链，避免目标被冲淡了。所以，你看到一点点的决策或者判断，实际上可能背后都是大量的工作。&#xA;就是要你懂TCP&amp;ndash;半连接队列和全连接队列就是要你懂TCP&amp;ndash;半连接队列和全连接队列&#xA;20240907 重读，作者确实对基础知识敲的比较深\&#xA;如何在工作中学习&#xA;快速学习&#xA;什么是软件架构&#xA;浅谈最佳学习路径&#xA;Makefile概念入门&#xA;20240421 重读，为了更高的控制力，make工具一直在演化，最终给出一套完整的工程文件编译规则，适配所有平台。高屋建瓴，最重要的是“基于目标分层”的方式理解一个工具的思维，太牛逼了\&#xA;如何快速学习一项新技能？&#xA;如何学习一门技术&#xA;一款产品的从0到1之旅&#xA;从技术难题中学习</description>
+      <description>再谈什么是软件架构&#xA;我手上有无数这种分析，一般我会写在evernote上，但前天正好在机场等飞机，写的时候手边访问evernote不方便，所以就改写到知乎上了。 我举这个例子是说，其实架构师手边是有大量的分析数据的，但必须能保证这些分析不会随意进入主分析链，避免目标被冲淡了。所以，你看到一点点的决策或者判断，实际上可能背后都是大量的工作。&#xA;就是要你懂TCP&amp;ndash;半连接队列和全连接队列就是要你懂TCP&amp;ndash;半连接队列和全连接队列&#xA;20240907 重读，作者确实对基础知识敲的比较深\&#xA;如何在工作中学习&#xA;快速学习&#xA;什么是软件架构&#xA;浅谈最佳学习路径&#xA;Makefile概念入门&#xA;20240421 重读，为了更高的控制力，make工具一直在演化，最终给出一套完整的工程文件编译规则，适配所有平台。高屋建瓴，最重要的是“基于目标分层”的方式理解一个工具的思维，太牛逼了\&#xA;如何快速学习一项新技能？&#xA;如何学习一门技术&#xA;一款产品的从0到1之旅&#xA;从技术难题中学习&#xA;为什么在现实中学到的知识和观点，我自己无法成体系遵从逻辑得表达出来？&#xA;世界观和方法论</description>
     </item>
     <item>
       <title>效率工具Android</title>
@@ -923,7 +930,7 @@
       <link>/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/project/</guid>
-      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/03/20 自定义搜索引擎yacy&#xA;2023/11/04 效率工具PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/06 flomo实践gtd与para&#xA;2024/02/08 windows软件管理&#xA;2024/10/04 GTD系统扩展+calender&#xA;2024/11/24 msys2使用anaconda&#xA;2024/12/02 GTD工具一览&#xA;2024/12/02 项目管理 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通\ 沟通模型&#xA;2024/04/12 冲突图&#xA;2024/02/11 FABE 乔哈里视窗 show your self</description>
+      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/03/20 自定义搜索引擎yacy&#xA;2023/11/04 效率工具PC&#xA;2023/11/17 效率工具-Android&#xA;2024/02/06 flomo实践gtd与para&#xA;2024/02/08 windows软件管理&#xA;2024/10/04 GTD系统扩展+calender&#xA;2024/11/24 msys2使用anaconda&#xA;2024/12/02 GTD工具一览&#xA;2024/12/02 项目管理 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通\ 沟通模型&#xA;2024/04/12 冲突图&#xA;2025/02/11 FABE 乔哈里视窗 show your self</description>
     </item>
     <item>
       <title></title>
