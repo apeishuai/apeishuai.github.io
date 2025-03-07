@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Feb 2025 11:31:08 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Mar 2025 16:32:35 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode开发qt</title>
+      <link>/posts/vscode%E5%BC%80%E5%8F%91qt/</link>
+      <pubDate>Fri, 07 Mar 2025 16:32:35 +0800</pubDate>
+      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt/</guid>
+      <description>qt creator太难用了，转到vscode开发qt。&#xA;新建项目 命令行编译 ok，这是一个完整的流程，接下来用命令行实现 主要用到三个命令：qmake.exe，mingw32-make.exe，gcc.exe&#xA;qmake作用是解析xx.pro文件，生成跨平台编译的的makefile文件；&#xA;mingw32-make是make命令的windows实现，作用是调用工具链，编译成平台可执行文件，比如exe&#xA;gcc，顾名思义，编译器，把代码编译成二进制码 vscode编译 vscode需要用到两个配置：c++、外部指令(qmake、mingw32-make算是外部指令)&#xA;安装c++插件，设置智能补全&#xA;项目根目录下创建这两个文件，一个是c++编译相关配置，task.json是调用外部指令的配置&#xA;配置完成后 ： ctrl+shift+p&amp;ndash;&amp;gt;run task&amp;ndash;&amp;gt;run-debug { &amp;#34;version&amp;#34;: &amp;#34;2.0.0&amp;#34;, &amp;#34;tasks&amp;#34;: [ { &amp;#34;label&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-Force&amp;#34;, &amp;#34;build&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;qmake-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;qmake&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;../${workspaceFolderBasename}.pro&amp;#34;, &amp;#34;-spec&amp;#34;, &amp;#34;win32-g++&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=debug\&amp;#34;&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=console\&amp;#34;&amp;#34; ], &amp;#34;dependsOn&amp;#34;: [ &amp;#34;mkdir&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;make-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mingw32-make&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-f&amp;#34;, &amp;#34;Makefile.</description>
+    </item>
     <item>
       <title>知行合一</title>
       <link>/posts/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/</link>
@@ -783,7 +790,7 @@
       <link>/resource/ref-%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Tue, 21 Nov 2023 14:10:27 +0800</pubDate>
       <guid>/resource/ref-%E5%AD%A6%E4%B9%A0/</guid>
-      <description>再谈什么是软件架构&#xA;我手上有无数这种分析，一般我会写在evernote上，但前天正好在机场等飞机，写的时候手边访问evernote不方便，所以就改写到知乎上了。 我举这个例子是说，其实架构师手边是有大量的分析数据的，但必须能保证这些分析不会随意进入主分析链，避免目标被冲淡了。所以，你看到一点点的决策或者判断，实际上可能背后都是大量的工作。&#xA;就是要你懂TCP&amp;ndash;半连接队列和全连接队列就是要你懂TCP&amp;ndash;半连接队列和全连接队列&#xA;20240907 重读，作者确实对基础知识敲的比较深\&#xA;如何在工作中学习&#xA;快速学习&#xA;什么是软件架构&#xA;浅谈最佳学习路径&#xA;Makefile概念入门&#xA;20240421 重读，为了更高的控制力，make工具一直在演化，最终给出一套完整的工程文件编译规则，适配所有平台。高屋建瓴，最重要的是“基于目标分层”的方式理解一个工具的思维，太牛逼了\&#xA;如何快速学习一项新技能？&#xA;如何学习一门技术&#xA;一款产品的从0到1之旅&#xA;从技术难题中学习&#xA;为什么在现实中学到的知识和观点，我自己无法成体系遵从逻辑得表达出来？&#xA;世界观和方法论</description>
+      <description>再谈什么是软件架构&#xA;我手上有无数这种分析，一般我会写在evernote上，但前天正好在机场等飞机，写的时候手边访问evernote不方便，所以就改写到知乎上了。 我举这个例子是说，其实架构师手边是有大量的分析数据的，但必须能保证这些分析不会随意进入主分析链，避免目标被冲淡了。所以，你看到一点点的决策或者判断，实际上可能背后都是大量的工作。&#xA;就是要你懂TCP&amp;ndash;半连接队列和全连接队列就是要你懂TCP&amp;ndash;半连接队列和全连接队列&#xA;20240907 重读，作者确实对基础知识敲的比较深\&#xA;如何在工作中学习&#xA;快速学习&#xA;什么是软件架构&#xA;浅谈最佳学习路径&#xA;Makefile概念入门&#xA;20240421 重读，为了更高的控制力，make工具一直在演化，最终给出一套完整的工程文件编译规则，适配所有平台。高屋建瓴，最重要的是“基于目标分层”的方式理解一个工具的思维，太牛逼了\&#xA;如何快速学习一项新技能？&#xA;如何学习一门技术&#xA;一款产品的从0到1之旅&#xA;从技术难题中学习&#xA;为什么在现实中学到的知识和观点，我自己无法成体系遵从逻辑得表达出来？&#xA;世界观和方法论&#xA;+The &amp;lsquo;illusion of knowledge&amp;rsquo; that makes people overconfident&#xA;//学会的&amp;quot;幻觉&amp;quot;</description>
     </item>
     <item>
       <title>效率工具Android</title>

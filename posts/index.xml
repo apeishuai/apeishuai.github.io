@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Feb 2025 11:31:08 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Mar 2025 16:32:35 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode开发qt</title>
+      <link>/posts/vscode%E5%BC%80%E5%8F%91qt/</link>
+      <pubDate>Fri, 07 Mar 2025 16:32:35 +0800</pubDate>
+      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt/</guid>
+      <description>qt creator太难用了，转到vscode开发qt。&#xA;新建项目 命令行编译 ok，这是一个完整的流程，接下来用命令行实现 主要用到三个命令：qmake.exe，mingw32-make.exe，gcc.exe&#xA;qmake作用是解析xx.pro文件，生成跨平台编译的的makefile文件；&#xA;mingw32-make是make命令的windows实现，作用是调用工具链，编译成平台可执行文件，比如exe&#xA;gcc，顾名思义，编译器，把代码编译成二进制码 vscode编译 vscode需要用到两个配置：c++、外部指令(qmake、mingw32-make算是外部指令)&#xA;安装c++插件，设置智能补全&#xA;项目根目录下创建这两个文件，一个是c++编译相关配置，task.json是调用外部指令的配置&#xA;配置完成后 ： ctrl+shift+p&amp;ndash;&amp;gt;run task&amp;ndash;&amp;gt;run-debug { &amp;#34;version&amp;#34;: &amp;#34;2.0.0&amp;#34;, &amp;#34;tasks&amp;#34;: [ { &amp;#34;label&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-Force&amp;#34;, &amp;#34;build&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;qmake-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;qmake&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;../${workspaceFolderBasename}.pro&amp;#34;, &amp;#34;-spec&amp;#34;, &amp;#34;win32-g++&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=debug\&amp;#34;&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=console\&amp;#34;&amp;#34; ], &amp;#34;dependsOn&amp;#34;: [ &amp;#34;mkdir&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;make-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mingw32-make&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-f&amp;#34;, &amp;#34;Makefile.</description>
+    </item>
     <item>
       <title>知行合一</title>
       <link>/posts/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/</link>
