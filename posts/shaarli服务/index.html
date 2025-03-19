@@ -9,7 +9,7 @@
   />
   
     
-      <title>Freshrss搭建 | Wxf`s Fantasy World</title>
+      <title>Shaarli服务 | Wxf`s Fantasy World</title>
     
   
   <link rel="stylesheet" href="/css/reset.css"/>
@@ -70,16 +70,16 @@
         
   <main>
     <article>
-      <h1 class="title">Freshrss搭建</h1>
+      <h1 class="title">Shaarli服务</h1>
       
       <div class="post-meta">
   <strong>
     <span>Posted on</span>
-    <time>2025-01-16</time>
+    <time>2025-03-20</time>
     
     
   </strong>
-  <span> • 135 words</span>
+  <span> • 67 words</span>
   <span> • 1 minute read</span>
   
     <div>
@@ -91,93 +91,38 @@
 </div>
 
       <div class="content"><h1 id="前置准备">前置准备</h1>
-<p>需要一台1G1核心的云主机，我用ucloud；操作系统选择ubuntu</p>
-<h1 id="配置ssh登录">配置ssh登录</h1>
-<pre tabindex="0"><code>ssh-keygen -t rsa -f ~/.ssh/ucloud_ubuntu
-ssh-copy-id -i ~/.ssh/ucloud_ubuntu user@remotehost
-
-比如root就新建一个ucloud_root密钥，shuai就新建一个ucloud_shuai密钥
-修改配置文件~/.ssh/config
-Host ucloud_root
-	HostName 132.43.143.434(修改过的)
-	User root
-	Port 22
-	IdentityFile ~/.ssh/ucloud_root
-
-ssh user@remotehost
-</code></pre><h1 id="安装docker">安装docker</h1>
-<pre tabindex="0"><code>sudo apt install docker
-
-- add mirror web
-/etc/docker/deamon.json
-{
-&#34;registry-mirrors&#34;: [
-&#34;https://registry.docker-cn.com&#34;
-]
-}
-</code></pre><h1 id="安装vraya">安装vraya</h1>
-<p>docker镜像有很多时候pull不下来，需借助魔法</p>
-<pre tabindex="0"><code>https://github.com/ningmoon/v2ray
-$ sudo apt install v2ray v2raya
-$ sudo systemctl start v2raya.service
-</code></pre><h1 id="运行服务">运行服务</h1>
-<ul>
-<li>准备docker-compose.yml文件</li>
-</ul>
-<pre tabindex="0"><code>version: &#34;3&#34;
+<p>vps服务器一台、shaarli插件<br>
+参考<a href="../freshrss%E6%90%AD%E5%BB%BA/">freshrss服务搭建</a></p>
+<h1 id="部署">部署</h1>
+<p>docker-compose.yml</p>
+<pre tabindex="0"><code>version: &#39;3&#39;
 
 services:
-  freshrss-app:
-    image: freshrss/freshrss:latest
-    container_name: freshrss-app
-    hostname: freshrss-app
+  shaarli:
+    image: shaarli/shaarli:latest
+    container_name: shaarli
     restart: unless-stopped
     ports:
-      - &#34;7000:80&#34;
-    depends_on:
-      - freshrss-db
+      - 8005:80
     volumes:
-      - ./data:/var/www/FreshRSS/data
-      - ./extensions:/var/www/FreshRSS/extensions
-    environment:
-      CRON_MIN: &#39;*/45&#39;
-      TZ: Asia/Shanghai
-
-  freshrss-db:
-    image: postgres:latest
-    container_name: freshrss-db
-    hostname: freshrss-db
-    restart: unless-stopped
-    volumes:
-      - freshrss-db:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER: freshrss
-      POSTGRES_PASSWORD: freshrss
-      POSTGRES_DB: freshrss
-
-volumes:
-  freshrss-db:
-</code></pre><p>注：不要瞎改，要吃亏的</p>
-<ul>
-<li>运行
-在docker-compose.yml同级目录下，执行：</li>
-</ul>
-<pre tabindex="0"><code>sudo docker-compose up -d
-</code></pre><p>，然后在浏览器输入ip:port，就能看到freshrss的界面了</p>
-<h1 id="配置">配置</h1>
-<p>服务运行后有两个需求：<br>
-1 让其他人能看到我的rss<br>
-2 安卓手机的feedme软件也能订阅刷新
-<img src="/img/Snipaste_2025-03-20_00-31-39.png" alt="">
-<img src="/img/Snipaste_2025-01-16_16-25-28.png" alt="">
-<img src="/img/Snipaste_2025-01-16_16-28-14.png" alt="">
-还有别的需求：<br>
-3 多用户管理<br>
-4 rsshub接入<br>
-这两个需求不管了，因为服务器吞吐量太小，后续升级</p>
-<h1 id="end">end</h1>
-<p><a href="https://www.xfzhao.com/wiki/server-02-freshrss/">服务部署 Step 2. FreshRSS</a></p>
-<p>just have fun!</p>
+      - /home/ubuntu/serv/shaarli/cache:/var/www/shaarli/cache
+      - /home/ubuntu/serv/shaarli/data:/var/www/shaarli/data
+</code></pre><pre tabindex="0"><code>$ sudo docker-compose up -d
+</code></pre><p>执行上一条指令，即可开启服务，volumes选项。<br>
+宿主机的cache和data文件的所属用户和用户组可能跟容器内部的所属用户、用户组不一样，这时候要切到容器内部。\</p>
+<pre tabindex="0"><code>$ sudo docker exec -it ID bash
+$ cd shaarli
+$ chown -R nginx:nginx data
+$ chown -R nginx:nginx cache
+</code></pre><h1 id="最终效果">最终效果</h1>
+<p><img src="/img/Snipaste_2025-03-20_00-22-56.png" alt="">
+<img src="/img/Snipaste_2025-03-20_00-23-43.png" alt="">
+<img src="/img/Snipaste_2025-03-20_00-24-17.png" alt=""></p>
+<h1 id="数据迁移">数据迁移</h1>
+<pre tabindex="0"><code>$ alias sync_ucloud=&#34;rsync -avz -e ssh ubuntu@ip:~/serv/shaarli/* &#39;/d/g/area/serv&#39;&#34;
+</code></pre><p>用这条指令同步所有数据，然后执行</p>
+<pre tabindex="0"><code>$ sudo docker-compose up -d
+</code></pre><p>即可迁移和一键恢复(注意docker-compose.yml中-volumes选型的宿主机目录，要更改为当前宿主机目录)。</p>
 </div>
     </article>
   </main>

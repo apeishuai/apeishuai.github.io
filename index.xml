@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Mar 2025 06:38:31 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Mar 2025 00:15:49 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shaarli服务</title>
+      <link>/posts/shaarli%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Thu, 20 Mar 2025 00:15:49 +0800</pubDate>
+      <guid>/posts/shaarli%E6%9C%8D%E5%8A%A1/</guid>
+      <description>前置准备 vps服务器一台、shaarli插件&#xA;参考freshrss服务搭建&#xA;部署 docker-compose.yml&#xA;version: &amp;#39;3&amp;#39; services: shaarli: image: shaarli/shaarli:latest container_name: shaarli restart: unless-stopped ports: - 8005:80 volumes: - /home/ubuntu/serv/shaarli/cache:/var/www/shaarli/cache - /home/ubuntu/serv/shaarli/data:/var/www/shaarli/data $ sudo docker-compose up -d 执行上一条指令，即可开启服务，volumes选项。&#xA;宿主机的cache和data文件的所属用户和用户组可能跟容器内部的所属用户、用户组不一样，这时候要切到容器内部。\&#xA;$ sudo docker exec -it ID bash $ cd shaarli $ chown -R nginx:nginx data $ chown -R nginx:nginx cache 最终效果 数据迁移 $ alias sync_ucloud=&amp;#34;rsync -avz -e ssh ubuntu@ip:~/serv/shaarli/* &amp;#39;/d/g/area/serv&amp;#39;&amp;#34; 用这条指令同步所有数据，然后执行&#xA;$ sudo docker-compose up -d 即可迁移和一键恢复(注意docker-compose.yml中-volumes选型的宿主机目录，要更改为当前宿主机目录)。</description>
+    </item>
     <item>
       <title>生活节奏</title>
       <link>/posts/%E7%94%9F%E6%B4%BB%E8%8A%82%E5%A5%8F/</link>
