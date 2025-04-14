@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Apr 2025 14:59:59 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Apr 2025 23:07:03 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode开发qt Cmake</title>
+      <link>/posts/vscode%E5%BC%80%E5%8F%91qt-cmake/</link>
+      <pubDate>Mon, 14 Apr 2025 23:07:03 +0800</pubDate>
+      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt-cmake/</guid>
+      <description>新建一个cmake qt项目，看构建步骤&#xA;cmake configure cmake build cmake run 对应到vscode，第一步，设置c++的智能补全，这个在qmake那篇文章中说了&#xA;第二步，安装cmake tools、cmake插件，配置这两项 然后在CmakeList.txt文档中加&amp;quot;set(CMAKE_PREFIX_PATH &amp;ldquo;D:/qt6.8.2/6.8.2/mingw_64&amp;rdquo;)&amp;quot;，目的是cmake编译时能找到qt相关的库&#xA;ctrl+shift+p，分别执行cmake configure、cmake build、cmake run，完成 </description>
+    </item>
     <item>
       <title>无痛英语环境打造2</title>
       <link>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A02/</link>
@@ -44,10 +51,10 @@
       <description>能量积累？&#xA;人和其他物种的大脑可“同频共振”</description>
     </item>
     <item>
-      <title>Vscode开发qt</title>
-      <link>/posts/vscode%E5%BC%80%E5%8F%91qt/</link>
+      <title>Vscode开发qt qmake</title>
+      <link>/posts/vscode%E5%BC%80%E5%8F%91qt-qmake/</link>
       <pubDate>Fri, 07 Mar 2025 16:32:35 +0800</pubDate>
-      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt/</guid>
+      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt-qmake/</guid>
       <description>qt creator太难用了，转到vscode开发qt。&#xA;新建项目 命令行编译 ok，这是一个完整的流程，接下来用命令行实现 主要用到三个命令：qmake.exe，mingw32-make.exe，gcc.exe&#xA;qmake作用是解析xx.pro文件，生成跨平台编译的的makefile文件；&#xA;mingw32-make是make命令的windows实现，作用是调用工具链，编译成平台可执行文件，比如exe&#xA;gcc，顾名思义，编译器，把代码编译成二进制码 vscode编译 vscode需要用到两个配置：c++、外部指令(qmake、mingw32-make算是外部指令)&#xA;安装c++插件，设置智能补全&#xA;项目根目录下创建这两个文件，一个是c++编译相关配置，task.json是调用外部指令的配置&#xA;配置完成后 ： ctrl+shift+p&amp;ndash;&amp;gt;run task&amp;ndash;&amp;gt;run-debug { &amp;#34;version&amp;#34;: &amp;#34;2.0.0&amp;#34;, &amp;#34;tasks&amp;#34;: [ { &amp;#34;label&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-Force&amp;#34;, &amp;#34;build&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;qmake-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;qmake&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;../${workspaceFolderBasename}.pro&amp;#34;, &amp;#34;-spec&amp;#34;, &amp;#34;win32-g++&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=debug\&amp;#34;&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=console\&amp;#34;&amp;#34; ], &amp;#34;dependsOn&amp;#34;: [ &amp;#34;mkdir&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;make-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mingw32-make&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-f&amp;#34;, &amp;#34;Makefile.</description>
     </item>
     <item>
@@ -667,10 +674,10 @@
       <description>自定义搜索引擎解决了搜索范围的问题，多个网站聚合成一个引擎，相当于我这边筛选了一遍，再进行二次筛选，能提升效率&#xA;网站地址在programm able seach engine，添加搜索引擎 添加索引网站 点击进入实例，添加&amp;ndash;&amp;gt;填网址 对网址格式做一说明，一般是&amp;quot;xxx.com/ * &amp;ldquo;,即该网站下所有页面 xml格式导入&#xA;xml文件大概是这样，更改about和value值，就能批量添加地址了，当然，图形框也能批量添加&#xA;&amp;lt;Annotations&amp;gt; &amp;lt;Annotation about=&amp;#34;*.antirez.com/*&amp;#34; timestamp=&amp;#34;0x0006140ea65e7149&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;http://antirez.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;Annotation about=&amp;#34;*.huoding.com/*&amp;#34; timestamp=&amp;#34;0x0006140e7ab53ef5&amp;#34; score=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;Label name=&amp;#34;_include_&amp;#34;/&amp;gt; &amp;lt;AdditionalData attribute=&amp;#34;original_url&amp;#34; value=&amp;#34;https://huoding.com&amp;#34;/&amp;gt; &amp;lt;/Annotation&amp;gt; &amp;lt;/Annotations&amp;gt; 改外观 这样就行了 最终所得网址如下 qireader脚本 qireader是我看rss的工具，导出opml文件，里面包含了订阅所有博客的网址，我写了个python脚本把网址转化为xml格式，以便导入&#xA;# 描述: 这是一个Python脚本，用于构建google ces的annoation格式文本，达到批量导入博客，用于检索的目的 # 作者: wxf # 版本: 1.0 # 生成日期: 2024/03/20 # 最后修改日期: 2024/03/20 import re import os import subprocess # 从本地文件读取文本 file_path = &amp;#39;QiReader subscriptions - Wed Mar 20 2024.</description>
     </item>
     <item>
-      <title>Workflow_inbox</title>
-      <link>/resource/workflow_inbox/</link>
+      <title>定时推送随机任务</title>
+      <link>/resource/%E5%AE%9A%E6%97%B6%E6%8E%A8%E9%80%81%E9%9A%8F%E6%9C%BA%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Wed, 20 Mar 2024 02:12:35 +0800</pubDate>
-      <guid>/resource/workflow_inbox/</guid>
+      <guid>/resource/%E5%AE%9A%E6%97%B6%E6%8E%A8%E9%80%81%E9%9A%8F%E6%9C%BA%E4%BB%BB%E5%8A%A1/</guid>
       <description>一个有点奇怪的工作流…… 我用 todoist 很多，这天想起来它有完善的 api 支持，于是大概看了下，然后定时推送rss feed 到 todo里… 居然很好用哎&#xA;然后我就真的好多天没打开过 reeder 了。&#xA;担心过文章摘录等情况，但现在看来没多大需求，后续再看。&#xA;大不了自己实现一个它的前端。&#xA;· 3月12日&#xA;发现这个后我一发不可收拾，我做了个随机推送锻炼的任务，随机发送一些适合办公室里做的小的身体活动的事项，每30分钟推一次，这样我没事看看 todo，就有一些新的东西，正好锻炼下。\&#xA;对我来说这个比 iOS 通知好用的多…</description>
     </item>
     <item>

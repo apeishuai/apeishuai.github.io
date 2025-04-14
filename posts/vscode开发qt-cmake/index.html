@@ -9,7 +9,7 @@
   />
   
     
-      <title>定时推送随机任务 | Wxf`s Fantasy World</title>
+      <title>Vscode开发qt Cmake | Wxf`s Fantasy World</title>
     
   
   <link rel="stylesheet" href="/css/reset.css"/>
@@ -70,34 +70,43 @@
         
   <main>
     <article>
-      <h1 class="title">定时推送随机任务</h1>
+      <h1 class="title">Vscode开发qt Cmake</h1>
       
       <div class="post-meta">
   <strong>
     <span>Posted on</span>
-    <time>2024-03-20</time>
+    <time>2025-04-14</time>
     
     
   </strong>
-  <span> • 22 words</span>
+  <span> • 17 words</span>
   <span> • 1 minute read</span>
   
     <div>
       Last updated on
-      <time>2025-04-13</time>
+      <time>2025-04-14</time>
     </div>
   
   
 </div>
 
-      <div class="content"><p>一个有点奇怪的工作流…… 我用 todoist 很多，这天想起来它有完善的 api 支持，于是大概看了下，然后定时推送rss feed 到 todo里… 居然很好用哎<br>
-然后我就真的好多天没打开过 reeder 了。<br>
-担心过文章摘录等情况，但现在看来没多大需求，后续再看。<br>
-大不了自己实现一个它的前端。<br>
-·
-3月12日<br>
-发现这个后我一发不可收拾，我做了个随机推送锻炼的任务，随机发送一些适合办公室里做的小的身体活动的事项，每30分钟推一次，这样我没事看看 todo，就有一些新的东西，正好锻炼下。\</p>
-<p>对我来说这个比 iOS 通知好用的多…</p>
+      <div class="content"><p>新建一个cmake qt项目，看构建步骤<br>
+cmake configure
+<img src="/img/Snipaste_2025-04-14_23-09-08.png" alt="">
+cmake build
+<img src="/img/Snipaste_2025-04-14_23-10-41.png" alt="">
+cmake run
+<img src="/img/Snipaste_2025-04-14_23-11-29.png" alt=""></p>
+<p>对应到vscode，第一步，设置c++的智能补全，这个在qmake那篇文章中说了<br>
+第二步，安装cmake tools、cmake插件，配置这两项
+<img src="/img/Snipaste_2025-04-14_23-13-15.png" alt="">
+<img src="/img/Snipaste_2025-04-14_23-14-09.png" alt="">
+然后在CmakeList.txt文档中加&quot;set(CMAKE_PREFIX_PATH &ldquo;D:/qt6.8.2/6.8.2/mingw_64&rdquo;)&quot;，目的是cmake编译时能找到qt相关的库</p>
+<p>ctrl+shift+p，分别执行cmake configure、cmake build、cmake run，完成
+<img src="/img/Snipaste_2025-04-14_23-16-48.png" alt="">
+<img src="/img/Snipaste_2025-04-14_23-17-20.png" alt="">
+<img src="/img/Snipaste_2025-04-14_23-17-46.png" alt="">
+<img src="/img/Snipaste_2025-04-14_23-18-08.png" alt=""></p>
 </div>
     </article>
   </main>

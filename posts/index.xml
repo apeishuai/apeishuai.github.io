@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Apr 2025 14:59:59 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Apr 2025 23:07:03 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode开发qt Cmake</title>
+      <link>/posts/vscode%E5%BC%80%E5%8F%91qt-cmake/</link>
+      <pubDate>Mon, 14 Apr 2025 23:07:03 +0800</pubDate>
+      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt-cmake/</guid>
+      <description>新建一个cmake qt项目，看构建步骤&#xA;cmake configure cmake build cmake run 对应到vscode，第一步，设置c++的智能补全，这个在qmake那篇文章中说了&#xA;第二步，安装cmake tools、cmake插件，配置这两项 然后在CmakeList.txt文档中加&amp;quot;set(CMAKE_PREFIX_PATH &amp;ldquo;D:/qt6.8.2/6.8.2/mingw_64&amp;rdquo;)&amp;quot;，目的是cmake编译时能找到qt相关的库&#xA;ctrl+shift+p，分别执行cmake configure、cmake build、cmake run，完成 </description>
+    </item>
     <item>
       <title>无痛英语环境打造2</title>
       <link>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A02/</link>
@@ -44,10 +51,10 @@
       <description>能量积累？&#xA;人和其他物种的大脑可“同频共振”</description>
     </item>
     <item>
-      <title>Vscode开发qt</title>
-      <link>/posts/vscode%E5%BC%80%E5%8F%91qt/</link>
+      <title>Vscode开发qt qmake</title>
+      <link>/posts/vscode%E5%BC%80%E5%8F%91qt-qmake/</link>
       <pubDate>Fri, 07 Mar 2025 16:32:35 +0800</pubDate>
-      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt/</guid>
+      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt-qmake/</guid>
       <description>qt creator太难用了，转到vscode开发qt。&#xA;新建项目 命令行编译 ok，这是一个完整的流程，接下来用命令行实现 主要用到三个命令：qmake.exe，mingw32-make.exe，gcc.exe&#xA;qmake作用是解析xx.pro文件，生成跨平台编译的的makefile文件；&#xA;mingw32-make是make命令的windows实现，作用是调用工具链，编译成平台可执行文件，比如exe&#xA;gcc，顾名思义，编译器，把代码编译成二进制码 vscode编译 vscode需要用到两个配置：c++、外部指令(qmake、mingw32-make算是外部指令)&#xA;安装c++插件，设置智能补全&#xA;项目根目录下创建这两个文件，一个是c++编译相关配置，task.json是调用外部指令的配置&#xA;配置完成后 ： ctrl+shift+p&amp;ndash;&amp;gt;run task&amp;ndash;&amp;gt;run-debug { &amp;#34;version&amp;#34;: &amp;#34;2.0.0&amp;#34;, &amp;#34;tasks&amp;#34;: [ { &amp;#34;label&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-Force&amp;#34;, &amp;#34;build&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;qmake-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;qmake&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;../${workspaceFolderBasename}.pro&amp;#34;, &amp;#34;-spec&amp;#34;, &amp;#34;win32-g++&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=debug\&amp;#34;&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=console\&amp;#34;&amp;#34; ], &amp;#34;dependsOn&amp;#34;: [ &amp;#34;mkdir&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;make-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mingw32-make&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-f&amp;#34;, &amp;#34;Makefile.</description>
     </item>
     <item>
