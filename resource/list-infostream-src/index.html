@@ -79,12 +79,12 @@
     
     
   </strong>
-  <span> • 314 words</span>
-  <span> • 2 minute read</span>
+  <span> • 156 words</span>
+  <span> • 1 minute read</span>
   
     <div>
       Last updated on
-      <time>2025-04-11</time>
+      <time>2025-04-16</time>
     </div>
   
   
@@ -125,7 +125,6 @@
 </tbody>
 </table>
 <h1 id="说明">说明</h1>
-<p><del>博客是重要的信息源，如果订阅到大牛博客，能极大丰富个人见识。当然，所有的内容都要带有批判性的阅读。我视博客为信息库和信息源</del>\</p>
 <p>最高层次就是预测信息，通过把控事物的演化规律预判有哪些信息产生，能为我所用。可以有目的的制造信息</p>
 <p>这个世界每天产生大量的信息，不管是有意识、无意识，都会有大量信息流过，所以需要构建一个主题聚焦器、多个监控器、多个发送器、多个过滤器、多个存储库，以便高效、迅速的提取信息。迅速是为了应对环境变化</p>
 <p>体系化：论文 &gt; 出版书籍(审核ing) &gt; 博客(rss) &gt; 会议 &gt; 电话1v1 <br>
@@ -137,17 +136,10 @@
 <li>信息流：时不时刷最新推送，看到有用的内容补充进自己的笔记</li>
 <li>提取练习：一方面通过卡片推送(logseq,简悦,flomo)；另一方面通过项目(这块正完善)</li>
 </ul>
-<p><del>+ 软件：Inoreader</del><br>
-<del>+ 软件：提取码：jlfg  [irreader1.5.9+1.6.11]ttps://pan.baidu.com/s/1xqKW_hCPUeWRyA2lXaLMOw)</del><br>
-<del>+ 软件：reeder(ipad)+omnifocus(归档进标签体系)</del>\</p>
 <h1 id="常用">常用</h1>
 <ul>
 <li>
-<p>软件
-<del>+ 蚁阅： <a href="https://rss.anyant.com">https://rss.anyant.com</a> (rss阅读器)</del><br>
-<del>+ qireader： <a href="https://qireader.com//">https://qireader.com//</a> (rss阅读器)</del>
-<del>+ wewerss:   (微信公众号订阅工具,docker部署)</del>
-<del>+ juchats： <a href="https://www.juchats.com/">https://www.juchats.com/</a> (chatgpt衍生项目)</del></p>
+<p>freshrss</p>
 </li>
 <li>
 <p>yacy(自定义元搜索引擎)</p>
@@ -175,12 +167,6 @@ inurl:github.io  &lt;关键词&gt;  /search blog\</li>
 </ul>
 </li>
 <li>
-<p>twitter search (主动)<br>
-<a href="https://www.scoutzen.com/twitter-lists/search">search for twitter list</a><br>
-<a href="https://twitter.com/search?q=list%3A1565529135316815873%20%20">https://twitter.com/search?q=list%3A1565529135316815873%20%20</a>周杰伦&amp;src=typed_query&amp;f=top<br>
-<a href="https://twitter.com/search?q=list%3A1742859529241624647%20%20">https://twitter.com/search?q=list%3A1742859529241624647%20%20</a>周杰伦&amp;src=typed_query&amp;f=top</p>
-</li>
-<li>
 <p>telegram search</p>
 </li>
 <li>
@@ -204,10 +190,6 @@ inurl:github.io  &lt;关键词&gt;  /search blog\</li>
 </ul>
 <p>weibo分组调整<br>
 twitter分组调整</p>
-<ul>
-<li>事件触发<br>
-找个东西监控，如果出现想要的信息就推送至邮件或者手机</li>
-</ul>
 <h1 id="信息流动路径">信息流动路径</h1>
 <ul>
 <li>社区发帖(某困惑、某具体实践)&ndash;&gt;评论补充(出现新方向)</li>
@@ -221,96 +203,14 @@ twitter分组调整</p>
 </ul>
 <h2 id="搜索策略">搜索策略</h2>
 <p>搜索优先，信息推流随后</p>
-<p>我有一份笔记和一堆网络信源，假如某天我接触到一个从来没接触过的新词，首先检索我的笔记和信源(recoll index、yacy)</p>
+<p>我有一份笔记和一堆网络信源，假如某天我接触到一个从来没接触过的新词，首先检索我的笔记和信源(rga $rsc、yacy)</p>
 <p>如果这里面也没有说明信源该扩充了，如果有，这就是不知知的例子 <br>
 不知知是因为内容碰不到使用场景，所以被遗忘在潜意识</p>
 <p>&lt;2023-08-18 周五 13:22&gt;<br>
 信息源一直在演化，twitter list，telegram，微博，公众号，在加一个与人交流(短板得补齐)</p>
 <h2 id="思路获取">思路获取：</h2>
 <p>&lt;虫搜索&gt;</p>
-<h1 id="ref">ref</h1>
-<p>twitter search 语法</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>基础链接部分：https://twitter.com/search
-</span></span><span style="display:flex;"><span>这部分指定了Twitter的搜索功能
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>查询参数部分：
-</span></span><span style="display:flex;"><span>q<span style="color:#f92672">=</span>list%3A1565529135316815873%20%20周杰伦
-</span></span><span style="display:flex;"><span>q参数用于指定搜索的查询内容，其中包含两个部分：
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>list%3A1565529135316815873：这部分表示搜索特定列表的内容。数字1565529135316815873是一个列表的唯一标识符。
-</span></span><span style="display:flex;"><span>%20%20周杰伦：这部分表示要搜索的关键词，%20代表空格，周杰伦是要搜索的关键词。
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>src<span style="color:#f92672">=</span>typed_query：这部分指定了搜索来源为“typed_query”，即手动输入的查询。
-</span></span><span style="display:flex;"><span>f<span style="color:#f92672">=</span>top：这部分指定了搜索结果按照“top”排序，即按照热度或相关性排序显示搜索结果。
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>在URL中，百分号（%）通常用来对特殊字符进行编码，以确保URL的正确性和兼容性。在给定的链接中，
-</span></span><span style="display:flex;"><span>%20:URL编码中的空格字符
-</span></span><span style="display:flex;"><span>%3A:URL编码中的冒号<span style="color:#f92672">(</span>:<span style="color:#f92672">)</span>字符
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>twitterlist 程序员:1565529135316815873
-</span></span><span style="display:flex;"><span>twitterlist 关注的中国用户:1742859529241624647
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>from: xx to:xx
-</span></span><span style="display:flex;"><span>@username
-</span></span><span style="display:flex;"><span>since:2017-11-30 <span style="color:#66d9ef">until</span>:2017-11-31
-</span></span><span style="display:flex;"><span>保存搜索
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>filter:
-</span></span><span style="display:flex;"><span>top: 按照热度或者相关性排序显示搜索结果
-</span></span><span style="display:flex;"><span>latest：按照最新发布的内容排序，显示最新的推文或内容。
-</span></span><span style="display:flex;"><span>popular：按照受欢迎程度排序，显示被点赞、转发等操作次数较多的内容。
-</span></span><span style="display:flex;"><span>mixed：混合排序，将热门内容和最新内容混合在一起显示。
-</span></span><span style="display:flex;"><span>people：按照相关性排序，显示与搜索关键词相关性较高的用户和内容。
-</span></span><span style="display:flex;"><span>news：按照新闻性排序，显示与搜索关键词相关的新闻报道和信息。
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>信息检索   from:tombkeeperweibo
-</span></span><span style="display:flex;"><span>随便写    list:1565529135316815873
-</span></span><span style="display:flex;"><span>list 分类
-</span></span></code></pre></div><p>google search 语法</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>ps. 使用频率较高的放前排<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>“页面 SEO 终极指南”
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>filetype: 。
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>lose weight -advertising
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>鱼 OR 熊掌 或者 鱼 | 熊掌（反馈的结果也是一样的）
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>allintext: 外贸网站感谢页
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>seo 终极指南 intext: 搜索意图
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>allintitle: 跳出率案例
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>首次输入延迟 intitle: 核心网页指标提升
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>allinurl: 埃克森数字营销
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>site:www.xnbeast.com “用户体验”
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>related:ahrefs.com/blog
-</span></span><span style="display:flex;"><span>查询相关性。我们还可以使用 SITE：xxx.com 得到一个结果数，然后使用 site:xxx.com + 内容在得到一个结果数。将第二个数除以第一个数，如果数值大于 0.5 说明是内容很相关的网站。
-</span></span><span style="display:flex;"><span>例如，利用这个命令查看一下埃克森数字营销跟外贸网站和 SEO 这两个内容的相关性。
-</span></span><span style="display:flex;"><span>首先搜索 site：xnbeast.com，得到的结果数为 <span style="color:#ae81ff">69</span>
-</span></span><span style="display:flex;"><span>然后搜索 site：xnbeast.com 外贸网站，结果数为 55.
-</span></span><span style="display:flex;"><span>55/69<span style="color:#f92672">=</span>0.79 这说明埃克森数字营销网站与内容：外贸网站非常相关。
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>link:buzzfeed
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>“页面 SEO 优化” ~ 指南
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>define:plethora
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>much * about nothing 或者 埃克森 * 营销 又或者 偏偏 * 你
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>star wars location:London, world war <span style="color:#ae81ff">2</span> location: China
-</span></span></code></pre></div><h4 id="ref-blog_list">ref-blog_list</h4>
+<h4 id="ref-blog_list">ref-blog_list</h4>
 <p>(几个比较重要的)</p>
 <ul>
 <li><a href="https://weibo.com/u/2301586363">https://weibo.com/u/2301586363</a> 徐高 经济学博士 首席经济学家</li>
