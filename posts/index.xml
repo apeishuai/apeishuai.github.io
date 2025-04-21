@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Apr 2025 23:07:03 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Apr 2025 08:45:35 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode开发qt Pyside6</title>
+      <link>/posts/vscode%E5%BC%80%E5%8F%91qt-pyside6/</link>
+      <pubDate>Mon, 21 Apr 2025 08:45:35 +0800</pubDate>
+      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt-pyside6/</guid>
+      <description>用qt creator创建一个pyside6 qt项目，和之前的qmake、cmake项目一样，先看构建套件，再看编译过程，再看运行过程。&#xA;python虚拟环境配置&#xA;构建套件需要标明python.exe的位置，我自己手动指定了一个 构建过程需要pyside6-uic.exe, pyside6-project.exe，参考下面的文章，还需要配置pyrcc，这三个软件均可以从配置的环境中找出 配置完插件后直接在命令行运行py文件 全局安装PySide6</description>
+    </item>
     <item>
       <title>Vscode开发qt Cmake</title>
       <link>/posts/vscode%E5%BC%80%E5%8F%91qt-cmake/</link>

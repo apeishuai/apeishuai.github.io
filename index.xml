@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Apr 2025 20:35:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Apr 2025 08:45:35 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode开发qt Pyside6</title>
+      <link>/posts/vscode%E5%BC%80%E5%8F%91qt-pyside6/</link>
+      <pubDate>Mon, 21 Apr 2025 08:45:35 +0800</pubDate>
+      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt-pyside6/</guid>
+      <description>用qt creator创建一个pyside6 qt项目，和之前的qmake、cmake项目一样，先看构建套件，再看编译过程，再看运行过程。&#xA;python虚拟环境配置&#xA;构建套件需要标明python.exe的位置，我自己手动指定了一个 构建过程需要pyside6-uic.exe, pyside6-project.exe，参考下面的文章，还需要配置pyrcc，这三个软件均可以从配置的环境中找出 配置完插件后直接在命令行运行py文件 全局安装PySide6</description>
+    </item>
     <item>
       <title>技能习得与提升</title>
       <link>/resource/%E6%8A%80%E8%83%BD%E4%B9%A0%E5%BE%97%E4%B8%8E%E6%8F%90%E5%8D%87/</link>
@@ -839,7 +846,7 @@
       <link>/resource/ref-%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Tue, 21 Nov 2023 14:10:27 +0800</pubDate>
       <guid>/resource/ref-%E5%AD%A6%E4%B9%A0/</guid>
-      <description>再谈什么是软件架构&#xA;我手上有无数这种分析，一般我会写在evernote上，但前天正好在机场等飞机，写的时候手边访问evernote不方便，所以就改写到知乎上了。 我举这个例子是说，其实架构师手边是有大量的分析数据的，但必须能保证这些分析不会随意进入主分析链，避免目标被冲淡了。所以，你看到一点点的决策或者判断，实际上可能背后都是大量的工作。&#xA;就是要你懂TCP&amp;ndash;半连接队列和全连接队列就是要你懂TCP&amp;ndash;半连接队列和全连接队列&#xA;20240907 重读，作者确实对基础知识敲的比较深\&#xA;如何在工作中学习&#xA;快速学习&#xA;什么是软件架构&#xA;浅谈最佳学习路径&#xA;Makefile概念入门&#xA;20240421 重读，为了更高的控制力，make工具一直在演化，最终给出一套完整的工程文件编译规则，适配所有平台。高屋建瓴，最重要的是“基于目标分层”的方式理解一个工具的思维，太牛逼了\&#xA;如何快速学习一项新技能？&#xA;如何学习一门技术&#xA;一款产品的从0到1之旅&#xA;从技术难题中学习&#xA;为什么在现实中学到的知识和观点，我自己无法成体系遵从逻辑得表达出来？&#xA;世界观和方法论&#xA;+The &amp;lsquo;illusion of knowledge&amp;rsquo; that makes people overconfident&#xA;//学会的&amp;quot;幻觉&amp;quot;</description>
+      <description>再谈什么是软件架构&#xA;我手上有无数这种分析，一般我会写在evernote上，但前天正好在机场等飞机，写的时候手边访问evernote不方便，所以就改写到知乎上了。 我举这个例子是说，其实架构师手边是有大量的分析数据的，但必须能保证这些分析不会随意进入主分析链，避免目标被冲淡了。所以，你看到一点点的决策或者判断，实际上可能背后都是大量的工作。&#xA;就是要你懂TCP&amp;ndash;半连接队列和全连接队列就是要你懂TCP&amp;ndash;半连接队列和全连接队列&#xA;20240907 重读，作者确实对基础知识敲的比较深\&#xA;如何在工作中学习&#xA;快速学习&#xA;什么是软件架构&#xA;浅谈最佳学习路径&#xA;Makefile概念入门&#xA;20240421 重读，为了更高的控制力，make工具一直在演化，最终给出一套完整的工程文件编译规则，适配所有平台。高屋建瓴，最重要的是“基于目标分层”的方式理解一个工具的思维，太牛逼了\&#xA;如何快速学习一项新技能？&#xA;如何学习一门技术&#xA;一款产品的从0到1之旅&#xA;从技术难题中学习&#xA;为什么在现实中学到的知识和观点，我自己无法成体系遵从逻辑得表达出来？&#xA;世界观和方法论&#xA;+The &amp;lsquo;illusion of knowledge&amp;rsquo; that makes people overconfident&#xA;//学会的&amp;quot;幻觉&amp;quot;&#xA;黑客的学习方法</description>
     </item>
     <item>
       <title>效率工具Android</title>
