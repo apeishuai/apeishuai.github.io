@@ -20,7 +20,7 @@
       <link>/resource/%E6%8A%80%E8%83%BD%E4%B9%A0%E5%BE%97%E4%B8%8E%E6%8F%90%E5%8D%87/</link>
       <pubDate>Wed, 16 Apr 2025 20:35:23 +0800</pubDate>
       <guid>/resource/%E6%8A%80%E8%83%BD%E4%B9%A0%E5%BE%97%E4%B8%8E%E6%8F%90%E5%8D%87/</guid>
-      <description>这段时间学习c++，主要看&amp;lt;c++ primer&amp;gt; &amp;lt;c++ primer plus&amp;gt;两本，在这个过程中，对技能习得有一些感悟。&#xA;新手入门最大的问题是不知道关注点，这样会导致看很多跟目标无关的资料，运气好的话一段时间后能梳理出该领域图景，运气不好可能需要很长时间。&#xA;所以好的教程会给一张大图，然后针对大图给几个抓手，就能基本入门，然后碰到什么场景就学哪些工具，效率高。&#xA;把该领域最权威的资料都翻了，关注点在哪也能出来，就是耗时间。&#xA;然后是技能的巩固和练习，练习的目的是增加熟练度，分为两层，一层是基础技能，比如写个tcp通信，写个基础的排序算法；第二层是对需求建模，看到目标，在心里盘算怎么把基础的东西组合，得到一个想要的结果。&#xA;犯错触发反馈：&#xA;在训练的时候尽量用自己的语言去写，这样能暴露当前的理解和最好模型之间的gap，得到修正方向。&#xA;练习分为两种方式，一种是交互式的，一种是大脑中演练。熟练度由脑中相关的神经链路决定，可以想象最初的链路是文字、行为激活的，当链路成型后，只是在大脑中不断演练，也有很好的提升效果。&#xA;经过这么久的实践，目前理解学习就是压缩信息，确定一个范围，确定该范围所有的输入输出，用尽可能好的结构组织这些输入输出。所以习得有一个概念展开在收缩的过程。&#xA;进入任何一个领域，按照我上面说的找出该领域的知识结构，在知识结构的基础上找出行业最佳实践，就能躺着玩了。</description>
+      <description>这段时间学习c++，主要看&amp;lt;c++ primer&amp;gt; &amp;lt;c++ primer plus&amp;gt;两本，在这个过程中，对技能习得有一些感悟。&#xA;新手入门最大的问题是不知道关注点，这样会导致看很多跟目标无关的资料，运气好的话一段时间后能梳理出该领域图景，运气不好可能需要很长时间。&#xA;所以好的教程会给一张大图，然后针对大图给几个抓手，就能基本入门，然后碰到什么场景就学哪些工具，效率高。&#xA;1 把该领域最权威的资料都翻了，关注点在哪也能出来，就是耗时间。&#xA;然后是技能的巩固和练习，练习的目的是增加熟练度，分为两层，一层是基础技能，比如写个tcp通信，写个基础的排序算法；第二层是对需求建模，看到目标，在心里盘算怎么把基础的东西组合，得到一个想要的结果。&#xA;具体操作：&#xA;2 技能练习：让ai给出练习题&#xA;犯错触发反馈：&#xA;3 在训练的时候尽量用自己的语言去写，这样能暴露当前的理解和最好模型之间的gap，得到修正方向。&#xA;4 检测掌握情况：能否根据名字带出很多细节&#xA;5 检查是否理解：能否用自己的话说出来&#xA;可能空间，声明周期 闭环+验证 数据间的变化关系 用项目学习 目标不清晰 练习分为两种方式，一种是交互式的，一种是大脑中演练。熟练度由脑中相关的神经链路决定，可以想象最初的链路是文字、行为激活的，当链路成型后，只是在大脑中不断演练，也有很好的提升效果。&#xA;经过这么久的实践，目前理解学习就是压缩信息，确定一个范围，确定该范围所有的输入输出，用尽可能好的结构组织这些输入输出。所以习得有一个概念展开在收缩的过程。&#xA;进入任何一个领域，按照我上面说的找出该领域的知识结构，在知识结构的基础上找出行业最佳实践，就能躺着玩了。</description>
     </item>
     <item>
       <title>Vscode开发qt Cmake</title>
@@ -723,11 +723,18 @@
       <description>提供几个视角：&#xA;如何做出较优决策 同样的场景，不同年纪、不同背景的人会做出截然不同的决策，怎么评价决策的好坏呢，看事情的发展是否与预期相符，是否对实现目标有帮助。&#xA;ok，现在面对一个场景，基于现有的信息和经验，我迅速做出了决策，问题是：存不存在比我的这个决策更好的决策？如果有，为什么我没有想出这个更好的决策呢？&#xA;假设有一个全知全能的人物，他的所有决策都是最优，所有事情都按他的预期走，跟这个全知全能的人物对比一下，就知道为什么做不出最优决策了&#xA;信息：全知全能人掌握所有层次、所有细节的信息；而个人只能基于全人类共识，通过观察、语言提取信息&#xA;思维模型：全知全能人能串起所有跟目标实现相关的要素，并梳理出要素的动态作用关系；个人只能提取一部分要素，梳理部分要素作用关系，从中拿几个切面&#xA;如上，能否做出较优决策主要影响因素是信息和思维模型&#xA;信息首先要有多样性的信息渠道，我在上家公司观察到信息流动是有时延的，靠近信息中心位置可能能更快获取信息；第二点是验证信息准确性，这个涉及到信息质量的评估，得有意识的去验证&#xA;模型参考《模型思维》p53，本章证明了多模型预测的准确度要高于单模型。如何获取多模型，找三个跟你完全不同背景的人讨论下，这样就得到三个模型了(头脑风暴吧！)&#xA;如上，提供打破个人局限的思路</description>
     </item>
     <item>
-      <title>Windows软件管理</title>
-      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
-      <pubDate>Thu, 08 Feb 2024 07:52:31 +0800</pubDate>
-      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
+      <title>Windows软件管理 msys2</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-msys2/</link>
+      <pubDate>Thu, 08 Feb 2024 07:53:31 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-msys2/</guid>
       <description>window主要靠两个软件：msys2(类linux环境)、scoop&#xA;流程 所有数据都放到u盘了，所以只要恢复软件及其配置&#xA;拿到一个新电脑，先安装msys2，然后恢复其配置文件，再安装scoop，完成&#xA;msys配置 msys的核心是这些配置文件，把它们上传到github，定期更新，迁移到新电脑时git clone一下就行&#xA;然后需要修改注册表，我写了三个脚本，执行一遍，msys配置就完成了!!!&#xA;main-init.sh&#xA;#!/bin/bash # change environment variables . chg-env-var.sh # change reg . chg-reg.sh # install cmd tool . command-install.sh chg-env-var.sh&#xA;#!/bin/bash # Set the system environment variable list SYS_ENV_VARS=( &amp;#34;&amp;#34; ) # Create the system batch file cat &amp;gt; update_sys_env.bat &amp;lt;&amp;lt; EOF @echo off REM Update system environment variables EOF for env_var in &amp;#34;${SYS_ENV_VARS[@]}&amp;#34; do var_name=&amp;#34;${env_var%=*}&amp;#34; var_value=&amp;#34;${env_var#*=}&amp;#34; echo &amp;#34;setx $var_name \&amp;#34;$var_value\&amp;#34; /M&amp;#34; &amp;gt;&amp;gt; update_sys_env.</description>
+    </item>
+    <item>
+      <title>Windows软件管理 scoop</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-scoop/</link>
+      <pubDate>Thu, 08 Feb 2024 07:52:31 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-scoop/</guid>
+      <description>window主要靠两个软件：msys2(类linux环境)、scoop&#xA;流程 所有数据都放到u盘了，所以只要恢复软件及其配置&#xA;拿到一个新电脑，先安装msys2，然后恢复其配置文件，再安装scoop，完成&#xA;scoop ref scoop blog&#xA;卸载：默认在“C:\Users\whens\scoop\&amp;#34;，删除该目录即可 - env:powershell &amp;gt; admin $env:SCOOP=&amp;#39;D:\softwares\scoop&amp;#39; [environment]::setEnvironmentVariable(&amp;#39;USERSCOOP&amp;#39;,$env:SCOOP,&amp;#39;User&amp;#39;) $env:SCOOP_GLOBAL=&amp;#39;D:\softwares\scoop\globalApps&amp;#39; [environment]::setEnvironmentVariable(&amp;#39;SCOOP_GLOBAL&amp;#39;,$env:SCOOP_GLOBAL,&amp;#39;Machine&amp;#39;) &amp;gt; user Set-ExecutionPolicy RemoteSigned -Scope CurrentUser iwr -useb get.scoop.sh | iex scoop uninstall scoop ------------------------------------- &amp;gt; proxy scoop install git scoop config proxy socks5://127.0.0.1:1081 scoop config rm proxy &amp;gt; add buckets scoop bucket add extras #scoop bucket add apps https://github.com/kkzzhizhou/scoop-apps scoop bucket add dorado https://github.com/h404bi/dorado &amp;gt;install tools scoop install yt-dlp ffmpeg miniconda scoop install 7zip curl sudo git openssh coreutils grep sed gawk less innounp scoop install python ruby go nodejs &amp;gt; manage scoop list xxx scoop update xxx scoop search xxx scoop info xxx scoop install spc/&amp;lt;app_name&amp;gt; scoop bucket list scoop bucket known scoop update scoop bucket add scoop reset xx [[https://www.</description>
     </item>
     <item>
       <title>Flomo实践gtd和para</title>
@@ -1035,7 +1042,7 @@
       <link>/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/project/</guid>
-      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/03/20 自定义搜索引擎yacy&#xA;2024/02/06 flomo实践gtd与para&#xA;2024/02/08 windows软件管理&#xA;2024/10/04 GTD系统扩展+calender&#xA;2024/11/24 msys2使用anaconda&#xA;2024/12/02 GTD工具一览&#xA;2024/12/02 项目管理&#xA;2025/04/16 技能习得与提升 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通\ 沟通模型&#xA;2024/04/12 冲突图&#xA;2025/02/11 FABE 乔哈里视窗 show your self&#xA;2023/10/18 hugo 博客搭建</description>
+      <description>pro1 环境搭建 项目概述：如果在一个公司工作，那么很长时间都会在这个地方，逐渐被环境同化，我希望能留尽可能多的自由度，以应对未来不确定性的冲击，所以需要构建几个系统，使得自己能像u盘一样快速匹配不同的环境。&#xA;物理环境 end&#xA;(2022/05/10&amp;ndash;&amp;gt;2023/11/16 1y6m6d end)&#xA;2023/07/13 搬家&#xA;2023/11/16 最小生活、学习单元_end&#xA;2024/06/30 +开车&#xA;need house need car 生产环境&#xA;实践环境&#xA;2023/03/20 自定义搜索引擎yacy&#xA;2024/02/06 flomo实践gtd与para&#xA;2024/02/08 windows软件管理 msys2&#xA;2024/02/08 windows软件管理 scoop&#xA;2024/10/04 GTD系统扩展+calender&#xA;2024/11/24 msys2使用anaconda&#xA;2024/12/02 GTD工具一览&#xA;2024/12/02 项目管理\ 信息环境&#xA;2024/10/20 ref 信息专题&#xA;2024/10/20 namespace和贝叶斯推理 挣钱 &amp;amp; 商业&#xA;2023/11/30 金钱观&#xA;2023/12/01 技术栈(持续更新)&#xA;2023/12/11 如何适应一家公司&#xA;2024/01/08 构建现金流渠道&#xA;2024/04/26 最近面试的一些情况&#xA;pro2 高效率 项目概述：基于状态机模型+有限无限游戏的思想，构建一套思维工具，使得能快速向目标收敛。&#xA;内容：目标管理、现状分析(信息获取|猜测及验证)、策略及执行()、复盘(纠错机制)&#xA;高效沟通\ 沟通模型&#xA;2024/04/12 冲突图&#xA;2025/02/11 FABE 乔哈里视窗 show your self</description>
     </item>
     <item>
       <title></title>
