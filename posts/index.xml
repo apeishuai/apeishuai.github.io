@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Apr 2025 08:45:35 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 23:10:25 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aider使用第三方api</title>
+      <link>/posts/aider%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9api/</link>
+      <pubDate>Sun, 11 May 2025 23:10:25 +0800</pubDate>
+      <guid>/posts/aider%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9api/</guid>
+      <description>gemini pro 2.5的编程能力大幅提升，而且结合过去的案例看，AI确实能大幅提升个人的生产力，所以有必要将AI纳入工作流。&#xA;我这边点的技能树仅限编程，所以用aider，之前使用ai的流程是：写prompt、复制、运行测试，aider相当于把这三个步骤合成一个，而且提供repo-map功能，AI通过repo-map，能更精准给出代码。&#xA;还有位emacs大神，也在emacs实现相同的配置。仅从生产力角度，使用他的eaf，很容易进入心流状态，但是我常用的电脑没装linux系统，暂且先用aider。&#xA;aider预置了很多AI厂商的api接口，只要在环境变量中配置api-key、base-url，并在aider命令模式下指定模型，就会用该模型辅助编程。我用了deepseek和gemini pro。&#xA;gemini pro会出现因ip归属地导致访问失败的问题，使用openrouter作为代理访问gemini pro可突破地域限制，因为我的主要目标是gemini，openrouter需要充值10美元才能使用openrouter/gemini pro exp模型(模型本身是免费的，但是有门槛)。&#xA;没有办法，只能找第三方api集成商了，有不少这样的网站。23年7月10日注册了一个类似的网站，api价格貌似也便宜。&#xA;第一个思路是用litellm，作为代理，在后台开一个服务，然后aider访问litellm提供的服务，litellm对接第三方api平台。后面发现是多此一举，因为这个api集成商的api设计成了openai的格式，所以直接用openai接口调用就行。&#xA;经过一番折腾，最终配置如下：&#xA;alias aider-gptgod=&amp;#34;aider --openai-api-base https://api.gptgod.online/v1 --model openai/qwen3-4b --no-git --no-auto-commits&amp;#34; alias aider-deepseek=&amp;#34;conda activate &amp;amp;&amp;amp; aider --model deepseek/deepseek-coder --no-git --no-auto-commits&amp;#34; alias aider-gemini=&amp;#34;conda activate &amp;amp;&amp;amp; aider --model openrouter/google/gemini-2.5-pro-exp-03-25:free --no-git --no-auto-commits --no-show-model-warnings&amp;#34; 重点讲一下gptgod这个第三方集成商的api是怎么用的，因为从这个可以访问几乎所有模型；openrouter也能做到，但是收钱了。同理，换任何一个第三方api都是一样的操作。&#xA;alias aider-gptgod=&amp;#34;aider --openai-api-base https://api.gptgod.online/v1 --model openai/qwen3-4b --no-git --no-auto-commits&amp;#34; open-api-base也可以放进系统变量，openai/model-name，model-name是api集成商提供的所有model，这个里面就能用gemini pro 2.5。&#xA;使用效果如下： </description>
+    </item>
     <item>
       <title>Vscode开发qt Pyside6</title>
       <link>/posts/vscode%E5%BC%80%E5%8F%91qt-pyside6/</link>
