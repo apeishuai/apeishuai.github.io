@@ -44,13 +44,6 @@
       <description>1 同花顺从200涨到300，然后一直维持在300上下浮动&#xA;key: 估值&#xA;比如该企业的估值是15-20倍PE，以后就长期在这个估值处浮动&#xA;2 交易-股价变动细节&#xA;股价变动：&#xA;股价变动的核心是供需关系&#xA;股价变动是通过交易实现的&#xA;交易分三个时段：开盘/尾盘 盘中&#xA;交易规则：&#xA;开盘/尾盘：集合竞价：交易所将所有订单按价格优先、时间优先的原则排序，找到一个价格，使得该价格下能够成交的股票数量最大，这一价格当为当日的开盘价或者收盘价&#xA;盘中：连续竞价：买单 价格高的订单优先成交、价格低的订单优先成交&#xA;限价购买总是比当前股票价格高，当前股票价格就是买一的价格 大盘情况及交易金额 只有挂单数量，没有具体金额 3 股票价格在实时波动，选择时间区间的长短交易，额外重要&#xA;pending</description>
     </item>
     <item>
-      <title>Shaarli服务</title>
-      <link>/posts/shaarli%E6%9C%8D%E5%8A%A1/</link>
-      <pubDate>Thu, 20 Mar 2025 00:15:49 +0800</pubDate>
-      <guid>/posts/shaarli%E6%9C%8D%E5%8A%A1/</guid>
-      <description>前置准备 vps服务器一台、shaarli插件&#xA;参考freshrss服务搭建&#xA;部署 docker-compose.yml&#xA;version: &amp;#39;3&amp;#39; services: shaarli: image: shaarli/shaarli:latest container_name: shaarli restart: unless-stopped ports: - 8005:80 volumes: - /home/ubuntu/serv/shaarli/cache:/var/www/shaarli/cache - /home/ubuntu/serv/shaarli/data:/var/www/shaarli/data $ sudo docker-compose up -d 执行上一条指令，即可开启服务，volumes选项。&#xA;宿主机的cache和data文件的所属用户和用户组可能跟容器内部的所属用户、用户组不一样，这时候要切到容器内部。\&#xA;$ sudo docker exec -it ID bash $ cd shaarli $ chown -R nginx:nginx data $ chown -R nginx:nginx cache 最终效果 数据迁移 $ alias sync_ucloud=&amp;#34;rsync -avz -e ssh ubuntu@ip:~/serv/shaarli/* &amp;#39;/d/g/area/serv&amp;#39;&amp;#34; 用这条指令同步所有数据，然后执行&#xA;$ sudo docker-compose up -d 即可迁移和一键恢复(注意docker-compose.yml中-volumes选型的宿主机目录，要更改为当前宿主机目录)。</description>
-    </item>
-    <item>
       <title>生活节奏</title>
       <link>/posts/%E7%94%9F%E6%B4%BB%E8%8A%82%E5%A5%8F/</link>
       <pubDate>Sun, 16 Mar 2025 06:38:31 +0800</pubDate>

@@ -9,7 +9,7 @@
   />
   
     
-      <title>领域驱动&#43;搭积木 | Wxf`s Fantasy World</title>
+      <title>Shaarli服务 | Wxf`s Fantasy World</title>
     
   
   <link rel="stylesheet" href="/css/reset.css"/>
@@ -70,16 +70,16 @@
         
   <main>
     <article>
-      <h1 class="title">领域驱动&#43;搭积木</h1>
+      <h1 class="title">Shaarli服务</h1>
       
       <div class="post-meta">
   <strong>
     <span>Posted on</span>
-    <time>2024-04-02</time>
+    <time>2025-03-20</time>
     
     
   </strong>
-  <span> • 5 words</span>
+  <span> • 67 words</span>
   <span> • 1 minute read</span>
   
     <div>
@@ -91,22 +91,44 @@
     <div>
       <span>Tags:</span>
       
-        <a href="/tags/series-study">series-study</a>
+        <a href="/tags/series-%E7%94%9F%E4%BA%A7-%E5%AE%9E%E8%B7%B5%E7%8E%AF%E5%A2%83">series-生产-实践环境</a>
     </div>
   
 </div>
 
-      <div class="content"><p>说说我是怎么学习c语言的。</p>
-<p>我认为c语言是构建出的工具，为了使用好这个工具，得往下降一层，去学习编译器相关原理，但是也不用学的太多，有这么一张表足够，上面写了基本元素和语法规则、语义，此两者相当于象棋规则。<br>
-知晓规则后便是为了实现我们的目标，精心编排代码段。编排代码段跟搭积木类似，不管多复杂的逻辑，最终要回到这些基本要素，要做的是把相关的逻辑链跑通，然后看看人家是怎么搭积木的，用自己的方式实现一遍。<br>
-如此不断遍历，学会编程只是时间问题。但是，我在网上看到的c语言教学，都是教着写语句，++循环，乱七八糟的，那玩意用教么，给个表照着写不成吗，误人子弟
-<img src="/img/Snipaste_2024-04-02_00-52-21.png" alt=""></p>
-<p>第二种是领域驱动，因为代码反映现实，跟具体领域相关，只有对编程的理解还不够，需补充领域相关知识，这时候需要请领域专家，一起建模，直到模型跑通了，产出产品为止。</p>
-<p><img src="/img/Snipaste_2024-04-02_01-13-36.png" alt="">
-<img src="/img/Snipaste_2024-04-02_01-14-11.png" alt="">
-<img src="/img/Snipaste_2024-04-02_01-14-19.png" alt="">
-<img src="/img/Snipaste_2024-04-02_01-14-26.png" alt="">
-<img src="/img/Snipaste_2024-04-02_01-14-36.png" alt=""></p>
+      <div class="content"><h1 id="前置准备">前置准备</h1>
+<p>vps服务器一台、shaarli插件<br>
+参考<a href="../freshrss%E6%90%AD%E5%BB%BA/">freshrss服务搭建</a></p>
+<h1 id="部署">部署</h1>
+<p>docker-compose.yml</p>
+<pre tabindex="0"><code>version: &#39;3&#39;
+
+services:
+  shaarli:
+    image: shaarli/shaarli:latest
+    container_name: shaarli
+    restart: unless-stopped
+    ports:
+      - 8005:80
+    volumes:
+      - /home/ubuntu/serv/shaarli/cache:/var/www/shaarli/cache
+      - /home/ubuntu/serv/shaarli/data:/var/www/shaarli/data
+</code></pre><pre tabindex="0"><code>$ sudo docker-compose up -d
+</code></pre><p>执行上一条指令，即可开启服务，volumes选项。<br>
+宿主机的cache和data文件的所属用户和用户组可能跟容器内部的所属用户、用户组不一样，这时候要切到容器内部。\</p>
+<pre tabindex="0"><code>$ sudo docker exec -it ID bash
+$ cd shaarli
+$ chown -R nginx:nginx data
+$ chown -R nginx:nginx cache
+</code></pre><h1 id="最终效果">最终效果</h1>
+<p><img src="/img/Snipaste_2025-03-20_00-22-56.png" alt="">
+<img src="/img/Snipaste_2025-03-20_00-23-43.png" alt="">
+<img src="/img/Snipaste_2025-03-20_00-24-17.png" alt=""></p>
+<h1 id="数据迁移">数据迁移</h1>
+<pre tabindex="0"><code>$ alias sync_ucloud=&#34;rsync -avz -e ssh ubuntu@ip:~/serv/shaarli/* &#39;/d/g/area/serv&#39;&#34;
+</code></pre><p>用这条指令同步所有数据，然后执行</p>
+<pre tabindex="0"><code>$ sudo docker-compose up -d
+</code></pre><p>即可迁移和一键恢复(注意docker-compose.yml中-volumes选型的宿主机目录，要更改为当前宿主机目录)。</p>
 </div>
     </article>
   </main>
