@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 May 2025 23:10:25 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 21 May 2025 11:10:50 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do</title>
+      <link>/resource/do/</link>
+      <pubDate>Wed, 21 May 2025 11:10:50 +0800</pubDate>
+      <guid>/resource/do/</guid>
+      <description>do，遇到不会的再想办法解决，that`s core!&#xA;end this topic!</description>
+    </item>
     <item>
       <title>Aider使用第三方api</title>
       <link>/posts/aider%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9api/</link>
