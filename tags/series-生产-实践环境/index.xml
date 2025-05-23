@@ -6,8 +6,15 @@
     <description>Recent content in series-生产-实践环境 on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Mar 2025 00:15:49 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 May 2025 08:48:44 +0800</lastBuildDate>
     <atom:link href="/tags/series-%E7%94%9F%E4%BA%A7-%E5%AE%9E%E8%B7%B5%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows软件管理 Nirsoft&#43;sysinternals</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-nirsoft&#43;sysinternals/</link>
+      <pubDate>Fri, 23 May 2025 08:48:44 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-nirsoft&#43;sysinternals/</guid>
+      <description>scoop install openark&#xA;nirsoft in openark, we can install Nirsoft&#xA;sysinternals scoop install sysinternals&#xA;other tools scoop install rufus&#xA;图拉丁工具箱</description>
+    </item>
     <item>
       <title>Shaarli服务</title>
       <link>/resource/shaarli%E6%9C%8D%E5%8A%A1/</link>

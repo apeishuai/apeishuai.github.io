@@ -6,8 +6,15 @@
     <description>Recent content in Resources on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 May 2025 11:10:50 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 May 2025 08:48:44 +0800</lastBuildDate>
     <atom:link href="/resource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows软件管理 Nirsoft&#43;sysinternals</title>
+      <link>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-nirsoft&#43;sysinternals/</link>
+      <pubDate>Fri, 23 May 2025 08:48:44 +0800</pubDate>
+      <guid>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-nirsoft&#43;sysinternals/</guid>
+      <description>scoop install openark&#xA;nirsoft in openark, we can install Nirsoft&#xA;sysinternals scoop install sysinternals&#xA;other tools scoop install rufus&#xA;图拉丁工具箱</description>
+    </item>
     <item>
       <title>Do</title>
       <link>/resource/do/</link>

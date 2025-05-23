@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/resource/</loc>
+    <lastmod>2025-05-23T09:07:30+08:00</lastmod>
+  </url><url>
+    <loc>/tags/series-%E7%94%9F%E4%BA%A7-%E5%AE%9E%E8%B7%B5%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2025-05-23T09:07:30+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-05-23T09:07:30+08:00</lastmod>
+  </url><url>
+    <loc>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-nirsoft&#43;sysinternals/</loc>
+    <lastmod>2025-05-23T09:07:30+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-05-23T09:07:30+08:00</lastmod>
+  </url><url>
     <loc>/resource/do/</loc>
     <lastmod>2025-05-21T11:12:24+08:00</lastmod>
   </url><url>
-    <loc>/resource/</loc>
-    <lastmod>2025-05-21T11:12:24+08:00</lastmod>
-  </url><url>
     <loc>/tags/series-study/</loc>
-    <lastmod>2025-05-21T11:12:24+08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2025-05-21T11:12:24+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2025-05-21T11:12:24+08:00</lastmod>
   </url><url>
     <loc>/posts/aider%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9api/</loc>
@@ -40,9 +46,6 @@
   </url><url>
     <loc>/posts/%E6%8A%95%E8%B5%84%E8%A7%82%E5%AF%9F/</loc>
     <lastmod>2025-03-29T13:55:43+08:00</lastmod>
-  </url><url>
-    <loc>/tags/series-%E7%94%9F%E4%BA%A7-%E5%AE%9E%E8%B7%B5%E7%8E%AF%E5%A2%83/</loc>
-    <lastmod>2025-05-18T10:49:33+08:00</lastmod>
   </url><url>
     <loc>/resource/shaarli%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2025-05-18T10:02:20+08:00</lastmod>
