@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/posts/</loc>
+    <lastmod>2025-05-30T08:27:53+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-05-30T08:27:53+08:00</lastmod>
+  </url><url>
+    <loc>/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%BD%93%E7%B3%BB/</loc>
+    <lastmod>2025-05-30T08:27:53+08:00</lastmod>
+  </url><url>
+    <loc>/posts/cmake%E7%AE%A1%E7%90%86c_cpp%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2025-05-24T13:10:49+08:00</lastmod>
+  </url><url>
     <loc>/resource/</loc>
     <lastmod>2025-05-23T09:07:30+08:00</lastmod>
   </url><url>
@@ -14,9 +26,6 @@
     <loc>/resource/windows%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86-nirsoft&#43;sysinternals/</loc>
     <lastmod>2025-05-23T09:07:30+08:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2025-05-23T09:07:30+08:00</lastmod>
-  </url><url>
     <loc>/resource/do/</loc>
     <lastmod>2025-05-21T11:12:24+08:00</lastmod>
   </url><url>
@@ -25,9 +34,6 @@
   </url><url>
     <loc>/posts/aider%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9api/</loc>
     <lastmod>2025-05-11T23:46:04+08:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-05-18T10:49:33+08:00</lastmod>
   </url><url>
     <loc>/posts/vscode%E5%BC%80%E5%8F%91qt-pyside6/</loc>
     <lastmod>2025-04-21T08:58:40+08:00</lastmod>

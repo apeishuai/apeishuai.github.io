@@ -6,8 +6,22 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 May 2025 23:10:25 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 07:55:24 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>软件开发体系</title>
+      <link>/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%BD%93%E7%B3%BB/</link>
+      <pubDate>Fri, 30 May 2025 07:55:24 +0800</pubDate>
+      <guid>/posts/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%BD%93%E7%B3%BB/</guid>
+      <description>代码组织及构建 c/c++: cmake&#xA;python: uv&#xA;javascript: pnpm&#xA;代码阅读 doxygen&#xA;doxygen -g vim Doxyfile doxygen Doxyfile # c/c++ config # 启用调用图生成（依赖 Graphviz） HAVE_DOT = YES CALL_GRAPH = YES CALLER_GRAPH = YES # 输入文件（递归扫描） INPUT = . RECURSIVE = YES # FILE_PATTERNS = *.py //python项目开放这一项 # 输出格式 GENERATE_HTML = YES GENERATE_LATEX = NO # 提取私有/静态成员（可选） EXTRACT_ALL = YES EXTRACT_STATIC = YES 代码补全 lsp服务&#xA;vscode+ pylance(python)、C/C++ IntelliSense(c/c++)、&#xA;协作 git\&#xA;alias c=&amp;#34;git log | grep ^comment | wc -l&amp;#34; \\cout all comments alias statis=&amp;#34;git shortlog -sn --no-merges&amp;#34; \\every people comments alias dif=&amp;#34;git diff HEAD~1 HEAD&amp;#34; \\the diff between now commit with last commit j.</description>
+    </item>
+    <item>
+      <title>Cmake管理c_cpp项目</title>
+      <link>/posts/cmake%E7%AE%A1%E7%90%86c_cpp%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Sat, 24 May 2025 13:06:16 +0800</pubDate>
+      <guid>/posts/cmake%E7%AE%A1%E7%90%86c_cpp%E9%A1%B9%E7%9B%AE/</guid>
+      <description>交叉编译 </description>
+    </item>
     <item>
       <title>Aider使用第三方api</title>
       <link>/posts/aider%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9api/</link>
