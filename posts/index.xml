@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jun 2025 11:31:03 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Jun 2025 19:30:42 +0800</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>时间管理</title>
+      <link>/posts/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Thu, 05 Jun 2025 19:30:42 +0800</pubDate>
+      <guid>/posts/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</guid>
+      <description>《自我管理》 讲下这篇文章中，记录时间的思路。&#xA;pc: 网费很贵插件 + org-mode (emacs)&#xA;iphone：atimelogger + 捷径&#xA;android: atimelogger + tasker + 应用定时器2&#xA;记录时间我之前践行过，一直成功不了，因为现存的所有时间记录工具，都要求在记录前主动点击。我要刷会短视频也要先点一下吗？根据B=MAT，“点击”这个按钮藏的太深，所以触发不了时间记录这个行为，也就很难养成习惯。解决方案是自动化工具。&#xA;pc插件就不说了，直接安装即可，数据同步至坚果云。&#xA;iphone的思路是每打开一个应用，就创建一条捷径，打开atimelogger记录时间，关闭应用就结束记录。记录常用的四五个app就行。&#xA;android的思路是直接导出应用定时器2的数据，这是个sqlite数据库，需要用脚本处理字段。&#xA;字段规定成：&#xA;platefrom application start-time end-time duration&#xA;将从上述设备搜集到的数据转换成规定的数据格式。这时候有两种处理方式：打标签，看不同行为的频次，整体占用时间；导出到日历，分析一天的时间分布。&#xA;通过两个视角就能找出时间分布的不合理处，进而制定优化方案，比如时间切的太碎，可以找出原因，是外界干扰，还是个人行为导致，或者是注意力不集中。总能找到入手的地方。&#xA;形成系统，统计，发现规律，形成认知，最后内化成为一种习惯。这套工具我觉得还是有用的，再搞搞。</description>
+    </item>
     <item>
       <title>人生设计框架</title>
       <link>/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1%E6%A1%86%E6%9E%B6/</link>
