@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>series-工程实践 on Wxf`s Fantasy World</title>
+    <link>/tags/series-%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+    <description>Recent content in series-工程实践 on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Jun 2025 16:43:45 +0800</lastBuildDate>
+    <atom:link href="/tags/series-%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>工程实践</title>
+      <link>/resource/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Sat, 28 Jun 2025 16:43:45 +0800</pubDate>
+      <guid>/resource/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
+      <description>从给 RisingWave 提 PR 说起，聊聊怎么快速切入一个复杂的开源项目</description>
+    </item>
+  </channel>
+</rss>

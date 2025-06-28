@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Jun 2025 13:21:03 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jun 2025 16:43:45 +0800</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>工程实践</title>
+      <link>/resource/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Sat, 28 Jun 2025 16:43:45 +0800</pubDate>
+      <guid>/resource/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
+      <description>从给 RisingWave 提 PR 说起，聊聊怎么快速切入一个复杂的开源项目</description>
+    </item>
     <item>
       <title>如何在规定时间内完成任务</title>
       <link>/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E8%A7%84%E5%AE%9A%E6%97%B6%E9%97%B4%E5%86%85%E5%AE%8C%E6%88%90%E4%BB%BB%E5%8A%A1/</link>
