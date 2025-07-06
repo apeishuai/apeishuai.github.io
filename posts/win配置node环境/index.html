@@ -79,12 +79,12 @@
     
     
   </strong>
-  <span> • 122 words</span>
+  <span> • 157 words</span>
   <span> • 1 minute read</span>
   
     <div>
       Last updated on
-      <time>2025-05-18</time>
+      <time>2025-07-04</time>
     </div>
   
   
@@ -121,12 +121,22 @@
 </span></span></code></pre></div><p>设置pnpm目录</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>pnpm c get  <span style="color:#960050;background-color:#1e0010">\\获取</span>pnpm当前目录
 </span></span><span style="display:flex;"><span>pnpm config set global<span style="color:#f92672">-</span>bin<span style="color:#f92672">-</span>dir cache<span style="color:#f92672">-</span>dir state<span style="color:#f92672">-</span>dir global<span style="color:#f92672">-</span>dir <span style="color:#e6db74">&#34;&#34;</span>  <span style="color:#960050;background-color:#1e0010">\\设置</span>pnpm目录
-</span></span></code></pre></div><p>node版本管理</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span> pnpm env use <span style="color:#f92672">-</span>g <span style="color:#ae81ff">18</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">在</span><span style="color:#e6db74">&#34;~/.bashrc&#34;</span><span style="color:#960050;background-color:#1e0010">中加一条</span><span style="color:#e6db74">&#34;alias node = &#34;</span>C:<span style="color:#f92672">/</span>Users<span style="color:#f92672">/</span>whens<span style="color:#f92672">/</span>AppData<span style="color:#f92672">/</span>Local<span style="color:#f92672">/</span>pnpm<span style="color:#f92672">/</span>node.exe<span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span> source <span style="color:#f92672">~/</span>.bashrc
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span> node <span style="color:#f92672">-</span>v
-</span></span></code></pre></div><p><img src="/img/Snipaste_2024-10-15_21-49-19.png" alt=""></p>
+</span></span></code></pre></div><p>node版本管理<br>
+<del>```c</del><br>
+<del>$ pnpm env use -g 18</del><br>
+<del>在&quot;~/.bashrc&quot;中加一条&quot;alias node = &ldquo;C:/Users/whens/AppData/Local/pnpm/node.exe&rdquo;&quot;</del><br>
+<del>$ source ~/.bashrc</del></p>
+<pre tabindex="0"><code>1 将pnpm下的current目录添加到环境变量
+
+2 删除pnpm下的node.exe等可执行文件，参考如下：
+export node_path=&#34;/d/softwares/pnpm/&#34;\
+alias node_clear=&#34;cd $node_path &amp;&amp; rm node.exe &amp;&amp; rm npm &amp;&amp; rm npm.CMD &amp;&amp; rm npx &amp;&amp; rm npx.CMD&#34;
+
+3 $ pnpm env use --global 21 //切换不同的版本
+
+4 scoop安装node的目的是安装pnpm，pnpm安装完成后，删除node的环境变量(按顺序执行)
+</code></pre><pre tabindex="0"><code>$ node -v
+</code></pre><p><img src="/img/Snipaste_2024-10-15_21-49-19.png" alt=""></p>
 <p>尽情玩耍吧!!!</p>
 </div>
     </article>
