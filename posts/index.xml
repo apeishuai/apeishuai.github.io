@@ -51,20 +51,6 @@
       <description>gemini pro 2.5的编程能力大幅提升，而且结合过去的案例看，AI确实能大幅提升个人的生产力，所以有必要将AI纳入工作流。&#xA;我这边点的技能树仅限编程，所以用aider，之前使用ai的流程是：写prompt、复制、运行测试，aider相当于把这三个步骤合成一个，而且提供repo-map功能，AI通过repo-map，能更精准给出代码。&#xA;还有位emacs大神，也在emacs实现相同的配置。仅从生产力角度，使用他的eaf，很容易进入心流状态，但是我常用的电脑没装linux系统，暂且先用aider。&#xA;aider预置了很多AI厂商的api接口，只要在环境变量中配置api-key、base-url，并在aider命令模式下指定模型，就会用该模型辅助编程。我用了deepseek和gemini pro。&#xA;gemini pro会出现因ip归属地导致访问失败的问题，使用openrouter作为代理访问gemini pro可突破地域限制，因为我的主要目标是gemini，openrouter需要充值10美元才能使用openrouter/gemini pro exp模型(模型本身是免费的，但是有门槛)。&#xA;没有办法，只能找第三方api集成商了，有不少这样的网站。23年7月10日注册了一个类似的网站，api价格貌似也便宜。&#xA;第一个思路是用litellm，作为代理，在后台开一个服务，然后aider访问litellm提供的服务，litellm对接第三方api平台。后面发现是多此一举，因为这个api集成商的api设计成了openai的格式，所以直接用openai接口调用就行。&#xA;经过一番折腾，最终配置如下：&#xA;alias aider-gptgod=&amp;#34;aider --openai-api-base https://api.gptgod.online/v1 --model openai/qwen3-4b --no-git --no-auto-commits&amp;#34; alias aider-deepseek=&amp;#34;conda activate &amp;amp;&amp;amp; aider --model deepseek/deepseek-coder --no-git --no-auto-commits&amp;#34; alias aider-gemini=&amp;#34;conda activate &amp;amp;&amp;amp; aider --model openrouter/google/gemini-2.5-pro-exp-03-25:free --no-git --no-auto-commits --no-show-model-warnings&amp;#34; 重点讲一下gptgod这个第三方集成商的api是怎么用的，因为从这个可以访问几乎所有模型；openrouter也能做到，但是收钱了。同理，换任何一个第三方api都是一样的操作。&#xA;alias aider-gptgod=&amp;#34;aider --openai-api-base https://api.gptgod.online/v1 --model openai/qwen3-4b --no-git --no-auto-commits&amp;#34; open-api-base也可以放进系统变量，openai/model-name，model-name是api集成商提供的所有model，这个里面就能用gemini pro 2.5。&#xA;使用效果如下： </description>
     </item>
     <item>
-      <title>Vscode开发qt Pyside6</title>
-      <link>/posts/vscode%E5%BC%80%E5%8F%91qt-pyside6/</link>
-      <pubDate>Mon, 21 Apr 2025 08:45:35 +0800</pubDate>
-      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt-pyside6/</guid>
-      <description>用qt creator创建一个pyside6 qt项目，和之前的qmake、cmake项目一样，先看构建套件，再看编译过程，再看运行过程。&#xA;python虚拟环境配置&#xA;构建套件需要标明python.exe的位置，我自己手动指定了一个 构建过程需要pyside6-uic.exe, pyside6-project.exe，参考下面的文章，还需要配置pyrcc，这三个软件均可以从配置的环境中找出 配置完插件后直接在命令行运行py文件 全局安装PySide6</description>
-    </item>
-    <item>
-      <title>Vscode开发qt Cmake</title>
-      <link>/posts/vscode%E5%BC%80%E5%8F%91qt-cmake/</link>
-      <pubDate>Mon, 14 Apr 2025 23:07:03 +0800</pubDate>
-      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt-cmake/</guid>
-      <description>新建一个cmake qt项目，看构建步骤&#xA;cmake configure cmake build cmake run 对应到vscode，第一步，设置c++的智能补全，这个在qmake那篇文章中说了&#xA;第二步，安装cmake tools、cmake插件，配置这两项 然后在CmakeList.txt文档中加&amp;quot;set(CMAKE_PREFIX_PATH &amp;ldquo;D:/qt6.8.2/6.8.2/mingw_64&amp;rdquo;)&amp;quot;，目的是cmake编译时能找到qt相关的库&#xA;ctrl+shift+p，分别执行cmake configure、cmake build、cmake run，完成 </description>
-    </item>
-    <item>
       <title>无痛英语环境打造2</title>
       <link>/posts/%E6%97%A0%E7%97%9B%E8%8B%B1%E8%AF%AD%E7%8E%AF%E5%A2%83%E6%89%93%E9%80%A02/</link>
       <pubDate>Fri, 04 Apr 2025 14:59:59 +0800</pubDate>
@@ -91,13 +77,6 @@
       <pubDate>Sun, 16 Mar 2025 05:13:03 +0800</pubDate>
       <guid>/posts/%E7%B2%BE%E7%A5%9E%E8%83%BD%E9%87%8F/</guid>
       <description>能量积累？&#xA;人和其他物种的大脑可“同频共振”</description>
-    </item>
-    <item>
-      <title>Vscode开发qt qmake</title>
-      <link>/posts/vscode%E5%BC%80%E5%8F%91qt-qmake/</link>
-      <pubDate>Fri, 07 Mar 2025 16:32:35 +0800</pubDate>
-      <guid>/posts/vscode%E5%BC%80%E5%8F%91qt-qmake/</guid>
-      <description>qt creator太难用了，转到vscode开发qt。&#xA;新建项目 命令行编译 ok，这是一个完整的流程，接下来用命令行实现 主要用到三个命令：qmake.exe，mingw32-make.exe，gcc.exe&#xA;qmake作用是解析xx.pro文件，生成跨平台编译的的makefile文件；&#xA;mingw32-make是make命令的windows实现，作用是调用工具链，编译成平台可执行文件，比如exe&#xA;gcc，顾名思义，编译器，把代码编译成二进制码 vscode编译 vscode需要用到两个配置：c++、外部指令(qmake、mingw32-make算是外部指令)&#xA;安装c++插件，设置智能补全&#xA;项目根目录下创建这两个文件，一个是c++编译相关配置，task.json是调用外部指令的配置&#xA;配置完成后 ： ctrl+shift+p&amp;ndash;&amp;gt;run task&amp;ndash;&amp;gt;run-debug { &amp;#34;version&amp;#34;: &amp;#34;2.0.0&amp;#34;, &amp;#34;tasks&amp;#34;: [ { &amp;#34;label&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mkdir&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-Force&amp;#34;, &amp;#34;build&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;qmake-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;qmake&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;../${workspaceFolderBasename}.pro&amp;#34;, &amp;#34;-spec&amp;#34;, &amp;#34;win32-g++&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=debug\&amp;#34;&amp;#34;, &amp;#34;\&amp;#34;CONFIG+=console\&amp;#34;&amp;#34; ], &amp;#34;dependsOn&amp;#34;: [ &amp;#34;mkdir&amp;#34; ] }, { &amp;#34;label&amp;#34;: &amp;#34;make-debug&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;shell&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;cwd&amp;#34;: &amp;#34;${workspaceFolder}/build&amp;#34; }, &amp;#34;command&amp;#34;: &amp;#34;mingw32-make&amp;#34;, &amp;#34;args&amp;#34;: [ &amp;#34;-f&amp;#34;, &amp;#34;Makefile.</description>
     </item>
     <item>
       <title>知行合一</title>
@@ -182,13 +161,6 @@
       <pubDate>Wed, 22 Jan 2025 16:07:27 +0800</pubDate>
       <guid>/posts/lsp%E9%85%8D%E7%BD%AE/</guid>
       <description>lsp即language server protocol，如图： 为了实现自动补全，减少查手册的频率，首先我尝试了lsp-bridge，里面的本地开发、ssh开发、本地容器开发模式都试了，可惜没跑通。&#xA;其实我需要一个自动补全的工具，vscode完全满足需求，没必要瞎折腾。&#xA;参考前一篇vscode安装的文章，安装完毕vscode，需要配置lsp服务器，我选pyright作为python的服务器，vscode配置优先级如下： 在项目目录下新建.vscode/settings.json文件，内容填写：&#xA;{ &amp;#34;python.languageServer&amp;#34;: &amp;#34;Pyright&amp;#34; } 然后执行，ref win配置node环境&#xA;npm install -g pyright 安装pyright服务器，重新打开一下vscode，就可以使用pyright提供的自动补全服务了 </description>
-    </item>
-    <item>
-      <title>Vscode初配置</title>
-      <link>/posts/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Tue, 21 Jan 2025 22:15:01 +0800</pubDate>
-      <guid>/posts/vscode%E5%88%9D%E9%85%8D%E7%BD%AE/</guid>
-      <description>安装vscode vscode download&#xA;code命令 打开终端，执行\&#xA;code --version 可以看到code版本，在项目根目录下执行&#xA;code . 可以快速打开项目文件。&#xA;code --list-extensions 列出安装的所有插件&#xA;配置项 VS Code 提供了几种不同的设置范围。当您打开工作区时，您将至少看到以下两个范围：&#xA;用户设置- 全局应用到您打开的任何 VS Code 实例的设置。&#xA;工作区设置- 存储在工作区内部的设置，仅在工作区打开时应用。&#xA;用户设置 设置文件位置&#xA;根据您的平台，用户设置文件位于此处：&#xA;视窗 %APPDATA%\Code\User\settings.json&#xA;苹果系统 $HOME/Library/Application\ Support/Code/User/settings.json&#xA;Linux $HOME/.config/Code/User/settings.json&#xA;工作区设置 工作区设置特定于项目，可以在项目的开发人员之间共享。工作区设置覆盖用户设置。 工作区设置文件位于.vscode根文件夹中的文件夹下。&#xA;特定语言编辑器设置 setting.json\&#xA;{ &amp;#34;[typescript]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.formatOnPaste&amp;#34;: true }, &amp;#34;[markdown]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.wordWrap&amp;#34;: &amp;#34;on&amp;#34;, &amp;#34;editor.renderWhitespace&amp;#34;: &amp;#34;all&amp;#34;, &amp;#34;editor.acceptSuggestionOnEnter&amp;#34;: &amp;#34;off&amp;#34; } } 插件配置 eslint-config-prettier 与 eslint-plugin-prettier (pending)&#xA;vscode-eslint 语法检测 code --install-extension dbaeumer.vscode-eslint conf: eslint.</description>
     </item>
     <item>
       <title>信息流监控</title>
