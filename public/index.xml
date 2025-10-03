@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wxf`s Fantasy World</title>
+    <link>https://example.org/</link>
+    <description>Recent content on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Oct 2025 09:57:00 +0800</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重新部署博客</title>
+      <link>https://example.org/posts/%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 03 Oct 2025 09:57:00 +0800</pubDate>
+      <guid>https://example.org/posts/%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</guid>
+      <description>操作失误，把所有的服务相关文件和demo文件删了，之前的博客移到blog_old，重新写。</description>
+    </item>
+    <item>
+      <title>Main</title>
+      <link>https://example.org/resource/main/</link>
+      <pubDate>Fri, 03 Oct 2025 09:22:05 +0800</pubDate>
+      <guid>https://example.org/resource/main/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

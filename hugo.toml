@@ -1,0 +1,35 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Wxf`s Fantasy World'
+theme = 'smigle'
+
+
+[[menu.main]]
+  name = "Home"
+  url = "/main/"
+  weight = 1
+
+[[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "Tag"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  name = "Project"
+  url = "/project/"
+  weight = 4
+
+[[menu.main]]
+  name = "Photos"
+  url = "/photos/"
+  weight = 5
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 6
