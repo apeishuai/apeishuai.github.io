@@ -8,6 +8,7 @@ draft = false
 
 *   [领域及阅读列表](https://dxr54gq30qo.feishu.cn/wiki/UQnJw306eivn4vk3OwtcD5NUndb?from=from_copylink)
 *   [wxf`s 知识网](https://www.mubu.com/doc/3FKbNQGmHXC)
+*   [resource shared](https://oykfxigb.cloud.sealos.io/)
 
 trace
 -----
