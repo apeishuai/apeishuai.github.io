@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Dec 2025 12:22:13 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 02:16:03 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Abc</title>
-      <link>http://localhost:1313/posts/abc/</link>
-      <pubDate>Sat, 20 Dec 2025 12:22:13 +0800</pubDate>
-      <guid>http://localhost:1313/posts/abc/</guid>
-      <description></description>
+      <title>注意力管理</title>
+      <link>http://localhost:1313/posts/%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 29 Dec 2025 02:16:03 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%AE%A1%E7%90%86/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://justoffbyone.com/posts/math-of-why-you-cant-focus-at-work/&#34;&gt;The Math of Why You Can&amp;rsquo;t Focus at Work&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;参考这篇文章，注意力的核心是要长时间聚焦在一件事情上，且不能被打断。&lt;/p&gt;&#xA;&lt;p&gt;1 要做到真正的聚焦，进入心流状态&lt;br&gt;&#xA;2 排除外界干扰源&lt;/p&gt;&#xA;&lt;p&gt;真正的聚焦核心在目标-上下文，上下文即工作现场的保留，目标是动态的，在上下文环境的不断切换中完成所有目标；所以需要载体保留现场(&amp;hellip;)，需要工具记录目标(GTD)。&lt;/p&gt;&#xA;&lt;p&gt;原则：目标可以有很多，每天最多不超过三个。&lt;/p&gt;&#xA;&lt;p&gt;这个就不赘述，之前我都实现了。&lt;/p&gt;&#xA;&lt;p&gt;排除外界干扰，识别干扰源。在这个过程中我发现人其实没有自我意志，只是在外界刺激下被动响应。真正进入主动决策的时间非常少，这个可能是因为被动进入环境，如果是自己控制环境变换，情况会有所不同。&lt;/p&gt;&#xA;&lt;p&gt;干扰源也是触发源，B=MAT，trigger，触发进入另一个状态。可以将触发纳入刚才的目标-上下文管理。有两种状况，如果触发不重要，后续就慢慢遗忘，如果触发不紧急，就延时执行。&lt;/p&gt;&#xA;&lt;p&gt;如果是紧急、重要的触发，会第一时间执行。但我敢说，99%的都是些不紧急、不重要的事。&lt;/p&gt;&#xA;&lt;p&gt;ok，以上就是注意力管理一个最简单的模型。时间管理不现实，注意力+目标管理，能稍微帮助找回点控制权。&lt;/p&gt;</description>
     </item>
     <item>
       <title>重新部署博客</title>
