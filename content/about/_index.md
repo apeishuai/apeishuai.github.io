@@ -31,8 +31,12 @@ service platefrom and self host
 *  [n8n](https://n8n-1029482891736.asia-east2.run.app/) //by google cloud
 *  [luxirty-search](https://luxirty-search-iota-nine.vercel.app/) //by vercel, search based on google search
 *  [radicale](http://117.50.186.154:5232/.web/) //deploy by vps, ref form [跨平台日历同步：使用 CalDAV 和 Radicale 打造个人日历云服务](https://moelove.info/2023/07/29/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%97%A5%E5%8E%86%E5%90%8C%E6%AD%A5%E4%BD%BF%E7%94%A8-CalDAV-%E5%92%8C-Radicale-%E6%89%93%E9%80%A0%E4%B8%AA%E4%BA%BA%E6%97%A5%E5%8E%86%E4%BA%91%E6%9C%8D%E5%8A%A1/)
-*  [MoonTV](https://apeishuai.github.io/about/moontv-3qr.pages.dev) //MoonTV 是一个开箱即用的、跨平台的影视聚合播放器。
-*  [gpt-aciademic](https://apeishuai.github.io/about/) //quick use , deploy by docker
+*  [MoonTV](https://moontv-3qr.pages.dev) //MoonTV 是一个开箱即用的、跨平台的影视聚合播放器。
+
+
+**other**:
+*  [gpt-aciademic](https://academic.chatwithpaper.org/) //quick use , deploy by docker
+
 
 性格
 --

@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Wxf`s Fantasy World</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://example.org/posts/</link>
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Dec 2025 02:16:03 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Dec 2025 20:37:20 +0800</lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025年度总结</title>
+      <link>https://example.org/posts/2025%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Wed, 31 Dec 2025 20:37:20 +0800</pubDate>
+      <guid>https://example.org/posts/2025%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://apeishuai.github.io/blog_old/posts/2023%E5%B9%B4%E6%80%BB%E7%BB%93/&#34;&gt;2023年度总结&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://apeishuai.github.io/blog_old/posts/2024%E5%B9%B4%E6%80%BB%E7%BB%93/&#34;&gt;2024年度总结&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;定了个大框架吧，真正有计划是20年开始的，20-&amp;gt;23在瞎折腾，没有以事业为重，23年底聚焦转向，向技术、商务，24年一年，25年一年，两年可以干的事有很多，但我觉得一直在原地踏步，那就细数下今年都干了啥吧。&lt;/p&gt;&#xA;&lt;p&gt;24、25年都是沿着23年底的框架进行，大方向符合，就是迭代太慢了。&lt;/p&gt;&#xA;&lt;p&gt;今年主要是两件事：\&lt;/p&gt;&#xA;&lt;h1 id=&#34;数字化基建&#34;&gt;数字化基建&lt;/h1&gt;&#xA;&lt;p&gt;我做了很多工具，来留痕。目的是为了更好的分析和改进，促进自我成长，这个属于个人成长框架搭建的一部分。&lt;br&gt;&#xA;具体看b站主页发的视频&lt;a href=&#34;https://space.bilibili.com/1993949543/upload/video&#34;&gt;bilibili wxf&lt;/a&gt;，列表如下：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;emacs+gtd //gtd工具&lt;/li&gt;&#xA;&lt;li&gt;flomo  //卡片笔记&lt;/li&gt;&#xA;&lt;li&gt;anki //碎片化学习&lt;/li&gt;&#xA;&lt;li&gt;msys2 //windows开发环境&lt;/li&gt;&#xA;&lt;li&gt;奥维地图 //空间信息记录&lt;/li&gt;&#xA;&lt;li&gt;web serve&#xA;&lt;ul&gt;&#xA;&lt;li&gt;docsify //文档展示&lt;/li&gt;&#xA;&lt;li&gt;blog  //个人成长记录&lt;/li&gt;&#xA;&lt;li&gt;radicle //日历工具&lt;/li&gt;&#xA;&lt;li&gt;kooreader //电子图书馆&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;supercook //食谱&lt;/li&gt;&#xA;&lt;li&gt;一木记账 //财务记录&lt;/li&gt;&#xA;&lt;li&gt;connect //睡眠数据&lt;/li&gt;&#xA;&lt;li&gt;训记 //锻炼身体记录&lt;/li&gt;&#xA;&lt;li&gt;running page //跑步数据展示&lt;/li&gt;&#xA;&lt;li&gt;医疗记录 //个人健康核查&lt;/li&gt;&#xA;&lt;li&gt;stayfree //电子设备使用时间记录&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;如上，个人成长的量化达到了50%，还不够，要继续努力。&lt;/p&gt;&#xA;&lt;h1 id=&#34;技术进步&#34;&gt;技术进步&lt;/h1&gt;&#xA;&lt;p&gt;进步也谈不上，只不过是比一年前更有长进。技术这一块我的计划是PLC打底，web开发、应用程序开发并行，干得好可以拿到2w以上，在此基础上做点自己的产品出来。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PLC编程&lt;br&gt;&#xA;这个我基本搞定了，就是状态图+对设备的理解。从之前的继电器开关系统到开关量系统搭建，要严格把控信号的周期、流向，给我的感觉更像是时序信号处理这一块。&lt;br&gt;&#xA;明年继续这一块，多做点项目，达到熟练(其实23年就应该完成的，但是环境真的不是我能把控的，所以那些能组织资源的人，引导事情流向的人，是真的牛)，期限半年。&lt;/li&gt;&#xA;&lt;li&gt;数控CNC编程&lt;br&gt;&#xA;接触了三个月，CNC系统的核心在将轨迹指令分解成离散的点，然后控制伺服电机走这些点。数控的核心在精度。我也查了一些资料，传感器、测量系统、控制系统，每一个水都很深，工业母机这一块不是那么好做，我们的很多设备用的还是国外的，不要被国内那些自媒体骗了。&lt;br&gt;&#xA;应用层面，就是MACRO，G00、G01、G04，但是这些都是操机崽的活，就不深入了解了，我只需要用CNC做到丝滑的轨迹就ok。&lt;/li&gt;&#xA;&lt;li&gt;QT编程&lt;br&gt;&#xA;这个我只是搭建起了开发环境，可以手动从0到1搭建qt的开发环境，然后把各种c++包纳入到qt体系中。但是在深入一些就不行了，比如将c++的eventloop结合到qt的eventloop，不难，但要动手去做。&lt;br&gt;&#xA;现在主要卡在数据结构，给一个问题需要做适当的数据结构，我试了下搞json解析，这个涉及到树的遍历，所以说数据结构这一块做的还是不够，这个是明年的重中之重。&lt;/li&gt;&#xA;&lt;li&gt;WEB开发&lt;br&gt;&#xA;依然是缺乏练习，就不赘述了，主要是css、web性能优化(io资源、内存资源、cpu资源分配)、但是我发现学会了plc后学tcp链接如有神助，学会plc以后碰到任何状态转换相关问题都能很好理解。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;生活&#34;&gt;生活&lt;/h1&gt;&#xA;&lt;p&gt;依然是维持最基本的生活单元，麻雀虽小，五脏俱全，自己做饭，电子设备齐全，游戏设备也齐全，运动设备也齐全，这个就是最精简的生活状态，后面填个床车，也能做到无缝迁移。这个就不赘述了。&lt;/p&gt;&#xA;&lt;h1 id=&#34;工作&#34;&gt;工作&lt;/h1&gt;&#xA;&lt;p&gt;强度不大，但是占用的时间太多了，而且工资也不高。&lt;br&gt;&#xA;但是没关系，因为职业规划是23年底开始的，现在才两年，实际工作5年，在剩下的3年内技术要做到上限，好岗位倒是挺多的，但是需要经验，沿着规划的方向一步一步走就行。&lt;/p&gt;&#xA;&lt;h1 id=&#34;26年期望&#34;&gt;26年期望&lt;/h1&gt;&#xA;&lt;p&gt;我觉得一个人最大的限制是思维的限制，之前我觉得有很多迷雾，看不清楚，经过20年到现在，5年的思考、学习，思维模式已经更新了很多次，信息环境也在不断优化，构建了很多脚手架，关于意义，关于方向，已不在困扰。&lt;/p&gt;&#xA;&lt;p&gt;现在就看在当前模式下，快速迭代，能做到什么程度。并且在我设想的这套框架中，能随时回退。当前唯一的优势是时间。&lt;/p&gt;&#xA;&lt;p&gt;26年，技术、项目这一块继续推进，社交、生活层面探索更多可能性。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>注意力管理</title>
-      <link>http://localhost:1313/posts/%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%AE%A1%E7%90%86/</link>
+      <link>https://example.org/posts/%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%AE%A1%E7%90%86/</link>
       <pubDate>Mon, 29 Dec 2025 02:16:03 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%AE%A1%E7%90%86/</guid>
+      <guid>https://example.org/posts/%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%AE%A1%E7%90%86/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://justoffbyone.com/posts/math-of-why-you-cant-focus-at-work/&#34;&gt;The Math of Why You Can&amp;rsquo;t Focus at Work&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;参考这篇文章，注意力的核心是要长时间聚焦在一件事情上，且不能被打断。&lt;/p&gt;&#xA;&lt;p&gt;1 要做到真正的聚焦，进入心流状态&lt;br&gt;&#xA;2 排除外界干扰源&lt;/p&gt;&#xA;&lt;p&gt;真正的聚焦核心在目标-上下文，上下文即工作现场的保留，目标是动态的，在上下文环境的不断切换中完成所有目标；所以需要载体保留现场(&amp;hellip;)，需要工具记录目标(GTD)。&lt;/p&gt;&#xA;&lt;p&gt;原则：目标可以有很多，每天最多不超过三个。&lt;/p&gt;&#xA;&lt;p&gt;这个就不赘述，之前我都实现了。&lt;/p&gt;&#xA;&lt;p&gt;排除外界干扰，识别干扰源。在这个过程中我发现人其实没有自我意志，只是在外界刺激下被动响应。真正进入主动决策的时间非常少，这个可能是因为被动进入环境，如果是自己控制环境变换，情况会有所不同。&lt;/p&gt;&#xA;&lt;p&gt;干扰源也是触发源，B=MAT，trigger，触发进入另一个状态。可以将触发纳入刚才的目标-上下文管理。有两种状况，如果触发不重要，后续就慢慢遗忘，如果触发不紧急，就延时执行。&lt;/p&gt;&#xA;&lt;p&gt;如果是紧急、重要的触发，会第一时间执行。但我敢说，99%的都是些不紧急、不重要的事。&lt;/p&gt;&#xA;&lt;p&gt;ok，以上就是注意力管理一个最简单的模型。时间管理不现实，注意力+目标管理，能稍微帮助找回点控制权。&lt;/p&gt;</description>
     </item>
     <item>
       <title>重新部署博客</title>
-      <link>http://localhost:1313/posts/%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://example.org/posts/%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Fri, 03 Oct 2025 09:57:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://example.org/posts/%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;p&gt;操作失误，把所有的服务相关文件和demo文件删了，之前的博客移到&lt;a href=&#34;apeishuai.github.io/blog_old&#34;&gt;blog_old&lt;/a&gt;，重新写。&lt;/p&gt;</description>
     </item>
   </channel>
