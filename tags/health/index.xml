@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>health on Wxf`s Fantasy World</title>
+    <link>https://example.org/tags/health/</link>
+    <description>Recent content in health on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Apr 2024 18:33:28 +0800</lastBuildDate>
+    <atom:link href="https://example.org/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>体检相关</title>
+      <link>https://example.org/resource/%E4%BD%93%E6%A3%80%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Tue, 16 Apr 2024 18:33:28 +0800</pubDate>
+      <guid>https://example.org/resource/%E4%BD%93%E6%A3%80%E7%9B%B8%E5%85%B3/</guid>
+      <description>体检手册 rss推送到了体检这个话题，身体健康很重要，且以预防为主，记录一下查资料的结果：&#xA;策略 三甲医院体检科、肿瘤内科，开检查单，检查完毕后找医生看就ok 体检报告留存，积累到一块，供医生分析用&#xA;保险 惠民保 百万医疗险 统筹医疗&#xA;专题-基础项 专题-癌症 专题-工具 ios/健康笔记 ios/icare ios\就诊问问&#xA;具体项目 ref 链接：https://pan.baidu.com/s/1HyHdSmZsDEdRo0I3z3nHHw?pwd=2oki 提取码：2oki 思路分享：制定最适合你的体检项目 健康体检基本项目专家共识（2022） http://gzhongen.com.cn/upcase/%E4%BD%93%E6%A3%80%E7%A7%91%EF%BC%88%E9%80%82%E5%90%88%E9%9D%9E%E5%BF%83%E6%A0%87%E9%A1%B9%E7%9B%AE)-2022%E5%81%A5%E5%BA%B7%E4%BD%93%E6%A3%80%E5%9F%BA%E6%9C%AC%E9%A1%B9%E7%9B%AE%E4%B8%93%E5%AE%B6%E5%85%B1%E8%AF%86.pdf</description>
+    </item>
+  </channel>
+</rss>

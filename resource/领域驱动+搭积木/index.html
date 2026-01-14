@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>领域驱动&#43;搭积木 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="https://example.org/">
+      <img
+        class="icon"
+        src="/images/brandIcon.svg"
+      />
+    </a>
+    <div class="text">
+      <a href="https://example.org/"><h1>Wxf`s Fantasy World</h1></a>
+      <h3>Share Something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>Project</b></a>
+      
+         | 
+        <a href="/photos/"><b>Photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+<article>
+    <h1>领域驱动&#43;搭积木</h1>
+    <div class="content">
+        <h2 id="材料覆盖率">材料覆盖率</h2>
+<p>log:材料覆盖率章节增加材料索引相关内容</p>
+<p>如何保证材料覆盖率？<br>
+所有的东西都是为了满足某些需求，人为创造出来的，所以需要知道这套控制方案产生的驱动力是什么，在创造这一套控制框架的过程中，是如何选取组织材料的，有哪些取舍，效果如何，未来如何演化</p>
+<p>降一层，自己构建出这个工具，(原子语言、基于原子语言构建的一个平台类的东西)<br>
+然后以该工具提供的接口为基础，在不同场景的应用；如何确保构建的程序可控(基于SDK，再做一层抽象，为了满足具体业务)<br>
+应用过程中出现的问题及排查措施、解决方案(补全2中的逻辑、工程漏洞)<br>
+最终得到的是一个不人为干预，完美运行的机器(理想状态)，事实上，没有完美的系统</p>
+<p>材料覆盖率，说的就是材料中上面四个层次信息的覆盖情况。</p>
+<p>step1:<br>
+因为信息都是人产出的，要么是网页形式，要么是书本，视频。<br>
+找该领域的20-30人，把他们产出的所有资料遍历一遍，这样做的目的是画一张大图，标几个关键点。<br>
+具体操作：搜索：电气设计 xxx，然后必然会搜出些书、知乎文章类似的，顺藤摸瓜，把里面提到的所有参考资料、人汇聚到一起，凑够30个，就大功告成了</p>
+<p>实际操作：<br>
+ref 自定义搜索引擎<br>
+参考这篇文章，把平时索引搜集到的使用频率较高、内容质量相对比较高的网站放到google的自定义搜索引擎，可大大提升检索效率<br>
+ref 搭建个人文档池</p>
+<p>实例：<br>
+在想办法解决qt界面自适应的时候，直接从google搜索，效率很低；在博客园搜，大概半个小时找到了解决方案。所以自定义搜索引擎可以加速从未知到已知的速度。<br>
+还有一个好处是可以不断积累，一切问题从已积累的材料入手，清晰划出了个人能力的边界，如果问题超出了能力圈，也知道怎么扩展能力圈。</p>
+<p>还需要实践场景，解决的是从已知到熟练</p>
+<p>step2:<br>
+无学习路径<br>
+通过各种方式搜集断语，用自己的话写下来–&gt;凑逻辑链–&gt;做练习，从不同角度检测逻辑链–&gt;淘汰没用的概念，成熟的闭环逻辑封存备用(注：可能需要花很长时间)</p>
+<p>搜集断语路径：<br>
+技术文档 &gt; 博客 &gt;</p>
+<p>2024/03/16 实践–&gt;技术文档–&gt;书单(扩充概念)</p>
+<p>step3:<br>
+用工程手段探测，分析系统，找系统的控制点。这样相当于把视角切入到系统内部，有庖丁解牛，不见全牛的感觉。<br>
+依然是上面提到的四个层次，关注三个点：基本要素、抽象机制、组合机制。一个系统肯定能分解成最基本的部分。这里主要解决一个方向的问题，费曼有句话，凡我不能创造，我就不能理解。<br>
+如果step1的覆盖率足够的话，应该是能解决方向的问题，如果不行就求助有经验的员工，学习他们debug的思路，补全这块知识</p>
+<p>2024/07/21 搜素proteus仿真相关书籍，内容有：所有功能介绍(当手册看)，经典电路，proteus构建仿真的思路及流程(此为上述覆盖率的一个实例)<br>
+2024/07/27 出现找一个资料死也找不到的情况，这时候要check下文档搜集路径(即网络)<br>
+2024/12/13 给出具体的索引方案，更新step1</p>
+<h2 id="领域驱动搭积木">领域驱动+搭积木</h2>
+<p>说说我是怎么学习c语言的。</p>
+<p>我认为c语言是构建出的工具，为了使用好这个工具，得往下降一层，去学习编译器相关原理，但是也不用学的太多，有这么一张表足够，上面写了基本元素和语法规则、语义，此两者相当于象棋规则。<br>
+知晓规则后便是为了实现我们的目标，精心编排代码段。编排代码段跟搭积木类似，不管多复杂的逻辑，最终要回到这些基本要素，要做的是把相关的逻辑链跑通，然后看看人家是怎么搭积木的，用自己的方式实现一遍。<br>
+如此不断遍历，学会编程只是时间问题。但是，我在网上看到的c语言教学，都是教着写语句，++循环，乱七八糟的，那玩意用教么，给个表照着写不成吗，误人子弟</p>
+<p>第二种是领域驱动，因为代码反映现实，跟具体领域相关，只有对编程的理解还不够，需补充领域相关知识，这时候需要请领域专家，一起建模，直到模型跑通了，产出产品为止。</p>
+
+    </div>
+</article>
+
+      </div>
+      <footer>
+  <hr />
+  
+  <p class="copyright">
+    Copyright © 2026
+    <a href="https://example.org/"><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

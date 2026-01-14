@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>series-study on Wxf`s Fantasy World</title>
+    <link>https://example.org/tags/series-study/</link>
+    <description>Recent content in series-study on Wxf`s Fantasy World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Jan 2026 18:32:36 +0800</lastBuildDate>
+    <atom:link href="https://example.org/tags/series-study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学习理论v1.0</title>
+      <link>https://example.org/resource/%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BAv1.0/</link>
+      <pubDate>Tue, 13 Jan 2026 18:32:36 +0800</pubDate>
+      <guid>https://example.org/resource/%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BAv1.0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>学习工程化</title>
+      <link>https://example.org/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%96/</link>
+      <pubDate>Tue, 13 Jan 2026 18:32:22 +0800</pubDate>
+      <guid>https://example.org/resource/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%96/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
