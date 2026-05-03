@@ -6,8 +6,29 @@
     <description>Recent content in Posts on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jan 2026 22:06:22 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 14:04:04 +0800</lastBuildDate>
     <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PC开发环境迁移</title>
+      <link>https://example.org/posts/pc%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E8%BF%81%E7%A7%BB/</link>
+      <pubDate>Wed, 15 Apr 2026 14:04:04 +0800</pubDate>
+      <guid>https://example.org/posts/pc%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E8%BF%81%E7%A7%BB/</guid>
+      <description>scoop scoop export scoop import&#xA;winget winget export winget import&#xA;openark </description>
+    </item>
+    <item>
+      <title>人生设计 时间切片&#43;分层</title>
+      <link>https://example.org/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1-%E6%97%B6%E9%97%B4%E5%88%87%E7%89%87&#43;%E5%88%86%E5%B1%82/</link>
+      <pubDate>Mon, 06 Apr 2026 10:35:59 +0800</pubDate>
+      <guid>https://example.org/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1-%E6%97%B6%E9%97%B4%E5%88%87%E7%89%87&#43;%E5%88%86%E5%B1%82/</guid>
+      <description>用设计思维，把连续流动的人生，拆解成可管理、可迭代的“时间切片”，并在每个切片里主动创造价值与体验。&#xA;切片作为黑箱，有输入输出接口。&#xA;上一切片的输入，为下一切片的输出。&#xA;整体来看，如果在某一切片时间停留过长，会影响到其他切片的分配。&#xA;切片就是聚焦系统，一个切片就是一段专注的时间块。&#xA;切片内容定义：&#xA;OKR&#xA;GTD&#xA;AEIOU&#xA;切片系统 </description>
+    </item>
+    <item>
+      <title>ai辅助工具列表</title>
+      <link>https://example.org/posts/ai%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Wed, 04 Feb 2026 14:07:40 +0800</pubDate>
+      <guid>https://example.org/posts/ai%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E5%88%97%E8%A1%A8/</guid>
+      <description>之前写过一篇配置aider的文章，新增一个AI编程工具-claude code，新增其他提高效率的工具。&#xA;中转站 cc-switch 帮助配置客户端环境变量&#xA;claude code\&#xA;模型能力分类 多模态： gemini&#xA;编程、推理：claude、deepseek-reasoner&#xA;实时信息与趋势分析：grok&#xA;通用任务：GPT&#xA;长文档：gemini、claude&#xA;AI应用 codeing cursor+ claude code +aider&#xA;codex+cursor: Auto 自动切换模型 日常编码&#xA;claude code: Opus，深度推理，解决复杂问题&#xA;aider: deepseek-reasoner， 深度推理，架构层面&#xA;pi: 小规模提示词+本地llm&#xA;漫剧 注：截至20260415，AI漫剧工具链越来越成熟了 seedance2.0、gemini 视频总结 播客总结 1 install wsl&#xA;$ wsl &amp;ndash;install&#xA;2 install docker $ scoop install docker&#xA;$ scoop install docker-compose&#xA;$ winget install -e &amp;ndash;id Docker.DockerDesktop&#xA;3 docker run Bibinote&#xA;标准部署 docker-compose up -d&#xA;GPU 加速部署（需要 NVIDIA GPU） docker-compose -f docker-compose.</description>
+    </item>
     <item>
       <title>人生设计 建模</title>
       <link>https://example.org/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1-%E5%BB%BA%E6%A8%A1/</link>

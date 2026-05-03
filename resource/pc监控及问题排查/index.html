@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+    
+      <title>PC监控及问题排查 | Wxf`s Fantasy World</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/font.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <div id="root">
+      <header>
+  <div id="brand">
+    <a class="icon-link" href="https://example.org/">
+      <img
+        class="icon"
+        src="/images/brandIcon.svg"
+      />
+    </a>
+    <div class="text">
+      <a href="https://example.org/"><h1>Wxf`s Fantasy World</h1></a>
+      <h3>Share Something useful</h3>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/posts/"><b>Blog</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tag</b></a>
+      
+         | 
+        <a href="/project/"><b>Project</b></a>
+      
+         | 
+        <a href="/photos/"><b>Photos</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+      <div id="content">
+        
+<article>
+    <h1>PC监控及问题排查</h1>
+    <div class="content">
+        <h1 id="procdump">procdump</h1>
+<p>procdump -ma -n 1 -s 0 a.exe dumps<br>
+启动程序，立即转储一次，然后退出</p>
+<h1 id="wtrace">wtrace</h1>
+<h2 id="堆内存破坏">堆内存破坏</h2>
+<ul>
+<li>数组越界访问</li>
+<li>realloc使用不当</li>
+<li>访问未初始化的内存</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e"># 基本操作
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>sc query SNMP                  <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">查询服务状态</span>
+</span></span><span style="display:flex;"><span>sc start SNMP                   <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">启动服务</span>
+</span></span><span style="display:flex;"><span>sc stop SNMP                    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">停止服务</span>
+</span></span><span style="display:flex;"><span>sc pause SNMP                   <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">暂停服务</span>
+</span></span><span style="display:flex;"><span>sc <span style="color:#66d9ef">continue</span> SNMP                <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">恢复暂停的服务</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 配置操作
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>sc config SNMP start<span style="color:#f92672">=</span> <span style="color:#66d9ef">auto</span>       <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">设置自动启动</span>
+</span></span><span style="display:flex;"><span>sc config SNMP start<span style="color:#f92672">=</span> demand     <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">设置手动启动</span>
+</span></span><span style="display:flex;"><span>sc config SNMP start<span style="color:#f92672">=</span> disabled   <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">设置禁用</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 查看服务配置
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>sc qc SNMP                       <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">查询服务配置</span>
+</span></span><span style="display:flex;"><span>sc enumdep SNMP                  <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">查看服务依赖</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 远程操作
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>sc <span style="color:#960050;background-color:#1e0010">\\</span><span style="color:#ae81ff">192.168.1.100</span> query SNMP    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">查询远程电脑的服务</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e"># 基本操作
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>net start                        <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">查看所有已启动的服务</span>
+</span></span><span style="display:flex;"><span>net start <span style="color:#e6db74">&#34;SNMP Service&#34;</span>         <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">启动服务（注意引号）</span>
+</span></span><span style="display:flex;"><span>net stop <span style="color:#e6db74">&#34;SNMP Service&#34;</span>          <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">停止服务</span>
+</span></span><span style="display:flex;"><span>net pause <span style="color:#e6db74">&#34;SNMP Service&#34;</span>         <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">暂停服务</span>
+</span></span><span style="display:flex;"><span>net <span style="color:#66d9ef">continue</span> <span style="color:#e6db74">&#34;SNMP Service&#34;</span>      <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">恢复服务</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 注意：net命令不支持配置修改
+</span></span></span></code></pre></div><p>Get-WindowsCapability -Online -Name &ldquo;SNMP*&rdquo;  //检查是否安装
+Get-WindowsCapability -Online -Name &ldquo;SNMP*&rdquo; //安装snmp服务</p>
+
+    </div>
+</article>
+
+      </div>
+      <footer>
+  <hr />
+  
+  <p class="copyright">
+    Copyright © 2026
+    <a href="https://example.org/"><strong>Blog Author</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>,
+    which was influenced by the theme
+    <a href="https://github.com/sumnerevans/smol">smol</a>.
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>
