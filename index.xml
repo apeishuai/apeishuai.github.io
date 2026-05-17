@@ -6,8 +6,15 @@
     <description>Recent content on Wxf`s Fantasy World</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2026 14:04:04 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 19:14:06 +0800</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>复盘机制</title>
+      <link>https://example.org/resource/%E5%A4%8D%E7%9B%98%E6%9C%BA%E5%88%B6/</link>
+      <pubDate>Sun, 17 May 2026 19:14:06 +0800</pubDate>
+      <guid>https://example.org/resource/%E5%A4%8D%E7%9B%98%E6%9C%BA%E5%88%B6/</guid>
+      <description>之前写过一个日记模板，挺全的，如下&#xA;- [ ] - [ ] 产出成果 复盘(一句话总结) 今天计划的事有没有做完 有没有分配时间在重要的事上 哪些项目很久没推进了: 手机使用时长: 睡眠时长: AEIOU: 日志区 这个明显不轻量化，老是忘记看。今天突然有一种感觉，可以把这些指标量化。&#xA;第一个，当然是OKR，当前最想做的事是什么，从整个生命周期来看，这件事处在什么位置。这个可以用切片技术做到。&#xA;还有两个监控项，除了让事情处在正轨上，我觉得可能要开发更多的视角，比如更多考虑到“我”的感受，什么事情可以让我开心，在这个视角下发掘主动的空间。&#xA;复盘的目的是追溯过去和预测未来，用这个切片技术和视角引导，可以夺得更多对生活的掌控权。</description>
+    </item>
     <item>
       <title>PC开发环境迁移</title>
       <link>https://example.org/posts/pc%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E8%BF%81%E7%A7%BB/</link>
@@ -16,10 +23,10 @@
       <description>scoop scoop export scoop import&#xA;winget winget export winget import&#xA;openark </description>
     </item>
     <item>
-      <title>人生设计 时间切片&#43;分层</title>
-      <link>https://example.org/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1-%E6%97%B6%E9%97%B4%E5%88%87%E7%89%87&#43;%E5%88%86%E5%B1%82/</link>
+      <title>时间切片&#43;分层</title>
+      <link>https://example.org/resource/%E6%97%B6%E9%97%B4%E5%88%87%E7%89%87&#43;%E5%88%86%E5%B1%82/</link>
       <pubDate>Mon, 06 Apr 2026 10:35:59 +0800</pubDate>
-      <guid>https://example.org/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1-%E6%97%B6%E9%97%B4%E5%88%87%E7%89%87&#43;%E5%88%86%E5%B1%82/</guid>
+      <guid>https://example.org/resource/%E6%97%B6%E9%97%B4%E5%88%87%E7%89%87&#43;%E5%88%86%E5%B1%82/</guid>
       <description>用设计思维，把连续流动的人生，拆解成可管理、可迭代的“时间切片”，并在每个切片里主动创造价值与体验。&#xA;切片作为黑箱，有输入输出接口。&#xA;上一切片的输入，为下一切片的输出。&#xA;整体来看，如果在某一切片时间停留过长，会影响到其他切片的分配。&#xA;切片就是聚焦系统，一个切片就是一段专注的时间块。&#xA;切片内容定义：&#xA;OKR&#xA;GTD&#xA;AEIOU&#xA;切片系统 </description>
     </item>
     <item>
@@ -34,13 +41,13 @@
       <link>https://example.org/posts/ai%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E5%88%97%E8%A1%A8/</link>
       <pubDate>Wed, 04 Feb 2026 14:07:40 +0800</pubDate>
       <guid>https://example.org/posts/ai%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E5%88%97%E8%A1%A8/</guid>
-      <description>之前写过一篇配置aider的文章，新增一个AI编程工具-claude code，新增其他提高效率的工具。&#xA;中转站 cc-switch 帮助配置客户端环境变量&#xA;claude code\&#xA;模型能力分类 多模态： gemini&#xA;编程、推理：claude、deepseek-reasoner&#xA;实时信息与趋势分析：grok&#xA;通用任务：GPT&#xA;长文档：gemini、claude&#xA;AI应用 codeing cursor+ claude code +aider&#xA;codex+cursor: Auto 自动切换模型 日常编码&#xA;claude code: Opus，深度推理，解决复杂问题&#xA;aider: deepseek-reasoner， 深度推理，架构层面&#xA;pi: 小规模提示词+本地llm&#xA;漫剧 注：截至20260415，AI漫剧工具链越来越成熟了 seedance2.0、gemini 视频总结 播客总结 1 install wsl&#xA;$ wsl &amp;ndash;install&#xA;2 install docker $ scoop install docker&#xA;$ scoop install docker-compose&#xA;$ winget install -e &amp;ndash;id Docker.DockerDesktop&#xA;3 docker run Bibinote&#xA;标准部署 docker-compose up -d&#xA;GPU 加速部署（需要 NVIDIA GPU） docker-compose -f docker-compose.</description>
+      <description>之前写过一篇配置aider的文章，新增一个AI编程工具-claude code，新增其他提高效率的工具。&#xA;中转站 cc-switch 帮助配置客户端环境变量&#xA;claude code\&#xA;模型能力分类 多模态： gemini&#xA;编程、推理：claude、deepseek-reasoner&#xA;实时信息与趋势分析：grok&#xA;通用任务：GPT&#xA;长文档：gemini、claude&#xA;AI应用 codeing cursor+ claude code +aider \cursor pass，注册太费劲&#xA;codex: Auto 自动切换模型 日常编码&#xA;claude code: Opus，深度推理，解决复杂问题&#xA;aider: deepseek-reasoner， 深度推理，架构层面&#xA;pi: 小规模提示词+本地llm&#xA;漫剧 注：截至20260415，AI漫剧工具链越来越成熟了 seedance2.0、gemini 视频总结 播客总结 1 install wsl&#xA;$ wsl &amp;ndash;install&#xA;2 install docker $ scoop install docker&#xA;$ scoop install docker-compose&#xA;$ winget install -e &amp;ndash;id Docker.DockerDesktop&#xA;3 docker run Bibinote&#xA;标准部署 docker-compose up -d</description>
     </item>
     <item>
-      <title>人生设计 建模</title>
-      <link>https://example.org/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1-%E5%BB%BA%E6%A8%A1/</link>
+      <title>建模</title>
+      <link>https://example.org/resource/%E5%BB%BA%E6%A8%A1/</link>
       <pubDate>Tue, 06 Jan 2026 22:06:22 +0800</pubDate>
-      <guid>https://example.org/posts/%E4%BA%BA%E7%94%9F%E8%AE%BE%E8%AE%A1-%E5%BB%BA%E6%A8%A1/</guid>
+      <guid>https://example.org/resource/%E5%BB%BA%E6%A8%A1/</guid>
       <description>人生是个混沌系统 混沌系统在科学中的定义是：对初始条件极端敏感，内在存在复杂关联和反馈，长期行为不可预测，但又在无序中蕴含某种隐藏秩序的系统。生活恰恰如此。&#xA;我们可以从几个层面来理解这个比喻：&#xA;微小选择，巨大差异（蝴蝶效应）&#xA;生活中一个偶然的相遇、一次临时的决定、一句无心的话，都可能像蝴蝶扇动翅膀，在几年后引发一场人生的“风暴”。你无法预知哪个瞬间会成为命运的拐点。这种不可预测性和非线性放大，正是混沌的核心特征。&#xA;无法完全掌控，但有迹可循&#xA;混沌系统不是随机的，它由确定的规则支配（比如人际关系、社会规则、物理定律），但因为变量太多、相互作用太复杂，我们无法精确计算其长期轨迹。生活也一样：我们遵循某些原则努力，但结果却常常出人意料，充满了意外和巧合。&#xA;在无序与秩序的边缘&#xA;健康的生活形态往往处于“混沌的边缘”——过于僵化的规划会失去活力（像晶体），完全随波逐流又会陷入混乱（像气体）。最好的状态是在稳定与变化之间保持动态平衡：有基本的价值观和习惯作为“吸引子”，同时又对新的可能保持开放。&#xA;独特的路径，分形的美感&#xA;混沌系统会产生“分形”——在不同尺度上自相似的复杂结构。人生也是如此：一天的模式、一年的节奏、一生的轨迹，可能存在着某种相似的韵律（比如成长、挫折、恢复的循环）。每个人的生命轨迹都是独一无二、不可复制的艺术品。&#xA;那么，意识到生活是混沌系统，对我们有什么启示？ 放下对“绝对控制”的执念：接纳不确定性和意外，它们不是生活的错误，而是系统的本性。&#xA;专注于初始条件与当下：既然长期预测不准，那就认真对待每一个当下的选择、情绪和行动，种下好的“初始条件”。&#xA;保持弹性与适应性：混沌系统需要灵活反馈来适应变化。培养抗挫力、学习力和开放心态，比一份完美的长期计划更重要。&#xA;在过程中寻找意义：目标可能偏移，但旅程本身充满了学习、感受和成长。意义往往存在于应对混沌的动态过程中，而非某个固定的终点。&#xA;敬畏与他人的联结：我们都是彼此系统中的变量，相互影响。善意或冷漠都可能通过复杂的网络传递、放大。&#xA;如何获得相对掌控权 核心原则：从“预测与控制”转向 “塑造与适应”&#xA;我们的目标不是预测十年后的精确位置，而是提高整个系统的“反脆弱性”和“适应性”，让自己在任何可能的风浪中都能保持核心稳定并抓住机会。&#xA;混沌不是敌人，而是土壤。周期不是枷锁，而是节奏。你塑造的节点，就是你在混沌中生长出的、独特而坚韧的生命结构。&#xA;周期性与节点塑造 在混沌系统中（如天气、生态、市场、人生），你找不到像钟表一样精确的周期。但你会发现：&#xA;分形（Fractal）模式：相似的形态在不同尺度上重复出现。&#xA;奇异吸引子（Strange Attractor）：系统状态不会重复，但会被限制在一个具有精细结构的边界内运动，这个边界就是“吸引子”。&#xA;间歇性（Intermittency）：在看似混沌的行为中，会突然出现短暂的有序周期。&#xA;基于混沌理论，你不能控制结果，但可以设计具有反脆弱性的节点和流程，提高在概率游戏中胜出的可能性。&#xA;核心习惯 做什么：打造每天/每周雷打不动的“基石习惯”。如：早晨的冥想/阅读、固定的睡眠时间、定期的运动。&#xA;为什么：这些习惯构成了你人生的“基本算法”，在混乱的外部环境中为你提供内在秩序和稳定能量。它们是你能绝对掌控的小事。&#xA;核心支持网络 做什么：用心经营与家人、挚友、导师的深度关系。这是你的“情感安全网”。&#xA;为什么：混沌系统中，强联结是你最可靠的反馈和支持节点。他们能在你偏离轨道时提醒你，在你跌倒时接住你。&#xA;知识-产出系统 动态演化 资源引入与环境切换 env iter speed&#xA;设计灵活的反馈与调节系统 混沌系统要求你持续观察、学习、微调。&#xA;在混沌系统中，机会不是“找到”的，而是你通过正确的观测姿势，让它“浮现”出来的。&#xA;1 建立“预警指标”与复盘机制：&#xA;做什么：不只关注结果（往往滞后），更要关注过程指标。例如：精力水平、情绪状态、关键关系的质量、学习时间。定期（如每周）进行简短复盘：“什么做得好？什么可以调整？系统给了我什么信号？”&#xA;为什么：这让你能在问题发酵成危机前，像雷达一样捕捉到微小偏移，及时调整。&#xA;2 采用“飞行员模式”，而非“指挥官模式”：&#xA;做什么：将大目标分解为一系列可执行的、短周期的“实验”或“小项目”（如3个月）。为每个实验设定学习目标和成功指标，然后快速行动、获取反馈、调整方向。&#xA;为什么：这避免了“一条路走到黑”的刚性计划。你是在持续“试飞”并修正航线，拥抱必要的调整。&#xA;3 培养“选项思维”：&#xA;做什么：在关键领域（如职业、投资、居住地）有意识地为自己创造更多选择权。学习跨界技能、维持流动性资产、拓展人脉网络。&#xA;为什么：这直接提升了你的“适应性”。当系统剧变时，拥有更多可行选项的人，拥有更大的控制权。&#xA;管理能量与注意力 划定“影响圈”，专注其中：&#xA;做什么：清晰区分哪些是你能控制的（自己的行为、态度），哪些是你只能影响的（他人的看法、合作），哪些是你必须接受的（宏观经济、过去事实）。将至少80%的精力投入“能控制”的部分。&#xA;为什么：这避免了将有限的能量浪费在焦虑和抱怨上，是获得掌控感最直接的心理转换。&#xA;设计“停机”与“恢复”协议：&#xA;做什么：像重视工作一样，将高质量的休息、放松、放空纳入日程。设定数字戒律，保护自己的专注时间。 为什么：清晰的头脑和充沛的能量，是你在混沌中做出明智决策、保持情绪稳定的生理基础。&#xA;构建心流状态 构造心流，本质是人为设计一个“挑战与技能”精确匹配的微观环境，让自我暂时消失，行动与意识合二为一。&#xA;心流=明确目标+即时反馈+挑战与技能的平衡(略高于当前能力5-10%)\&#xA;构建心流的三层设计：&#xA;环境：创建0阻力启动场，隔绝外部环境干扰ref: math of focus</description>
     </item>
     <item>
